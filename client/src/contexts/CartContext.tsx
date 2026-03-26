@@ -49,7 +49,13 @@ interface CartContextValue {
   getCartCrossSells: () => Product[];
 }
 
-const CartContext = createContext<CartContextValue | null>(null);
+// Use globalThis to keep a stable context reference across HMR updates
+const CART_CONTEXT_KEY = '__HEARTH_CART_CTX__' as const;
+const globalRef = globalThis as unknown as Record<string, ReturnType<typeof createContext<CartContextValue | null>>>;
+if (!globalRef[CART_CONTEXT_KEY]) {
+  globalRef[CART_CONTEXT_KEY] = createContext<CartContextValue | null>(null);
+}
+const CartContext = globalRef[CART_CONTEXT_KEY];
 
 const STORAGE_KEY = "hearth-curated-cart";
 
@@ -207,10 +213,28 @@ export function CartProvider({ children }: { children: ReactNode }) {
   );
 }
 
-export function useCart() {
+export function useCart(): CartContextValue {
   const context = useContext(CartContext);
   if (!context) {
-    throw new Error("useCart must be used within a CartProvider");
+    // During HMR, context may briefly be null — return a safe no-op fallback
+    return {
+      items: [],
+      itemCount: 0,
+      subtotal: 0,
+      freeShippingThreshold: FREE_SHIPPING_THRESHOLD,
+      amountToFreeShipping: FREE_SHIPPING_THRESHOLD,
+      hasFreeShipping: false,
+      isOpen: false,
+      openCart: () => {},
+      closeCart: () => {},
+      toggleCart: () => {},
+      addItem: () => {},
+      removeItem: () => {},
+      updateQuantity: () => {},
+      clearCart: () => {},
+      nudgeItems: [],
+      getCartCrossSells: () => [],
+    };
   }
   return context;
 }
