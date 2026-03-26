@@ -3,9 +3,10 @@
 // item list with quantity controls, cross-sell recommendations, checkout CTA.
 // No rounded corners. Editorial typography.
 
-import { X, Minus, Plus, ShoppingBag, Truck, ArrowRight } from "lucide-react";
+import { X, Minus, Plus, ShoppingBag, Truck, ArrowRight, Loader2 } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { Link } from "wouter";
+import { getShopifyVariantGid } from "@/lib/products";
 
 export default function CartDrawer() {
   const {
@@ -16,12 +17,14 @@ export default function CartDrawer() {
     hasFreeShipping,
     freeShippingThreshold,
     isOpen,
+    isLoading,
     closeCart,
     removeItem,
     updateQuantity,
     nudgeItems,
     getCartCrossSells,
     addItem,
+    goToCheckout,
   } = useCart();
 
   const crossSells = getCartCrossSells();
@@ -149,13 +152,13 @@ export default function CartDrawer() {
               <div className="px-6 py-4">
                 {items.map((item) => (
                   <div
-                    key={`${item.productId}-${item.variantId || "default"}`}
+                    key={item.lineId}
                     className="flex gap-4 py-4"
                     style={{ borderBottom: "1px solid var(--hc-stone)" }}
                   >
                     {/* Image */}
                     <Link
-                      href={`/products/${item.productSlug}`}
+                      href={`/products/${item.productHandle}`}
                       onClick={closeCart}
                       className="shrink-0"
                     >
@@ -163,11 +166,17 @@ export default function CartDrawer() {
                         className="w-20 h-24 overflow-hidden"
                         style={{ backgroundColor: "var(--hc-sand)" }}
                       >
-                        <img
-                          src={item.image}
-                          alt={item.name}
-                          className="w-full h-full object-cover"
-                        />
+                        {item.image ? (
+                          <img
+                            src={item.image}
+                            alt={item.name}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center">
+                            <ShoppingBag size={20} strokeWidth={1} style={{ color: "var(--hc-stone)" }} />
+                          </div>
+                        )}
                       </div>
                     </Link>
 
@@ -175,7 +184,7 @@ export default function CartDrawer() {
                     <div className="flex-1 flex flex-col justify-between">
                       <div>
                         <Link
-                          href={`/products/${item.productSlug}`}
+                          href={`/products/${item.productHandle}`}
                           onClick={closeCart}
                         >
                           <p
@@ -210,14 +219,11 @@ export default function CartDrawer() {
                         >
                           <button
                             onClick={() =>
-                              updateQuantity(
-                                item.productId,
-                                item.variantId,
-                                item.quantity - 1
-                              )
+                              updateQuantity(item.lineId, item.quantity - 1)
                             }
                             className="w-8 h-8 flex items-center justify-center hover:bg-[var(--hc-sand)] transition-colors"
                             aria-label="Decrease quantity"
+                            disabled={isLoading}
                           >
                             <Minus size={12} strokeWidth={1.5} />
                           </button>
@@ -229,14 +235,11 @@ export default function CartDrawer() {
                           </span>
                           <button
                             onClick={() =>
-                              updateQuantity(
-                                item.productId,
-                                item.variantId,
-                                item.quantity + 1
-                              )
+                              updateQuantity(item.lineId, item.quantity + 1)
                             }
                             className="w-8 h-8 flex items-center justify-center hover:bg-[var(--hc-sand)] transition-colors"
                             aria-label="Increase quantity"
+                            disabled={isLoading}
                           >
                             <Plus size={12} strokeWidth={1.5} />
                           </button>
@@ -255,9 +258,8 @@ export default function CartDrawer() {
                             ${(item.price * item.quantity).toFixed(2)}
                           </span>
                           <button
-                            onClick={() =>
-                              removeItem(item.productId, item.variantId)
-                            }
+                            onClick={() => removeItem(item.lineId)}
+                            disabled={isLoading}
                             className="text-xs underline transition-opacity hover:opacity-60"
                             style={{
                               fontFamily: "'Karla', sans-serif",
@@ -306,7 +308,8 @@ export default function CartDrawer() {
                             const defaultVariant = product.variants?.find(
                               (v) => v.available
                             );
-                            addItem(product, defaultVariant, 1);
+                            const gid = getShopifyVariantGid(product, defaultVariant);
+                            if (gid) addItem(gid, 1);
                           }}
                           className="shrink-0 w-24 text-left group"
                         >
@@ -389,13 +392,17 @@ export default function CartDrawer() {
             </p>
             <button
               className="w-full hc-btn-primary flex items-center justify-center gap-2"
-              onClick={() => {
-                // Future: redirect to Shopify checkout
-                closeCart();
-              }}
+              onClick={goToCheckout}
+              disabled={isLoading}
             >
-              <span>Proceed to Checkout</span>
-              <ArrowRight size={14} strokeWidth={1.5} />
+              {isLoading ? (
+                <Loader2 size={14} className="animate-spin" />
+              ) : (
+                <>
+                  <span>Proceed to Checkout</span>
+                  <ArrowRight size={14} strokeWidth={1.5} />
+                </>
+              )}
             </button>
           </div>
         )}

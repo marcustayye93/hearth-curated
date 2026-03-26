@@ -9,7 +9,7 @@ import { Link, useParams } from "wouter";
 import { ShoppingBag, Truck, Shield, RotateCcw, ChevronDown } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { getProductBySlug, getCrossSells, type Variant } from "@/lib/products";
+import { getProductBySlug, getCrossSells, type Variant, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
 
 export default function Product() {
@@ -49,8 +49,9 @@ export default function Product() {
   }
 
   const handleAddToCart = () => {
-    if (!isAvailable) return;
-    addItem(product, selectedVariant, 1);
+    if (!isAvailable || !product) return;
+    const variantGid = getShopifyVariantGid(product, selectedVariant);
+    if (variantGid) addItem(variantGid, 1);
   };
 
   return (

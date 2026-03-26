@@ -6,7 +6,7 @@ import { Link, useParams } from "wouter";
 import { Plus } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { getCollectionBySlug, COLLECTIONS, type Product } from "@/lib/products";
+import { getCollectionBySlug, COLLECTIONS, type Product, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
 
 function ProductCard({ product }: { product: Product }) {
@@ -17,7 +17,8 @@ function ProductCard({ product }: { product: Product }) {
     e.stopPropagation();
     if (!product.available) return;
     const defaultVariant = product.variants?.find((v) => v.available);
-    addItem(product, defaultVariant, 1);
+    const variantGid = getShopifyVariantGid(product, defaultVariant);
+    if (variantGid) addItem(variantGid, 1);
   };
 
   return (

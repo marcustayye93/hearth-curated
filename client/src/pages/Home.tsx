@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import { Plus } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { COLLECTIONS, PRODUCTS, type Product } from "@/lib/products";
+import { COLLECTIONS, PRODUCTS, type Product, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
 
 const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/hero-banner-v2-WGnoQge2ivaCcYKVnDSYX9.webp";
@@ -22,7 +22,8 @@ function FeaturedCard({ product }: { product: Product }) {
     e.preventDefault();
     e.stopPropagation();
     const defaultVariant = product.variants?.find((v) => v.available);
-    addItem(product, defaultVariant, 1);
+    const variantGid = getShopifyVariantGid(product, defaultVariant);
+    if (variantGid) addItem(variantGid, 1);
   };
   return (
     <Link
@@ -89,6 +90,7 @@ function FeaturedCard({ product }: { product: Product }) {
 }
 
 export default function Home() {
+
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--hc-parchment)" }}>
       <Nav />

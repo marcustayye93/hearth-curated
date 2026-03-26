@@ -12,8 +12,8 @@ import Collection from "./pages/Collection";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import ShippingReturns from "./pages/ShippingReturns";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />

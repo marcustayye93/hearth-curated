@@ -7,6 +7,7 @@ export interface Variant {
   label: string;
   price: number;
   available: boolean;
+  shopifyVariantId?: string; // Shopify variant GID for cart operations
 }
 
 export interface Product {
@@ -25,6 +26,8 @@ export interface Product {
   crossSells?: string[]; // product IDs for "You may also like"
   available: boolean; // false = all variants unavailable in Shopify
   hookLine?: string; // one-line descriptor for product cards
+  shopifyHandle?: string; // Shopify product handle for API lookups
+  shopifyVariantId?: string; // Default Shopify variant GID (for products without variants)
 }
 
 export interface Collection {
@@ -1052,4 +1055,51 @@ export function getThresholdNudgeItems(cartTotal: number): Product[] {
   )
     .sort((a, b) => Math.abs(a.price - remaining) - Math.abs(b.price - remaining))
     .slice(0, 3);
+}
+
+// ── Shopify Variant Enrichment ──────────────────────────────────────
+// Enrich static products with Shopify variant GIDs for real cart operations
+import { shopifyMap } from "./shopifyMap";
+
+(function enrichWithShopifyIds() {
+  for (const product of PRODUCTS) {
+    const shopifyInfo = shopifyMap[product.slug];
+    if (!shopifyInfo) continue;
+
+    product.shopifyHandle = shopifyInfo.handle;
+
+    if (product.variants && product.variants.length > 0) {
+      // Map static variants to Shopify variants by index
+      product.variants.forEach((v, i) => {
+        if (i < shopifyInfo.variants.length) {
+          v.shopifyVariantId = shopifyInfo.variants[i].id;
+        }
+      });
+    } else {
+      // Single-variant product: store the first Shopify variant GID
+      const firstAvailable = shopifyInfo.variants.find(v => v.available);
+      if (firstAvailable) {
+        product.shopifyVariantId = firstAvailable.id;
+      }
+    }
+  }
+})();
+
+/**
+ * Get the Shopify variant GID for a product (for cart operations).
+ * For multi-variant products, pass the static variant.
+ * For single-variant products, returns the default Shopify variant.
+ */
+export function getShopifyVariantGid(
+  product: Product,
+  variant?: Variant
+): string | null {
+  if (variant?.shopifyVariantId) return variant.shopifyVariantId;
+  if (product.shopifyVariantId) return product.shopifyVariantId;
+
+  // Fallback: look up from the map
+  const info = shopifyMap[product.slug];
+  if (!info) return null;
+  const available = info.variants.find(v => v.available);
+  return available?.id ?? null;
 }
