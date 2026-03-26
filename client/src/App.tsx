@@ -10,6 +10,7 @@ import EmailCapture from "./components/EmailCapture";
 import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import Product from "./pages/Product";
+import About from "./pages/About";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/collections/:slug" component={Collection} />
       <Route path="/products/:slug" component={Product} />
+      <Route path="/about" component={About} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

@@ -165,7 +165,16 @@ export default function Nav() {
           <div>
             <hr style={{ borderColor: "rgba(196,185,170,0.2)", marginBottom: "1.5rem" }} />
             <ul className="space-y-3">
-              {["About", "Shipping & Returns", "Contact"].map((item) => (
+              <li>
+                <Link
+                  href="/about"
+                  className="text-xs tracking-widest uppercase transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  About
+                </Link>
+              </li>
+              {["Shipping & Returns", "Contact"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"

@@ -120,7 +120,16 @@ export default function Footer() {
           <div>
             <p className="hc-eyebrow mb-4" style={{ color: "var(--hc-stone)" }}>About</p>
             <ul className="space-y-2.5">
-              {["Our Story", "Sustainability", "Press", "Careers"].map((item) => (
+              <li>
+                <a
+                  href="/about"
+                  className="text-xs tracking-wide transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Our Story
+                </a>
+              </li>
+              {["Sustainability", "Press", "Careers"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
