@@ -32,3 +32,20 @@
 - [x] Write vitest tests for Shopify integration (10 tests passing)
 - [ ] Add SEO meta tags for product/collection pages
 - [ ] Add inventory awareness once Storefront token gets inventory scope
+
+## Mobile Responsiveness Optimization
+- [x] Audit all pages on mobile viewport (Home, Collection, Product, CartDrawer, Nav, Footer, About, Shipping)
+- [x] Quick Add buttons visible on touch devices (hc-quick-add class + @media hover:none)
+- [x] Hero section responsive (smaller font, bottom gradient for mobile text legibility)
+- [x] Brand manifesto & editorial split headings responsive (text-2xl sm:text-3xl)
+- [x] Collection hero responsive (shorter minHeight, responsive heading)
+- [x] Product page heading responsive + sticky bar spacer + safe-area padding
+- [x] Cart quantity buttons enlarged for touch targets (32px → 40px)
+- [x] Shipping rates table horizontal scroll on mobile (overflow-x-auto)
+- [x] ManusDialog responsive width (max-w-[400px] instead of fixed w-[400px])
+- [x] Footer policy links wrap gracefully (flex-wrap)
+- [x] EmailCapture form stacks on narrow screens (flex-col sm:flex-row)
+- [x] Editorial split images shorter on mobile (minHeight 300px)
+- [x] viewport-fit=cover for notched phones
+- [x] Global overflow-x: hidden to prevent horizontal scroll
+- [x] All 10 tests passing after mobile fixes

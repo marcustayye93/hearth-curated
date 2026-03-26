@@ -346,10 +346,10 @@ export default function ShippingReturns() {
 
                   {/* Shipping rates table */}
                   <div
-                    className="overflow-hidden"
+                    className="overflow-x-auto"
                     style={{ border: "1px solid var(--hc-stone)" }}
                   >
-                    <table className="w-full text-left text-sm">
+                    <table className="w-full text-left text-sm" style={{ minWidth: "480px" }}>
                       <thead>
                         <tr style={{ backgroundColor: "var(--hc-espresso)" }}>
                           <th

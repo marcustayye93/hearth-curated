@@ -180,7 +180,7 @@ export default function Footer() {
           >
             © 2026 Hearth Curated. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-4 sm:gap-6">
             {["Privacy Policy", "Terms of Service", "Refund Policy"].map((item) => (
               <a
                 key={item}

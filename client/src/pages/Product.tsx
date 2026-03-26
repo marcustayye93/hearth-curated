@@ -115,7 +115,7 @@ export default function Product() {
               <div className="flex flex-col">
                 <p className="hc-eyebrow mb-3">{product.collection}</p>
                 <h1
-                  className="text-3xl md:text-4xl mb-2 leading-tight"
+                  className="text-2xl sm:text-3xl md:text-4xl mb-2 leading-tight"
                   style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)", fontWeight: 400 }}
                 >
                   {product.name}
@@ -320,6 +320,9 @@ export default function Product() {
         )}
       </main>
 
+      {/* Spacer for sticky mobile bar */}
+      <div className="h-20 md:hidden" />
+
       {/* ── STICKY MOBILE ADD TO CART ──────────────────────────────────── */}
       <div
         className="fixed bottom-0 left-0 right-0 z-50 md:hidden px-4 py-3"
@@ -327,6 +330,7 @@ export default function Product() {
           backgroundColor: "var(--hc-parchment)",
           borderTop: "1px solid var(--hc-stone)",
           boxShadow: "0 -4px 20px rgba(28,16,8,0.08)",
+          paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))",
         }}
       >
         <div className="flex items-center justify-between gap-4">

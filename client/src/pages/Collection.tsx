@@ -37,7 +37,7 @@ function ProductCard({ product }: { product: Product }) {
         {product.available && (
           <button
             onClick={handleQuickAdd}
-            className="absolute bottom-3 left-3 right-3 flex items-center justify-center gap-2 py-2.5 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
+            className="hc-quick-add absolute bottom-3 left-3 right-3 flex items-center justify-center gap-2 py-2.5 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
             style={{
               backgroundColor: "var(--hc-espresso)",
               color: "var(--hc-parchment)",
@@ -132,7 +132,7 @@ export default function Collection() {
 
       <main className="flex-1">
         {/* ── COLLECTION HERO ──────────────────────────────────────────── */}
-        <section className="relative overflow-hidden" style={{ height: "60vh", minHeight: "400px" }}>
+        <section className="relative overflow-hidden" style={{ height: "60vh", minHeight: "320px" }}>
           <img
             src={collection.image}
             alt={collection.name}
@@ -148,7 +148,7 @@ export default function Collection() {
                 {collection.tagline}
               </p>
               <h1
-                className="text-4xl md:text-5xl lg:text-6xl"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
                 style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-parchment)", fontWeight: 400 }}
               >
                 {collection.name}
@@ -200,7 +200,7 @@ export default function Collection() {
             <p className="hc-eyebrow mb-8" style={{ color: "var(--hc-stone)" }}>
               Explore More
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
               {COLLECTIONS.filter((c) => c.slug !== collection.slug).map((col) => (
                 <Link key={col.slug} href={`/collections/${col.slug}`} className="group block">
                   <div className="overflow-hidden mb-4 hc-product-card" style={{ aspectRatio: "4/3" }}>

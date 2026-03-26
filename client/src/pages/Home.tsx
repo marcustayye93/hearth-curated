@@ -39,7 +39,7 @@ function FeaturedCard({ product }: { product: Product }) {
         {product.available && (
           <button
             onClick={handleQuickAdd}
-            className="absolute bottom-3 left-3 right-3 flex items-center justify-center gap-2 py-2.5 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
+            className="hc-quick-add absolute bottom-3 left-3 right-3 flex items-center justify-center gap-2 py-2.5 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
             style={{
               backgroundColor: "var(--hc-espresso)",
               color: "var(--hc-parchment)",
@@ -97,16 +97,22 @@ export default function Home() {
 
       <main className="flex-1">
         {/* ── HERO ─────────────────────────────────────────────────────── */}
-        <section className="relative w-full overflow-hidden" style={{ height: "85vh", minHeight: "560px" }}>
+        <section className="relative w-full overflow-hidden" style={{ height: "85vh", minHeight: "480px" }}>
           <img
             src={HERO_IMAGE}
             alt="Hearth Curated — Objects for the intentional home"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
           {/* Subtle dark overlay on left for text legibility */}
+          {/* Gradient overlay — wider on mobile for text legibility */}
           <div
             className="absolute inset-0"
             style={{ background: "linear-gradient(to right, rgba(28,16,8,0.55) 0%, rgba(28,16,8,0.1) 55%, transparent 100%)" }}
+          />
+          {/* Additional bottom gradient for mobile */}
+          <div
+            className="absolute inset-0 md:hidden"
+            style={{ background: "linear-gradient(to top, rgba(28,16,8,0.6) 0%, rgba(28,16,8,0.2) 50%, transparent 100%)" }}
           />
 
           {/* Hero text — left aligned */}
@@ -117,13 +123,13 @@ export default function Home() {
                   New Arrivals — Spring 2026
                 </p>
                 <h1
-                  className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6 leading-tight"
                   style={{ color: "var(--hc-parchment)", fontFamily: "'Libre Baskerville', serif", fontWeight: 400 }}
                 >
                   Objects for the<br />Intentional Home
                 </h1>
                 <p
-                  className="text-sm md:text-base mb-8 leading-relaxed max-w-sm"
+                  className="text-sm md:text-base mb-6 sm:mb-8 leading-relaxed max-w-sm"
                   style={{ color: "rgba(242,237,228,0.85)", fontFamily: "'Karla', sans-serif" }}
                 >
                   A curated selection of kitchen tools, home fragrance, botanicals, and artisan food — chosen for quiet utility and considered design.
@@ -215,7 +221,7 @@ export default function Home() {
                 Our Philosophy
               </p>
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl leading-tight mb-8"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-6 sm:mb-8"
                 style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-parchment)", fontWeight: 400, fontStyle: "italic" }}
               >
                 "The home is not a backdrop.<br />It is a practice."
@@ -278,7 +284,7 @@ export default function Home() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
             {/* Image */}
-            <div className="relative overflow-hidden" style={{ minHeight: "400px" }}>
+            <div className="relative overflow-hidden" style={{ minHeight: "300px" }}>
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-gather_87a9bb21.jpg"
                 alt="GATHER Collection"
@@ -292,7 +298,7 @@ export default function Home() {
                   GATHER — The Art of the Table
                 </p>
                 <h2
-                  className="text-3xl md:text-4xl mb-6 leading-tight"
+                  className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 leading-tight"
                   style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-parchment)", fontWeight: 400 }}
                 >
                   Tools that make cooking feel like a ritual
@@ -322,7 +328,7 @@ export default function Home() {
               <div className="max-w-sm">
                 <p className="hc-eyebrow mb-4">ADORN — Objects of Intention</p>
                 <h2
-                  className="text-3xl md:text-4xl mb-6 leading-tight"
+                  className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 leading-tight"
                   style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)", fontWeight: 400 }}
                 >
                   Scent is the invisible architecture of a room
@@ -339,7 +345,7 @@ export default function Home() {
               </div>
             </div>
             {/* Image — right on desktop */}
-            <div className="relative overflow-hidden order-1 md:order-2" style={{ minHeight: "400px" }}>
+            <div className="relative overflow-hidden order-1 md:order-2" style={{ minHeight: "300px" }}>
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-adorn_18502690.jpg"
                 alt="ADORN Collection"

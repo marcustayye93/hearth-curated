@@ -221,14 +221,14 @@ export default function CartDrawer() {
                             onClick={() =>
                               updateQuantity(item.lineId, item.quantity - 1)
                             }
-                            className="w-8 h-8 flex items-center justify-center hover:bg-[var(--hc-sand)] transition-colors"
+                            className="w-10 h-10 flex items-center justify-center hover:bg-[var(--hc-sand)] transition-colors"
                             aria-label="Decrease quantity"
                             disabled={isLoading}
                           >
-                            <Minus size={12} strokeWidth={1.5} />
+                            <Minus size={14} strokeWidth={1.5} />
                           </button>
                           <span
-                            className="w-8 h-8 flex items-center justify-center text-xs"
+                            className="w-8 h-10 flex items-center justify-center text-xs"
                             style={{ fontFamily: "'Karla', sans-serif" }}
                           >
                             {item.quantity}
@@ -237,11 +237,11 @@ export default function CartDrawer() {
                             onClick={() =>
                               updateQuantity(item.lineId, item.quantity + 1)
                             }
-                            className="w-8 h-8 flex items-center justify-center hover:bg-[var(--hc-sand)] transition-colors"
+                            className="w-10 h-10 flex items-center justify-center hover:bg-[var(--hc-sand)] transition-colors"
                             aria-label="Increase quantity"
                             disabled={isLoading}
                           >
-                            <Plus size={12} strokeWidth={1.5} />
+                            <Plus size={14} strokeWidth={1.5} />
                           </button>
                         </div>
 

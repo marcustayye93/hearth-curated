@@ -121,7 +121,7 @@ export default function EmailCapture() {
               Subscribe for early access to new arrivals, editorial features, and a welcome discount on your first purchase.
             </p>
             <form onSubmit={handleSubmit}>
-              <div className="flex gap-0">
+              <div className="flex flex-col sm:flex-row gap-0">
                 <input
                   type="email"
                   value={email}
@@ -131,7 +131,6 @@ export default function EmailCapture() {
                   className="flex-1 px-4 py-3 text-sm outline-none"
                   style={{
                     border: "1px solid var(--hc-stone)",
-                    borderRight: "none",
                     backgroundColor: "transparent",
                     fontFamily: "'Karla', sans-serif",
                     color: "var(--hc-espresso)",
@@ -139,7 +138,7 @@ export default function EmailCapture() {
                 />
                 <button
                   type="submit"
-                  className="px-6 py-3 text-xs tracking-widest uppercase shrink-0"
+                  className="px-6 py-3 text-xs tracking-widest uppercase shrink-0 w-full sm:w-auto"
                   style={{
                     backgroundColor: "var(--hc-espresso)",
                     color: "var(--hc-parchment)",
