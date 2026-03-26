@@ -1,10 +1,110 @@
-// HEARTH CURATED — Collection Page
-// Design: Editorial grid, collection hero, product listing with filters
+// HEARTH CURATED — Collection Page (CRO Optimised)
+// Design: Editorial grid, collection hero, product listing with hook lines
+// Quick-add button on hover, product count, curated sort order
 
 import { Link, useParams } from "wouter";
+import { Plus } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { getCollectionBySlug, COLLECTIONS } from "@/lib/products";
+import { getCollectionBySlug, COLLECTIONS, type Product } from "@/lib/products";
+import { useCart } from "@/contexts/CartContext";
+
+function ProductCard({ product }: { product: Product }) {
+  const { addItem } = useCart();
+
+  const handleQuickAdd = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!product.available) return;
+    const defaultVariant = product.variants?.find((v) => v.available);
+    addItem(product, defaultVariant, 1);
+  };
+
+  return (
+    <Link
+      href={`/products/${product.slug}`}
+      className="group block hc-product-card"
+    >
+      {/* Image */}
+      <div className="overflow-hidden mb-4 relative" style={{ aspectRatio: "3/4" }}>
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-cover hc-product-img"
+        />
+        {/* Quick Add button — desktop hover */}
+        {product.available && (
+          <button
+            onClick={handleQuickAdd}
+            className="absolute bottom-3 left-3 right-3 flex items-center justify-center gap-2 py-2.5 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
+            style={{
+              backgroundColor: "var(--hc-espresso)",
+              color: "var(--hc-parchment)",
+              fontFamily: "'Karla', sans-serif",
+              fontSize: "0.65rem",
+              fontWeight: 500,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+            }}
+          >
+            <Plus size={12} strokeWidth={2} />
+            <span>Quick Add</span>
+          </button>
+        )}
+        {/* Returning Soon overlay */}
+        {!product.available && (
+          <div
+            className="absolute inset-0 flex items-center justify-center"
+            style={{ backgroundColor: "rgba(28,16,8,0.3)" }}
+          >
+            <span
+              className="text-[10px] tracking-widest uppercase px-3 py-1.5"
+              style={{
+                backgroundColor: "var(--hc-parchment)",
+                color: "var(--hc-espresso)",
+                fontFamily: "'Karla', sans-serif",
+                fontWeight: 500,
+              }}
+            >
+              Returning Soon
+            </span>
+          </div>
+        )}
+      </div>
+      {/* Info */}
+      <div>
+        <p
+          className="text-xs tracking-widest uppercase mb-1"
+          style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
+        >
+          {product.collection}
+        </p>
+        <h3
+          className="text-sm md:text-base mb-1 leading-snug"
+          style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)", fontWeight: 400 }}
+        >
+          {product.name}
+        </h3>
+        {product.hookLine && (
+          <p
+            className="text-xs mb-1.5 leading-relaxed line-clamp-2"
+            style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
+          >
+            {product.hookLine}
+          </p>
+        )}
+        <p
+          className="text-sm font-medium"
+          style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
+        >
+          {product.variants && product.variants.length > 1
+            ? `From $${product.price.toFixed(0)}`
+            : `$${product.price.toFixed(0)}`}
+        </p>
+      </div>
+    </Link>
+  );
+}
 
 export default function Collection() {
   const params = useParams<{ slug: string }>();
@@ -73,7 +173,7 @@ export default function Collection() {
                 className="text-xs tracking-widest uppercase shrink-0"
                 style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
               >
-                {collection.products.length} objects
+                {collection.products.length} {collection.products.length === 1 ? "object" : "objects"}
               </p>
             </div>
           </div>
@@ -84,49 +184,7 @@ export default function Collection() {
           <div className="container">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
               {collection.products.map((product) => (
-                <Link
-                  key={product.id}
-                  href={`/products/${product.slug}`}
-                  className="group block hc-product-card"
-                >
-                  {/* Image */}
-                  <div className="overflow-hidden mb-4" style={{ aspectRatio: "3/4" }}>
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover hc-product-img"
-                    />
-                  </div>
-                  {/* Info */}
-                  <div>
-                    <p
-                      className="text-xs tracking-widest uppercase mb-1"
-                      style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
-                    >
-                      {product.collection}
-                    </p>
-                    <h3
-                      className="text-sm md:text-base mb-1 leading-snug"
-                      style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)", fontWeight: 400 }}
-                    >
-                      {product.name}
-                    </h3>
-                    {product.notes && (
-                      <p
-                        className="text-xs mb-2 leading-relaxed"
-                        style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
-                      >
-                        {product.notes}
-                      </p>
-                    )}
-                    <p
-                      className="text-sm font-medium"
-                      style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
-                    >
-                      ${product.price.toFixed(2)}
-                    </p>
-                  </div>
-                </Link>
+                <ProductCard key={product.id} product={product} />
               ))}
             </div>
           </div>

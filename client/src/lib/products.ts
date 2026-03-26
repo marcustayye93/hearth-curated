@@ -1,5 +1,13 @@
 // HEARTH CURATED — Product & Collection Data
-// All 20 products from V4 expansion report across 4 collections
+// CRO-audited: editorial names, variant-level pricing, cross-sell mappings
+// Currency: SGD. All prices end in .00
+
+export interface Variant {
+  id: string;
+  label: string;
+  price: number;
+  available: boolean;
+}
 
 export interface Product {
   id: string;
@@ -7,12 +15,16 @@ export interface Product {
   name: string;
   headline: string;
   description: string;
-  price: number;
+  price: number; // base / default variant price
   collection: string;
   collectionSlug: string;
-  image: string; // placeholder — will be replaced with real product images
+  image: string;
   tags: string[];
-  notes?: string; // Aesop-style scent/attribute notes
+  notes?: string;
+  variants?: Variant[];
+  crossSells?: string[]; // product IDs for "You may also like"
+  available: boolean; // false = all variants unavailable in Shopify
+  hookLine?: string; // one-line descriptor for product cards
 }
 
 export interface Collection {
@@ -24,292 +36,941 @@ export interface Collection {
   products: Product[];
 }
 
+const FREE_SHIPPING_THRESHOLD = 75;
+export { FREE_SHIPPING_THRESHOLD };
+
 export const PRODUCTS: Product[] = [
-  // ── GATHER ──────────────────────────────────────────────────────────────
+  // ═══════════════════════════════════════════════════════════════════════
+  // GATHER — The Art of the Table
+  // ═══════════════════════════════════════════════════════════════════════
   {
     id: "gather-1",
-    slug: "microwave-splatter-cover",
-    name: "Microwave Splatter Cover",
-    headline: "Elegance in Utility",
+    slug: "moroccan-mandorla-coaster-set",
+    name: "Moroccan Mandorla Coaster Set",
+    headline: "The Quiet Detail",
+    hookLine: "Eight wooden coasters with Moroccan mandorla patterns.",
     description:
-      "The most practical tools should still be beautiful. This splatter cover protects your microwave interior while doubling as a water steamer, locking in moisture to revive leftovers to their original texture. Designed with a minimalist aesthetic and heat-resistant materials, it is a quiet workhorse that maintains the pristine condition of your kitchen.",
-    price: 18.99,
+      "A set of eight wooden coasters printed with Moroccan mandorla patterns — the kind of small, considered detail that quietly transforms a coffee table. Each coaster is 10cm in diameter and just 3mm thin, light enough to stack neatly and substantial enough to protect any surface. The natural wood backing adds warmth to the geometric patterns.",
+    price: 24.0,
     collection: "GATHER",
     collectionSlug: "gather",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
-    tags: ["kitchen", "microwave", "steamer"],
-    notes: "BPA-free · Heat-resistant · Dishwasher safe",
+    image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
+    tags: ["coasters", "moroccan", "wood", "tabletop"],
+    notes: "Set of 8 · 10cm diameter · Natural wood backing",
+    available: true,
+    crossSells: ["gather-3", "gather-7", "adorn-8"],
   },
   {
     id: "gather-2",
-    slug: "kitchen-scissors",
-    name: "Kitchen Scissors",
-    headline: "Precision, Considered",
+    slug: "acacia-serving-bowl",
+    name: "Acacia Serving Bowl",
+    headline: "Carved from a Single Piece",
+    hookLine: "Japanese-inspired acacia bowl — no two are identical.",
     description:
-      "All-purpose stainless steel kitchen scissors with a Japanese-inspired design that photographs beautifully and performs with quiet authority. Separable blades for thorough cleaning. The kind of tool that earns a permanent place on your counter.",
-    price: 12.99,
+      "Carved from a single piece of acacia wood, this bowl carries the quiet authority of natural grain — no two are identical. The Japanese-inspired silhouette is generous enough for a family salad yet refined enough to display on an open shelf. Acacia is naturally antibacterial and remarkably durable, developing a richer patina with each use.",
+    price: 36.0,
     collection: "GATHER",
     collectionSlug: "gather",
     image: "https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=800&q=80",
-    tags: ["kitchen", "scissors", "tools"],
-    notes: "Stainless steel · Separable blades · All-purpose",
+    tags: ["bowl", "acacia", "wood", "japanese"],
+    notes: "Solid acacia · Hand-wash · Develops patina",
+    available: true,
+    variants: [
+      { id: "gather-2-s", label: "Small (12×6cm)", price: 36.0, available: true },
+      { id: "gather-2-m", label: "Medium (14×7.5cm)", price: 42.0, available: true },
+      { id: "gather-2-std", label: "Standard (16×7.5cm)", price: 48.0, available: true },
+      { id: "gather-2-l", label: "Large (18×7.5cm)", price: 56.0, available: true },
+      { id: "gather-2-xl", label: "Serving (20×7.5cm)", price: 62.0, available: true },
+      { id: "gather-2-xxl", label: "Statement (24×8cm)", price: 78.0, available: true },
+    ],
+    crossSells: ["gather-3", "nourish-9", "gather-7"],
   },
   {
     id: "gather-3",
-    slug: "stainless-peeler-knife-set",
-    name: "Stainless Steel Peeler Knife Set",
-    headline: "The Art of Preparation",
+    slug: "wooden-serving-tray",
+    name: "Wooden Serving Tray",
+    headline: "The Centrepiece of the Ritual",
+    hookLine: "Solid wood tray with integrated handles for morning tea or evening gatherings.",
     description:
-      "A two-piece stainless steel peeler and paring knife set with an editorial quality that elevates the act of preparation. Multi-function construction that does more than you expect — the kind of kitchen tool that generates genuine appreciation.",
-    price: 16.99,
-    collection: "GATHER",
-    collectionSlug: "gather",
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
-    tags: ["kitchen", "peeler", "knife"],
-    notes: "Stainless steel · 2-piece set · Multi-function",
-  },
-  {
-    id: "gather-4",
-    slug: "stainless-cutting-board-set",
-    name: "Stainless Steel Cutting Board Set",
-    headline: "The Foundation of the Kitchen",
-    description:
-      "A three-piece set of food-grade stainless steel cutting boards in small, medium, and large. Metal cutting boards are more hygienic and durable than plastic — a premium kitchen category with strong editorial appeal. The set format creates genuine value and makes for a considered gift.",
-    price: 17.50,
-    collection: "GATHER",
-    collectionSlug: "gather",
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
-    tags: ["kitchen", "cutting board", "set"],
-    notes: "Food-grade stainless · 3 sizes · Dishwasher safe",
-  },
-  {
-    id: "gather-5",
-    slug: "mason-jar-side-opening",
-    name: "Mason Jar — Side Opening",
-    headline: "The Considered Vessel",
-    description:
-      "A mason jar with a side-opening door that solves the perennial problem of dressing at the bottom. The side door allows you to access the contents without tipping the jar — an unexpectedly elegant solution. Inherently photogenic and deeply aligned with the artisan, farmhouse-modern aesthetic.",
-    price: 14.99,
+      "A generous serving tray with integrated handles, crafted from solid wood with a natural grain finish. Whether carrying morning tea to the garden or presenting cheese and fruit for an evening gathering, this tray becomes the quiet centrepiece of the ritual.",
+    price: 52.0,
     collection: "GATHER",
     collectionSlug: "gather",
     image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=800&q=80",
-    tags: ["kitchen", "jar", "salad"],
-    notes: "Glass · Side-opening door · Airtight seal",
+    tags: ["tray", "wood", "serving", "hosting"],
+    notes: "Natural grain · Integrated handles · 3 sizes",
+    available: true,
+    variants: [
+      { id: "gather-3-s", label: "Small (33×22cm)", price: 52.0, available: true },
+      { id: "gather-3-m", label: "Medium (40×28cm)", price: 62.0, available: true },
+      { id: "gather-3-l", label: "Large (43×33cm)", price: 72.0, available: true },
+    ],
+    crossSells: ["gather-1", "gather-2", "gather-10"],
   },
   {
-    id: "gather-6",
-    slug: "apple-corer-peeler",
-    name: "Apple Corer & Peeler",
-    headline: "The Satisfying Spiral",
+    id: "gather-4",
+    slug: "nordic-espresso-cup-saucer",
+    name: "Nordic Espresso Cup & Saucer",
+    headline: "Studio Pottery for Every Morning",
+    hookLine: "Ceramic cup and saucer with the character of Scandinavian studio pottery.",
     description:
-      "A 2-in-1 stainless steel apple corer and peeler that creates a perfect spiral peel in one fluid motion. The visual result is inherently shareable — the kind of kitchen gadget that makes you want to use it again immediately. The stainless steel construction and clean design align with the Hearth Curated kitchen aesthetic.",
-    price: 22.99,
+      "A ceramic espresso cup and saucer set with the understated character of Scandinavian studio pottery. The slightly irregular glaze and organic form give each piece the feeling of being handmade. The 220ml capacity is sized for a proper espresso or a small cortado.",
+    price: 36.0,
     collection: "GATHER",
     collectionSlug: "gather",
-    image: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800&q=80",
-    tags: ["kitchen", "apple", "peeler", "corer"],
-    notes: "Stainless steel · Spiral peel · 2-in-1",
+    image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=800&q=80",
+    tags: ["cup", "saucer", "ceramic", "espresso", "nordic"],
+    notes: "220ml · Handmade character · Ceramic",
+    available: true,
+    variants: [
+      { id: "gather-4-a", label: "Style A", price: 36.0, available: true },
+      { id: "gather-4-b", label: "Style B", price: 36.0, available: true },
+    ],
+    crossSells: ["gather-5", "gather-6", "gather-8"],
   },
   {
-    id: "gather-7",
-    slug: "electric-omelet-maker",
-    name: "Electric Flip Omelet Maker",
-    headline: "The Breakfast Ritual",
+    id: "gather-5",
+    slug: "japanese-stoneware-mug",
+    name: "Japanese Stoneware Mug",
+    headline: "The Satisfying Heft",
+    hookLine: "High-fired stoneware with reactive glaze — in grey or apricot.",
     description:
-      "A compact electric appliance that flips to cook both sides of an omelet simultaneously — the perfect omelet, every time. The flip mechanism creates inherently shareable video content. Lightweight, compact, and highly giftable. A breakfast ritual product that aligns with Hearth Curated's morning routine content angle.",
-    price: 24.95,
-    collection: "GATHER",
-    collectionSlug: "gather",
-    image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&q=80",
-    tags: ["kitchen", "electric", "omelet", "breakfast"],
-    notes: "Non-stick · Compact · 2-sided cooking",
-  },
-  {
-    id: "gather-8",
-    slug: "peeler-bottle-opener",
-    name: "Peeler & Bottle Opener",
-    headline: "Dual Purpose, Single Object",
-    description:
-      "A 2-in-1 fruit and vegetable peeler with an integrated bottle opener, finished with a warm wooden handle. The wooden handle and botanical aesthetic elevate a utilitarian object into something worth displaying. The kind of kitchen tool that earns a quiet compliment from guests.",
-    price: 9.99,
+      "Fired at high temperature in the tradition of Japanese stoneware, this mug has the satisfying heft and tactile warmth that mass-produced ceramics cannot replicate. The reactive glaze creates subtle colour variations that deepen with use. Microwave and oven safe.",
+    price: 42.0,
     collection: "GATHER",
     collectionSlug: "gather",
     image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
-    tags: ["kitchen", "peeler", "bottle opener", "wood"],
-    notes: "Wooden handle · 2-in-1 · Stainless blade",
+    tags: ["mug", "stoneware", "japanese", "coffee"],
+    notes: "Reactive glaze · Microwave safe · 300ml or 600ml",
+    available: true,
+    variants: [
+      { id: "gather-5-gs", label: "Grey / Small (300ml)", price: 42.0, available: true },
+      { id: "gather-5-gl", label: "Grey / Large (600ml)", price: 48.0, available: true },
+      { id: "gather-5-as", label: "Apricot / Small (300ml)", price: 42.0, available: true },
+      { id: "gather-5-al", label: "Apricot / Large (600ml)", price: 48.0, available: true },
+    ],
+    crossSells: ["gather-4", "gather-8", "gather-9"],
   },
-  // ── ADORN ──────────────────────────────────────────────────────────────
+  {
+    id: "gather-6",
+    slug: "vintage-japanese-ceramic-mug",
+    name: "Vintage Japanese Ceramic Mug",
+    headline: "An Intentional Tuesday Morning",
+    hookLine: "A 200ml ceramic mug with vintage Japanese character.",
+    description:
+      "A 200ml ceramic mug with a vintage Japanese aesthetic — the kind of vessel that makes even an ordinary Tuesday morning feel intentional. The compact size is designed for concentrated coffee or a small matcha.",
+    price: 38.0,
+    collection: "GATHER",
+    collectionSlug: "gather",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+    tags: ["mug", "ceramic", "japanese", "vintage"],
+    notes: "200ml · Vintage glaze · Compact",
+    available: true,
+    crossSells: ["gather-5", "gather-4", "gather-8"],
+  },
+  {
+    id: "gather-7",
+    slug: "hand-painted-ceramic-oil-cruet",
+    name: "Hand-Painted Ceramic Oil Cruet",
+    headline: "A Counter-Top Heirloom",
+    hookLine: "Mediterranean-inspired motifs with drip-free pouring.",
+    description:
+      "Each oil cruet is hand-painted with Mediterranean-inspired motifs — olive branches, lemons, and wildflowers — making it as much a display piece as a kitchen tool. The ceramic body keeps oil cool and protected from light, while the narrow spout provides precise, drip-free pouring.",
+    price: 52.0,
+    collection: "GATHER",
+    collectionSlug: "gather",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["oil", "cruet", "ceramic", "hand-painted"],
+    notes: "Hand-painted · Drip-free spout · 3 colours",
+    available: true,
+    variants: [
+      { id: "gather-7-bk", label: "Black", price: 52.0, available: true },
+      { id: "gather-7-gn", label: "Green", price: 52.0, available: true },
+      { id: "gather-7-rd", label: "Red", price: 52.0, available: true },
+    ],
+    crossSells: ["gather-2", "nourish-9", "gather-3"],
+  },
+  {
+    id: "gather-8",
+    slug: "vacuum-sealed-glass-canister",
+    name: "Vacuum-Sealed Glass Canister",
+    headline: "Freshness, Engineered",
+    hookLine: "Pump-seal canister that keeps coffee and tea at peak freshness.",
+    description:
+      "A borosilicate glass canister with a vacuum-seal mechanism that extracts air with a simple pump, keeping coffee beans, loose-leaf tea, or whole spices at peak freshness for weeks longer than conventional storage.",
+    price: 28.0,
+    collection: "GATHER",
+    collectionSlug: "gather",
+    image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=800&q=80",
+    tags: ["canister", "glass", "vacuum", "storage"],
+    notes: "Borosilicate glass · Vacuum pump · 4 sizes",
+    available: true,
+    variants: [
+      { id: "gather-8-500", label: "500ml", price: 28.0, available: true },
+      { id: "gather-8-900", label: "900ml", price: 34.0, available: true },
+      { id: "gather-8-1200", label: "1200ml", price: 38.0, available: true },
+      { id: "gather-8-1800", label: "1800ml", price: 44.0, available: true },
+    ],
+    crossSells: ["gather-9", "gather-5", "nourish-1"],
+  },
+  {
+    id: "gather-9",
+    slug: "borosilicate-vacuum-canister",
+    name: "Borosilicate Vacuum Canister",
+    headline: "Laboratory Precision, Kitchen Beauty",
+    hookLine: "Lab-grade glass meets kitchen-counter aesthetics.",
+    description:
+      "Laboratory-grade borosilicate glass meets kitchen-counter aesthetics in this vacuum-sealed canister. A built-in pump removes air to create an airtight seal that preserves the volatile oils in coffee, the fragrance of loose tea, and the crunch of raw sugar.",
+    price: 32.0,
+    collection: "GATHER",
+    collectionSlug: "gather",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+    tags: ["canister", "borosilicate", "vacuum", "storage"],
+    notes: "Lab-grade glass · Airtight pump · 4 sizes",
+    available: true,
+    variants: [
+      { id: "gather-9-500", label: "500ml", price: 32.0, available: true },
+      { id: "gather-9-900", label: "900ml", price: 38.0, available: true },
+      { id: "gather-9-1200", label: "1200ml", price: 42.0, available: true },
+      { id: "gather-9-1800", label: "1800ml", price: 48.0, available: true },
+    ],
+    crossSells: ["gather-8", "gather-5", "nourish-1"],
+  },
+  {
+    id: "gather-10",
+    slug: "waffle-weave-cotton-dish-cloths",
+    name: "Waffle Weave Cotton Dish Cloths",
+    headline: "The Fabric of Daily Ritual",
+    hookLine: "Pure cotton, waffle-woven — softer with every wash.",
+    description:
+      "Pure cotton, waffle-woven for superior absorption and a texture that improves with every wash. The waffle weave dries faster than flat cotton, resists odour, and develops a soft, lived-in hand over time. Set of three in a single tone.",
+    price: 28.0,
+    collection: "GATHER",
+    collectionSlug: "gather",
+    image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
+    tags: ["cloths", "cotton", "waffle", "kitchen"],
+    notes: "100% cotton · Set of 3 · Machine washable",
+    available: true,
+    variants: [
+      { id: "gather-10-grey", label: "Grey", price: 28.0, available: true },
+      { id: "gather-10-green", label: "Green", price: 28.0, available: true },
+      { id: "gather-10-pink", label: "Blush", price: 28.0, available: true },
+    ],
+    crossSells: ["nourish-9", "nourish-7", "gather-7"],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // ADORN — Objects of Intention
+  // ═══════════════════════════════════════════════════════════════════════
   {
     id: "adorn-1",
-    slug: "midnight-marine-parfum",
-    name: "Midnight Marine Eau de Parfum",
-    headline: "An Olfactive Journey",
+    slug: "woven-bamboo-table-lamp",
+    name: "Woven Bamboo Table Lamp",
+    headline: "Dappled Light, Handwoven",
+    hookLine: "Hand-woven bamboo lamp casting warm, dappled light.",
     description:
-      "A unisex Arabian fragrance with bergamot, coconut, and amber — the anchor product of the ADORN collection. The combination of a premium-sounding name, luxury Arabian fragrance heritage, and an accessible price point creates a compelling perceived value gap. Customers feel they are accessing a luxury fragrance at an accessible price.",
-    price: 18.99,
-    collection: "ADORN",
-    collectionSlug: "adorn",
-    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800https://images.unsplash.com/photo-1541643600914-78b084683702?w=800&q=80q=80",
-    tags: ["fragrance", "perfume", "arabian", "unisex"],
-    notes: "Bergamot · Coconut · Amber · 50ml",
-  },
-  {
-    id: "adorn-2",
-    slug: "gold-musk-parfum",
-    name: "Gold Musk Eau de Parfum",
-    headline: "Warmth, Distilled",
-    description:
-      "The warmer, more intimate counterpart to Midnight Marine. Gold Musk and Midnight Marine complement each other as a day/evening fragrance pair — a natural bundle opportunity. The gold packaging photographs exceptionally well against Hearth Curated's warm palette. Arabian musk fragrances have a devoted following among customers who associate them with warmth, luxury, and intimacy.",
-    price: 24.99,
-    collection: "ADORN",
-    collectionSlug: "adorn",
-    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&q=80",
-    tags: ["fragrance", "perfume", "musk", "arabian"],
-    notes: "Gold musk · Warm amber · Sandalwood · 50ml",
-  },
-  {
-    id: "adorn-3",
-    slug: "only-sunshine-fragrance",
-    name: "Only Sunshine — Tropical Fragrance",
-    headline: "A Bottled Escape",
-    description:
-      "The hero fragrance in the ADORN collection at $68.00 — the aspirational purchase that anchors the collection's premium positioning. A premium fragrance brand with strong upward momentum. At $68, this is the discovery fragrance for the Hearth Curated customer who prides herself on finding things before they go mainstream.",
-    price: 68.00,
-    collection: "ADORN",
-    collectionSlug: "adorn",
-    image: "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=800&q=80",
-    tags: ["fragrance", "perfume", "tropical", "premium"],
-    notes: "Tropical florals · Warm base · 50ml",
-  },
-  {
-    id: "adorn-4",
-    slug: "mirror-sticker",
-    name: "Self-Adhesive Mirror Film",
-    headline: "Expanding Light",
-    description:
-      "Light is the most vital element of any space. Our self-adhesive mirror film offers a simple, elegant way to bounce natural light into dark corners and visually expand your room. With a frameless, minimal design, it integrates seamlessly into any aesthetic, transforming a flat wall into a dynamic reflection of your home.",
-    price: 11.69,
-    collection: "ADORN",
-    collectionSlug: "adorn",
-    image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
-    tags: ["decor", "mirror", "wall", "home"],
-    notes: "20×40 inch · Flexible film · Cut to size",
-  },
-  {
-    id: "adorn-5",
-    slug: "diffuser-oil",
-    name: "Highly Scented Diffuser Oil",
-    headline: "The Invisible Architecture of a Room",
-    description:
-      "A high-volume, high-growth home fragrance product that complements the perfumes in ADORN. Diffuser oils are a repeat-purchase category — once a customer buys a diffuser, they return for refills. The $35.99 price point is strong for a consumable, and the 43% growth rate shows the category is expanding.",
-    price: 35.99,
+      "Hand-woven from natural bamboo, this table lamp casts a warm, dappled light through its lattice shade — the kind of ambient glow that transforms a bedside table or reading nook into a sanctuary. Each lamp is slightly different, a consequence of the handcraft.",
+    price: 78.0,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&q=80",
-    tags: ["fragrance", "diffuser", "home", "scent"],
-    notes: "16oz · Highly concentrated · Reed diffuser compatible",
+    tags: ["lamp", "bamboo", "handwoven", "lighting"],
+    notes: "Natural bamboo · Hand-woven · 2 shapes",
+    available: true,
+    variants: [
+      { id: "adorn-1-lantern-eu", label: "Lantern — EU Plug", price: 78.0, available: true },
+      { id: "adorn-1-lantern-us", label: "Lantern — US Plug", price: 78.0, available: true },
+      { id: "adorn-1-column-eu", label: "Column — EU Plug", price: 82.0, available: true },
+      { id: "adorn-1-column-us", label: "Column — US Plug", price: 82.0, available: true },
+    ],
+    crossSells: ["adorn-2", "adorn-8", "adorn-10"],
   },
-  // ── BLOOM ──────────────────────────────────────────────────────────────
+  {
+    id: "adorn-2",
+    slug: "fireplace-aroma-diffuser",
+    name: "Fireplace Aroma Diffuser",
+    headline: "The Comfort of a Hearth",
+    hookLine: "Ceramic diffuser with flickering LED glow and essential oil dispersion.",
+    description:
+      "A ceramic diffuser designed to evoke the quiet comfort of a fireplace — the warm LED glow flickers behind a miniature hearth facade while essential oils disperse into the room. Waterless ultrasonic technology means no filters, no residue, and automatic shut-off.",
+    price: 62.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&q=80",
+    tags: ["diffuser", "aroma", "fireplace", "ceramic"],
+    notes: "Waterless ultrasonic · Auto shut-off · 2 colours",
+    available: true,
+    variants: [
+      { id: "adorn-2-bk", label: "Black", price: 62.0, available: true },
+      { id: "adorn-2-wh", label: "White", price: 62.0, available: true },
+    ],
+    crossSells: ["adorn-9", "adorn-8", "adorn-1"],
+  },
+  {
+    id: "adorn-3",
+    slug: "silence-figurine",
+    name: "Silence Figurine",
+    headline: "The Art of Stillness",
+    hookLine: "Resin sculpture in the universal gesture of silence.",
+    description:
+      "A resin sculpture of a figure in quiet contemplation — hand raised to lips in the universal gesture of silence. The matte finish and clean lines give it the presence of a gallery piece at a fraction of the scale.",
+    price: 22.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
+    tags: ["sculpture", "resin", "figurine", "decor"],
+    notes: "Matte resin · Multiple finishes · Singles & trio sets",
+    available: false,
+    variants: [
+      { id: "adorn-3-gold", label: "Gold — Single", price: 22.0, available: false },
+      { id: "adorn-3-silver", label: "Silver — Single", price: 22.0, available: false },
+      { id: "adorn-3-sand", label: "Sandstone — Single", price: 22.0, available: false },
+      { id: "adorn-3-gold-set", label: "Gold — Trio Set", price: 56.0, available: false },
+      { id: "adorn-3-silver-set", label: "Silver — Trio Set", price: 56.0, available: false },
+      { id: "adorn-3-sand-set", label: "Sandstone — Trio Set", price: 56.0, available: false },
+      { id: "adorn-3-black-set", label: "Black — Trio Set", price: 56.0, available: false },
+    ],
+    crossSells: ["adorn-4", "adorn-5", "adorn-8"],
+  },
+  {
+    id: "adorn-4",
+    slug: "thinker-sculpture",
+    name: "Thinker Sculpture",
+    headline: "Lost in Thought",
+    hookLine: "Minimalist sandstone resin interpretation of Rodin's Thinker.",
+    description:
+      "A minimalist interpretation of Rodin's Thinker, rendered in resin with a sandstone finish that gives it the tactile quality of carved stone. The Nordic-inspired simplification strips the figure to its essential gesture.",
+    price: 52.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
+    tags: ["sculpture", "thinker", "resin", "sandstone"],
+    notes: "Sandstone resin · 3 sizes",
+    available: true,
+    variants: [
+      { id: "adorn-4-s", label: "Small", price: 52.0, available: true },
+      { id: "adorn-4-m", label: "Medium", price: 58.0, available: true },
+      { id: "adorn-4-l", label: "Large", price: 64.0, available: true },
+    ],
+    crossSells: ["adorn-3", "adorn-5", "adorn-8"],
+  },
+  {
+    id: "adorn-5",
+    slug: "moroccan-decorative-wall-plate",
+    name: "Moroccan Decorative Wall Plate",
+    headline: "A Painted Mural in Metal",
+    hookLine: "Aluminium wall plate with hand-detailed Moroccan patterns.",
+    description:
+      "An aluminium wall plate with hand-detailed Moroccan floral and geometric patterns. The flat profile sits flush against the wall, creating the effect of a painted mural with the permanence of metal.",
+    price: 22.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
+    tags: ["plate", "moroccan", "wall-art", "aluminium"],
+    notes: "Aluminium · 20×20cm · Flush mount",
+    available: true,
+    crossSells: ["adorn-4", "adorn-3", "gather-1"],
+  },
+  {
+    id: "adorn-6",
+    slug: "rechargeable-ambient-table-lamp",
+    name: "Rechargeable Ambient Table Lamp",
+    headline: "Cordless, Considered Light",
+    hookLine: "Touch-sensitive cordless lamp with three brightness levels.",
+    description:
+      "A cordless table lamp with a rechargeable battery and touch-sensitive dimming — three brightness levels that transition from focused reading light to a soft ambient glow. No cords, no clutter.",
+    price: 38.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&q=80",
+    tags: ["lamp", "rechargeable", "cordless", "ambient"],
+    notes: "USB-C · Touch dimming · 3 levels",
+    available: true,
+    crossSells: ["adorn-1", "adorn-2", "adorn-8"],
+  },
+  {
+    id: "adorn-7",
+    slug: "motion-sensing-cabinet-light",
+    name: "Motion-Sensing Cabinet Light",
+    headline: "Illumination on Arrival",
+    hookLine: "Slim rechargeable light bar with built-in motion sensor.",
+    description:
+      "A slim, rechargeable light bar with a built-in motion sensor that illuminates the moment you open a wardrobe, kitchen cabinet, or pantry door. USB-C charging, magnetic mount, no tools required.",
+    price: 18.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&q=80",
+    tags: ["light", "cabinet", "motion-sensor", "rechargeable"],
+    notes: "USB-C · Magnetic mount · 5 lengths",
+    available: true,
+    variants: [
+      { id: "adorn-7-s10", label: "Silver / 10cm", price: 18.0, available: true },
+      { id: "adorn-7-s20", label: "Silver / 20cm", price: 22.0, available: true },
+      { id: "adorn-7-s30", label: "Silver / 30cm", price: 26.0, available: true },
+      { id: "adorn-7-s40", label: "Silver / 40cm", price: 30.0, available: true },
+      { id: "adorn-7-s50", label: "Silver / 50cm", price: 34.0, available: true },
+      { id: "adorn-7-b10", label: "Black / 10cm", price: 18.0, available: true },
+      { id: "adorn-7-b20", label: "Black / 20cm", price: 22.0, available: true },
+      { id: "adorn-7-b30", label: "Black / 30cm", price: 26.0, available: true },
+      { id: "adorn-7-b40", label: "Black / 40cm", price: 30.0, available: true },
+      { id: "adorn-7-b50", label: "Black / 50cm", price: 34.0, available: true },
+    ],
+    crossSells: ["adorn-6", "adorn-1", "adorn-2"],
+  },
+  {
+    id: "adorn-8",
+    slug: "ceramic-incense-holder",
+    name: "Ceramic Incense Holder",
+    headline: "A Ritual in Porcelain",
+    hookLine: "Porcelain holder with ash-catching tray — four glazes.",
+    description:
+      "A porcelain incense holder with an integrated ash-catching tray — minimal, functional, and small enough to place on a windowsill, a bedside table, or a bathroom shelf.",
+    price: 14.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&q=80",
+    tags: ["incense", "ceramic", "porcelain", "holder"],
+    notes: "Porcelain · Ash catcher · 4 glazes",
+    available: true,
+    variants: [
+      { id: "adorn-8-ivory", label: "Ivory", price: 14.0, available: true },
+      { id: "adorn-8-sage", label: "Sage", price: 14.0, available: true },
+      { id: "adorn-8-charcoal", label: "Charcoal", price: 14.0, available: true },
+      { id: "adorn-8-sand", label: "Sand", price: 14.0, available: true },
+    ],
+    crossSells: ["adorn-9", "adorn-2", "bloom-2"],
+  },
+  {
+    id: "adorn-9",
+    slug: "handmade-soy-wax-ceramic-candle",
+    name: "Handmade Soy Wax Ceramic Candle",
+    headline: "The Vessel Remains",
+    hookLine: "220g hand-poured candle in a ceramic vessel that outlasts the wax.",
+    description:
+      "A 220g candle poured by hand into a pure white ceramic vessel that remains beautiful long after the wax has burned. The ceramic vessel, once empty, becomes a small planter, a brush holder, or a quiet object in its own right.",
+    price: 62.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&q=80",
+    tags: ["candle", "soy-wax", "ceramic", "handmade"],
+    notes: "220g · Hand-poured · Reusable vessel",
+    available: true,
+    variants: [
+      { id: "adorn-9-camellia", label: "Camellia", price: 62.0, available: true },
+      { id: "adorn-9-jade", label: "Jade Dragon Tea", price: 62.0, available: true },
+      { id: "adorn-9-sandalwood", label: "Sandalwood", price: 62.0, available: true },
+      { id: "adorn-9-peach", label: "Peach", price: 62.0, available: true },
+    ],
+    crossSells: ["adorn-8", "adorn-2", "adorn-1"],
+  },
+  {
+    id: "adorn-10",
+    slug: "nordic-ceramic-vase",
+    name: "Nordic Ceramic Vase",
+    headline: "Three Sizes, One Statement",
+    hookLine: "Matte ceramic vase with organic Scandinavian silhouette.",
+    description:
+      "A ceramic vase with a matte finish and organic silhouette inspired by Scandinavian studio pottery. Available in three sizes that group beautifully together on a mantelpiece, a shelf, or a dining table centrepiece.",
+    price: 28.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&q=80",
+    tags: ["vase", "ceramic", "nordic", "matte"],
+    notes: "Matte finish · 3 sizes · Scandinavian design",
+    available: true,
+    variants: [
+      { id: "adorn-10-petite", label: "Petite", price: 28.0, available: true },
+      { id: "adorn-10-classic", label: "Classic", price: 32.0, available: true },
+      { id: "adorn-10-statement", label: "Statement", price: 36.0, available: true },
+    ],
+    crossSells: ["bloom-2", "bloom-3", "adorn-8"],
+  },
+  {
+    id: "adorn-11",
+    slug: "frameless-mirror-panel",
+    name: "Frameless Mirror Panel",
+    headline: "Expanding Light",
+    hookLine: "Self-adhesive shatter-resistant mirror that trims to fit.",
+    description:
+      "A frameless, self-adhesive mirror panel that transforms any flat surface into a reflective accent. The flexible soft-glass material is shatter-resistant and can be trimmed to fit unusual spaces.",
+    price: 26.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
+    tags: ["mirror", "self-adhesive", "frameless", "wall"],
+    notes: "20×40 inch · Shatter-resistant · Trimmable",
+    available: false,
+    variants: [
+      { id: "adorn-11-single", label: "Single Panel", price: 26.0, available: false },
+      { id: "adorn-11-double", label: "Double Panel", price: 44.0, available: false },
+    ],
+    crossSells: ["adorn-5", "adorn-1", "adorn-6"],
+  },
+  {
+    id: "adorn-12",
+    slug: "midnight-marine-eau-de-parfum",
+    name: "Midnight Marine — Eau de Parfum",
+    headline: "An Olfactive Journey",
+    hookLine: "Aquatic fragrance with bergamot, coconut, and amber — 50ml.",
+    description:
+      "An aquatic fragrance that opens with the bright citrus of bergamot, deepens into warm coconut and cedarwood, and settles into a base of amber and musk. The Arabian perfumery tradition favours concentration and longevity — this 50ml eau de parfum delivers both.",
+    price: 42.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&q=80",
+    tags: ["fragrance", "perfume", "aquatic", "arabian"],
+    notes: "Bergamot · Coconut · Amber · 50ml EDP",
+    available: false,
+    crossSells: ["adorn-9", "adorn-8", "adorn-2"],
+  },
+  {
+    id: "adorn-13",
+    slug: "wabi-sabi-ceramic-dispenser",
+    name: "Wabi-Sabi Ceramic Dispenser",
+    headline: "Beauty in Imperfection",
+    hookLine: "450ml ceramic dispenser with deliberate wabi-sabi irregularity.",
+    description:
+      "A 450ml ceramic dispenser with the deliberate imperfection of wabi-sabi — the Japanese philosophy that finds beauty in irregularity. The matte glaze and organic form transform a bathroom or kitchen counter from functional to intentional.",
+    price: 42.0,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://images.unsplash.com/photo-1602928321679-560bb453f190?w=800&q=80",
+    tags: ["dispenser", "ceramic", "wabi-sabi", "bathroom"],
+    notes: "450ml · Matte glaze · Pump included",
+    available: true,
+    variants: [
+      { id: "adorn-13-single", label: "Single", price: 42.0, available: true },
+      { id: "adorn-13-pair", label: "Pair", price: 72.0, available: true },
+    ],
+    crossSells: ["adorn-8", "adorn-9", "adorn-10"],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // BLOOM — Everlasting Greenery
+  // ═══════════════════════════════════════════════════════════════════════
   {
     id: "bloom-1",
-    slug: "artificial-daisy-eucalyptus",
-    name: "Faux Daisy & Eucalyptus Stems",
+    slug: "faux-daisy-eucalyptus-arrangement",
+    name: "Faux Daisy & Eucalyptus Arrangement",
     headline: "Perpetual Bloom",
+    hookLine: "Pre-arranged bouquet with a realism that requires a second glance.",
     description:
-      "The beauty of nature, captured in a permanent state of grace. These incredibly lifelike artificial flowers bring warmth and texture to any room without the need for maintenance. The eucalyptus pairing elevates it beyond a generic artificial flower — arranged in a simple vase, they offer a quiet, enduring elegance that softens the hard lines of modern interiors.",
-    price: 14.80,
-    collection: "BLOOM",
-    collectionSlug: "bloom",
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800https://images.unsplash.com/photo-1487530811015-780f2b0e9b4e?w=800&q=80q=80",
-    tags: ["botanical", "flowers", "artificial", "eucalyptus"],
-    notes: "Faux daisy · Eucalyptus leaves · Vase-ready",
-  },
-  {
-    id: "bloom-2",
-    slug: "guava-seeds",
-    name: "Guava Seeds — Grow Your Own",
-    headline: "The Patience of Growth",
-    description:
-      "There is a unique satisfaction in cultivating life from a single seed. Our premium guava seeds offer the opportunity to grow a lush, fruit-bearing plant within your own home or garden. A daily practice in patience and care, watching these seeds sprout and thrive connects you to the slow, rewarding rhythms of nature.",
-    price: 9.99,
-    collection: "BLOOM",
-    collectionSlug: "bloom",
-    image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80",
-    tags: ["seeds", "garden", "grow", "botanical"],
-    notes: "Premium seeds · Indoor & outdoor · Kraft packet",
-  },
-  {
-    id: "bloom-3",
-    slug: "raised-garden-bed",
-    name: "Metal Raised Garden Bed",
-    headline: "A Permanent Garden",
-    description:
-      "The galvalume metal construction is premium and durable, and the product has strong visual appeal for garden content. Raised garden beds are one of the fastest-growing garden categories. The metal construction signals permanence and quality compared to plastic alternatives.",
-    price: 48.72,
+      "A pre-arranged bouquet of faux daisies and eucalyptus leaves with a realism that requires a second glance. No water, no wilting, no guilt — just the quiet presence of greenery in a room that needs it.",
+    price: 32.0,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
-    tags: ["garden", "planter", "metal", "outdoor"],
-    notes: "Galvalume steel · 60×60×20cm · Outdoor",
+    tags: ["flowers", "faux", "eucalyptus", "arrangement"],
+    notes: "Faux silk · 3 colour palettes · Vase-ready",
+    available: false,
+    variants: [
+      { id: "bloom-1-colour", label: "Colourful", price: 32.0, available: false },
+      { id: "bloom-1-autumn", label: "Deep Autumn", price: 32.0, available: false },
+      { id: "bloom-1-orange", label: "Orange", price: 32.0, available: false },
+    ],
+    crossSells: ["bloom-3", "adorn-10", "bloom-4"],
   },
-  // ── NOURISH ──────────────────────────────────────────────────────────────
+  {
+    id: "bloom-2",
+    slug: "dried-cotton-stem",
+    name: "Dried Cotton Stem",
+    headline: "Understated Warmth",
+    hookLine: "A single stem of dried cotton bolls — the stylist's secret.",
+    description:
+      "A single stem of dried cotton bolls — the kind of understated botanical accent that interior stylists reach for when a space needs warmth without colour. Place three in a tall vase for a minimal arrangement.",
+    price: 9.0,
+    collection: "BLOOM",
+    collectionSlug: "bloom",
+    image: "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80",
+    tags: ["cotton", "dried", "stem", "botanical"],
+    notes: "Natural dried · Single stem · Pairs beautifully in threes",
+    available: true,
+    crossSells: ["adorn-10", "bloom-3", "bloom-4"],
+  },
+  {
+    id: "bloom-3",
+    slug: "faux-olive-branch",
+    name: "Faux Olive Branch — 113cm",
+    headline: "A Mediterranean Grove, Indoors",
+    hookLine: "113cm silk olive branch with silvery-green shimmer.",
+    description:
+      "A 113cm faux olive branch with silk leaves that capture the silvery-green shimmer of a Mediterranean grove. The wired stem bends to hold any shape, and the leaves are dust-resistant for years of maintenance-free beauty.",
+    price: 22.0,
+    collection: "BLOOM",
+    collectionSlug: "bloom",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
+    tags: ["olive", "faux", "branch", "silk"],
+    notes: "113cm · Wired stem · Dust-resistant silk",
+    available: true,
+    crossSells: ["adorn-10", "bloom-2", "bloom-4"],
+  },
+  {
+    id: "bloom-4",
+    slug: "pampas-grass-bouquet",
+    name: "Pampas Grass Bouquet",
+    headline: "Bohemian Warmth, Naturally Dried",
+    hookLine: "Natural dried pampas and bunny tail stems in warm neutrals.",
+    description:
+      "A curated bouquet of natural dried pampas grass and bunny tail stems in warm, neutral tones. Stands 30–45cm tall and requires no water. Available in three sizes.",
+    price: 24.0,
+    collection: "BLOOM",
+    collectionSlug: "bloom",
+    image: "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=800&q=80",
+    tags: ["pampas", "dried", "bouquet", "boho"],
+    notes: "Natural dried · 30–45cm tall · 3 sizes",
+    available: true,
+    variants: [
+      { id: "bloom-4-petite", label: "Petite (30 stems)", price: 24.0, available: true },
+      { id: "bloom-4-classic", label: "Classic (80 stems)", price: 34.0, available: true },
+      { id: "bloom-4-grand", label: "Grand (120 stems)", price: 44.0, available: true },
+    ],
+    crossSells: ["adorn-10", "bloom-3", "bloom-2"],
+  },
+  {
+    id: "bloom-5",
+    slug: "cedar-wreath",
+    name: "Cedar Wreath — 40cm",
+    headline: "Everlasting Evergreen",
+    hookLine: "40cm artificial cedar wreath — one purchase for years of display.",
+    description:
+      "A 40cm artificial cedar wreath with a density and colour depth that reads as freshly cut. Unlike a fresh wreath, it will not shed, dry out, or need replacing.",
+    price: 32.0,
+    collection: "BLOOM",
+    collectionSlug: "bloom",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
+    tags: ["wreath", "cedar", "artificial", "evergreen"],
+    notes: "40cm diameter · Year-round display · No maintenance",
+    available: true,
+    crossSells: ["bloom-3", "bloom-4", "adorn-10"],
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════
+  // NOURISH — The Ritual of Cooking
+  // ═══════════════════════════════════════════════════════════════════════
   {
     id: "nourish-1",
-    slug: "birria-spice-bombs",
-    name: "Birria Seasoning Spice Bombs",
-    headline: "The Secret Ingredient",
+    slug: "kitchen-shears-magnetic-case",
+    name: "Kitchen Shears with Magnetic Case",
+    headline: "Precision, Considered",
+    hookLine: "Stainless steel shears with a magnetic case that mounts anywhere.",
     description:
-      "Concentrated seasoning in bomb form — customers feel they have found a secret ingredient. The Birria trend has been one of the most sustained food trends on TikTok. The bomb format is inherently shareable — the moment of dropping it into a pot creates compelling content. Strong gifting potential as a kitchen discovery item.",
-    price: 19.99,
+      "All-purpose stainless steel kitchen shears with a magnetic case that keeps them within reach and off the counter. The separable blades come apart for thorough cleaning.",
+    price: 36.0,
     collection: "NOURISH",
     collectionSlug: "nourish",
-    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&q=80",
-    tags: ["food", "seasoning", "spice", "birria"],
-    notes: "Concentrated · Dissolves in cooking · Authentic blend",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["shears", "scissors", "stainless", "magnetic"],
+    notes: "Stainless steel · Separable blades · Magnetic case",
+    available: true,
+    crossSells: ["nourish-9", "nourish-7", "gather-10"],
   },
   {
     id: "nourish-2",
-    slug: "caramel-protein-coffee",
-    name: "Caramel Protein Iced Coffee",
-    headline: "The Functional Morning Ritual",
+    slug: "compartment-meal-container",
+    name: "Compartment Meal Container",
+    headline: "The Considered Lunch",
+    hookLine: "Leak-proof compartment container for those who refuse a sad desk lunch.",
     description:
-      "A premium protein coffee at $39.95 — the highest-priced food product in the selection. The combination of protein and coffee appeals to the health-conscious home cook who wants their morning ritual to be both pleasurable and functional. Strong repeat-purchase potential.",
-    price: 39.95,
+      "A compartmentalised meal container designed for the person who refuses to eat a sad desk lunch. The leak-proof condiment section keeps dressing separate until the moment you are ready to eat.",
+    price: 42.0,
     collection: "NOURISH",
     collectionSlug: "nourish",
-    image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80",
-    tags: ["coffee", "protein", "drink", "caramel"],
-    notes: "Premium whey protein · Caramel flavour · 500g",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+    tags: ["container", "meal-prep", "lunch", "leak-proof"],
+    notes: "Leak-proof · Compartmentalised · Dishwasher safe",
+    available: true,
+    crossSells: ["nourish-1", "gather-10", "nourish-9"],
   },
   {
     id: "nourish-3",
-    slug: "natural-decaf-iced-coffee",
-    name: "All Natural Decaf Iced Coffee",
-    headline: "The Calm Morning",
+    slug: "stainless-steel-peeler",
+    name: "Stainless Steel Peeler",
+    headline: "The Long, Continuous Stroke",
+    hookLine: "Ergonomic peeler with blade geometry for effortless strokes.",
     description:
-      "The decaf iced coffee trend is driven by customers who want the ritual of coffee without the caffeine anxiety. The all natural positioning adds a wellness halo. The 126% growth rate and 20% commission make this the strongest artisan food product in the dataset.",
-    price: 25.00,
+      "A stainless steel peeler with a blade geometry designed for long, continuous strokes. The ergonomic handle sits naturally in the hand.",
+    price: 14.0,
     collection: "NOURISH",
     collectionSlug: "nourish",
-    image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80",
-    tags: ["coffee", "decaf", "natural", "drink"],
-    notes: "All natural · Decaffeinated · 500g",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+    tags: ["peeler", "stainless", "kitchen", "tool"],
+    notes: "Stainless steel · Ergonomic grip",
+    available: false,
+    variants: [
+      { id: "nourish-3-a", label: "Style A", price: 14.0, available: false },
+      { id: "nourish-3-b", label: "Style B", price: 14.0, available: false },
+    ],
+    crossSells: ["nourish-4", "nourish-1", "nourish-9"],
   },
   {
     id: "nourish-4",
-    slug: "freeze-dried-ice-cream",
-    name: "Freeze Dried Ice Cream Bites",
-    headline: "A Playful Indulgence",
+    slug: "multi-function-grater",
+    name: "Multi-Function Grater",
+    headline: "Three Blades, One Handle",
+    hookLine: "Interchangeable blades — julienne, ribbon, and standard peel.",
     description:
-      "Freeze-dried ice cream is a genuinely novel food category. Lightweight, ships easily, and has strong gifting potential. Positioned as a playful indulgence in NOURISH — the product that makes the collection feel approachable rather than austere. The novelty factor and satisfying crunch texture create compelling content.",
-    price: 14.99,
+      "A multi-function grater and peeler with interchangeable stainless steel blades — julienne, ribbon, and standard peel — all housed in a single ergonomic handle.",
+    price: 14.0,
     collection: "NOURISH",
     collectionSlug: "nourish",
-    image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&q=80",
-    tags: ["food", "ice cream", "freeze dried", "snack"],
-    notes: "Strawberry shortcake · Freeze-dried · Giftable",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+    tags: ["grater", "peeler", "multi-function", "kitchen"],
+    notes: "3 interchangeable blades · Stainless steel",
+    available: false,
+    variants: [
+      { id: "nourish-4-a", label: "Style A", price: 14.0, available: false },
+      { id: "nourish-4-b", label: "Style B", price: 14.0, available: false },
+      { id: "nourish-4-duo", label: "Duo Pack", price: 24.0, available: false },
+    ],
+    crossSells: ["nourish-3", "nourish-1", "nourish-9"],
+  },
+  {
+    id: "nourish-5",
+    slug: "cherry-stone-fruit-pitter",
+    name: "Cherry & Stone Fruit Pitter",
+    headline: "The Clean Pit",
+    hookLine: "Single-press pitter with splash guard — no crushed fruit.",
+    description:
+      "A single-press fruit pitter that removes cherry and olive stones cleanly, without crushing the fruit. The splash guard keeps juice off your clothes.",
+    price: 28.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+    tags: ["pitter", "cherry", "kitchen", "tool"],
+    notes: "Splash guard · Food-grade · Dishwasher safe",
+    available: true,
+    crossSells: ["nourish-1", "nourish-9", "gather-10"],
+  },
+  {
+    id: "nourish-6",
+    slug: "airtight-pantry-container",
+    name: "Airtight Pantry Container — 2.5L",
+    headline: "Sealed Freshness",
+    hookLine: "Moisture-proof 2.5L container for pantry staples.",
+    description:
+      "A 2.5-litre airtight container with a moisture-proof seal designed for pantry staples. Stackable, BPA-free, and sized to fit standard pantry shelves.",
+    price: 24.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+    tags: ["container", "airtight", "pantry", "storage"],
+    notes: "2.5L · BPA-free · Stackable",
+    available: true,
+    crossSells: ["nourish-10", "gather-8", "gather-9"],
+  },
+  {
+    id: "nourish-7",
+    slug: "collapsible-silicone-containers",
+    name: "Collapsible Silicone Containers",
+    headline: "Flat When Empty, Full When Needed",
+    hookLine: "Containers that flatten to half height when empty.",
+    description:
+      "Collapsible silicone containers that flatten to half their height when empty. Microwave-safe, freezer-safe, dishwasher-safe, with a snap-lock lid.",
+    price: 12.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+    tags: ["container", "silicone", "collapsible", "storage"],
+    notes: "Silicone · Snap-lock · Microwave & freezer safe",
+    available: false,
+    variants: [
+      { id: "nourish-7-yellow", label: "Yellow — Single", price: 12.0, available: false },
+      { id: "nourish-7-green", label: "Green — Single", price: 12.0, available: false },
+      { id: "nourish-7-red", label: "Red — Single", price: 12.0, available: false },
+      { id: "nourish-7-brown", label: "Brown — Single", price: 12.0, available: false },
+      { id: "nourish-7-set", label: "Set of 4", price: 38.0, available: false },
+    ],
+    crossSells: ["nourish-6", "nourish-2", "gather-10"],
+  },
+  {
+    id: "nourish-8",
+    slug: "stainless-steel-chopping-board",
+    name: "Stainless Steel Chopping Board",
+    headline: "The Hygienic Foundation",
+    hookLine: "Double-sided steel board that never harbours bacteria.",
+    description:
+      "A double-sided stainless steel chopping board with anti-slip silicone edges. The non-porous steel does not harbour bacteria, odours, or stains. Dishwasher safe.",
+    price: 52.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["chopping-board", "stainless", "kitchen", "hygienic"],
+    notes: "Double-sided · Anti-slip · Dishwasher safe",
+    available: true,
+    variants: [
+      { id: "nourish-8-std", label: "Standard", price: 52.0, available: true },
+      { id: "nourish-8-thick", label: "Thickened", price: 78.0, available: true },
+    ],
+    crossSells: ["nourish-12", "nourish-1", "nourish-9"],
+  },
+  {
+    id: "nourish-9",
+    slug: "microwave-steamer-cover",
+    name: "Microwave Steamer Cover",
+    headline: "Elegance in Utility",
+    hookLine: "10-inch cover that steams and protects in one.",
+    description:
+      "A 10-inch microwave cover that does double duty as a water steamer. The vented design traps moisture to revive leftovers while keeping your microwave spotless.",
+    price: 32.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["microwave", "steamer", "cover", "kitchen"],
+    notes: "10 inch · Vented · BPA-free",
+    available: false,
+    variants: [
+      { id: "nourish-9-gr", label: "Green / Round", price: 32.0, available: false },
+      { id: "nourish-9-gyr", label: "Grey / Round", price: 32.0, available: false },
+      { id: "nourish-9-gd", label: "Green / Diamond", price: 32.0, available: false },
+      { id: "nourish-9-gyd", label: "Grey / Diamond", price: 32.0, available: false },
+    ],
+    crossSells: ["nourish-1", "nourish-8", "gather-10"],
+  },
+  {
+    id: "nourish-10",
+    slug: "teak-carving-board",
+    name: "Teak Carving Board",
+    headline: "The Heirloom Board",
+    hookLine: "Solid teak, one inch thick — develops a honeyed patina over years.",
+    description:
+      "A solid teak cutting board, one inch thick, with the density and natural oil content that has made teak the material of choice for serious kitchens. Naturally antimicrobial, resists warping, and develops a rich, honeyed patina over years of use.",
+    price: 88.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["cutting-board", "teak", "wood", "premium"],
+    notes: "Solid teak · 1 inch thick · Antimicrobial",
+    available: true,
+    variants: [
+      { id: "nourish-10-s", label: "Standard (13.3×9.5\")", price: 88.0, available: true },
+      { id: "nourish-10-l", label: "Large (16.5×11.8\")", price: 118.0, available: true },
+    ],
+    crossSells: ["nourish-9", "nourish-1", "nourish-14"],
+  },
+  {
+    id: "nourish-11",
+    slug: "rapid-defrosting-board",
+    name: "Rapid Defrosting Board",
+    headline: "Five Times Faster",
+    hookLine: "Aluminium board that thaws frozen food without electricity.",
+    description:
+      "An aluminium defrosting board that thaws frozen meat, fish, and poultry up to five times faster than a countertop — without electricity, hot water, or a microwave.",
+    price: 22.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["defrosting", "aluminium", "kitchen", "tool"],
+    notes: "Aluminium · No electricity · 5× faster",
+    available: true,
+    crossSells: ["nourish-10", "nourish-8", "nourish-1"],
+  },
+  {
+    id: "nourish-12",
+    slug: "acacia-magnetic-knife-block",
+    name: "Acacia Magnetic Knife Block",
+    headline: "Blades on Display",
+    hookLine: "Solid acacia with rare-earth magnets for a full knife set.",
+    description:
+      "A magnetic knife block carved from solid acacia wood, with embedded rare-earth magnets strong enough to hold a full set of kitchen knives. The open design keeps blades visible, accessible, and properly aired.",
+    price: 98.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["knife-block", "acacia", "magnetic", "kitchen"],
+    notes: "Solid acacia · Rare-earth magnets · Holds full set",
+    available: false,
+    crossSells: ["nourish-10", "nourish-1", "nourish-8"],
+  },
+  {
+    id: "nourish-13",
+    slug: "magnetic-spice-tins",
+    name: "Magnetic Spice Tins",
+    headline: "Spices Within Reach",
+    hookLine: "Magnetic tins that mount to any metal surface.",
+    description:
+      "Magnetic spice tins that mount directly to a fridge, a metal backsplash, or the included iron mounting sheet. The airtight seal preserves freshness, and the clear window lets you identify contents at a glance.",
+    price: 16.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["spice", "tins", "magnetic", "storage"],
+    notes: "Airtight · Clear window · Magnetic mount",
+    available: true,
+    variants: [
+      { id: "nourish-13-single", label: "Single Tin", price: 16.0, available: true },
+      { id: "nourish-13-set", label: "Set of 6 + Mounting Sheet", price: 52.0, available: true },
+    ],
+    crossSells: ["nourish-6", "nourish-14", "gather-8"],
+  },
+  {
+    id: "nourish-14",
+    slug: "acacia-salt-pepper-mill",
+    name: "Acacia Salt & Pepper Mill",
+    headline: "The Ceramic Grind",
+    hookLine: "Acacia wood mill with adjustable ceramic grinding mechanism.",
+    description:
+      "An acacia wood salt or pepper mill with an adjustable ceramic grinding mechanism — the material that professional chefs prefer because it does not corrode and maintains a consistent grind indefinitely.",
+    price: 28.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["mill", "salt", "pepper", "acacia"],
+    notes: "Ceramic grinder · Adjustable · 3 sizes + base",
+    available: true,
+    variants: [
+      { id: "nourish-14-base", label: "Wooden Display Base", price: 16.0, available: true },
+      { id: "nourish-14-6", label: "6-Inch Mill", price: 28.0, available: true },
+      { id: "nourish-14-8", label: "8-Inch Mill", price: 34.0, available: true },
+      { id: "nourish-14-10", label: "10-Inch Mill", price: 38.0, available: true },
+    ],
+    crossSells: ["nourish-13", "nourish-10", "nourish-9"],
+  },
+  {
+    id: "nourish-15",
+    slug: "acacia-wooden-utensil-set",
+    name: "Acacia Wooden Utensil Set",
+    headline: "The Considered Kitchen",
+    hookLine: "Satin-smooth acacia utensils that never scratch non-stick.",
+    description:
+      "A set of acacia wood cooking utensils — spatula, turner, serving spoon, and more — with a satin-smooth finish that will never scratch a non-stick pan. Acacia is naturally antimicrobial and heat-resistant.",
+    price: 56.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    tags: ["utensils", "acacia", "wood", "cooking"],
+    notes: "Antimicrobial · Heat-resistant · Multiple set sizes",
+    available: true,
+    variants: [
+      { id: "nourish-15-5", label: "5-Piece Set", price: 48.0, available: true },
+      { id: "nourish-15-6", label: "6-Piece Set", price: 52.0, available: true },
+      { id: "nourish-15-7", label: "7-Piece Set (Recommended)", price: 56.0, available: true },
+      { id: "nourish-15-9", label: "9-Piece Set", price: 72.0, available: true },
+      { id: "nourish-15-10", label: "10-Piece Set", price: 78.0, available: true },
+    ],
+    crossSells: ["nourish-10", "nourish-14", "nourish-8"],
+  },
+  {
+    id: "nourish-16",
+    slug: "electronic-precision-measuring-spoon",
+    name: "Electronic Precision Measuring Spoon",
+    headline: "Precision by the Gram",
+    hookLine: "Digital spoon scale for exact measurements up to 800g.",
+    description:
+      "A digital measuring spoon scale that weighs ingredients directly as you scoop — no separate bowl, no guesswork. Accurate to 0.1g for spices and 1g for larger quantities.",
+    price: 22.0,
+    collection: "NOURISH",
+    collectionSlug: "nourish",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80",
+    tags: ["scale", "measuring", "digital", "precision"],
+    notes: "0.1g precision · LCD display · Tare function",
+    available: true,
+    crossSells: ["nourish-14", "nourish-13", "nourish-15"],
   },
 ];
+
+// ═══════════════════════════════════════════════════════════════════════
+// COLLECTIONS
+// ═══════════════════════════════════════════════════════════════════════
 
 export const COLLECTIONS: Collection[] = [
   {
@@ -319,16 +980,16 @@ export const COLLECTIONS: Collection[] = [
     description:
       "Kitchen tools and tabletop accessories for the intentional host. These are the objects you reach for when you cook and when you host — each one chosen for its quiet utility and considered design.",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-gather_87a9bb21.jpg",
-    products: PRODUCTS.filter((p) => p.collectionSlug === "gather"),
+    products: [],
   },
   {
     slug: "adorn",
     name: "ADORN",
     tagline: "Objects of Intention",
     description:
-      "Home fragrance, decorative objects, and display pieces. These are the objects that make a space feel considered — nothing functional, nothing edible. Purely objects that transform the atmosphere of a room through scent, light, or visual presence.",
+      "Home fragrance, decorative objects, and display pieces. These are the objects that make a space feel considered — purely objects that transform the atmosphere of a room through scent, light, or visual presence.",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-adorn_18502690.jpg",
-    products: PRODUCTS.filter((p) => p.collectionSlug === "adorn"),
+    products: [],
   },
   {
     slug: "bloom",
@@ -337,18 +998,34 @@ export const COLLECTIONS: Collection[] = [
     description:
       "Botanicals, florals, plants, and garden accessories. Living and living-adjacent objects that bring the outside in. Every product in this collection relates to plants, flowers, seeds, or garden cultivation.",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-bloom_bb15969d.jpg",
-    products: PRODUCTS.filter((p) => p.collectionSlug === "bloom"),
+    products: [],
   },
   {
     slug: "nourish",
     name: "NOURISH",
     tagline: "The Ritual of Cooking",
     description:
-      "Artisan food and drink for the intentional cook. Consumables and ingredients that transform the act of cooking from a task into a ritual — each one chosen for its provenance, flavour, and story.",
+      "Artisan food, drink, and cookware for the intentional cook. Consumables and ingredients that transform the act of cooking from a task into a ritual — each one chosen for its provenance, flavour, and story.",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-nourish-9ACpb36EeNaEewRWfkFqCs.webp",
-    products: PRODUCTS.filter((p) => p.collectionSlug === "nourish"),
+    products: [],
   },
 ];
+
+// Populate collection products (only available products shown by default)
+COLLECTIONS.forEach((col) => {
+  col.products = PRODUCTS.filter(
+    (p) => p.collectionSlug === col.slug && p.available
+  );
+});
+
+// Helper: get all products including unavailable (for admin/debug)
+export function getAllProducts(): Product[] {
+  return PRODUCTS;
+}
+
+export function getAvailableProducts(): Product[] {
+  return PRODUCTS.filter((p) => p.available);
+}
 
 export function getProductBySlug(slug: string): Product | undefined {
   return PRODUCTS.find((p) => p.slug === slug);
@@ -356,4 +1033,23 @@ export function getProductBySlug(slug: string): Product | undefined {
 
 export function getCollectionBySlug(slug: string): Collection | undefined {
   return COLLECTIONS.find((c) => c.slug === slug);
+}
+
+// Cross-sell helper: get recommended products for a given product
+export function getCrossSells(product: Product): Product[] {
+  if (!product.crossSells) return [];
+  return product.crossSells
+    .map((id) => PRODUCTS.find((p) => p.id === id))
+    .filter((p): p is Product => p !== undefined && p.available);
+}
+
+// Cart cross-sell: recommend items that push cart toward free shipping
+export function getThresholdNudgeItems(cartTotal: number): Product[] {
+  const remaining = FREE_SHIPPING_THRESHOLD - cartTotal;
+  if (remaining <= 0) return [];
+  return PRODUCTS.filter(
+    (p) => p.available && p.price <= remaining + 5 && p.price >= 9
+  )
+    .sort((a, b) => Math.abs(a.price - remaining) - Math.abs(b.price - remaining))
+    .slice(0, 3);
 }

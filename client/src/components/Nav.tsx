@@ -1,17 +1,18 @@
 // HEARTH CURATED — Navigation Component
 // Design: Nomos Rituals inspired — hamburger left, centered wordmark, icons right
-// Palette: --hc-parchment bg, --hc-espresso text, 1px bottom border in --hc-stone
-// No rounded corners, no gradients, generous letter-spacing on nav items
+// Cart badge integrated with CartContext
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Search, ShoppingBag, User } from "lucide-react";
 import { COLLECTIONS } from "@/lib/products";
+import { useCart } from "@/contexts/CartContext";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [location] = useLocation();
+  const { itemCount, openCart } = useCart();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
@@ -75,8 +76,25 @@ export default function Nav() {
             <button aria-label="Account" className="p-1 hidden md:block">
               <User size={18} strokeWidth={1.5} />
             </button>
-            <button aria-label="Cart" className="p-1 relative">
+            <button
+              aria-label="Cart"
+              className="p-1 relative"
+              onClick={openCart}
+            >
               <ShoppingBag size={18} strokeWidth={1.5} />
+              {itemCount > 0 && (
+                <span
+                  className="absolute -top-1 -right-1 w-4 h-4 flex items-center justify-center text-[9px] font-medium"
+                  style={{
+                    backgroundColor: "var(--hc-sienna)",
+                    color: "var(--hc-parchment)",
+                    fontFamily: "'Karla', sans-serif",
+                    borderRadius: "50%",
+                  }}
+                >
+                  {itemCount > 9 ? "9+" : itemCount}
+                </span>
+              )}
             </button>
           </div>
         </div>

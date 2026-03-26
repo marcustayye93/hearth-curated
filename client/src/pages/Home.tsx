@@ -5,16 +5,88 @@
 //           Editorial feature (split image/text), Footer
 
 import { Link } from "wouter";
+import { Plus } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { COLLECTIONS, PRODUCTS } from "@/lib/products";
+import { COLLECTIONS, PRODUCTS, type Product } from "@/lib/products";
+import { useCart } from "@/contexts/CartContext";
 
 const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/hero-banner-v2-WGnoQge2ivaCcYKVnDSYX9.webp";
 
-// Top 8 products by CPS score for featured section
-const FEATURED_PRODUCTS = PRODUCTS.filter((p) =>
-  ["gather-1", "adorn-1", "bloom-1", "adorn-2", "gather-2", "adorn-4", "gather-5", "nourish-4"].includes(p.id)
-);
+// Top 8 available products for featured section
+const FEATURED_PRODUCTS = PRODUCTS.filter((p) => p.available).slice(0, 8);
+
+function FeaturedCard({ product }: { product: Product }) {
+  const { addItem } = useCart();
+  const handleQuickAdd = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const defaultVariant = product.variants?.find((v) => v.available);
+    addItem(product, defaultVariant, 1);
+  };
+  return (
+    <Link
+      href={`/products/${product.slug}`}
+      className="group block hc-product-card"
+    >
+      <div className="overflow-hidden mb-4 relative" style={{ aspectRatio: "3/4" }}>
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-cover hc-product-img"
+        />
+        {product.available && (
+          <button
+            onClick={handleQuickAdd}
+            className="absolute bottom-3 left-3 right-3 flex items-center justify-center gap-2 py-2.5 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
+            style={{
+              backgroundColor: "var(--hc-espresso)",
+              color: "var(--hc-parchment)",
+              fontFamily: "'Karla', sans-serif",
+              fontSize: "0.65rem",
+              fontWeight: 500,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+            }}
+          >
+            <Plus size={12} strokeWidth={2} />
+            <span>Quick Add</span>
+          </button>
+        )}
+      </div>
+      <div>
+        <p
+          className="text-xs tracking-widest uppercase mb-1"
+          style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
+        >
+          {product.collection}
+        </p>
+        <h3
+          className="text-sm md:text-base mb-1 leading-snug"
+          style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)", fontWeight: 400 }}
+        >
+          {product.name}
+        </h3>
+        {product.hookLine && (
+          <p
+            className="text-xs mb-2 leading-relaxed line-clamp-2"
+            style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
+          >
+            {product.hookLine}
+          </p>
+        )}
+        <p
+          className="text-sm font-medium"
+          style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
+        >
+          {product.variants && product.variants.length > 1
+            ? `From $${product.price.toFixed(0)}`
+            : `$${product.price.toFixed(0)}`}
+        </p>
+      </div>
+    </Link>
+  );
+}
 
 export default function Home() {
   return (
@@ -191,49 +263,7 @@ export default function Home() {
             {/* Product grid — 4 columns on desktop, 2 on mobile */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {FEATURED_PRODUCTS.map((product) => (
-                <Link
-                  key={product.id}
-                  href={`/products/${product.slug}`}
-                  className="group block hc-product-card"
-                >
-                  {/* Image */}
-                  <div className="overflow-hidden mb-4" style={{ aspectRatio: "3/4" }}>
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover hc-product-img"
-                    />
-                  </div>
-                  {/* Info */}
-                  <div>
-                    <p
-                      className="text-xs tracking-widest uppercase mb-1"
-                      style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
-                    >
-                      {product.collection}
-                    </p>
-                    <h3
-                      className="text-sm md:text-base mb-1 leading-snug"
-                      style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)", fontWeight: 400 }}
-                    >
-                      {product.name}
-                    </h3>
-                    {product.notes && (
-                      <p
-                        className="text-xs mb-2 leading-relaxed"
-                        style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
-                      >
-                        {product.notes}
-                      </p>
-                    )}
-                    <p
-                      className="text-sm font-medium"
-                      style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
-                    >
-                      ${product.price.toFixed(2)}
-                    </p>
-                  </div>
-                </Link>
+                <FeaturedCard key={product.id} product={product} />
               ))}
             </div>
           </div>
