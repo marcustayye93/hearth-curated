@@ -174,17 +174,24 @@ export default function Nav() {
                   About
                 </Link>
               </li>
-              {["Shipping & Returns", "Contact"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-xs tracking-widest uppercase transition-opacity hover:opacity-60"
-                    style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/shipping-returns"
+                  className="text-xs tracking-widest uppercase transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Shipping & Returns
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:hello@hearthcurated.com"
+                  className="text-xs tracking-widest uppercase transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
         </div>

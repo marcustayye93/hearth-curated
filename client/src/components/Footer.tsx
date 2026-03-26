@@ -102,17 +102,42 @@ export default function Footer() {
           <div>
             <p className="hc-eyebrow mb-4" style={{ color: "var(--hc-stone)" }}>Support</p>
             <ul className="space-y-2.5">
-              {["Shipping & Returns", "FAQs", "Contact Us", "Order Tracking"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-xs tracking-wide transition-opacity hover:opacity-60"
-                    style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="/shipping-returns"
+                  className="text-xs tracking-wide transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Shipping & Returns
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/shipping-returns#faq"
+                  className="text-xs tracking-wide transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:hello@hearthcurated.com"
+                  className="text-xs tracking-wide transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-xs tracking-wide transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Order Tracking
+                </a>
+              </li>
             </ul>
           </div>
 

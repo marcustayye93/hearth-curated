@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import Product from "./pages/Product";
 import About from "./pages/About";
+import ShippingReturns from "./pages/ShippingReturns";
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/collections/:slug" component={Collection} />
       <Route path="/products/:slug" component={Product} />
       <Route path="/about" component={About} />
+      <Route path="/shipping-returns" component={ShippingReturns} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
