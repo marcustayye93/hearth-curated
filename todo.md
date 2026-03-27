@@ -62,3 +62,18 @@
 - [x] Add canonical URLs to all pages
 - [x] Add default OG/Twitter meta tags to index.html for crawlers
 - [x] UTM params appended to Shopify checkout URL for attribution
+
+## Product Expansion (March 27, 2026)
+- [x] Add 14 new products to products.ts (3 GATHER, 3 ADORN, 5 BLOOM, 3 NOURISH)
+- [x] Generate editorial product photos for all 14 new products
+- [x] Upload product photos to CDN
+- [x] Add Shopify variant mappings to shopifyMap.ts for all 14 new products
+- [x] Resolve duplicate key conflicts (silence-figurine, acacia-salt-pepper-mill)
+- [x] Verify BLOOM collection shows 9 products (4 existing + 5 new)
+- [x] Verify GATHER collection shows 13 products (10 existing + 3 new: Linen Napkins, Spoon Rest, Sake Set)
+- [x] Verify ADORN collection shows 12 products (10 existing + Cushion Cover, Silence Figurine; Wall Hooks unavailable in Shopify)
+- [x] Verify NOURISH collection shows 13 products (11 existing + Linen Apron, Salt & Pepper Mill; Pour-Over Dripper unavailable in Shopify)
+- [x] Write vitest tests for new product entries (13 tests passing)
+- [x] Set old nourish-14 (acacia-salt-pepper-mill-v1) to unavailable (replaced by new import)
+- [ ] Fix Brass Wall Hooks (adorn-15) — Shopify inventory needs to be set (all variants unavailable)
+- [ ] Fix Ceramic Pour-Over Dripper (nourish-17) — Shopify inventory needs to be set (all variants unavailable)

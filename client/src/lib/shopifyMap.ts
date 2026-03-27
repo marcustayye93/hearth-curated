@@ -71,7 +71,8 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59232890880081", title: "1Pcs Thicken", price: 60.27, available: true },
     ],
   },
-  "acacia-salt-pepper-mill": {
+  // Old acacia-salt-pepper-mill replaced by new import (March 27)
+  "acacia-salt-pepper-mill-old": {
     handle: "salt-and-pepper-grinder-acacia-wooden-spice-pepper-mill-with-strong-adjustable-ceramic-grinder-kitchen-cooking-tools",
     shopifyId: "gid://shopify/Product/15734963994705",
     variants: [
@@ -175,7 +176,8 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59232889995345", title: "Round 20X20Cm", price: 9.99, available: true },
     ],
   },
-  "silence-figurine": {
+  // Old silence-figurine replaced by new import (March 27)
+  "silence-figurine-old": {
     handle: "new-creative-abstract-silence-is-gold-abstract-figurine-resin-hand-face-men-statue-sculpture-home-office-living-room-desk-decor",
     shopifyId: "gid://shopify/Product/15733069283409",
     variants: [
@@ -398,6 +400,147 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     shopifyId: "gid://shopify/Product/15733069250641",
     variants: [
       { id: "gid://shopify/ProductVariant/59232889471057", title: "As Shown", price: 30.13, available: true },
+    ],
+  },
+
+  // ── NEW PRODUCTS (March 27, 2026) ──────────────────────────────────
+
+  "linen-table-napkins": {
+    handle: "4-pieces-linen-napkins-hemstitch-napkin-natural-linen-dinner-napkins-custom-table-napkins-for-party-wedding",
+    shopifyId: "gid://shopify/Product/15735272079441",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243760648273", title: "Linen Grey 20X20Cm", price: 12.59, available: true },
+      { id: "gid://shopify/ProductVariant/59243760812113", title: "White Cotton 20X20Cm", price: 13.3, available: true },
+      { id: "gid://shopify/ProductVariant/59243760844881", title: "Linen Grey 35X50Cm", price: 17.03, available: true },
+      { id: "gid://shopify/ProductVariant/59243760746577", title: "White Cotton 35X50Cm", price: 17.17, available: true },
+      { id: "gid://shopify/ProductVariant/59243760713809", title: "Linen Grey 50X50Cm", price: 18.79, available: true },
+      { id: "gid://shopify/ProductVariant/59243760681041", title: "White Cotton 50X50Cm", price: 19.01, available: true },
+      { id: "gid://shopify/ProductVariant/59243760779345", title: "White Cotton 45X45Cm", price: 17.55, available: true },
+    ],
+  },
+  "ceramic-spoon-rest": {
+    handle: "ravioli-ceramic-spoon-rest-for-stove-top-and-kitchen-counter-large-and-dishwasher-safe",
+    shopifyId: "gid://shopify/Product/15735272177745",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243760386129", title: "Light Yellow", price: 12.98, available: true },
+    ],
+  },
+  "japanese-sake-set": {
+    handle: "best-selling-japanese-ceramic-sake-pot-cup-set-black-stoneware-wine-bottle-wine-bottle-cup-7-pieces-set",
+    shopifyId: "gid://shopify/Product/15735272046673",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243760484433", title: "A", price: 5.94, available: true },
+      { id: "gid://shopify/ProductVariant/59243760549969", title: "B", price: 5.94, available: true },
+      { id: "gid://shopify/ProductVariant/59243760582737", title: "C", price: 5.94, available: true },
+      { id: "gid://shopify/ProductVariant/59243760517201", title: "D", price: 5.94, available: true },
+    ],
+  },
+  "linen-cushion-cover": {
+    handle: "solid-pillow-case-cotton-linen-cushion-cover-45x45cm-55x55cm-beige-black-red-grey",
+    shopifyId: "gid://shopify/Product/15735272702033",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243761172561", title: "Natural Linen / 45X45Cm", price: 15.52, available: true },
+      { id: "gid://shopify/ProductVariant/59243761205329", title: "Natural Linen / 55X55Cm", price: 18.57, available: true },
+      { id: "gid://shopify/ProductVariant/59243761139793", title: "Grey / 45X45Cm", price: 15.52, available: true },
+      { id: "gid://shopify/ProductVariant/59243761074257", title: "Grey / 55X55Cm", price: 18.57, available: true },
+      { id: "gid://shopify/ProductVariant/59243761238097", title: "Coffee / 45X45Cm", price: 15.52, available: true },
+      { id: "gid://shopify/ProductVariant/59243761270865", title: "Coffee / 55X55Cm", price: 18.57, available: true },
+      { id: "gid://shopify/ProductVariant/59243761008721", title: "Black / 45X45Cm", price: 15.52, available: true },
+      { id: "gid://shopify/ProductVariant/59243761041489", title: "Black / 55X55Cm", price: 18.57, available: true },
+      { id: "gid://shopify/ProductVariant/59243761106985", title: "Red / 45X45Cm", price: 15.52, available: true },
+      { id: "gid://shopify/ProductVariant/59243760976977", title: "Red / 55X55Cm", price: 18.57, available: true },
+    ],
+  },
+  "brass-wall-hooks": {
+    handle: "1-5pcs-towel-hooks-matte-wall-hook-for-home-decorative-hook-bathroom-accessories-wall-hooks-wholesale",
+    shopifyId: "gid://shopify/Product/15735271915601",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243759829073", title: "1 Pc Matte Black", price: 7.15, available: false },
+      { id: "gid://shopify/ProductVariant/59243759927377", title: "1 Pc Matte Gold", price: 7.56, available: false },
+      { id: "gid://shopify/ProductVariant/59243759960145", title: "1 Pc Matte Silver", price: 7.48, available: false },
+      { id: "gid://shopify/ProductVariant/59243759861841", title: "5 Pcs Matte Gold", price: 22.45, available: false },
+      { id: "gid://shopify/ProductVariant/59243759894609", title: "5 Pcs Matte Black", price: 22.91, available: false },
+      { id: "gid://shopify/ProductVariant/59243759992913", title: "5 Pcs Matte Silver", price: 22.76, available: false },
+    ],
+  },
+  "silence-figurine": {
+    handle: "mask-gesture-ornament-finger-lip-sculpture-secret-keeping-home-decor-office-desk-decoration",
+    shopifyId: "gid://shopify/Product/15735272210513",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243760418897", title: "Black", price: 8.72, available: true },
+      { id: "gid://shopify/ProductVariant/59243760451665", title: "White", price: 8.86, available: true },
+    ],
+  },
+  "faux-eucalyptus-garland": {
+    handle: "180cm-1pc-artificial-eucalyptus-leaves-greenery-garland-faux-plant-spring-vine-with-white-flowers-berries-for-wedding-home-decor",
+    shopifyId: "gid://shopify/Product/15735271948369",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243760025681", title: "1Pcs", price: 8.62, available: true },
+    ],
+  },
+  "glass-propagation-vases": {
+    handle: "glass-vase-hydroponic-plant-container-desktop-planter-wooden-vase-stand-bulb-water-plant-terrarium",
+    shopifyId: "gid://shopify/Product/15735272734801",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243761303633", title: "Style A", price: 13.14, available: true },
+      { id: "gid://shopify/ProductVariant/59243761336401", title: "Style B", price: 14.73, available: true },
+      { id: "gid://shopify/ProductVariant/59243761369169", title: "Style C", price: 11.62, available: true },
+    ],
+  },
+  "dried-lavender-bundle": {
+    handle: "50-100pcs-natural-dried-lavender-flower-bundles-for-wedding-party-decoration-home-decor",
+    shopifyId: "gid://shopify/Product/15735272144977",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243760353361", title: "50G", price: 13.73, available: true },
+      { id: "gid://shopify/ProductVariant/59243760287825", title: "100G", price: 17.01, available: true },
+    ],
+  },
+  "faux-fiddle-leaf-fig": {
+    handle: "70-135cm-large-artificial-ficus-tree-fake-rubber-plants-branch-plastic-fiddle-leaf-fig-tree",
+    shopifyId: "gid://shopify/Product/15735272603729",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243761401937", title: "70Cm", price: 10.29, available: true },
+      { id: "gid://shopify/ProductVariant/59243761434705", title: "70Cm And105Cm", price: 25.53, available: true },
+      { id: "gid://shopify/ProductVariant/59243761467473", title: "135Cm 3Forks", price: 27.2, available: true },
+      { id: "gid://shopify/ProductVariant/59243761500241", title: "140Cm 3Forks", price: 28.58, available: true },
+    ],
+  },
+  "faux-daisy-arrangement": {
+    handle: "2pcs-artificial-hanging-flowers-silk-daisy-eucalyptus-garland-for-outdoor-indoor",
+    shopifyId: "gid://shopify/Product/15735272669265",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243761533009", title: "Red-Purple", price: 11.03, available: true },
+      { id: "gid://shopify/ProductVariant/59243761696849", title: "Pink-Rose", price: 11.05, available: true },
+      { id: "gid://shopify/ProductVariant/59243761598545", title: "Yellow-Orange", price: 11.18, available: true },
+    ],
+  },
+  "ceramic-pour-over-dripper": {
+    handle: "ceramic-coffee-filter-cup-reusable-filters-coffee-maker-v-style-funnel-dripper-filter-cup-coffee-accessories",
+    shopifyId: "gid://shopify/Product/15735271882833",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243759763537", title: "S", price: 25.83, available: false },
+      { id: "gid://shopify/ProductVariant/59243759796305", title: "L", price: 30.29, available: false },
+    ],
+  },
+  "japanese-linen-apron": {
+    handle: "2022-new-japanese-linen-aprons-for-women-with-pockets-cross-back-cute-apron-dress",
+    shopifyId: "gid://shopify/Product/15735272013905",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243760156753", title: "Style A1", price: 15.4, available: true },
+      { id: "gid://shopify/ProductVariant/59243760091217", title: "Style A2", price: 15.59, available: true },
+      { id: "gid://shopify/ProductVariant/59243760189521", title: "Style B2", price: 16.39, available: true },
+      { id: "gid://shopify/ProductVariant/59243760058449", title: "Style C2", price: 13.57, available: true },
+      { id: "gid://shopify/ProductVariant/59243760353361", title: "Style C1", price: 13.97, available: true },
+    ],
+  },
+  "acacia-salt-pepper-mill": {
+    handle: "salt-and-pepper-grinder-acacia-wooden-spice-pepper-mill-with-strong-adjustable-ceramic-grinder-kitchen-cooking-tools-1",
+    shopifyId: "gid://shopify/Product/15735272112209",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59243760877649", title: "Wooden Base 1Pcs", price: 11.03, available: true },
+      { id: "gid://shopify/ProductVariant/59243760943185", title: "6 Inch 1Pcs", price: 19.57, available: true },
+      { id: "gid://shopify/ProductVariant/59243760910417", title: "8 Inch 1Pcs", price: 22.84, available: true },
+      { id: "gid://shopify/ProductVariant/59243760975953", title: "10 Inch 1Pcs", price: 25.12, available: true },
     ],
   },
 };
