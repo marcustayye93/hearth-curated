@@ -49,3 +49,6 @@
 - [x] viewport-fit=cover for notched phones
 - [x] Global overflow-x: hidden to prevent horizontal scroll
 - [x] All 10 tests passing after mobile fixes
+
+## Bug Fixes
+- [x] Fix scroll-to-top when navigating between collection pages (Nourish, Bloom, Adorn, Gather)
