@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
 import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { captureUTMParams } from "./lib/utm";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { CartProvider } from "./contexts/CartContext";
 import CartDrawer from "./components/CartDrawer";
@@ -40,6 +41,11 @@ function Router() {
 }
 
 function App() {
+  // Capture UTM parameters from URL on first load
+  useEffect(() => {
+    captureUTMParams();
+  }, []);
+
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">

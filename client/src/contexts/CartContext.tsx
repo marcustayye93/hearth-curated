@@ -13,6 +13,7 @@ import {
 import { trpc } from "@/lib/trpc";
 import { PRODUCTS } from "@/lib/products";
 import { shopifyMap } from "@/lib/shopifyMap";
+import { appendUTMToUrl } from "@/lib/utm";
 
 // Build a reverse lookup: Shopify handle → static product
 const handleToStaticProduct = new Map<string, typeof PRODUCTS[0]>();
@@ -256,7 +257,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const goToCheckout = useCallback(() => {
     if (checkoutUrl) {
-      window.location.href = checkoutUrl;
+      // Append UTM parameters to checkout URL for attribution tracking
+      window.location.href = appendUTMToUrl(checkoutUrl);
     }
   }, [checkoutUrl]);
 

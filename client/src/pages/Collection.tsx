@@ -8,6 +8,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { getCollectionBySlug, COLLECTIONS, type Product, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
+import SEOHead from "@/components/SEOHead";
 
 function ProductCard({ product }: { product: Product }) {
   const { addItem } = useCart();
@@ -128,6 +129,13 @@ export default function Collection() {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--hc-parchment)" }}>
+      <SEOHead
+        title={`${collection.name} Collection — ${collection.tagline}`}
+        description={`${collection.description} Shop ${collection.products.length} curated objects in the ${collection.name} collection at Hearth Curated.`}
+        canonicalPath={`/collections/${collection.slug}`}
+        ogImage={collection.image}
+        ogImageAlt={`${collection.name} Collection — Hearth Curated`}
+      />
       <Nav />
 
       <main className="flex-1">

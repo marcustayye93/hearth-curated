@@ -30,7 +30,7 @@
 - [x] Loading states in cart operations (spinner on checkout button)
 - [x] Remove quantityAvailable field (token lacks inventory scope)
 - [x] Write vitest tests for Shopify integration (10 tests passing)
-- [ ] Add SEO meta tags for product/collection pages
+- [x] Add SEO meta tags for all pages (Home, Collection, Product, About, Shipping)
 - [ ] Add inventory awareness once Storefront token gets inventory scope
 
 ## Mobile Responsiveness Optimization
@@ -52,3 +52,13 @@
 
 ## Bug Fixes
 - [x] Fix scroll-to-top when navigating between collection pages (Nourish, Bloom, Adorn, Gather)
+- [x] Build reusable SEO Head component (title, description, OG, Twitter Card, JSON-LD)
+- [x] Add SEO meta tags to Home page
+- [x] Add SEO meta tags to Collection pages (dynamic per collection)
+- [x] Add SEO meta tags to Product pages (dynamic per product + JSON-LD structured data)
+- [x] Add SEO meta tags to About page
+- [x] Add SEO meta tags to Shipping & Returns page
+- [x] Build UTM parameter tracking utility (capture, persist, pass to checkout)
+- [x] Add canonical URLs to all pages
+- [x] Add default OG/Twitter meta tags to index.html for crawlers
+- [x] UTM params appended to Shopify checkout URL for attribution

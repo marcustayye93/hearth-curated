@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const HERO_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/about-hero-4gESyxisMgDHeNSkjTkoYU.webp";
@@ -67,6 +68,13 @@ export default function About() {
       className="min-h-screen flex flex-col"
       style={{ backgroundColor: "var(--hc-parchment)" }}
     >
+      <SEOHead
+        title="Our Story — Hearth Curated"
+        description="Hearth Curated exists for those who believe the objects they choose for their homes are a quiet autobiography. Learn about our philosophy of intentional living."
+        canonicalPath="/about"
+        ogImage={HERO_IMG}
+        ogImageAlt="Hearth Curated workshop — objects arranged with intention"
+      />
       <Nav />
 
       <main className="flex-1">

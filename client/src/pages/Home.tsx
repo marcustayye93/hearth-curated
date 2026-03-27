@@ -10,6 +10,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { COLLECTIONS, PRODUCTS, type Product, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
+import SEOHead from "@/components/SEOHead";
 
 const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/hero-banner-v2-WGnoQge2ivaCcYKVnDSYX9.webp";
 
@@ -93,6 +94,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--hc-parchment)" }}>
+      <SEOHead
+        title="Hearth Curated — Objects for the Intentional Home"
+        description="A curated selection of kitchen tools, home fragrance, botanicals, and artisan food — chosen for quiet utility and considered design. Free shipping over $75."
+        canonicalPath="/"
+        ogImage={HERO_IMAGE}
+        ogImageAlt="Hearth Curated — handcrafted kitchen and home objects"
+      />
       <Nav />
 
       <main className="flex-1">

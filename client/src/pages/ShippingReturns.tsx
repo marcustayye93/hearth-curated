@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { Package, RotateCcw, Clock, Truck, ShieldCheck, Mail } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 /* ── Scroll-triggered fade-up ─────────────────────────────────── */
 function FadeUp({
@@ -227,6 +228,11 @@ export default function ShippingReturns() {
       className="min-h-screen flex flex-col"
       style={{ backgroundColor: "var(--hc-parchment)" }}
     >
+      <SEOHead
+        title="Shipping & Returns — Hearth Curated"
+        description="Free shipping on orders over $75. Easy 14-day returns on all unused items. Learn about our shipping rates, delivery times, and return policy."
+        canonicalPath="/shipping-returns"
+      />
       <Nav />
 
       <main className="flex-1">

@@ -11,6 +11,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { getProductBySlug, getCrossSells, type Variant, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
+import SEOHead from "@/components/SEOHead";
 
 export default function Product() {
   const params = useParams<{ slug: string }>();
@@ -54,8 +55,34 @@ export default function Product() {
     if (variantGid) addItem(variantGid, 1);
   };
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.hookLine || product.description || `${product.name} from Hearth Curated`,
+    image: product.image,
+    brand: { "@type": "Brand", name: "Hearth Curated" },
+    offers: {
+      "@type": "Offer",
+      price: currentPrice.toFixed(2),
+      priceCurrency: "USD",
+      availability: isAvailable
+        ? "https://schema.org/InStock"
+        : "https://schema.org/OutOfStock",
+    },
+  };
+
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--hc-parchment)" }}>
+      <SEOHead
+        title={`${product.name} — Hearth Curated`}
+        description={product.hookLine || product.description || `Shop ${product.name} at Hearth Curated. Curated objects for the intentional home.`}
+        canonicalPath={`/products/${product.slug}`}
+        ogImage={product.image}
+        ogImageAlt={product.name}
+        ogType="product"
+        jsonLd={productJsonLd}
+      />
       <Nav />
 
       <main className="flex-1">
