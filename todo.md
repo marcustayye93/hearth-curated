@@ -128,3 +128,8 @@
 - [x] Change 'The Problem' to 'The Mission' on About page
 - [x] Fix 'View All Objects' button — now links to /shop (Shop All page)
 - [x] Add 'Shop All' to main navigation menu and side/mobile menu
+
+## Email & Branding Updates (March 27, 2026)
+- [x] Connect email capture (footer + popup) to Shopify Customers API
+- [x] Design custom HC logo for Hearth Curated
+- [x] Set HC logo as browser favicon/thumbnail

@@ -11,6 +11,7 @@ import {
   updateCartLines,
   removeFromCart,
 } from "../shopify";
+import { createNewsletterCustomer } from "../shopify-customers";
 
 export const shopifyRouter = router({
   // ── Products ─────────────────────────────────────────────────────
@@ -115,5 +116,13 @@ export const shopifyRouter = router({
     )
     .mutation(async ({ input }) => {
       return removeFromCart(input.cartId, input.lineIds);
+    }),
+
+  // ── Newsletter ──────────────────────────────────────────────────
+
+  newsletterSubscribe: publicProcedure
+    .input(z.object({ email: z.string().email() }))
+    .mutation(async ({ input }) => {
+      return createNewsletterCustomer(input.email);
     }),
 });

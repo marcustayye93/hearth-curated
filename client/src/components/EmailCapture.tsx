@@ -1,9 +1,11 @@
 // HEARTH CURATED — Email Capture Popup
 // Design: Minimal, editorial, exit-intent triggered
 // Shows once per session, stores dismissal in sessionStorage
+// Connected to Shopify Customers API via tRPC
 
 import { useState, useEffect, useCallback } from "react";
 import { X } from "lucide-react";
+import { trpc } from "@/lib/trpc";
 
 const STORAGE_KEY = "hc-email-popup-dismissed";
 
@@ -11,6 +13,10 @@ export default function EmailCapture() {
   const [visible, setVisible] = useState(false);
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  const subscribe = trpc.shopify.newsletterSubscribe.useMutation();
 
   const dismiss = useCallback(() => {
     setVisible(false);
@@ -42,12 +48,25 @@ export default function EmailCapture() {
     };
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email.trim()) return;
-    // In production: send to email service
-    setSubmitted(true);
-    setTimeout(dismiss, 2500);
+    if (!email.trim() || submitting) return;
+    setError("");
+    setSubmitting(true);
+
+    try {
+      const result = await subscribe.mutateAsync({ email: email.trim() });
+      if (result.success) {
+        setSubmitted(true);
+        setTimeout(dismiss, 2500);
+      } else {
+        setError(result.error ?? "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (!visible) return null;
@@ -128,16 +147,19 @@ export default function EmailCapture() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email address"
                   required
+                  disabled={submitting}
                   className="flex-1 px-4 py-3 text-sm outline-none"
                   style={{
                     border: "1px solid var(--hc-stone)",
                     backgroundColor: "transparent",
                     fontFamily: "'Karla', sans-serif",
                     color: "var(--hc-espresso)",
+                    opacity: submitting ? 0.6 : 1,
                   }}
                 />
                 <button
                   type="submit"
+                  disabled={submitting}
                   className="px-6 py-3 text-xs tracking-widest uppercase shrink-0 w-full sm:w-auto"
                   style={{
                     backgroundColor: "var(--hc-espresso)",
@@ -146,11 +168,20 @@ export default function EmailCapture() {
                     fontWeight: 500,
                     letterSpacing: "0.12em",
                     border: "1px solid var(--hc-espresso)",
+                    opacity: submitting ? 0.6 : 1,
                   }}
                 >
-                  Subscribe
+                  {submitting ? "Subscribing..." : "Subscribe"}
                 </button>
               </div>
+              {error && (
+                <p
+                  className="text-xs mt-2"
+                  style={{ fontFamily: "'Karla', sans-serif", color: "#c44" }}
+                >
+                  {error}
+                </p>
+              )}
             </form>
             <p
               className="text-[10px] mt-3"

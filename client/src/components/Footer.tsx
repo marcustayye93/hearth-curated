@@ -1,10 +1,41 @@
 // HEARTH CURATED — Footer Component
 // Design: Minimal, editorial — espresso background, parchment text
 // Aesop-style quote, newsletter signup, clean link columns
+// Connected to Shopify Customers API via tRPC
 
+import { useState } from "react";
 import { COLLECTIONS } from "@/lib/products";
+import { trpc } from "@/lib/trpc";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  const subscribe = trpc.shopify.newsletterSubscribe.useMutation();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email.trim() || submitting) return;
+    setError("");
+    setSubmitting(true);
+
+    try {
+      const result = await subscribe.mutateAsync({ email: email.trim() });
+      if (result.success) {
+        setSubmitted(true);
+        setEmail("");
+      } else {
+        setError(result.error ?? "Something went wrong.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <footer style={{ backgroundColor: "var(--hc-espresso)", color: "var(--hc-parchment)" }}>
       {/* Quote band */}
@@ -34,31 +65,57 @@ export default function Footer() {
         >
           New arrivals, considered essays, and occasional discoveries — delivered quietly.
         </p>
-        <form
-          className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-          onSubmit={(e) => e.preventDefault()}
-        >
-          <input
-            type="email"
-            placeholder="Your email address"
-            className="flex-1 px-4 py-3 text-sm bg-transparent outline-none"
-            style={{
-              border: "1px solid rgba(196,185,170,0.4)",
-              color: "var(--hc-parchment)",
-              fontFamily: "'Karla', sans-serif",
-            }}
-          />
-          <button
-            type="submit"
-            className="hc-btn-outline text-xs"
-            style={{
-              borderColor: "rgba(196,185,170,0.4)",
-              color: "var(--hc-parchment)",
-            }}
+        {submitted ? (
+          <p
+            className="text-sm"
+            style={{ color: "var(--hc-parchment)", fontFamily: "'Karla', sans-serif" }}
           >
-            Subscribe
-          </button>
-        </form>
+            Thank you — welcome to the Hearth.
+          </p>
+        ) : (
+          <>
+            <form
+              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+              onSubmit={handleSubmit}
+            >
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Your email address"
+                required
+                disabled={submitting}
+                className="flex-1 px-4 py-3 text-sm bg-transparent outline-none"
+                style={{
+                  border: "1px solid rgba(196,185,170,0.4)",
+                  color: "var(--hc-parchment)",
+                  fontFamily: "'Karla', sans-serif",
+                  opacity: submitting ? 0.6 : 1,
+                }}
+              />
+              <button
+                type="submit"
+                disabled={submitting}
+                className="hc-btn-outline text-xs"
+                style={{
+                  borderColor: "rgba(196,185,170,0.4)",
+                  color: "var(--hc-parchment)",
+                  opacity: submitting ? 0.6 : 1,
+                }}
+              >
+                {submitting ? "Subscribing..." : "Subscribe"}
+              </button>
+            </form>
+            {error && (
+              <p
+                className="text-xs mt-2"
+                style={{ fontFamily: "'Karla', sans-serif", color: "#e88" }}
+              >
+                {error}
+              </p>
+            )}
+          </>
+        )}
       </div>
 
       {/* Links */}
