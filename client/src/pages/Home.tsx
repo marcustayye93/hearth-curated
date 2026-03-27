@@ -96,7 +96,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--hc-parchment)" }}>
       <SEOHead
         title="Hearth Curated — Objects for the Intentional Home"
-        description="A curated selection of kitchen tools, home fragrance, botanicals, and artisan food — chosen for quiet utility and considered design. Free shipping over $75."
+        description="A curated selection of kitchen tools, home fragrance, botanicals, and artisan food — chosen for quiet utility and considered design. Free shipping over $60."
         canonicalPath="/"
         ogImage={HERO_IMAGE}
         ogImageAlt="Hearth Curated — handcrafted kitchen and home objects"

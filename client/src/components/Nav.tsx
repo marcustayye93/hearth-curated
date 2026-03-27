@@ -32,7 +32,7 @@ export default function Nav() {
         className="w-full text-center py-2.5 text-xs tracking-widest uppercase"
         style={{ backgroundColor: "var(--hc-espresso)", color: "var(--hc-parchment)" }}
       >
-        Complimentary shipping on orders over $75
+        Complimentary shipping on orders over $60
       </div>
 
       {/* Main nav */}

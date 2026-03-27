@@ -230,7 +230,7 @@ export default function ShippingReturns() {
     >
       <SEOHead
         title="Shipping & Returns — Hearth Curated"
-        description="Free shipping on orders over $75. Easy 14-day returns on all unused items. Learn about our shipping rates, delivery times, and return policy."
+        description="Free shipping on orders over $60. Easy 14-day returns on all unused items. Learn about our shipping rates, delivery times, and return policy."
         canonicalPath="/shipping-returns"
       />
       <Nav />
@@ -286,8 +286,8 @@ export default function ShippingReturns() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 max-w-4xl mx-auto">
               <PolicyCard
                 icon={Truck}
-                title="Free Over $75"
-                description="Complimentary standard shipping on all orders above $75 SGD within Singapore."
+                title="Free Over $60"
+                description="Complimentary standard shipping on all orders above $60 SGD within Singapore."
                 delay={0}
               />
               <PolicyCard
@@ -403,7 +403,7 @@ export default function ShippingReturns() {
                         {[
                           {
                             dest: "Singapore",
-                            rate: "Free over $75 / $5 flat",
+                            rate: "Free over $60 / $5 flat",
                             time: "3–5 business days",
                           },
                           {

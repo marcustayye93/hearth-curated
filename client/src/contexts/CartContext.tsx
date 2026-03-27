@@ -22,7 +22,7 @@ for (const product of PRODUCTS) {
   if (info) handleToStaticProduct.set(info.handle, product);
 }
 
-const FREE_SHIPPING_THRESHOLD = 75;
+const FREE_SHIPPING_THRESHOLD = 60;
 
 // ── Types ────────────────────────────────────────────────────────────
 

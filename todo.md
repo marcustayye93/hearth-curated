@@ -77,3 +77,18 @@
 - [x] Set old nourish-14 (acacia-salt-pepper-mill-v1) to unavailable (replaced by new import)
 - [ ] Fix Brass Wall Hooks (adorn-15) — Shopify inventory needs to be set (all variants unavailable)
 - [ ] Fix Ceramic Pour-Over Dripper (nourish-17) — Shopify inventory needs to be set (all variants unavailable)
+
+## Pricing Audit (March 27, 2026)
+- [x] Audit all 14 new product prices — check if AliExpress "welcome offer" prices were used instead of regular prices
+- [x] Compare catalog prices vs Shopify prices vs actual AliExpress regular prices
+- [x] Recalculate retail prices based on corrected COGS if needed
+- [x] Design CRO-driven pricing strategy with 4 product roles (Gateway, Hero, Workhorse, Anchor)
+
+## CRO Pricing Implementation (March 27, 2026)
+- [x] Apply CRO-driven pricing to all 52 products in products.ts
+- [x] Unlist Microwave Steamer Cover (already set available: false)
+- [x] Update free shipping threshold from $75 to $60 SGD in products.ts
+- [x] Update free shipping threshold in CartContext.tsx
+- [x] Update free shipping threshold in Nav.tsx, Product.tsx, Home.tsx, ShippingReturns.tsx
+- [x] Fix variant pricing outliers (Acacia Bowl, Magnetic Spice Tins, Brass Hooks, etc.)
+- [x] Run tests and verify all changes (35/35 passed)
