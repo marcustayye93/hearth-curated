@@ -110,3 +110,11 @@
 - [x] Removed placeholder links: Order Tracking, Sustainability, Press, Careers
 - [x] Added SEOHead to all three pages via LegalPageLayout component
 - [x] Verify TypeScript compiles and tests pass (35/35)
+
+## About Page Rewrite (March 27, 2026)
+- [x] Rewrite About page — removed fictional artisan sourcing narrative
+- [x] Focus on real curation process: searching, comparing, reviewing, testing
+- [x] Maintained editorial design quality and Aesop/Kinfolk aesthetic
+- [x] Kept all existing images and layout structure
+- [x] Updated hero headline, origin story, three principles, curation process, and promise sections
+- [x] All 35 tests passing
