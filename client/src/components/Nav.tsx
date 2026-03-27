@@ -45,18 +45,27 @@ export default function Nav() {
         }}
       >
         <div className="container flex items-center justify-between h-16 md:h-20">
-          {/* Left — hamburger */}
-          <button
-            onClick={() => setMenuOpen(true)}
-            className="flex items-center gap-2 p-1 -ml-1"
-            aria-label="Open menu"
-            style={{ color: "var(--hc-espresso)" }}
-          >
-            <Menu size={20} strokeWidth={1.5} />
-            <span className="hidden md:block text-xs tracking-widest uppercase" style={{ fontFamily: "'Karla', sans-serif" }}>
-              Menu
-            </span>
-          </button>
+          {/* Left — hamburger + nav links */}
+          <div className="flex items-center gap-6">
+            <button
+              onClick={() => setMenuOpen(true)}
+              className="flex items-center gap-2 p-1 -ml-1"
+              aria-label="Open menu"
+              style={{ color: "var(--hc-espresso)" }}
+            >
+              <Menu size={20} strokeWidth={1.5} />
+              <span className="hidden md:block text-xs tracking-widest uppercase" style={{ fontFamily: "'Karla', sans-serif" }}>
+                Menu
+              </span>
+            </button>
+            <Link
+              href="/shop"
+              className="hidden md:block text-xs tracking-widest uppercase transition-opacity hover:opacity-60"
+              style={{ fontFamily: "'Karla', sans-serif", color: "var(--hc-espresso)" }}
+            >
+              Shop All
+            </Link>
+          </div>
 
           {/* Centre — wordmark */}
           <Link href="/" className="absolute left-1/2 -translate-x-1/2">
@@ -129,6 +138,27 @@ export default function Nav() {
                 Close
               </span>
             </button>
+
+            {/* Shop All */}
+            <nav className="mb-10">
+              <Link
+                href="/shop"
+                className="block group"
+              >
+                <span
+                  className="text-3xl md:text-4xl tracking-tight transition-colors duration-200 group-hover:opacity-70"
+                  style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-parchment)", fontWeight: 400 }}
+                >
+                  Shop All
+                </span>
+                <span
+                  className="block text-xs tracking-widest uppercase mt-0.5"
+                  style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Browse our full collection
+                </span>
+              </Link>
+            </nav>
 
             {/* Collections */}
             <nav>

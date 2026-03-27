@@ -118,3 +118,13 @@
 - [x] Kept all existing images and layout structure
 - [x] Updated hero headline, origin story, three principles, curation process, and promise sections
 - [x] All 35 tests passing
+
+## Shopify Price Sync (March 27, 2026)
+- [x] Attempted Admin API sync — token lacks read_products/write_products scopes
+- [x] Generated Shopify-compatible CSV for bulk import (54 products, 157 variant rows)
+- [ ] User to import CSV via Shopify Admin → Products → Import
+
+## UI Updates (March 27, 2026)
+- [x] Change 'The Problem' to 'The Mission' on About page
+- [x] Fix 'View All Objects' button — now links to /shop (Shop All page)
+- [x] Add 'Shop All' to main navigation menu and side/mobile menu

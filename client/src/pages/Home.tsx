@@ -264,7 +264,7 @@ export default function Home() {
                 </h2>
               </div>
               <Link
-                href="/collections/gather"
+                href="/shop"
                 className="text-xs tracking-widest uppercase border-b pb-0.5 self-start md:self-auto"
                 style={{
                   color: "var(--hc-espresso)",

@@ -142,7 +142,7 @@ export default function About() {
               {/* Text — right, 7 cols */}
               <div className="md:col-span-7 md:pl-4">
                 <FadeUp delay={0.1}>
-                  <p className="hc-eyebrow mb-4">The Problem</p>
+                  <p className="hc-eyebrow mb-4">The Mission</p>
                 </FadeUp>
                 <FadeUp delay={0.15}>
                   <h2
