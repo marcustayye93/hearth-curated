@@ -92,3 +92,11 @@
 - [x] Update free shipping threshold in Nav.tsx, Product.tsx, Home.tsx, ShippingReturns.tsx
 - [x] Fix variant pricing outliers (Acacia Bowl, Magnetic Spice Tins, Brass Hooks, etc.)
 - [x] Run tests and verify all changes (35/35 passed)
+
+## Shipping Policy Redesign (March 27, 2026)
+- [x] Update Nav.tsx announcement bar to "Complimentary worldwide shipping on orders over $60"
+- [x] Update Product.tsx trust signals to "Free worldwide shipping over $60"
+- [x] Rewrite ShippingReturns.tsx — remove 4-zone table, replace with 2-tier (Asia-Pacific / International), honest delivery times, remove express
+- [x] Update Home.tsx SEO description
+- [x] Update FAQs — honest delivery times, remove express shipping references, update return policy
+- [x] Run tests and verify (35/35 passed)

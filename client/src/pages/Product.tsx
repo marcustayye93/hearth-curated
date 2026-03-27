@@ -231,7 +231,7 @@ export default function Product() {
                   className="text-xs text-center mb-6"
                   style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
                 >
-                  Complimentary shipping on orders over $60
+                  Complimentary worldwide shipping on orders over $60
                 </p>
 
                 <hr className="hc-divider mb-6" />
@@ -267,7 +267,7 @@ export default function Product() {
                   style={{ borderTop: "1px solid var(--hc-stone)" }}
                 >
                   {[
-                    { icon: Truck, label: "Free shipping over $60" },
+                    { icon: Truck, label: "Free worldwide shipping over $60" },
                     { icon: Shield, label: "Secure checkout" },
                     { icon: RotateCcw, label: "Easy returns" },
                   ].map(({ icon: Icon, label }) => (

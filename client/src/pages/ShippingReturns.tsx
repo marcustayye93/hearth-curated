@@ -181,12 +181,12 @@ const FAQS = [
   {
     question: "How long does standard shipping take?",
     answer:
-      "Standard shipping within Singapore takes 3–5 business days. Regional orders (Malaysia, Indonesia, Thailand, Philippines) typically arrive within 7–12 business days. International orders to all other destinations are estimated at 10–18 business days. Please note that customs processing may add 1–3 additional days for international shipments.",
+      "Orders to Asia-Pacific destinations (Singapore, Malaysia, Indonesia, Thailand, Philippines, Japan, Australia, and others) typically arrive within 7–15 business days. International orders to all other destinations are estimated at 15–25 business days. Please note that customs processing may add 1–3 additional days for international shipments.",
   },
   {
     question: "Do you offer express shipping?",
     answer:
-      "Yes. Express shipping is available for Singapore orders at a flat rate of $8 SGD, with delivery within 1–2 business days. Express shipping for regional destinations is available at checkout for $15 SGD, with delivery within 3–5 business days. Express international shipping is not currently available.",
+      "We currently ship all orders via the fastest available standard method. We are working to introduce expedited options in the future. All orders include tracking so you can follow your package every step of the way.",
   },
   {
     question: "How do I track my order?",
@@ -196,12 +196,12 @@ const FAQS = [
   {
     question: "What is your return policy?",
     answer:
-      "We accept returns within 14 days of delivery for unused, undamaged items in their original packaging. To initiate a return, email hello@hearthcurated.com with your order number and reason for return. We will provide a return shipping label for Singapore orders. For international returns, the customer is responsible for return shipping costs.",
+      "We accept returns within 14 days of delivery for unused, undamaged items in their original packaging. To initiate a return, email hello@hearthcurated.com with your order number and reason for return. Return shipping costs are the responsibility of the customer.",
   },
   {
     question: "Can I exchange an item for a different variant?",
     answer:
-      "Yes. If you would like a different size or colour of the same product, email us within 14 days of delivery and we will arrange an exchange at no additional cost (Singapore only). For international exchanges, a shipping difference may apply. Exchanges are subject to availability.",
+      "Yes. If you would like a different size or colour of the same product, email us within 14 days of delivery and we will arrange an exchange. Exchanges are subject to availability and the customer is responsible for return shipping.",
   },
   {
     question: "What if my item arrives damaged?",
@@ -230,7 +230,7 @@ export default function ShippingReturns() {
     >
       <SEOHead
         title="Shipping & Returns — Hearth Curated"
-        description="Free shipping on orders over $60. Easy 14-day returns on all unused items. Learn about our shipping rates, delivery times, and return policy."
+        description="Free worldwide shipping on orders over $60. $4.90 flat rate shipping worldwide. Easy 14-day returns on all unused items. Learn about our shipping rates, delivery times, and return policy."
         canonicalPath="/shipping-returns"
       />
       <Nav />
@@ -287,7 +287,7 @@ export default function ShippingReturns() {
               <PolicyCard
                 icon={Truck}
                 title="Free Over $60"
-                description="Complimentary standard shipping on all orders above $60 SGD within Singapore."
+                description="Complimentary worldwide shipping on all orders above $60 SGD. $4.90 flat rate on all other orders."
                 delay={0}
               />
               <PolicyCard
@@ -344,7 +344,7 @@ export default function ShippingReturns() {
                   }}
                 >
                   <p>
-                    We ship from Singapore to destinations worldwide. Every order
+                    We ship to destinations worldwide. Every order
                     is carefully packed within 1–2 business days of purchase. You
                     will receive a confirmation email with tracking details once
                     your order has been dispatched.
@@ -382,7 +382,7 @@ export default function ShippingReturns() {
                               color: "var(--hc-parchment)",
                             }}
                           >
-                            Standard
+                            Standard Rate
                           </th>
                           <th
                             className="px-5 py-3.5"
@@ -402,24 +402,14 @@ export default function ShippingReturns() {
                       <tbody>
                         {[
                           {
-                            dest: "Singapore",
-                            rate: "Free over $60 / $5 flat",
-                            time: "3–5 business days",
-                          },
-                          {
-                            dest: "Malaysia, Indonesia, Thailand, Philippines",
-                            rate: "$12 SGD",
-                            time: "7–12 business days",
-                          },
-                          {
-                            dest: "Rest of Asia-Pacific",
-                            rate: "$18 SGD",
-                            time: "10–15 business days",
+                            dest: "Asia-Pacific",
+                            rate: "Free over $60 / $4.90 flat",
+                            time: "7–15 business days",
                           },
                           {
                             dest: "International",
-                            rate: "$25 SGD",
-                            time: "10–18 business days",
+                            rate: "Free over $60 / $4.90 flat",
+                            time: "15–25 business days",
                           },
                         ].map((row, i) => (
                           <tr
@@ -470,12 +460,9 @@ export default function ShippingReturns() {
                   </div>
 
                   <p>
-                    <strong style={{ color: "var(--hc-espresso)", fontWeight: 600 }}>
-                      Express shipping
-                    </strong>{" "}
-                    is available for Singapore ($8 SGD, 1–2 business days) and
-                    regional destinations ($15 SGD, 3–5 business days). Express
-                    options will appear at checkout where available.
+                    All orders are shipped via the fastest available standard
+                    method and include full tracking. You will receive your
+                    tracking number by email within 24 hours of dispatch.
                   </p>
 
                   <p>
