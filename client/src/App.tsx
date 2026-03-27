@@ -14,6 +14,9 @@ import Collection from "./pages/Collection";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import ShippingReturns from "./pages/ShippingReturns";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import RefundPolicy from "./pages/RefundPolicy";
 function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
@@ -33,6 +36,9 @@ function Router() {
         <Route path="/products/:slug" component={Product} />
         <Route path="/about" component={About} />
         <Route path="/shipping-returns" component={ShippingReturns} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-of-service" component={TermsOfService} />
+        <Route path="/refund-policy" component={RefundPolicy} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

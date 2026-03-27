@@ -131,11 +131,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/refund-policy"
                   className="text-xs tracking-wide transition-opacity hover:opacity-60"
                   style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
                 >
-                  Order Tracking
+                  Refund Policy
                 </a>
               </li>
             </ul>
@@ -154,17 +154,24 @@ export default function Footer() {
                   Our Story
                 </a>
               </li>
-              {["Sustainability", "Press", "Careers"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-xs tracking-wide transition-opacity hover:opacity-60"
-                    style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="/privacy-policy"
+                  className="text-xs tracking-wide transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/terms-of-service"
+                  className="text-xs tracking-wide transition-opacity hover:opacity-60"
+                  style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
+                >
+                  Terms of Service
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -181,16 +188,27 @@ export default function Footer() {
             © 2026 Hearth Curated. All rights reserved.
           </p>
           <div className="flex flex-wrap gap-4 sm:gap-6">
-            {["Privacy Policy", "Terms of Service", "Refund Policy"].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="text-xs transition-opacity hover:opacity-60"
-                style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
-              >
-                {item}
-              </a>
-            ))}
+            <a
+              href="/privacy-policy"
+              className="text-xs transition-opacity hover:opacity-60"
+              style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms-of-service"
+              className="text-xs transition-opacity hover:opacity-60"
+              style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+            >
+              Terms of Service
+            </a>
+            <a
+              href="/refund-policy"
+              className="text-xs transition-opacity hover:opacity-60"
+              style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+            >
+              Refund Policy
+            </a>
           </div>
         </div>
       </div>

@@ -100,3 +100,13 @@
 - [x] Update Home.tsx SEO description
 - [x] Update FAQs — honest delivery times, remove express shipping references, update return policy
 - [x] Run tests and verify (35/35 passed)
+
+## Legal Pages (March 27, 2026)
+- [x] Create Privacy Policy page (/privacy-policy) — GDPR, CCPA, PDPA compliant
+- [x] Create Terms of Service page (/terms-of-service) — e-commerce worldwide standard
+- [x] Create Refund Policy page (/refund-policy) — aligned with actual shipping/returns policy
+- [x] Register all three routes in App.tsx
+- [x] Update Footer.tsx — replaced all placeholder # links with real routes
+- [x] Removed placeholder links: Order Tracking, Sustainability, Press, Careers
+- [x] Added SEOHead to all three pages via LegalPageLayout component
+- [x] Verify TypeScript compiles and tests pass (35/35)
