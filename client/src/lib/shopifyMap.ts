@@ -543,6 +543,16 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59243760975953", title: "10 Inch 1Pcs", price: 25.12, available: true },
     ],
   },
+
+  // ── NEW GATHER EXPANSION (CJ Dropshipping — not yet connected) ──
+  "japanese-matcha-ceremony-set": null,
+  "bamboo-matcha-whisk": null,
+  "ceramic-matcha-bowl": null,
+  "handmade-stoneware-espresso-cup": null,
+  "vintage-stoneware-coffee-mug": null,
+  "round-acacia-plate-small": null,
+  "round-acacia-plate-large": null,
+  "acacia-snack-board": null,
 };
 
 /**

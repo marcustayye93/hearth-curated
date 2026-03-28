@@ -179,3 +179,19 @@
 - [x] Replace updated images on the site
 - [x] Add dimension photos as additional product images
 - [x] Build image gallery with thumbnail navigation on Product page
+
+## New Product Expansion — CJ Dropshipping (March 28, 2026)
+- [x] Add new product: Japanese Matcha Ceremony Set (6-piece)
+- [x] Add new product: Bamboo Matcha Whisk (Chasen)
+- [x] Add new product: Ceramic Matcha Bowl (Chawan)
+- [x] Add new product: Handmade Stoneware Espresso Cup
+- [x] Add new product: Vintage Stoneware Coffee Mug
+- [x] Add new product: Round Acacia Serving Plate — 20cm
+- [x] Add new product: Round Acacia Serving Plate — 25cm
+- [x] Add new product: Acacia Wood Snack Board with Compartments
+- [x] Generate product images for all 8 new products
+- [x] Write product descriptions and copy for all 8 new products
+- [x] Add all 8 products to products.ts with pricing and collection assignment
+- [x] Add null entries to shopifyMap.ts (CJ Dropshipping not yet connected)
+- [x] Verify all 8 products display correctly on GATHER collection page (21 objects)
+- [x] Verify product detail pages render correctly with images, descriptions, and cross-sells
