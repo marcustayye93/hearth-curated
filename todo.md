@@ -159,3 +159,23 @@
 - [x] Updated shopifyMap.ts with new Shopify variant IDs for all 8 products
 - [x] CRO-optimized prices set during product creation (no separate sync needed)
 - [x] All 40 tests passing, dev server healthy
+
+## Image Audit (March 28, 2026)
+- [ ] Compare all AI-generated product images against original Shopify photos
+- [ ] Identify products where generated image has lost likeness to original
+- [ ] Compile report with findings
+
+## Image Regeneration (March 28, 2026)
+- [ ] Document key characteristics of 15 original Shopify products (13 POOR + 2 MODERATE)
+- [ ] Regenerate product images with brand guidelines matching original product features
+- [ ] Create side-by-side comparisons for user review
+- [ ] Replace approved images on the site
+
+## Image Fixes & Dimension Photos (March 28, 2026)
+- [x] Regenerate Ceramic Scented Candle to better match original
+- [x] Regenerate Faux Olive Branch with longer stem
+- [x] Identify all products with dimensions listed (15 products)
+- [x] Generate dimension photos for 15 products with dimensions
+- [x] Replace updated images on the site
+- [x] Add dimension photos as additional product images
+- [x] Build image gallery with thumbnail navigation on Product page

@@ -26,6 +26,7 @@ export interface Product {
   crossSells?: string[]; // product IDs for "You may also like"
   available: boolean; // false = all variants unavailable in Shopify
   hookLine?: string; // one-line descriptor for product cards
+  images?: string[]; // Additional product images (dimension photos, lifestyle shots, etc.)
   shopifyHandle?: string; // Shopify product handle for API lookups
   shopifyVariantId?: string; // Default Shopify variant GID (for products without variants)
 }
@@ -60,6 +61,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-1_bee01ee4_3984075e.webp",
     tags: ["coasters", "moroccan", "wood", "tabletop"],
     notes: "Set of 8 · 10cm diameter · Natural wood backing",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-moroccan-coasters-5rLNxkYmczi7Yeoa3Wy2eh.webp"],
     available: true,
     crossSells: ["gather-3", "gather-7", "adorn-8"],
   },
@@ -77,6 +79,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-2_fefc2804_c3af67f3.webp",
     tags: ["bowl", "acacia", "wood", "japanese"],
     notes: "Solid acacia · Hand-wash · Develops patina",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-acacia-serving-bowl-3hNr4zaahSNV5TYJXdhEAw.webp"],
     available: true,
     variants: [
       { id: "gather-2-s", label: "Small (12×6cm)", price: 58.0, available: true },
@@ -102,6 +105,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-3_62131da8_b12fb5bf.webp",
     tags: ["tray", "wood", "serving", "hosting"],
     notes: "Natural grain · Integrated handles · 3 sizes",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-chopping-board-cQ3z6sRTki9p47xDsrbxUT.webp"],
     available: true,
     variants: [
       { id: "gather-3-s", label: "Small (33×22cm)", price: 72.0, available: true },
@@ -371,6 +375,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-5_af19b9dd_7f11c838.webp",
     tags: ["plate", "moroccan", "wall-art", "aluminium"],
     notes: "Aluminium · 20×20cm · Flush mount",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-moroccan-wall-plate-BAEi4hYihjyaHvrMUkzFBs.webp"],
     available: true,
     crossSells: ["adorn-4", "adorn-3", "gather-1"],
   },
@@ -405,6 +410,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-7_a6d7867e_421146b9.webp",
     tags: ["light", "cabinet", "motion-sensor", "rechargeable"],
     notes: "USB-C · Magnetic mount · 5 lengths",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-bamboo-lamp-36nKL3b28Y8jttWQsPJFhe.webp"],
     available: true,
     variants: [
       { id: "adorn-7-s10", label: "Silver / 10cm", price: 36.0, available: true },
@@ -454,7 +460,7 @@ export const PRODUCTS: Product[] = [
     price: 78.0,
     collection: "ADORN",
     collectionSlug: "adorn",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-9_8febe5f2_2939ffb2.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-ceramic-scented-candle-v2-RcXprdpz4ZwfRUDaFjxt8n.webp",
     tags: ["candle", "soy-wax", "ceramic", "handmade"],
     notes: "220g · Hand-poured · Reusable vessel",
     available: true,
@@ -502,6 +508,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80",
     tags: ["mirror", "self-adhesive", "frameless", "wall"],
     notes: "20×40 inch · Shatter-resistant · Trimmable",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-wall-mirror-mqXhpC5cbTGPmVYiMDhvhb.webp"],
     available: false,
     variants: [
       { id: "adorn-11-single", label: "Single Panel", price: 56.0, available: false },
@@ -601,7 +608,8 @@ export const PRODUCTS: Product[] = [
     price: 24.0,
     collection: "BLOOM",
     collectionSlug: "bloom",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-3_c043d7cf_f67d4efe.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-faux-olive-branch-v2-Yi2AfEG846a6TGzSbY38i9.webp",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-olive-branch-evFukUigBKVXLpvD3SmcKm.webp"],
     tags: ["olive", "faux", "branch", "silk"],
     notes: "113cm · Wired stem · Dust-resistant silk",
     available: true,
@@ -621,6 +629,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-4_755176a6_3b16a865.webp",
     tags: ["pampas", "dried", "bouquet", "boho"],
     notes: "Natural dried · 30–45cm tall · 3 sizes",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-pampas-grass-QuAeUKifwRDjEUVTn87irP.webp"],
     available: true,
     variants: [
       { id: "bloom-4-petite", label: "Petite (30 stems)", price: 38.0, available: true },
@@ -643,6 +652,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-5_d1a5ef15_6225bc35.webp",
     tags: ["wreath", "cedar", "artificial", "evergreen"],
     notes: "40cm diameter · Year-round display · No maintenance",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-cedar-wreath-nEGLXCSUAsCA8Yv8z2d3SC.webp"],
     available: true,
     crossSells: ["bloom-3", "bloom-4", "adorn-10"],
   },
@@ -843,6 +853,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nourish-10_bbff6a48_ac604d70.webp",
     tags: ["cutting-board", "teak", "wood", "premium"],
     notes: "Solid teak · 1 inch thick · Antimicrobial",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-teak-carving-board-K6ER83jyLDmZrGYWBDBQpT.webp"],
     available: true,
     variants: [
       { id: "nourish-10-s", label: "Standard (13.3×9.5\")", price: 88.0, available: true },
@@ -989,6 +1000,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/0_yEnfSLP6vxQbcxGMWtteP7_1774599066121_na1fn_L2hvbWUvdWJ1bnR1L2xpbmVuX3RhYmxlX25hcGtpbnM_292a79c2_68aeea96.webp",
     tags: ["napkins", "linen", "hemstitch", "tabletop", "entertaining"],
     notes: "Set of 4 · Natural linen · Hemstitched edges",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-linen-napkins-DoUHgeFkdu8DjQ3HBqa6Wb.webp"],
     available: true,
     variants: [
       { id: "gather-11-grey-s", label: "Linen Grey / Cocktail (20×20cm)", price: 38.0, available: true },
@@ -1057,6 +1069,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/3_peZFc31SZBd42XjBrRwPaY_1774599125668_na1fn_L2hvbWUvdWJ1bnR1L2xpbmVuX2N1c2hpb25fY292ZXI_acc2473b_348a64ab.webp",
     tags: ["cushion", "linen", "textile", "sofa", "living-room"],
     notes: "Linen-cotton blend · Invisible zip · Cover only (no insert)",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-cushion-cover-FLrCkAFVHPXjXQDfRkazY3.webp"],
     available: true,
     variants: [
       { id: "adorn-14-nat-s", label: "Natural Linen / 45×45cm", price: 38.0, available: true },
@@ -1111,6 +1124,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/5_vuklseE9dxJx7voH81mTnb_1774599096409_na1fn_L2hvbWUvdWJ1bnR1L3NpbGVuY2VfZmlndXJpbmU_09e5f1f5_918fb661.webp",
     tags: ["figurine", "sculpture", "resin", "decorative", "abstract"],
     notes: "Resin · Matte finish · Approx. 15cm tall",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-silence-figurine-n783iHifgVccnjtb8s36QR.webp"],
     available: true,
     variants: [
       { id: "adorn-16-blk", label: "Black", price: 28.0, available: true },
@@ -1134,6 +1148,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/6_fHJUqkKi4c7Unhzj6aoCO2_1774599072046_na1fn_L2hvbWUvdWJ1bnR1L2ZhdXhfZXVjYWx5cHR1c19nYXJsYW5k_3fd2826d_aab2c8ab.webp",
     tags: ["garland", "eucalyptus", "faux", "greenery", "mantelpiece"],
     notes: "180cm length · Flexible wire stem · White berry accents",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-eucalyptus-garland-JaKcKMLqs4zXNAeXgxzYZp.webp"],
     available: true,
     crossSells: ["bloom-1", "bloom-3", "bloom-7"],
   },
@@ -1194,6 +1209,7 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/9_4iyk7eMY8UfOilNiocHjL3_1774599065053_na1fn_L2hvbWUvdWJ1bnR1L2ZhdXhfZmlkZGxlX2xlYWZfZmln_31bc724f_8474253d.webp",
     tags: ["fiddle-leaf", "faux", "plant", "statement", "greenery"],
     notes: "Realistic texture · Multiple heights · No maintenance",
+    images: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dim-fiddle-leaf-fig-Ka3braJuWFgApWMN9RmCsS.webp"],
     available: true,
     variants: [
       { id: "bloom-9-70", label: "Single Branch (70cm)", price: 48.0, available: true },

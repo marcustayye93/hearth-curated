@@ -28,6 +28,14 @@ export default function Product() {
     ? selectedVariant.available
     : product?.available ?? false;
 
+  // Image gallery: main image first, then additional images (dimension photos, etc.)
+  const allImages = useMemo(() => {
+    const imgs = [product?.image].filter(Boolean) as string[];
+    if (product?.images) imgs.push(...product.images);
+    return imgs;
+  }, [product]);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
   // Cross-sells
   const crossSells = useMemo(
     () => (product ? getCrossSells(product) : []),
@@ -111,33 +119,66 @@ export default function Product() {
         <section className="py-10 md:py-16">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-20">
-              {/* ── IMAGE ──────────────────────────────────────── */}
-              <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover"
-                  fetchPriority="high"
-                  decoding="async"
-                  width={800}
-                  height={1067}
-                />
-                {!isAvailable && (
-                  <div
-                    className="absolute inset-0 flex items-center justify-center"
-                    style={{ backgroundColor: "rgba(28,16,8,0.4)" }}
-                  >
-                    <span
-                      className="text-xs tracking-widest uppercase px-4 py-2"
-                      style={{
-                        backgroundColor: "var(--hc-parchment)",
-                        color: "var(--hc-espresso)",
-                        fontFamily: "'Karla', sans-serif",
-                        fontWeight: 500,
-                      }}
+              {/* ── IMAGE GALLERY ────────────────────────────── */}
+              <div className="flex flex-col gap-3">
+                {/* Main image */}
+                <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
+                  <img
+                    src={allImages[activeImageIndex] || product.image}
+                    alt={activeImageIndex === 0 ? product.name : `${product.name} — Dimensions`}
+                    className="w-full h-full object-cover transition-opacity duration-300"
+                    fetchPriority="high"
+                    decoding="async"
+                    width={800}
+                    height={1067}
+                  />
+                  {!isAvailable && (
+                    <div
+                      className="absolute inset-0 flex items-center justify-center"
+                      style={{ backgroundColor: "rgba(28,16,8,0.4)" }}
                     >
-                      Returning Soon
-                    </span>
+                      <span
+                        className="text-xs tracking-widest uppercase px-4 py-2"
+                        style={{
+                          backgroundColor: "var(--hc-parchment)",
+                          color: "var(--hc-espresso)",
+                          fontFamily: "'Karla', sans-serif",
+                          fontWeight: 500,
+                        }}
+                      >
+                        Returning Soon
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Thumbnail strip — only show if there are additional images */}
+                {allImages.length > 1 && (
+                  <div className="flex gap-2">
+                    {allImages.map((img, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setActiveImageIndex(idx)}
+                        className="relative overflow-hidden transition-all duration-200"
+                        style={{
+                          width: "64px",
+                          height: "64px",
+                          flexShrink: 0,
+                          border: idx === activeImageIndex
+                            ? "2px solid var(--hc-espresso)"
+                            : "1px solid var(--hc-stone)",
+                          opacity: idx === activeImageIndex ? 1 : 0.6,
+                        }}
+                      >
+                        <img
+                          src={img}
+                          alt={idx === 0 ? product.name : `${product.name} — Dimensions`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </button>
+                    ))}
                   </div>
                 )}
               </div>
