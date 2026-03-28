@@ -553,6 +553,12 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
   "round-acacia-plate-small": null,
   "round-acacia-plate-large": null,
   "acacia-snack-board": null,
+  // ── NEW AUTODS PRODUCTS (March 28, 2026) ──
+  "natural-wooden-fruit-bowl": null,
+  "ceramic-side-dish-plates": null,
+  "retro-stoneware-set": null,
+  "matcha-ceremony-bowl-whisk": null,
+  "nordic-waffle-throw-blanket": null,
 };
 
 /**

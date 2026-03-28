@@ -195,3 +195,17 @@
 - [x] Add null entries to shopifyMap.ts (CJ Dropshipping not yet connected)
 - [x] Verify all 8 products display correctly on GATHER collection page (21 objects)
 - [x] Verify product detail pages render correctly with images, descriptions, and cross-sells
+
+## New AutoDS Products — CJ Dropshipping (March 28, 2026)
+- [x] Add new product: Kitchen Natural Wooden Bowl (Fruit/Salad Bowl)
+- [x] Add new product: Household Dinner Exquisite Snack Kimchi Serving Dishes (Ceramic Plates)
+- [x] Add new product: Retro Bowls and Plates (Ceramic)
+- [x] Add new product: Matcha Bowl Japanese Matcha Tea Set Matcha Brush
+- [x] Add new product: Nordic Chunky Knit Throw Blanket (Waffle Embossed)
+- [x] Generate AI product images for all 5 new products
+- [x] Write editorial product descriptions for all 5 new products
+- [x] Upload images to CDN
+- [x] Add all 5 products to products.ts with pricing and collection assignment
+- [x] Add entries to shopifyMap.ts
+- [x] Verify products display correctly on collection pages (TypeScript compiles, 40 tests pass)
+- [x] Run tests and save checkpoint (40/40 tests passing)
