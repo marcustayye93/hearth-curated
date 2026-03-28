@@ -12,11 +12,11 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 
 const HERO_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/about-hero-4gESyxisMgDHeNSkjTkoYU.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/about-hero-4gESyxisMgDHeNSkjTkoYU_970778ce.webp";
 const ORIGIN_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/about-origin-UU4bPSvs8Ss29MxGm8hi3o.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/about-origin-UU4bPSvs8Ss29MxGm8hi3o_9b4513a4.webp";
 const HANDS_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/about-hands-9xGFaW7GdoAJ58ktC9zTvi.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/about-hands-9xGFaW7GdoAJ58ktC9zTvi_b3081f1f.webp";
 
 /* ── Scroll-triggered fade-up ─────────────────────────────────── */
 function FadeUp({
@@ -87,6 +87,8 @@ export default function About() {
             src={HERO_IMG}
             alt="Hearth Curated — objects arranged with intention"
             className="absolute inset-0 w-full h-full object-cover object-center"
+            fetchPriority="high"
+            decoding="async"
           />
           <div
             className="absolute inset-0"
@@ -135,6 +137,8 @@ export default function About() {
                     src={ORIGIN_IMG}
                     alt="Curated objects on a kitchen table — ceramic mug, wooden spoon, linen"
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </FadeUp>
@@ -355,6 +359,8 @@ export default function About() {
                     src={HANDS_IMG}
                     alt="Carefully selected home objects arranged on a surface"
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </FadeUp>

@@ -117,6 +117,10 @@ export default function Product() {
                   src={product.image}
                   alt={product.name}
                   className="w-full h-full object-cover"
+                  fetchPriority="high"
+                  decoding="async"
+                  width={800}
+                  height={1067}
                 />
                 {!isAvailable && (
                   <div
@@ -311,6 +315,10 @@ export default function Product() {
                         src={rel.image}
                         alt={rel.name}
                         className="w-full h-full object-cover hc-product-img"
+                        loading="lazy"
+                        decoding="async"
+                        width={800}
+                        height={1067}
                       />
                     </div>
                     <p

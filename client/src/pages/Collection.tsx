@@ -33,6 +33,10 @@ function ProductCard({ product }: { product: Product }) {
           src={product.image}
           alt={product.name}
           className="w-full h-full object-cover hc-product-img"
+          loading="lazy"
+          decoding="async"
+          width={800}
+          height={1067}
         />
         {/* Quick Add button — desktop hover */}
         {product.available && (
@@ -145,6 +149,8 @@ export default function Collection() {
             src={collection.image}
             alt={collection.name}
             className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
           />
           <div
             className="absolute inset-0"
@@ -216,6 +222,8 @@ export default function Collection() {
                       src={col.image}
                       alt={col.name}
                       className="w-full h-full object-cover hc-product-img"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <p

@@ -34,6 +34,10 @@ function ProductCard({ product }: { product: Product }) {
           src={product.image}
           alt={product.name}
           className="w-full h-full object-cover hc-product-img"
+          loading="lazy"
+          decoding="async"
+          width={800}
+          height={1067}
         />
         {/* Quick Add button — desktop hover */}
         {product.available && (

@@ -133,3 +133,13 @@
 - [x] Connect email capture (footer + popup) to Shopify Customers API
 - [x] Design custom HC logo for Hearth Curated
 - [x] Set HC logo as browser favicon/thumbnail
+
+## Performance Optimization (March 28, 2026)
+- [x] Audit all image URLs and sizes (CDN originals vs compressed)
+- [x] Switch all 57 images to compressed WebP (total: 3.8MB vs ~300MB before = 99% reduction)
+- [x] Add lazy loading (loading="lazy") to all below-fold images
+- [x] Add width/height attributes to prevent layout shift
+- [x] Resized product images to 800px, hero/collection to 1600px (from 2048px originals)
+- [x] Reduce hero image size (113KB → 54KB WebP)
+- [x] Added fetchPriority="high" to hero images, decoding="async" to all images
+- [x] aspectRatio containers prevent layout shift while images load

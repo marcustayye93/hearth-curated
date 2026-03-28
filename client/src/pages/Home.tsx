@@ -12,7 +12,7 @@ import { COLLECTIONS, PRODUCTS, type Product, getShopifyVariantGid } from "@/lib
 import { useCart } from "@/contexts/CartContext";
 import SEOHead from "@/components/SEOHead";
 
-const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/hero-banner-v2-WGnoQge2ivaCcYKVnDSYX9.webp";
+const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/hero-banner-v2-WGnoQge2ivaCcYKVnDSYX9_240f3315.webp";
 
 // Top 8 available products for featured section
 const FEATURED_PRODUCTS = PRODUCTS.filter((p) => p.available).slice(0, 8);
@@ -36,6 +36,10 @@ function FeaturedCard({ product }: { product: Product }) {
           src={product.image}
           alt={product.name}
           className="w-full h-full object-cover hc-product-img"
+          loading="lazy"
+          decoding="async"
+          width={800}
+          height={1067}
         />
         {product.available && (
           <button
@@ -110,6 +114,8 @@ export default function Home() {
             src={HERO_IMAGE}
             alt="Hearth Curated — Objects for the intentional home"
             className="absolute inset-0 w-full h-full object-cover object-center"
+            fetchPriority="high"
+            decoding="async"
           />
           {/* Subtle dark overlay on left for text legibility */}
           {/* Gradient overlay — wider on mobile for text legibility */}
@@ -183,6 +189,10 @@ export default function Home() {
                       src={col.image}
                       alt={col.name}
                       className="w-full h-full object-cover hc-product-img"
+                      loading="lazy"
+                      decoding="async"
+                      width={1600}
+                      height={1200}
                     />
                     {/* Overlay */}
                     <div
@@ -294,9 +304,11 @@ export default function Home() {
             {/* Image */}
             <div className="relative overflow-hidden" style={{ minHeight: "300px" }}>
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-gather_87a9bb21.jpg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-gather_87a9bb21_7f1ded38.webp"
                 alt="GATHER Collection"
                 className="w-full h-full object-cover absolute inset-0"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             {/* Text */}
@@ -355,9 +367,11 @@ export default function Home() {
             {/* Image — right on desktop */}
             <div className="relative overflow-hidden order-1 md:order-2" style={{ minHeight: "300px" }}>
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-adorn_18502690.jpg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-adorn_18502690_c51d6d47.webp"
                 alt="ADORN Collection"
                 className="w-full h-full object-cover absolute inset-0"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -373,14 +387,14 @@ export default function Home() {
                   name: "BLOOM",
                   tagline: "Everlasting Greenery",
                   copy: "Botanicals, florals, plants, and garden accessories. Living and living-adjacent objects that bring the outside in.",
-                  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-bloom_bb15969d.jpg",
+                  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-bloom_bb15969d_44bea310.webp",
                 },
                 {
                   slug: "nourish",
                   name: "NOURISH",
                   tagline: "The Ritual of Cooking",
                   copy: "Artisan food and drink for the intentional cook. Consumables and ingredients that transform cooking from a task into a ritual.",
-                  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663458969613/5KGFFWkvMdM9vM3nKPm88B/collection-nourish-9ACpb36EeNaEewRWfkFqCs.webp",
+                  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-nourish-9ACpb36EeNaEewRWfkFqCs_9eacb58a.webp",
                 },
               ].map((col) => (
                 <Link key={col.slug} href={`/collections/${col.slug}`} className="group block">
@@ -389,6 +403,8 @@ export default function Home() {
                       src={col.image}
                       alt={col.name}
                       className="w-full h-full object-cover hc-product-img"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <p className="hc-eyebrow mb-2">{col.tagline}</p>
