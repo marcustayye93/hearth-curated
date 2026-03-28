@@ -559,10 +559,33 @@ function normalizeCollection(raw: ShopifyCollection): NormalizedCollection {
   };
 }
 
+/**
+ * Rewrite checkout URL to use the .myshopify.com domain.
+ * Shopify returns checkout URLs using the store's primary custom domain (hearthcurated.com),
+ * but since that domain points to our Manus-hosted storefront (not Shopify), the checkout
+ * URL would 404. We swap the hostname to the .myshopify.com domain which always routes
+ * to Shopify's checkout servers.
+ */
+function rewriteCheckoutUrl(url: string): string {
+  const myshopifyDomain = process.env.SHOPIFY_STORE_DOMAIN;
+  if (!myshopifyDomain) return url;
+  try {
+    const parsed = new URL(url);
+    // Only rewrite if it's NOT already a .myshopify.com URL
+    if (!parsed.hostname.endsWith('.myshopify.com')) {
+      parsed.hostname = myshopifyDomain;
+      return parsed.toString();
+    }
+    return url;
+  } catch {
+    return url;
+  }
+}
+
 function normalizeCart(raw: ShopifyCart): NormalizedCart {
   return {
     id: raw.id,
-    checkoutUrl: raw.checkoutUrl,
+    checkoutUrl: rewriteCheckoutUrl(raw.checkoutUrl),
     totalQuantity: raw.totalQuantity,
     cost: {
       total: parseFloat(raw.cost.totalAmount.amount),
