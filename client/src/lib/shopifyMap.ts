@@ -90,10 +90,10 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "cherry-stone-fruit-pitter": {
-    handle: "joie-cherry-pitter-fruit-corer-kitchen-tools-cooking-tools-fruit-core-remove-tool-kitchen-gadget",
-    shopifyId: "gid://shopify/Product/15733069545553",
+    handle: "cherry-stone-fruit-pitter-single-press-with-splash-guard",
+    shopifyId: "gid://shopify/Product/15737818644561",
     variants: [
-      { id: "gid://shopify/ProductVariant/59232890257489", title: "Cherry Pitter", price: 35.35, available: true },
+      { id: "gid://shopify/ProductVariant/59248122232913", title: "Default Title", price: 58, available: true },
     ],
   },
   "multi-function-grater": {
@@ -124,10 +124,10 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "rapid-defrosting-board": {
-    handle: "defrosting-tray-fast-defrost-tray-thaw-tray-metal-aluminum-fast-food-meat-defrosting-thawing-tray-plate-home-kitchen-gadget",
-    shopifyId: "gid://shopify/Product/15733069840465",
+    handle: "rapid-defrosting-board-aluminium-thawing-plate",
+    shopifyId: "gid://shopify/Product/15737818710097",
     variants: [
-      { id: "gid://shopify/ProductVariant/59232891109457", title: "1Pcs", price: 13.02, available: true },
+      { id: "gid://shopify/ProductVariant/59248122298449", title: "Default Title", price: 22, available: true },
     ],
   },
   "electronic-precision-measuring-spoon": null,
@@ -297,10 +297,10 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "dried-cotton-stem": {
-    handle: "handmade-home-decor-fake-flower-floral-branch-cotton-stem-dried-cotton-flower-artificial-plants",
-    shopifyId: "gid://shopify/Product/15734963667025",
+    handle: "dried-cotton-stem-natural-botanical-accent",
+    shopifyId: "gid://shopify/Product/15737818579025",
     variants: [
-      { id: "gid://shopify/ProductVariant/59241557688401", title: "White", price: 3.68, available: true },
+      { id: "gid://shopify/ProductVariant/59248122167377", title: "Default Title", price: 9, available: true },
     ],
   },
   "midnight-marine-eau-de-parfum": {
@@ -353,10 +353,10 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "airtight-pantry-container": {
-    handle: "2-5l-covered-moisture-proof-sealed-storage-container-used-for-grain-nut-flour-rice-food-storage-boxes",
-    shopifyId: "gid://shopify/Product/15733069578321",
+    handle: "airtight-pantry-container-2-5l-moisture-proof",
+    shopifyId: "gid://shopify/Product/15737818677329",
     variants: [
-      { id: "gid://shopify/ProductVariant/59232890290257", title: "White", price: 14.71, available: true },
+      { id: "gid://shopify/ProductVariant/59248122265681", title: "Default Title", price: 28, available: true },
     ],
   },
   "borosilicate-vacuum-canister": {
@@ -396,10 +396,10 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "compartment-meal-container": {
-    handle: "food-grade-pet-portable-salad-box-leak-proof-condiment-compartment-food-storage-box-light-meal-lunch-box-for-office-workers",
-    shopifyId: "gid://shopify/Product/15733069250641",
+    handle: "compartment-meal-container-leak-proof-design",
+    shopifyId: "gid://shopify/Product/15737818611793",
     variants: [
-      { id: "gid://shopify/ProductVariant/59232889471057", title: "As Shown", price: 30.13, available: true },
+      { id: "gid://shopify/ProductVariant/59248122200145", title: "Default Title", price: 52, available: true },
     ],
   },
 
@@ -479,12 +479,12 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "glass-propagation-vases": {
-    handle: "glass-vase-hydroponic-plant-container-desktop-planter-wooden-vase-stand-bulb-water-plant-terrarium",
-    shopifyId: "gid://shopify/Product/15735272734801",
+    handle: "glass-propagation-vases-bulb-shaped-on-wooden-stand",
+    shopifyId: "gid://shopify/Product/15737819201617",
     variants: [
-      { id: "gid://shopify/ProductVariant/59243761303633", title: "Style A", price: 13.14, available: true },
-      { id: "gid://shopify/ProductVariant/59243761336401", title: "Style B", price: 14.73, available: true },
-      { id: "gid://shopify/ProductVariant/59243761369169", title: "Style C", price: 11.62, available: true },
+      { id: "gid://shopify/ProductVariant/59248124330065", title: "Style A (3 bulbs)", price: 36, available: true },
+      { id: "gid://shopify/ProductVariant/59248124362833", title: "Style B (5 bulbs)", price: 42, available: true },
+      { id: "gid://shopify/ProductVariant/59248124395601", title: "Style C (single)", price: 32, available: true },
     ],
   },
   "dried-lavender-bundle": {
@@ -496,22 +496,22 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "faux-fiddle-leaf-fig": {
-    handle: "70-135cm-large-artificial-ficus-tree-fake-rubber-plants-branch-plastic-fiddle-leaf-fig-tree",
-    shopifyId: "gid://shopify/Product/15735272603729",
+    handle: "faux-fiddle-leaf-fig-realistic-artificial-branch",
+    shopifyId: "gid://shopify/Product/15737819267153",
     variants: [
-      { id: "gid://shopify/ProductVariant/59243761401937", title: "70Cm", price: 10.29, available: true },
-      { id: "gid://shopify/ProductVariant/59243761434705", title: "70Cm And105Cm", price: 25.53, available: true },
-      { id: "gid://shopify/ProductVariant/59243761467473", title: "135Cm 3Forks", price: 27.2, available: true },
-      { id: "gid://shopify/ProductVariant/59243761500241", title: "140Cm 3Forks", price: 28.58, available: true },
+      { id: "gid://shopify/ProductVariant/59248124657745", title: "Single Branch (70cm)", price: 48, available: true },
+      { id: "gid://shopify/ProductVariant/59248124690513", title: "Pair (70cm + 105cm)", price: 68, available: true },
+      { id: "gid://shopify/ProductVariant/59248124723281", title: "Tall (135cm, 3 forks)", price: 78, available: true },
+      { id: "gid://shopify/ProductVariant/59248124756049", title: "Grand (140cm, 3 forks)", price: 88, available: true },
     ],
   },
   "faux-daisy-arrangement": {
-    handle: "2pcs-artificial-hanging-flowers-silk-daisy-eucalyptus-garland-for-outdoor-indoor",
-    shopifyId: "gid://shopify/Product/15735272669265",
+    handle: "faux-daisy-arrangement-silk-garland-pair",
+    shopifyId: "gid://shopify/Product/15737819299921",
     variants: [
-      { id: "gid://shopify/ProductVariant/59243761533009", title: "Red-Purple", price: 11.03, available: true },
-      { id: "gid://shopify/ProductVariant/59243761696849", title: "Pink-Rose", price: 11.05, available: true },
-      { id: "gid://shopify/ProductVariant/59243761598545", title: "Yellow-Orange", price: 11.18, available: true },
+      { id: "gid://shopify/ProductVariant/59248124788817", title: "Red-Purple", price: 28, available: true },
+      { id: "gid://shopify/ProductVariant/59248124821585", title: "Pink-Rose", price: 28, available: true },
+      { id: "gid://shopify/ProductVariant/59248124854353", title: "Yellow-Orange", price: 28, available: true },
     ],
   },
   "ceramic-pour-over-dripper": {

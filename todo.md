@@ -150,3 +150,12 @@
 ## Welcome Email & Bug Fix (March 28, 2026)
 - [x] Fix double thank-you message — shared subscription state between popup and footer via sessionStorage + custom event
 - [x] Set up welcome flow: created WELCOME10 discount code in Shopify (10% off, once per customer), shown in popup + footer thank-you messages, owner notification on each signup
+
+## Price Sync
+- [x] Sync CRO-optimized prices to Shopify Admin API: 144 variants updated successfully, 8 skipped (products deleted from Shopify: dried-cotton-stem, compartment-meal-container, cherry-stone-fruit-pitter, airtight-pantry-container, rapid-defrosting-board, glass-propagation-vases, faux-fiddle-leaf-fig, faux-daisy-arrangement)
+
+## Re-add Deleted Products to Shopify (March 28, 2026)
+- [x] Created 8 deleted products in Shopify via Admin API (all 8 created successfully)
+- [x] Updated shopifyMap.ts with new Shopify variant IDs for all 8 products
+- [x] CRO-optimized prices set during product creation (no separate sync needed)
+- [x] All 40 tests passing, dev server healthy
