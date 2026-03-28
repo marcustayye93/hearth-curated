@@ -12,6 +12,7 @@ import {
   removeFromCart,
 } from "../shopify";
 import { createNewsletterCustomer } from "../shopify-customers";
+import { notifyOwner } from "../_core/notification";
 
 export const shopifyRouter = router({
   // ── Products ─────────────────────────────────────────────────────
@@ -123,6 +124,20 @@ export const shopifyRouter = router({
   newsletterSubscribe: publicProcedure
     .input(z.object({ email: z.string().email() }))
     .mutation(async ({ input }) => {
-      return createNewsletterCustomer(input.email);
+      const result = await createNewsletterCustomer(input.email);
+
+      // Notify owner of new subscriber (fire-and-forget)
+      if (result.success) {
+        notifyOwner({
+          title: result.isNew
+            ? `New subscriber: ${input.email}`
+            : `Returning subscriber: ${input.email}`,
+          content: result.isNew
+            ? `${input.email} just subscribed to the Hearth Curated newsletter. They've been added to Shopify Customers with the "newsletter" tag and will receive the WELCOME10 discount code.`
+            : `${input.email} submitted the newsletter form again. They were already in your Shopify Customers list.`,
+        }).catch(() => {});
+      }
+
+      return result;
     }),
 });

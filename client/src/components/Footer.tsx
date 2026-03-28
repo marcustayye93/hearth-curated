@@ -2,18 +2,35 @@
 // Design: Minimal, editorial — espresso background, parchment text
 // Aesop-style quote, newsletter signup, clean link columns
 // Connected to Shopify Customers API via tRPC
+// Shares subscription state with EmailCapture popup via sessionStorage + custom event
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { COLLECTIONS } from "@/lib/products";
 import { trpc } from "@/lib/trpc";
 
+const SUBSCRIBED_KEY = "hc-newsletter-subscribed";
+
 export default function Footer() {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(() => {
+    // Check if already subscribed this session (e.g. via popup)
+    try {
+      return sessionStorage.getItem(SUBSCRIBED_KEY) === "true";
+    } catch {
+      return false;
+    }
+  });
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
   const subscribe = trpc.shopify.newsletterSubscribe.useMutation();
+
+  // Listen for subscription events from the popup
+  useEffect(() => {
+    const handleSubscribed = () => setSubmitted(true);
+    window.addEventListener("hc-subscribed", handleSubscribed);
+    return () => window.removeEventListener("hc-subscribed", handleSubscribed);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,6 +43,9 @@ export default function Footer() {
       if (result.success) {
         setSubmitted(true);
         setEmail("");
+        try { sessionStorage.setItem(SUBSCRIBED_KEY, "true"); } catch {}
+        // Broadcast to popup in case it's still visible
+        window.dispatchEvent(new Event("hc-subscribed"));
       } else {
         setError(result.error ?? "Something went wrong.");
       }
@@ -66,12 +86,34 @@ export default function Footer() {
           New arrivals, considered essays, and occasional discoveries — delivered quietly.
         </p>
         {submitted ? (
-          <p
-            className="text-sm"
-            style={{ color: "var(--hc-parchment)", fontFamily: "'Karla', sans-serif" }}
-          >
-            Thank you — welcome to the Hearth.
-          </p>
+          <div>
+            <p
+              className="text-sm mb-3"
+              style={{ color: "var(--hc-parchment)", fontFamily: "'Karla', sans-serif" }}
+            >
+              Thank you — welcome to the Hearth.
+            </p>
+            <div
+              className="inline-block px-5 py-2.5 mb-2"
+              style={{
+                backgroundColor: "var(--hc-parchment)",
+                color: "var(--hc-espresso)",
+              }}
+            >
+              <span
+                className="text-base tracking-[0.2em] font-medium"
+                style={{ fontFamily: "'Karla', sans-serif" }}
+              >
+                WELCOME10
+              </span>
+            </div>
+            <p
+              className="text-xs"
+              style={{ fontFamily: "'Karla', sans-serif", color: "var(--hc-stone)" }}
+            >
+              Use this code at checkout for 10% off your first order.
+            </p>
+          </div>
         ) : (
           <>
             <form

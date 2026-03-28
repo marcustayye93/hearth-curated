@@ -146,3 +146,7 @@
 
 ## Bug Fixes
 - [x] Fix Shopify checkout 404 — rewrite checkout URL from hearthcurated.com to csjqgg-7e.myshopify.com (domain conflict: hearthcurated.com points to Manus site, not Shopify)
+
+## Welcome Email & Bug Fix (March 28, 2026)
+- [x] Fix double thank-you message — shared subscription state between popup and footer via sessionStorage + custom event
+- [x] Set up welcome flow: created WELCOME10 discount code in Shopify (10% off, once per customer), shown in popup + footer thank-you messages, owner notification on each signup

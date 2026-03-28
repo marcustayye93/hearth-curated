@@ -8,6 +8,7 @@ import { X } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 
 const STORAGE_KEY = "hc-email-popup-dismissed";
+const SUBSCRIBED_KEY = "hc-newsletter-subscribed";
 
 export default function EmailCapture() {
   const [visible, setVisible] = useState(false);
@@ -58,7 +59,10 @@ export default function EmailCapture() {
       const result = await subscribe.mutateAsync({ email: email.trim() });
       if (result.success) {
         setSubmitted(true);
-        setTimeout(dismiss, 2500);
+        try { sessionStorage.setItem(SUBSCRIBED_KEY, "true"); } catch {}
+        // Broadcast to other components (e.g. Footer) that subscription happened
+        window.dispatchEvent(new Event("hc-subscribed"));
+        setTimeout(dismiss, 8000);
       } else {
         setError(result.error ?? "Something went wrong. Please try again.");
       }
@@ -104,10 +108,30 @@ export default function EmailCapture() {
               Welcome to the Hearth
             </p>
             <p
-              className="text-sm"
+              className="text-sm mb-4"
               style={{ fontFamily: "'Karla', sans-serif", color: "var(--hc-sienna)" }}
             >
-              We'll be in touch with considered things.
+              Here's your 10% welcome discount:
+            </p>
+            <div
+              className="inline-block px-6 py-3 mb-3"
+              style={{
+                backgroundColor: "var(--hc-espresso)",
+                color: "var(--hc-parchment)",
+              }}
+            >
+              <span
+                className="text-lg tracking-[0.2em] font-medium"
+                style={{ fontFamily: "'Karla', sans-serif" }}
+              >
+                WELCOME10
+              </span>
+            </div>
+            <p
+              className="text-xs"
+              style={{ fontFamily: "'Karla', sans-serif", color: "var(--hc-stone)" }}
+            >
+              Apply at checkout. One use per customer.
             </p>
           </div>
         ) : (
