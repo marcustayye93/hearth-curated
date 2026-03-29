@@ -544,7 +544,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
 
-  // ── NEW GATHER EXPANSION (CJ Dropshipping — not yet connected) ──
+  // ── NEW HEARTH EXPANSION (CJ Dropshipping — not yet connected) ──
   "japanese-matcha-ceremony-set": null,
   "bamboo-matcha-whisk": null,
   "ceramic-matcha-bowl": null,

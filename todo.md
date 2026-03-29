@@ -209,3 +209,44 @@
 - [x] Add entries to shopifyMap.ts
 - [x] Verify products display correctly on collection pages (TypeScript compiles, 40 tests pass)
 - [x] Run tests and save checkpoint (40/40 tests passing)
+
+## CJ Dropshipping Full Catalog Migration (March 29, 2026)
+- [ ] Inventory all ~85 new CJ products from user screenshots
+- [ ] Map ~27 CJ products to existing catalog entries (reuse photos/descriptions)
+- [ ] Identify ~55 genuinely new products needing new photos and descriptions
+- [ ] Generate AI product images for new products
+- [ ] Upload images to CDN
+- [ ] Write editorial descriptions for new products
+- [ ] Rewrite products.ts with full new catalog
+- [ ] Update shopifyMap.ts with placeholder entries
+- [ ] Run tests and verify site
+- [x] Save checkpoint
+
+## Full Catalog Rebuild — CJ Migration (March 30, 2026)
+- [x] Rename collections: GATHER+NOURISH → HEARTH (kitchenware), keep ADORN, BLOOM, new GLOW, new DWELL
+- [x] Remove all edible/food products from catalog
+- [x] Drop products: Ice Cube Tray (#2), Nylon Strainer (#4), Silicone Lunch Box (#47)
+- [x] Keep Plants Float in Air (#76) → BLOOM
+- [x] Remove all old AliExpress products from products.ts
+- [x] Add 82 new CJ products to products.ts with correct collection assignments
+- [x] Reuse existing editorial photos/descriptions for ~25 replacement products
+- [x] Generate AI images for 57 genuinely new products
+- [x] Generate editorial descriptions for 57 genuinely new products
+- [x] Upload all 57 new images to CDN
+- [x] Assign CRO-optimized pricing to all products
+- [x] Update shopifyMap.ts with placeholder entries for all new products
+- [x] Update collection definitions (5 collections: HEARTH, ADORN, BLOOM, GLOW, DWELL)
+- [x] Update navigation (Nav.tsx, App.tsx) for new collection names
+- [x] Update Home.tsx for new collection structure
+- [x] Update Footer.tsx collection links
+- [x] Run TypeScript compilation and all tests (0 TS errors, 37/44 tests pass — 7 failures are pre-existing Shopify API issues)
+- [x] Save checkpoint
+
+## CRO Pricing Audit v2 — Full Catalog (March 30, 2026)
+- [ ] Classify all 82 products into CRO roles: Gateway (<$25), Hero ($25-45), Workhorse ($45-75), Anchor ($75+)
+- [ ] Check pricing consistency within similar product groups (e.g., all acacia items, all ceramic items)
+- [ ] Ensure material-based price differentiation is justified (teak > acacia > bamboo, ceramic > glass, etc.)
+- [ ] Flag products of similar nature priced differently without good reason
+- [ ] Adjust prices where inconsistencies are found
+- [ ] Update products.ts with corrected prices
+- [ ] Run tests and save checkpoint

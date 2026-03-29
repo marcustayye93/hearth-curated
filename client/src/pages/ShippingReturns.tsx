@@ -211,7 +211,7 @@ const FAQS = [
   {
     question: "Are there items that cannot be returned?",
     answer:
-      "For hygiene and safety reasons, we cannot accept returns on candles that have been lit, food and drink items (NOURISH collection), or any item that has been used, washed, or altered. Gift cards are also non-refundable. If you are unsure whether your item qualifies for return, please contact us before shipping it back.",
+      "For hygiene and safety reasons, we cannot accept returns on candles that have been lit, or any item that has been used, washed, or altered. Gift cards are also non-refundable. If you are unsure whether your item qualifies for return, please contact us before shipping it back.",
   },
   {
     question: "How long does a refund take to process?",
@@ -600,7 +600,7 @@ export default function ShippingReturns() {
                       }}
                     >
                       <li>• Candles that have been lit or used</li>
-                      <li>• Food and drink items (NOURISH collection)</li>
+                      <li>• Perishable goods or consumable items</li>
                       <li>• Items that have been washed, altered, or damaged by the customer</li>
                       <li>• Gift cards</li>
                     </ul>

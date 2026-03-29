@@ -448,7 +448,7 @@ export default function About() {
                 The intentional home starts with a single, considered choice.
               </p>
               <Link
-                href="/collections/gather"
+                href="/collections/hearth"
                 className="inline-block px-8 py-3.5 text-xs tracking-widest uppercase transition-colors duration-250"
                 style={{
                   fontFamily: "'Karla', sans-serif",

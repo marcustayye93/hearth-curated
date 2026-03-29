@@ -175,7 +175,7 @@ export default function Footer() {
               className="text-xs leading-relaxed"
               style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif", maxWidth: "200px" }}
             >
-              Objects for the intentional home. Kitchen, fragrance, botanicals, and artisan food.
+              Objects for the intentional home. Kitchen, fragrance, botanicals, lighting, and soft furnishings.
             </p>
           </div>
 

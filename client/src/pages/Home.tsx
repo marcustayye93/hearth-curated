@@ -100,7 +100,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--hc-parchment)" }}>
       <SEOHead
         title="Hearth Curated — Objects for the Intentional Home"
-        description="A curated selection of kitchen tools, home fragrance, botanicals, and artisan food — chosen for quiet utility and considered design. Free worldwide shipping over $60."
+        description="A curated selection of kitchen tools, home fragrance, botanicals, lighting, and soft furnishings — chosen for quiet utility and considered design. Free worldwide shipping over $60."
         canonicalPath="/"
         ogImage={HERO_IMAGE}
         ogImageAlt="Hearth Curated — handcrafted kitchen and home objects"
@@ -146,9 +146,9 @@ export default function Home() {
                   className="text-sm md:text-base mb-6 sm:mb-8 leading-relaxed max-w-sm"
                   style={{ color: "rgba(242,237,228,0.85)", fontFamily: "'Karla', sans-serif" }}
                 >
-                  A curated selection of kitchen tools, home fragrance, botanicals, and artisan food — chosen for quiet utility and considered design.
+                  A curated selection of kitchen tools, home fragrance, botanicals, lighting, and soft furnishings — chosen for quiet utility and considered design.
                 </p>
-                <Link href="/collections/gather" className="hc-btn-primary">
+                <Link href="/collections/hearth" className="hc-btn-primary">
                   Explore Collections
                 </Link>
               </div>
@@ -166,7 +166,7 @@ export default function Home() {
                   className="text-3xl md:text-4xl"
                   style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)", fontWeight: 400 }}
                 >
-                  Four Worlds,<br />One Home
+                  Five Worlds,<br />One Home
                 </h2>
               </div>
               <p
@@ -295,7 +295,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── EDITORIAL SPLIT — GATHER feature ─────────────────────────── */}
+        {/* ── EDITORIAL SPLIT — HEARTH feature ─────────────────────────── */}
         <section
           className="py-0 md:py-0 overflow-hidden"
           style={{ backgroundColor: "var(--hc-parchment-dark, #E8E0D4)" }}
@@ -305,7 +305,7 @@ export default function Home() {
             <div className="relative overflow-hidden" style={{ minHeight: "300px" }}>
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-gather_87a9bb21_7f1ded38.webp"
-                alt="GATHER Collection"
+                alt="HEARTH Collection"
                 className="w-full h-full object-cover absolute inset-0"
                 loading="lazy"
                 decoding="async"
@@ -315,7 +315,7 @@ export default function Home() {
             <div className="flex items-center px-8 md:px-16 py-16 md:py-20" style={{ backgroundColor: "var(--hc-espresso)" }}>
               <div className="max-w-sm">
                 <p className="hc-eyebrow mb-4" style={{ color: "var(--hc-stone)" }}>
-                  GATHER — The Art of the Table
+                  HEARTH — The Art of the Kitchen
                 </p>
                 <h2
                   className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 leading-tight"
@@ -327,10 +327,10 @@ export default function Home() {
                   className="text-sm leading-relaxed mb-8"
                   style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif" }}
                 >
-                  Cooking is not merely sustenance. It is a daily practice of attention and care. The GATHER collection brings together kitchen tools and tabletop accessories chosen for their quiet utility and considered design.
+                  Cooking is not merely sustenance. It is a daily practice of attention and care. The HEARTH collection brings together kitchen tools and tabletop accessories chosen for their quiet utility and considered design.
                 </p>
-                <Link href="/collections/gather" className="hc-btn-outline" style={{ borderColor: "rgba(196,185,170,0.5)", color: "var(--hc-parchment)" }}>
-                  Explore GATHER
+                <Link href="/collections/hearth" className="hc-btn-outline" style={{ borderColor: "rgba(196,185,170,0.5)", color: "var(--hc-parchment)" }}>
+                  Explore HEARTH
                 </Link>
               </div>
             </div>
@@ -377,24 +377,24 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── BLOOM + NOURISH — side by side ───────────────────────────── */}
+        {/* ── GLOW + DWELL — side by side ─────────────────────────── */}
         <section className="py-20 md:py-28" style={{ backgroundColor: "var(--hc-parchment)" }}>
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               {[
                 {
-                  slug: "bloom",
-                  name: "BLOOM",
-                  tagline: "Everlasting Greenery",
-                  copy: "Botanicals, florals, plants, and garden accessories. Living and living-adjacent objects that bring the outside in.",
-                  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-bloom_bb15969d_44bea310.webp",
+                  slug: "glow",
+                  name: "GLOW",
+                  tagline: "The Light Within",
+                  copy: "Lamps, lanterns, solar lights, and ambient lighting. Every product in this collection is about light — the warm glow that transforms a house into a home.",
+                  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-nourish-9ACpb36EeNaEewRWfkFqCs_9eacb58a.webp",
                 },
                 {
-                  slug: "nourish",
-                  name: "NOURISH",
-                  tagline: "The Ritual of Cooking",
-                  copy: "Artisan food and drink for the intentional cook. Consumables and ingredients that transform cooking from a task into a ritual.",
-                  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-nourish-9ACpb36EeNaEewRWfkFqCs_9eacb58a.webp",
+                  slug: "dwell",
+                  name: "DWELL",
+                  tagline: "The Fabric of Home",
+                  copy: "Rugs, blankets, cushions, table linens, and soft furnishings. The textiles and surfaces that make a home feel warm, layered, and lived-in.",
+                  image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-adorn_18502690_c51d6d47.webp",
                 },
               ].map((col) => (
                 <Link key={col.slug} href={`/collections/${col.slug}`} className="group block">

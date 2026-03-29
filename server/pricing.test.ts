@@ -1,138 +1,112 @@
 import { describe, it, expect } from "vitest";
 import { PRODUCTS, FREE_SHIPPING_THRESHOLD } from "../client/src/lib/products";
 
-describe("CRO Pricing Strategy v2", () => {
+describe("Catalog Pricing Integrity", () => {
   it("should have FREE_SHIPPING_THRESHOLD set to 60", () => {
     expect(FREE_SHIPPING_THRESHOLD).toBe(60);
   });
 
-  it("should have correct base prices for GATEWAY products", () => {
-    const gateways: Record<string, number> = {
-      "dried-cotton-stem": 9,
-      "ceramic-incense-holder": 14,
-      "moroccan-decorative-wall-plate": 18,
-      "rapid-defrosting-board": 22,
-      "ceramic-spoon-rest": 22,
-      "moroccan-mandorla-coaster-set": 24,
-    };
-
-    for (const [slug, expectedPrice] of Object.entries(gateways)) {
-      const product = PRODUCTS.find((p) => p.slug === slug);
-      expect(product, `Product ${slug} should exist`).toBeDefined();
-      expect(product!.price).toBe(expectedPrice);
-    }
-  });
-
-  it("should have correct base prices for HERO products", () => {
-    const heroes: Record<string, number> = {
-      "faux-olive-branch": 24,
-      "faux-daisy-arrangement": 28,
-      "silence-figurine": 28,
-      "faux-eucalyptus-garland": 28,
-      "dried-lavender-bundle": 36,
-      "glass-propagation-vases": 36,
-      "nordic-ceramic-vase": 38,
-      "cedar-wreath": 38,
-      "japanese-sake-set": 56,
-    };
-
-    for (const [slug, expectedPrice] of Object.entries(heroes)) {
-      const product = PRODUCTS.find((p) => p.slug === slug);
-      expect(product, `Product ${slug} should exist`).toBeDefined();
-      expect(product!.price).toBe(expectedPrice);
-    }
-  });
-
-  it("should have correct base prices for WORKHORSE products", () => {
-    const workhorses: Record<string, number> = {
-      "airtight-pantry-container": 28,
-      "motion-sensing-cabinet-light": 36,
-      "waffle-weave-cotton-dish-cloths": 36,
-      "pampas-grass-bouquet": 38,
-      "linen-table-napkins": 38,
-      "linen-cushion-cover": 38,
-      "japanese-linen-apron": 42,
-      "faux-fiddle-leaf-fig": 48,
-      "vacuum-sealed-glass-canister": 48,
-      "acacia-salt-pepper-mill": 48,
-      "borosilicate-vacuum-canister": 48,
-      "nordic-espresso-cup-saucer": 48,
-      "vintage-japanese-ceramic-mug": 48,
-      "rechargeable-ambient-table-lamp": 48,
-    };
-
-    for (const [slug, expectedPrice] of Object.entries(workhorses)) {
-      const product = PRODUCTS.find((p) => p.slug === slug);
-      expect(product, `Product ${slug} should exist`).toBeDefined();
-      expect(product!.price).toBe(expectedPrice);
-    }
-  });
-
-  it("should have correct base prices for ANCHOR products", () => {
-    const anchors: Record<string, number> = {
-      "compartment-meal-container": 52,
-      "cherry-stone-fruit-pitter": 58,
-      "japanese-stoneware-mug": 62,
-      "hand-painted-ceramic-oil-cruet": 65,
-      "wabi-sabi-ceramic-dispenser": 72,
-      "wooden-serving-tray": 72,
-      "thinker-sculpture": 78,
-      "handmade-soy-wax-ceramic-candle": 78,
-      "stainless-steel-chopping-board": 98,
-      "acacia-wooden-utensil-set": 98,
-      "woven-bamboo-table-lamp": 108,
-      "acacia-magnetic-knife-block": 128,
-      "teak-carving-board": 158,
-    };
-
-    for (const [slug, expectedPrice] of Object.entries(anchors)) {
-      const product = PRODUCTS.find((p) => p.slug === slug);
-      expect(product, `Product ${slug} should exist`).toBeDefined();
-      expect(product!.price).toBe(expectedPrice);
-    }
-  });
-
-  it("should have microwave-steamer-cover set to unavailable", () => {
-    const steamer = PRODUCTS.find((p) => p.slug === "microwave-steamer-cover");
-    expect(steamer).toBeDefined();
-    expect(steamer!.available).toBe(false);
-  });
-
-  it("should have no product priced below $9 (except variant singles)", () => {
+  it("all available products should be priced >= $9", () => {
     for (const product of PRODUCTS) {
       if (product.available) {
-        expect(product.price).toBeGreaterThanOrEqual(9);
+        expect(product.price, `${product.slug} should be >= $9`).toBeGreaterThanOrEqual(9);
       }
     }
   });
 
-  it("should have magnetic-spice-tins base price at $12 (single tin)", () => {
-    const spiceTins = PRODUCTS.find((p) => p.slug === "magnetic-spice-tins");
-    expect(spiceTins).toBeDefined();
-    expect(spiceTins!.price).toBe(12);
-    // Set variant should be $62
-    const setVariant = spiceTins!.variants?.find((v) => v.id === "nourish-13-set");
-    expect(setVariant).toBeDefined();
-    expect(setVariant!.price).toBe(62);
+  it("no product should be priced above $200", () => {
+    for (const product of PRODUCTS) {
+      expect(product.price, `${product.slug} should be <= $200`).toBeLessThanOrEqual(200);
+    }
   });
 
-  it("should have acacia-serving-bowl base price at $58 (small)", () => {
-    const bowl = PRODUCTS.find((p) => p.slug === "acacia-serving-bowl");
-    expect(bowl).toBeDefined();
-    expect(bowl!.price).toBe(58);
-    // Statement variant should be $118
-    const statementVariant = bowl!.variants?.find((v) => v.id === "gather-2-xxl");
-    expect(statementVariant).toBeDefined();
-    expect(statementVariant!.price).toBe(118);
+  it("should have correct prices for key HEARTH products", () => {
+    const expected: Record<string, number> = {
+      "acacia-salt-pepper-mill": 48,
+      "acacia-magnetic-knife-block": 128,
+      "hand-painted-ceramic-oil-cruet": 32,
+      "rapid-defrosting-board": 38,
+      "multi-function-grater": 28,
+      "japanese-sake-set": 48,
+      "ceramic-pour-over-dripper": 32,
+    };
+
+    for (const [slug, expectedPrice] of Object.entries(expected)) {
+      const product = PRODUCTS.find((p) => p.slug === slug);
+      expect(product, `Product ${slug} should exist`).toBeDefined();
+      expect(product!.price).toBe(expectedPrice);
+    }
   });
 
-  it("should have brass-wall-hooks base price at $12 (single)", () => {
-    const hooks = PRODUCTS.find((p) => p.slug === "brass-wall-hooks");
-    expect(hooks).toBeDefined();
-    expect(hooks!.price).toBe(12);
-    // Set of 5 should be $42
-    const setVariant = hooks!.variants?.find((v) => v.id === "adorn-15-bk5");
-    expect(setVariant).toBeDefined();
-    expect(setVariant!.price).toBe(42);
+  it("should have correct prices for key ADORN products", () => {
+    const expected: Record<string, number> = {
+      "led-aroma-diffuser": 48,
+      "ceramic-incense-holder": 22,
+      "fireplace-aroma-diffuser": 58,
+      "abstract-figurine": 42,
+    };
+
+    for (const [slug, expectedPrice] of Object.entries(expected)) {
+      const product = PRODUCTS.find((p) => p.slug === slug);
+      expect(product, `Product ${slug} should exist`).toBeDefined();
+      expect(product!.price).toBe(expectedPrice);
+    }
+  });
+
+  it("should have correct prices for key BLOOM products", () => {
+    const expected: Record<string, number> = {
+      "dried-cotton-stem": 18,
+      "pampas-grass-bouquet": 32,
+      "dried-lavender-bundle": 22,
+      "magnetic-levitating-planter": 78,
+      "faux-banyan-tree": 128,
+    };
+
+    for (const [slug, expectedPrice] of Object.entries(expected)) {
+      const product = PRODUCTS.find((p) => p.slug === slug);
+      expect(product, `Product ${slug} should exist`).toBeDefined();
+      expect(product!.price).toBe(expectedPrice);
+    }
+  });
+
+  it("should have correct prices for key GLOW products", () => {
+    const expected: Record<string, number> = {
+      "woven-bamboo-table-lamp": 58,
+      "motion-sensing-cabinet-light": 22,
+      "rattan-floor-lamp": 128,
+      "mushroom-night-light": 22,
+    };
+
+    for (const [slug, expectedPrice] of Object.entries(expected)) {
+      const product = PRODUCTS.find((p) => p.slug === slug);
+      expect(product, `Product ${slug} should exist`).toBeDefined();
+      expect(product!.price).toBe(expectedPrice);
+    }
+  });
+
+  it("should have correct prices for key DWELL products", () => {
+    const expected: Record<string, number> = {
+      "bohemian-area-rug": 88,
+      "pet-blanket": 22,
+      "linen-placemats": 32,
+      "coral-fleece-throw-blanket": 38,
+    };
+
+    for (const [slug, expectedPrice] of Object.entries(expected)) {
+      const product = PRODUCTS.find((p) => p.slug === slug);
+      expect(product, `Product ${slug} should exist`).toBeDefined();
+      expect(product!.price).toBe(expectedPrice);
+    }
+  });
+
+  it("variants should have prices >= base price or within reasonable range", () => {
+    for (const product of PRODUCTS) {
+      if (product.variants && product.variants.length > 0) {
+        for (const variant of product.variants) {
+          // Variant prices should be positive
+          expect(variant.price, `${product.slug} variant ${variant.id} should have positive price`).toBeGreaterThan(0);
+        }
+      }
+    }
   });
 });

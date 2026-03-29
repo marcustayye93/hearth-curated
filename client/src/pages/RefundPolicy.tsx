@@ -45,7 +45,7 @@ export default function RefundPolicy() {
           style={{ color: "var(--hc-sienna)" }}
         >
           <li>Items that have been used, washed, or altered</li>
-          <li>Perishable goods, including artisan food products</li>
+          <li>Perishable goods or consumable items</li>
           <li>Items marked as "Final Sale" at the time of purchase</li>
           <li>Gift cards</li>
         </ul>

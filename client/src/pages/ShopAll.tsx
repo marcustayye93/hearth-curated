@@ -107,7 +107,7 @@ export default function ShopAll() {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--hc-parchment)" }}>
       <SEOHead
         title="Shop All — Hearth Curated"
-        description="Browse our full collection of curated home objects. Kitchen tools, home fragrance, botanicals, and artisan food — chosen for quiet utility and considered design."
+        description="Browse our full collection of curated home objects. Kitchen tools, home fragrance, botanicals, lighting, and soft furnishings — chosen for quiet utility and considered design."
         canonicalPath="/shop"
         ogImageAlt="Shop All — Hearth Curated"
       />

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 interface SEOHeadProps {
   title: string;
   description: string;
-  canonicalPath?: string; // e.g. "/collections/gather"
+  canonicalPath?: string; // e.g. "/collections/hearth"
   ogType?: "website" | "product" | "article";
   ogImage?: string;
   ogImageAlt?: string;
