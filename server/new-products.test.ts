@@ -28,18 +28,18 @@ describe("Full Product Catalog (5 Collections)", () => {
     expect(PRODUCTS.length).toBe(82);
   });
 
-  it("should have 5 collections: HEARTH, ADORN, BLOOM, GLOW, DWELL", async () => {
+  it("should have 5 collections: FEAST, ADORN, BLOOM, GLOW, DWELL", async () => {
     const mod = await import("../client/src/lib/products");
     COLLECTIONS = mod.COLLECTIONS;
     const slugs = COLLECTIONS.map((c: any) => c.slug);
-    expect(slugs).toEqual(["hearth", "adorn", "bloom", "glow", "dwell"]);
+    expect(slugs).toEqual(["feast", "adorn", "bloom", "glow", "dwell"]);
   });
 
-  it("HEARTH collection should have 31 products", async () => {
+  it("FEAST collection should have 31 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
-    const hearthProducts = PRODUCTS.filter((p) => p.collectionSlug === "hearth");
-    expect(hearthProducts.length).toBe(31);
+    const feastProducts = PRODUCTS.filter((p) => p.collectionSlug === "feast");
+    expect(feastProducts.length).toBe(31);
   });
 
   it("ADORN collection should have 9 products", async () => {
@@ -149,17 +149,19 @@ describe("Full Product Catalog (5 Collections)", () => {
     }
   });
 
-  it("no NOURISH or GATHER collection should exist", async () => {
+  it("no NOURISH, GATHER, or HEARTH collection should exist", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     COLLECTIONS = mod.COLLECTIONS;
     const collectionSlugs = COLLECTIONS.map((c: any) => c.slug);
     expect(collectionSlugs).not.toContain("nourish");
     expect(collectionSlugs).not.toContain("gather");
+    expect(collectionSlugs).not.toContain("hearth");
     // No product should reference old collections
     for (const product of PRODUCTS) {
       expect(product.collectionSlug).not.toBe("nourish");
       expect(product.collectionSlug).not.toBe("gather");
+      expect(product.collectionSlug).not.toBe("hearth");
     }
   });
 });

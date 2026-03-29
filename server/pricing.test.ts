@@ -20,15 +20,16 @@ describe("Catalog Pricing Integrity", () => {
     }
   });
 
-  it("should have correct prices for key HEARTH products", () => {
+  it("should have correct prices for key FEAST products", () => {
     const expected: Record<string, number> = {
       "acacia-salt-pepper-mill": 48,
       "acacia-magnetic-knife-block": 128,
-      "hand-painted-ceramic-oil-cruet": 32,
-      "rapid-defrosting-board": 38,
-      "multi-function-grater": 28,
-      "japanese-sake-set": 48,
+      "hand-painted-ceramic-oil-cruet": 48,
+      "rapid-defrosting-board": 28,
+      "multi-function-grater": 22,
+      "japanese-sake-set": 52,
       "ceramic-pour-over-dripper": 32,
+      "acacia-serving-bowl": 48,
     };
 
     for (const [slug, expectedPrice] of Object.entries(expected)) {

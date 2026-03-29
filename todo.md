@@ -252,16 +252,36 @@
 - [ ] Run tests and save checkpoint
 
 ## Collection Hero Images & Naming (March 30, 2026)
-- [ ] Update collection hero/placeholder images to match each category (current images don't fit)
-- [ ] Suggest alternative names for HEARTH collection (too ambiguous for kitchenware)
-- [ ] Apply chosen collection name across all site references
+- [x] Update collection hero/placeholder images to match each category (GLOW + DWELL regenerated)
+- [x] Suggest alternative names for HEARTH collection — user chose FEAST
+- [x] Apply FEAST name across all site references
 
 ## User-Reported Bugs & Fixes (Mar 30)
 - [x] Rename HEARTH collection to FEAST across entire codebase
-- [ ] Fix broken images that show broken image loading icon
-- [ ] Fix stoneware coffee cup image — wrong shape, missing handle
-- [ ] Fix magnetic knife holder — shows wrong image
-- [ ] Fix matcha tea set — should have 3 variants, only shows 1
+- [x] Fix broken images that show broken image loading icon (12 images regenerated + re-uploaded)
+- [x] Fix stoneware coffee cup image — wrong shape, missing handle
+- [x] Fix magnetic knife holder — shows wrong image
+- [x] Fix matcha tea set — 3 variants added (2pc, 4pc, 6pc)
 - [ ] For products with dimensions, include extra picture per variant showing dimensions
 - [ ] Implement variant-based image switching — product photo changes when variant selected
 - [ ] Where colour variants exist, reference original product image and keep close likeness
+- [x] Fix wooden water cup image — missing handle
+- [x] Fix whole wood log snack plate — renamed to "Whole Wood Log Snack Plate", 3 size variants added
+
+## Full Catalog Audit (Mar 30)
+- [x] Audit all 82 products for: image accuracy, naming correctness, variant completeness, data consistency
+- [x] Fix all broken CDN images (8 products with HTTP 403)
+- [x] Fix all duplicate/wrong images (knife block, pet blanket)
+- [x] Fix stoneware mug — wrong shape, needs handle
+- [x] Fix wooden water cup — needs handle
+- [x] Fix whole wood log snack plate — renamed + 3 variants added
+- [x] Fix matcha tea set — 3 variants added
+- [x] Audit all product names against CJ source names for accuracy
+- [x] Audit all variant definitions against CJ source data
+- [x] Apply all fixes found during audit
+- [x] Save checkpoint with all fixes
+
+## Pending — Requires User Input
+- [ ] (pending) Variant-based image switching — product photo changes when variant selected (large feature, needs design approval)
+- [ ] (pending) Dimension photos per variant — needs confirmation on which products to prioritize
+- [ ] (pending) Colour variant images — reference original product image for likeness (needs design direction)
