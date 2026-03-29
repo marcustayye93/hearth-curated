@@ -250,3 +250,18 @@
 - [ ] Adjust prices where inconsistencies are found
 - [ ] Update products.ts with corrected prices
 - [ ] Run tests and save checkpoint
+
+## Collection Hero Images & Naming (March 30, 2026)
+- [ ] Update collection hero/placeholder images to match each category (current images don't fit)
+- [ ] Suggest alternative names for HEARTH collection (too ambiguous for kitchenware)
+- [ ] Apply chosen collection name across all site references
+
+## User-Reported Bugs & Fixes (Mar 30)
+- [x] Rename HEARTH collection to FEAST across entire codebase
+- [ ] Fix broken images that show broken image loading icon
+- [ ] Fix stoneware coffee cup image — wrong shape, missing handle
+- [ ] Fix magnetic knife holder — shows wrong image
+- [ ] Fix matcha tea set — should have 3 variants, only shows 1
+- [ ] For products with dimensions, include extra picture per variant showing dimensions
+- [ ] Implement variant-based image switching — product photo changes when variant selected
+- [ ] Where colour variants exist, reference original product image and keep close likeness
