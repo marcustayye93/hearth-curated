@@ -263,8 +263,8 @@
 - [x] Fix magnetic knife holder — shows wrong image
 - [x] Fix matcha tea set — 3 variants added (2pc, 4pc, 6pc)
 - [ ] For products with dimensions, include extra picture per variant showing dimensions
-- [ ] Implement variant-based image switching — product photo changes when variant selected
-- [ ] Where colour variants exist, reference original product image and keep close likeness
+- [x] Implement variant-based image switching — product photo changes when variant selected
+- [x] Where colour variants exist, reference original product image and keep close likeness
 - [x] Fix wooden water cup image — missing handle
 - [x] Fix whole wood log snack plate — renamed to "Whole Wood Log Snack Plate", 3 size variants added
 
@@ -282,6 +282,28 @@
 - [x] Save checkpoint with all fixes
 
 ## Pending — Requires User Input
-- [ ] (pending) Variant-based image switching — product photo changes when variant selected (large feature, needs design approval)
+- [x] (done) Variant-based image switching — product photo changes when variant selected
 - [ ] (pending) Dimension photos per variant — needs confirmation on which products to prioritize
-- [ ] (pending) Colour variant images — reference original product image for likeness (needs design direction)
+- [x] (done) Colour variant images — 27 colour variant images generated with reference-based approach
+
+## Variant Image System (Mar 30)
+- [ ] Regenerate 2 remaining duplicate images (rattan serving tray, velvet cushion cover)
+- [x] Add optional `image` field to Variant type definition
+- [x] Generate colour-specific images for 10 products (27 colour variant images)
+- [ ] Generate dimension overlay photos for 21 size-variant products
+- [x] Upload all variant images to CDN
+- [x] Update products.ts with variant image URLs (27 variants updated)
+- [x] Implement variant-based image switching on Product detail page
+- [x] Test variant image switching works correctly (38/38 tests pass)
+- [ ] Save checkpoint
+
+## Standing Principles
+- Always challenge user assumptions where appropriate — there should be little bias to assume the user is correct. Push back with reasoning when something doesn't add up.
+- PRIORITISE 100% IMAGE LIKENESS TO THE ORIGINAL PRODUCT. AI-generated editorial images must match the actual CJ product the customer receives. Always use original CJ product photos as references when generating images.
+- Every AI image MUST use the actual CJ/supplier product photo as a reference image. Prompts must describe exact materials, shapes, handle styles, glaze finishes, number of pieces, dimensions.
+- Present images in small batches for user QC before committing. Flag any products where AI likeness is insufficient.
+
+## Variant Image Fixes (Mar 30)
+- [ ] Fix acacia magnetic knife block variant images — should be plain natural wood, no prints
+- [ ] Fix kungfu tea set variant images — all 3 variants should show same design, different glaze colours only
+- [ ] PENDING: Confirm gold figurine product — is it a decorative figurine or half-body planter pot?

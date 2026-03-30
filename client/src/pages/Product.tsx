@@ -28,13 +28,31 @@ export default function Product() {
     ? selectedVariant.available
     : product?.available ?? false;
 
-  // Image gallery: main image first, then additional images (dimension photos, etc.)
+  // Image gallery: variant image (if available) first, then main product image, then additional images
   const allImages = useMemo(() => {
-    const imgs = [product?.image].filter(Boolean) as string[];
-    if (product?.images) imgs.push(...product.images);
+    const variantImg = selectedVariant?.image;
+    const mainImg = product?.image;
+    const imgs: string[] = [];
+    // If variant has its own image, show it first
+    if (variantImg) imgs.push(variantImg);
+    // Add main product image (skip if same as variant image)
+    if (mainImg && mainImg !== variantImg) imgs.push(mainImg);
+    // Add additional images (dimension photos, etc.)
+    if (product?.images) {
+      for (const img of product.images) {
+        if (!imgs.includes(img)) imgs.push(img);
+      }
+    }
     return imgs;
-  }, [product]);
+  }, [product, selectedVariant]);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  // Reset to first image when variant changes
+  const [prevVariantId, setPrevVariantId] = useState(selectedVariant?.id);
+  if (selectedVariant?.id !== prevVariantId) {
+    setPrevVariantId(selectedVariant?.id);
+    setActiveImageIndex(0);
+  }
 
   // Cross-sells
   const crossSells = useMemo(
