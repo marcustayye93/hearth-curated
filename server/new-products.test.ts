@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 
-// Tests for the full 82-product catalog across 5 collections
-// Updated March 30, 2026 — CJ Dropshipping catalog rebuild
+// Tests for the 79-product catalog across 5 collections
+// Updated March 30, 2026 — CRO audit: deleted 3 products (Rattan Floor Lamp, Rice Paper Table Lamp, Acacia Round Dish Set)
 
 describe("Full Product Catalog (5 Collections)", () => {
   let PRODUCTS: any[];
@@ -22,10 +22,10 @@ describe("Full Product Catalog (5 Collections)", () => {
     expect(typeof shopifyMap).toBe("object");
   });
 
-  it("should contain exactly 82 products", async () => {
+  it("should contain exactly 79 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
-    expect(PRODUCTS.length).toBe(82);
+    expect(PRODUCTS.length).toBe(79);
   });
 
   it("should have 5 collections: FEAST, ADORN, BLOOM, GLOW, DWELL", async () => {
@@ -35,11 +35,11 @@ describe("Full Product Catalog (5 Collections)", () => {
     expect(slugs).toEqual(["feast", "adorn", "bloom", "glow", "dwell"]);
   });
 
-  it("FEAST collection should have 31 products", async () => {
+  it("FEAST collection should have 30 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     const feastProducts = PRODUCTS.filter((p) => p.collectionSlug === "feast");
-    expect(feastProducts.length).toBe(31);
+    expect(feastProducts.length).toBe(30);
   });
 
   it("ADORN collection should have 9 products", async () => {
@@ -56,11 +56,11 @@ describe("Full Product Catalog (5 Collections)", () => {
     expect(bloomProducts.length).toBe(14);
   });
 
-  it("GLOW collection should have 14 products", async () => {
+  it("GLOW collection should have 12 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     const glowProducts = PRODUCTS.filter((p) => p.collectionSlug === "glow");
-    expect(glowProducts.length).toBe(14);
+    expect(glowProducts.length).toBe(12);
   });
 
   it("DWELL collection should have 14 products", async () => {

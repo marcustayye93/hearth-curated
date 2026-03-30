@@ -243,13 +243,15 @@
 - [x] Save checkpoint
 
 ## CRO Pricing Audit v2 — Full Catalog (March 30, 2026)
-- [ ] Classify all 82 products into CRO roles: Gateway (<$25), Hero ($25-45), Workhorse ($45-75), Anchor ($75+)
-- [ ] Check pricing consistency within similar product groups (e.g., all acacia items, all ceramic items)
-- [ ] Ensure material-based price differentiation is justified (teak > acacia > bamboo, ceramic > glass, etc.)
-- [ ] Flag products of similar nature priced differently without good reason
-- [ ] Adjust prices where inconsistencies are found
-- [ ] Update products.ts with corrected prices
-- [ ] Run tests and save checkpoint
+- [x] Classify all 82 products into CRO roles: Gateway (<$25), Hero ($25-45), Workhorse ($45-75), Anchor ($75+)
+- [x] Check pricing consistency within similar product groups (e.g., all acacia items, all ceramic items)
+- [x] Ensure material-based price differentiation is justified (teak > acacia > bamboo, ceramic > glass, etc.)
+- [x] Flag products of similar nature priced differently without good reason
+- [x] Map all 82 products to Shopify storefront names and CJ source names
+- [x] Generate margin analysis with CJ source cost estimates
+- [x] Compile CRO Pricing Audit v2 report with cross-reference columns
+- [ ] Adjust prices where inconsistencies are found (pending user review)
+- [ ] Update products.ts with corrected prices (pending user review)
 
 ## Collection Hero Images & Naming (March 30, 2026)
 - [x] Update collection hero/placeholder images to match each category (GLOW + DWELL regenerated)
@@ -307,3 +309,24 @@
 - [ ] Fix acacia magnetic knife block variant images — should be plain natural wood, no prints
 - [ ] Fix kungfu tea set variant images — all 3 variants should show same design, different glaze colours only
 - [ ] PENDING: Confirm gold figurine product — is it a decorative figurine or half-body planter pot?
+
+## Shopify Storefront Name Sync (Mar 30)
+- [ ] Fetch all product names from Shopify Storefront API
+- [ ] Map each Shopify storefront name to the corresponding product in products.ts
+- [ ] Rename all 82 products to match exact Shopify storefront names
+- [ ] Update shopifyMap.ts product names to match storefront names
+- [ ] Verify slugs still work after renaming
+- [x] Run tests and save checkpoint (45/45 tests pass)
+
+## CRO Audit Implementation — User Findings (Mar 30)
+- [x] Delete Rattan Floor Lamp from catalog (CJ shipping too expensive)
+- [x] Delete Rice Paper Table Lamp from catalog (CJ shipping too expensive)
+- [x] Delete Acacia Round Dish Set — same CJ source as Acacia Serving Tray, AI image doesn't match real product, negative margin
+- [ ] (cancelled) Regenerate Acacia Round Dish Set photos — product deleted instead
+- [x] Reprice all Acacia products at premium (Acacia = expensive/highly perceived wood)
+- [x] Reposition Magnetic Levitating Planter as anchor product ($78→$128)
+- [x] Reprice all lamps into Workhorse/Anchor tiers (11 lamps repriced)
+- [x] Keep Mushroom Night Light as Gateway entry point ($22)
+- [x] Update lamp descriptions to emphasize artisanal, handcrafted, antique-sourced nature (8 lamps updated)
+- [ ] Consider increasing free shipping threshold marginally
+- [x] Run tests and save checkpoint (45/45 tests pass)

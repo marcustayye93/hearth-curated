@@ -1,6 +1,12 @@
 import { describe, it, expect } from "vitest";
 import { PRODUCTS, FREE_SHIPPING_THRESHOLD } from "../client/src/lib/products";
 
+// Updated March 30, 2026 — CRO audit repricing:
+// - Acacia products at premium
+// - Lamps repositioned to Workhorse/Anchor
+// - Magnetic Levitating Planter → Anchor
+// - Deleted: Rattan Floor Lamp, Rice Paper Table Lamp, Acacia Round Dish Set
+
 describe("Catalog Pricing Integrity", () => {
   it("should have FREE_SHIPPING_THRESHOLD set to 60", () => {
     expect(FREE_SHIPPING_THRESHOLD).toBe(60);
@@ -22,14 +28,15 @@ describe("Catalog Pricing Integrity", () => {
 
   it("should have correct prices for key FEAST products", () => {
     const expected: Record<string, number> = {
-      "acacia-salt-pepper-mill": 48,
-      "acacia-magnetic-knife-block": 128,
+      "acacia-salt-pepper-mill": 58,
+      "acacia-magnetic-knife-block": 148,
       "hand-painted-ceramic-oil-cruet": 48,
       "rapid-defrosting-board": 28,
       "multi-function-grater": 22,
       "japanese-sake-set": 52,
       "ceramic-pour-over-dripper": 32,
-      "acacia-serving-bowl": 48,
+      "acacia-serving-bowl": 58,
+      "acacia-serving-tray": 58,
     };
 
     for (const [slug, expectedPrice] of Object.entries(expected)) {
@@ -59,7 +66,7 @@ describe("Catalog Pricing Integrity", () => {
       "dried-cotton-stem": 18,
       "pampas-grass-bouquet": 32,
       "dried-lavender-bundle": 22,
-      "magnetic-levitating-planter": 78,
+      "magnetic-levitating-planter": 128,
       "faux-banyan-tree": 128,
     };
 
@@ -72,10 +79,13 @@ describe("Catalog Pricing Integrity", () => {
 
   it("should have correct prices for key GLOW products", () => {
     const expected: Record<string, number> = {
-      "woven-bamboo-table-lamp": 58,
-      "motion-sensing-cabinet-light": 22,
-      "rattan-floor-lamp": 128,
+      "woven-bamboo-table-lamp": 88,
+      "motion-sensing-cabinet-light": 32,
       "mushroom-night-light": 22,
+      "artisan-table-lamp": 128,
+      "ceramic-bedside-lamp": 98,
+      "edison-vintage-night-lamp": 68,
+      "round-linen-table-lamp": 98,
     };
 
     for (const [slug, expectedPrice] of Object.entries(expected)) {
@@ -97,6 +107,18 @@ describe("Catalog Pricing Integrity", () => {
       const product = PRODUCTS.find((p) => p.slug === slug);
       expect(product, `Product ${slug} should exist`).toBeDefined();
       expect(product!.price).toBe(expectedPrice);
+    }
+  });
+
+  it("deleted products should not exist in catalog", () => {
+    const deletedSlugs = [
+      "rattan-floor-lamp",
+      "rice-paper-table-lamp",
+      "acacia-round-dish-set",
+    ];
+    for (const slug of deletedSlugs) {
+      const product = PRODUCTS.find((p) => p.slug === slug);
+      expect(product, `Deleted product ${slug} should not exist`).toBeUndefined();
     }
   });
 
