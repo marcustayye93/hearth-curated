@@ -679,9 +679,7 @@ export const PRODUCTS: Product[] = [
     notes: "Reactive glaze · 350ml · Microwave safe",
     available: true,
     variants: [
-      { id: "feast-29-brn", label: "Earth Brown", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-29-brown-FXDKxcjLc6xAvgGrdMmhEr.webp" },
-      { id: "feast-29-grn", label: "Moss Green", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-29-green-ijaBrdnDghCjMtarr7NxaE.webp" },
-      { id: "feast-29-blu", label: "Ocean Blue", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-29-blue-enwpVTzyTD7tFMUHrq3Agh.webp" },
+      { id: "vintage-japanese-ceramic-coffee-mug-cup-200ml", label: "Cup · 200ml", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241560014929" },
     ],
     crossSells: ["feast-30", "feast-31", "feast-26"],
   },
@@ -701,8 +699,10 @@ export const PRODUCTS: Product[] = [
     notes: "Stoneware · 400ml · Keeps drinks warm",
     available: true,
     variants: [
-      { id: "feast-30-wht", label: "Cream White", price: 26.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-30-cream-UeU44z7MvsonfxEnVNVMhE.webp" },
-      { id: "feast-30-blk", label: "Charcoal Black", price: 26.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-30-charcoal-ExeWJyADeQyC4zejE2Xx9w.webp" },
+      { id: "japanese-stoneware-mug-grey-s", label: "Grey · Small", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558900817" },
+      { id: "japanese-stoneware-mug-grey-l", label: "Grey · Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558933585" },
+      { id: "japanese-stoneware-mug-apricot-s", label: "Apricot · Small", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558999121" },
+      { id: "japanese-stoneware-mug-apricot-l", label: "Apricot · Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558966353" },
     ],
     crossSells: ["feast-29", "feast-31", "feast-26"],
   },

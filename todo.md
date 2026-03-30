@@ -403,3 +403,9 @@
 - [x] All 24 variant images uploaded to CDN and updated in products.ts
 - [x] Added natural variation disclaimer to Product page (shows for dried/pampas/cotton/natural products)
 - [x] All 46 tests passing
+
+## Mug Variant Alignment (Mar 30)
+- [x] Vintage Japanese Ceramic Mug: aligned with Shopify (removed 3 fabricated colour variants, now single Cup·200ml variant)
+- [x] Japanese Stoneware Mug: aligned with Shopify (4 variants: Grey·Small, Grey·Large, Apricot·Small, Apricot·Large)
+- [x] shopifyMap already had correct entries — variant IDs now embedded in products.ts variants
+- [x] All 46 tests passing
