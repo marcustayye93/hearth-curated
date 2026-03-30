@@ -353,3 +353,17 @@
 - [x] Keep Magnetic Levitating Planter at $128 (no change)
 - [x] Update pricing tests
 - [x] Run tests and save checkpoint (46/46 tests pass)
+
+## Full Variant Sync from Shopify (Mar 30)
+- [x] Fetch all Shopify products with full variant details via Storefront API (93 products, 318 variants)
+- [x] Map all 79 catalog products to their Shopify counterparts (63 straightforward 1:1 mapped)
+- [x] Identify multi-style listings (especially lighting) that should be split into separate products (8 shared-source pairs flagged)
+- [x] Update shopifyMap.ts with all mapped product entries (106 entries, 318 variant GIDs)
+- [x] Rebuild all variant structures in products.ts from Shopify source of truth (63 products synced)
+- [x] Handle regional plug variants for lamps (EU/US/UK) — added as variants
+- [x] Fix fabricated variants: removed variants that don't exist on Shopify
+- [x] Fix missing colour options: added colours from Shopify
+- [x] Fix wrong variant counts: aligned with Shopify exactly
+- [x] Run tests and verify checkout routing integrity (46/46 tests pass, cart lifecycle confirmed)
+- [ ] Save checkpoint
+- [ ] Resolve 8 shared-source product pairs (pending user input on lighting especially)
