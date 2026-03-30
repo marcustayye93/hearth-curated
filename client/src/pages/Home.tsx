@@ -14,8 +14,8 @@ import SEOHead from "@/components/SEOHead";
 
 const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/hero-banner-v2-WGnoQge2ivaCcYKVnDSYX9_240f3315.webp";
 
-// Top 8 available products for featured section
-const FEATURED_PRODUCTS = PRODUCTS.filter((p) => p.available).slice(0, 8);
+// Top 8 products for featured section (includes sold-out with ribbon)
+const FEATURED_PRODUCTS = PRODUCTS.slice(0, 8);
 
 function FeaturedCard({ product }: { product: Product }) {
   const { addItem } = useCart();
@@ -35,7 +35,7 @@ function FeaturedCard({ product }: { product: Product }) {
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover hc-product-img"
+          className={`w-full h-full object-cover hc-product-img${!product.available ? " hc-sold-out-img" : ""}`}
           loading="lazy"
           decoding="async"
           width={800}
@@ -59,6 +59,7 @@ function FeaturedCard({ product }: { product: Product }) {
             <span>Quick Add</span>
           </button>
         )}
+        {!product.available && <div className="hc-sold-out-ribbon" />}
       </div>
       <div>
         <p

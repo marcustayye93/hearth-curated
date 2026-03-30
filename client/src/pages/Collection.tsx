@@ -32,13 +32,13 @@ function ProductCard({ product }: { product: Product }) {
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover hc-product-img"
+          className={`w-full h-full object-cover hc-product-img${!product.available ? " hc-sold-out-img" : ""}`}
           loading="lazy"
           decoding="async"
           width={800}
           height={1067}
         />
-        {/* Quick Add button — desktop hover */}
+        {/* Quick Add button — desktop hover (available only) */}
         {product.available && (
           <button
             onClick={handleQuickAdd}
@@ -57,25 +57,8 @@ function ProductCard({ product }: { product: Product }) {
             <span>Quick Add</span>
           </button>
         )}
-        {/* Returning Soon overlay */}
-        {!product.available && (
-          <div
-            className="absolute inset-0 flex items-center justify-center"
-            style={{ backgroundColor: "rgba(28,16,8,0.3)" }}
-          >
-            <span
-              className="text-[10px] tracking-widest uppercase px-3 py-1.5"
-              style={{
-                backgroundColor: "var(--hc-parchment)",
-                color: "var(--hc-espresso)",
-                fontFamily: "'Karla', sans-serif",
-                fontWeight: 500,
-              }}
-            >
-              Returning Soon
-            </span>
-          </div>
-        )}
+        {/* Sold-out diagonal ribbon */}
+        {!product.available && <div className="hc-sold-out-ribbon" />}
       </div>
       {/* Info */}
       <div>

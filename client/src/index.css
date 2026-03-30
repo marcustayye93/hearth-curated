@@ -219,4 +219,42 @@
       transform: translateY(0) !important;
     }
   }
+
+  /* Sold-out product card — greyed thumbnail */
+  .hc-sold-out-img {
+    filter: grayscale(0.6) brightness(1.1);
+    opacity: 0.65;
+  }
+
+  /* Sold-out diagonal ribbon */
+  .hc-sold-out-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .hc-sold-out-ribbon::after {
+    content: 'SOLD OUT';
+    position: absolute;
+    /* Position the ribbon running from bottom-left to top-right */
+    bottom: 12%;
+    left: -20%;
+    width: 140%;
+    text-align: center;
+    padding: 6px 0;
+    background-color: rgba(60, 55, 48, 0.82);
+    color: rgba(242, 237, 228, 0.92);
+    font-family: 'Karla', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    transform: rotate(-35deg);
+    transform-origin: center center;
+    box-shadow: 0 1px 4px rgba(28, 16, 8, 0.15);
+  }
 }

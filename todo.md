@@ -429,3 +429,16 @@
 - [x] Add new product: Wax Melt Aromatherapy Lamp (Shopify: 15738951958609) — updated with real Shopify data, new images, $23 price
 - [x] Add new product: Edison Vintage Night Lamp (Shopify: 15738951434321) — updated with real Shopify data, new images, $16 price, marked unavailable
 - [x] Remove product: Artisan Table Lamp
+
+## Solar Pathway Light Image Fix (Mar 30)
+- [x] Fix Solar Pathway Light images — replaced with original Shopify stock image
+- [x] Uploaded stock image to CDN and updated products.ts
+
+## Sold Out Product Styling (Mar 30)
+- [x] Diagonal "SOLD OUT" ribbon (dark grey, bottom-left to top-right) on unavailable product thumbnails
+- [x] Greyed-out (light grey) photo thumbnails for sold-out products
+- [x] Apply to all surfaces: Collection pages, Shop All, Home featured, Product cross-sells, Product detail
+- [x] Do not hide sold-out products — keep them visible in all listings
+- [x] Include unavailable products in collection.products and ShopAll (was previously filtered out)
+- [x] Replace old "Returning Soon" overlay with diagonal ribbon on Product detail page
+- [x] All 46 tests passing

@@ -1960,10 +1960,10 @@ export const COLLECTIONS: Collection[] = [
   },
 ];
 
-// Populate collection products (only available products shown by default)
+// Populate collection products (show all products, including sold-out)
 COLLECTIONS.forEach((col) => {
   col.products = PRODUCTS.filter(
-    (p) => p.collectionSlug === col.slug && p.available
+    (p) => p.collectionSlug === col.slug
   );
 });
 

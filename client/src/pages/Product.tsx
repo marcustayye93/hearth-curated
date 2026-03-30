@@ -150,24 +150,7 @@ export default function Product() {
                     width={800}
                     height={1067}
                   />
-                  {!isAvailable && (
-                    <div
-                      className="absolute inset-0 flex items-center justify-center"
-                      style={{ backgroundColor: "rgba(28,16,8,0.4)" }}
-                    >
-                      <span
-                        className="text-xs tracking-widest uppercase px-4 py-2"
-                        style={{
-                          backgroundColor: "var(--hc-parchment)",
-                          color: "var(--hc-espresso)",
-                          fontFamily: "'Karla', sans-serif",
-                          fontWeight: 500,
-                        }}
-                      >
-                        Returning Soon
-                      </span>
-                    </div>
-                  )}
+                  {!isAvailable && <div className="hc-sold-out-ribbon" />}
                 </div>
 
                 {/* Thumbnail strip — only show if there are additional images */}
@@ -482,16 +465,17 @@ export default function Product() {
                     href={`/products/${rel.slug}`}
                     className="group block hc-product-card"
                   >
-                    <div className="overflow-hidden mb-4" style={{ aspectRatio: "3/4" }}>
+                    <div className="overflow-hidden mb-4 relative" style={{ aspectRatio: "3/4" }}>
                       <img
                         src={rel.image}
                         alt={rel.name}
-                        className="w-full h-full object-cover hc-product-img"
+                        className={`w-full h-full object-cover hc-product-img${!rel.available ? " hc-sold-out-img" : ""}`}
                         loading="lazy"
                         decoding="async"
                         width={800}
                         height={1067}
                       />
+                      {!rel.available && <div className="hc-sold-out-ribbon" />}
                     </div>
                     <p
                       className="text-xs tracking-widest uppercase mb-1"

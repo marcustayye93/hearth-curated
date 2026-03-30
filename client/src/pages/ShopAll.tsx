@@ -6,7 +6,7 @@ import { Link } from "wouter";
 import { Plus } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { getAvailableProducts, COLLECTIONS, type Product, getShopifyVariantGid } from "@/lib/products";
+import { getAllProducts, COLLECTIONS, type Product, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
 import SEOHead from "@/components/SEOHead";
 import { useState } from "react";
@@ -33,13 +33,13 @@ function ProductCard({ product }: { product: Product }) {
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover hc-product-img"
+          className={`w-full h-full object-cover hc-product-img${!product.available ? " hc-sold-out-img" : ""}`}
           loading="lazy"
           decoding="async"
           width={800}
           height={1067}
         />
-        {/* Quick Add button — desktop hover */}
+        {/* Quick Add button — desktop hover (available only) */}
         {product.available && (
           <button
             onClick={handleQuickAdd}
@@ -58,6 +58,8 @@ function ProductCard({ product }: { product: Product }) {
             <span>Quick Add</span>
           </button>
         )}
+        {/* Sold-out diagonal ribbon */}
+        {!product.available && <div className="hc-sold-out-ribbon" />}
       </div>
       {/* Info */}
       <div>
@@ -95,7 +97,7 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export default function ShopAll() {
-  const allProducts = getAvailableProducts();
+  const allProducts = getAllProducts();
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
   const filteredProducts =
