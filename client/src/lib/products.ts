@@ -751,14 +751,14 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["adorn-9", "adorn-7", "bloom-1"],
       variants: [
-        { id: "led-aroma-diffuser-set-1-usb", label: "Set 1 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900271185" },
-        { id: "led-aroma-diffuser-shallow-wood-grain-u", label: "Shallow Wood Grain / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900303953" },
-        { id: "led-aroma-diffuser-set-6-usb", label: "Set 6 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900336721" },
-        { id: "led-aroma-diffuser-deep-wood-grain-usb", label: "Deep Wood Grain / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900369489" },
-        { id: "led-aroma-diffuser-set-2-usb", label: "Set 2 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900402257" },
-        { id: "led-aroma-diffuser-set-3-usb", label: "Set 3 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900435025" },
-        { id: "led-aroma-diffuser-set-4-usb", label: "Set 4 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900467793" },
-        { id: "led-aroma-diffuser-set-5-usb", label: "Set 5 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900500561" }
+        { id: "led-aroma-diffuser-set-1-usb", label: "Set 1 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900271185", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set1-RaGC44VtLuLyWaHaXURDJq.webp" },
+        { id: "led-aroma-diffuser-shallow-wood-grain-u", label: "Shallow Wood Grain / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900303953", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-shallow-wood-RGnqHBjbvVaJ3J5kQE8Qid.webp" },
+        { id: "led-aroma-diffuser-set-6-usb", label: "Set 6 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900336721", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set6-SUyyyWtAYLWfhmXHwifG8W.webp" },
+        { id: "led-aroma-diffuser-deep-wood-grain-usb", label: "Deep Wood Grain / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900369489", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-deep-wood-2ff2PNR85XDWXPSYcj73yJ.webp" },
+        { id: "led-aroma-diffuser-set-2-usb", label: "Set 2 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900402257", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set2-mXfagbkaJNmPSD6rSvv9Ud.webp" },
+        { id: "led-aroma-diffuser-set-3-usb", label: "Set 3 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900435025", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set3-HproJLzWb4D7qPUtmVdW9Q.webp" },
+        { id: "led-aroma-diffuser-set-4-usb", label: "Set 4 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900467793", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set4-jY498KmEheipnPzzadSPHc.webp" },
+        { id: "led-aroma-diffuser-set-5-usb", label: "Set 5 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900500561", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set5-2fdzHmbQh3yKpGpyyxYRZg.webp" }
       ]
   },
   {
@@ -802,9 +802,9 @@ export const PRODUCTS: Product[] = [
     notes: "Hand-blown glass · Thick base · Multiple colours",
     available: true,
     variants: [
-        { id: "sculptural-glass-vase-light-blue", label: "Light Blue", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307774033" },
-        { id: "sculptural-glass-vase-dark-blue", label: "Dark Blue", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307806801" },
-        { id: "sculptural-glass-vase-yellow", label: "Yellow", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307839569" }
+        { id: "sculptural-glass-vase-light-blue", label: "Light Blue", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307774033", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glass-vase-light-blue-CCf7fRhF9xy9cNxX8MjNjw.webp" },
+        { id: "sculptural-glass-vase-dark-blue", label: "Dark Blue", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307806801", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glass-vase-dark-blue-6L7AxSu9Yw6V8WFFBxETXK.webp" },
+        { id: "sculptural-glass-vase-yellow", label: "Yellow", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307839569", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glass-vase-yellow-HQaqzwev5TubyfHvTyFc7H.webp" }
       ],
     crossSells: ["adorn-5", "adorn-6", "bloom-5"],
   },
@@ -1045,12 +1045,12 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["bloom-2", "bloom-3", "adorn-5"],
       variants: [
-        { id: "mixed-dried-flower-bouquet-champagne", label: "Champagne", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309019217" },
-        { id: "mixed-dried-flower-bouquet-orange", label: "Orange", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309051985" },
-        { id: "mixed-dried-flower-bouquet-pink", label: "Pink", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309084753" },
-        { id: "mixed-dried-flower-bouquet-white", label: "White", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309117521" },
-        { id: "mixed-dried-flower-bouquet-mix-colors-4pcs", label: "Mix Colors 4Pcs", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309150289" },
-        { id: "mixed-dried-flower-bouquet-orange-2pcs", label: "Orange 2Pcs", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309183057" }
+        { id: "mixed-dried-flower-bouquet-champagne", label: "Champagne", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309019217", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-champagne-WLEvAkUf9H3Sa5sNN385HZ.webp" },
+        { id: "mixed-dried-flower-bouquet-orange", label: "Orange", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309051985", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-orange-g2DRHJHKLe3cCC3ZDZpFAn.webp" },
+        { id: "mixed-dried-flower-bouquet-pink", label: "Pink", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309084753", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-pink-3UaasXeGFqkyLSmdkxGH9V.webp" },
+        { id: "mixed-dried-flower-bouquet-white", label: "White", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309117521", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-white-cmU2qMTZK62XFXxWBbgoxb.webp" },
+        { id: "mixed-dried-flower-bouquet-mix-colors-4pcs", label: "Mix Colors 4Pcs", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309150289", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-mix-colors-RnmRMnbo5Ac9uCWrRZP2mf.webp" },
+        { id: "mixed-dried-flower-bouquet-orange-2pcs", label: "Orange 2Pcs", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309183057", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-orange-2pcs-DovV5aJMfrbBoprAG2VC2w.webp" }
       ]
   },
   {
@@ -1112,12 +1112,12 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["bloom-3", "bloom-5", "adorn-6"],
       variants: [
-        { id: "dried-reed-arrangement-pink-fron", label: "Pink Fron", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311050833" },
-        { id: "dried-reed-arrangement-black-beans", label: "Black Beans", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311083601" },
-        { id: "dried-reed-arrangement-sunflower", label: "Sunflower", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311116369" },
-        { id: "dried-reed-arrangement-pink-franca-black-be", label: "Pink Franca Black Beans", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311149137" },
-        { id: "dried-reed-arrangement-pink-franca-sunflowe", label: "Pink Franca Sunflower", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311181905" },
-        { id: "dried-reed-arrangement-powder-franca-sunflo", label: "Powder Franca Sunflower With B", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311214673" }
+        { id: "dried-reed-arrangement-pink-fron", label: "Pink Fron", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311050833", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-pink-fron-MeoutcqMSZi6EWacRsR7bR.webp" },
+        { id: "dried-reed-arrangement-black-beans", label: "Black Beans", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311083601", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-black-beans-XfoRwMVz9TDCaZPzmioHUg.webp" },
+        { id: "dried-reed-arrangement-sunflower", label: "Sunflower", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311116369", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-sunflower-fA7uKtuc64sytM4HvTbEhh.webp" },
+        { id: "dried-reed-arrangement-pink-franca-black-be", label: "Pink Franca Black Beans", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311149137", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-pink-black-Hmoapxhc36fcGNfCTBgVZT.webp" },
+        { id: "dried-reed-arrangement-pink-franca-sunflowe", label: "Pink Franca Sunflower", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311181905", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-pink-sunflower-AYaUv77qpnm3nhhRxDbZCh.webp" },
+        { id: "dried-reed-arrangement-powder-franca-sunflo", label: "Powder Franca Sunflower With B", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311214673", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-powder-sunflower-TSAkh2TUDvAhgNK2vb8b28.webp" }
       ]
   },
   {
