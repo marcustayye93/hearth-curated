@@ -1,15 +1,17 @@
 import { describe, it, expect } from "vitest";
 import { PRODUCTS, FREE_SHIPPING_THRESHOLD } from "../client/src/lib/products";
 
-// Updated March 30, 2026 — CRO audit repricing:
-// - Acacia products at premium
-// - Lamps repositioned to Workhorse/Anchor
-// - Magnetic Levitating Planter → Anchor
-// - Deleted: Rattan Floor Lamp, Rice Paper Table Lamp, Acacia Round Dish Set
+// Updated March 30, 2026 — Competitive repricing round 2:
+// - Table lamps capped at $99
+// - Edison Night Lamp $68→$78
+// - Japanese/Woven Bamboo Bedside $88→$98
+// - Ceramic Bedside $98→$99, Artisan Table $128→$99
+// - Acacia Bowl $58→$68, Teak Utensils $38→$48
+// - Fireplace Diffuser $58→$59
 
 describe("Catalog Pricing Integrity", () => {
-  it("should have FREE_SHIPPING_THRESHOLD set to 60", () => {
-    expect(FREE_SHIPPING_THRESHOLD).toBe(60);
+  it("should have FREE_SHIPPING_THRESHOLD set to 70", () => {
+    expect(FREE_SHIPPING_THRESHOLD).toBe(70);
   });
 
   it("all available products should be priced >= $9", () => {
@@ -35,8 +37,9 @@ describe("Catalog Pricing Integrity", () => {
       "multi-function-grater": 22,
       "japanese-sake-set": 52,
       "ceramic-pour-over-dripper": 32,
-      "acacia-serving-bowl": 58,
+      "acacia-serving-bowl": 68,
       "acacia-serving-tray": 58,
+      "teak-kitchen-utensil-set": 48,
     };
 
     for (const [slug, expectedPrice] of Object.entries(expected)) {
@@ -50,7 +53,7 @@ describe("Catalog Pricing Integrity", () => {
     const expected: Record<string, number> = {
       "led-aroma-diffuser": 48,
       "ceramic-incense-holder": 22,
-      "fireplace-aroma-diffuser": 58,
+      "fireplace-aroma-diffuser": 59,
       "abstract-figurine": 42,
     };
 
@@ -79,13 +82,14 @@ describe("Catalog Pricing Integrity", () => {
 
   it("should have correct prices for key GLOW products", () => {
     const expected: Record<string, number> = {
-      "woven-bamboo-table-lamp": 88,
+      "woven-bamboo-table-lamp": 98,
       "motion-sensing-cabinet-light": 32,
       "mushroom-night-light": 22,
-      "artisan-table-lamp": 128,
-      "ceramic-bedside-lamp": 98,
-      "edison-vintage-night-lamp": 68,
+      "artisan-table-lamp": 99,
+      "ceramic-bedside-lamp": 99,
+      "edison-vintage-night-lamp": 78,
       "round-linen-table-lamp": 98,
+      "japanese-bedside-lamp": 98,
     };
 
     for (const [slug, expectedPrice] of Object.entries(expected)) {
@@ -107,6 +111,24 @@ describe("Catalog Pricing Integrity", () => {
       const product = PRODUCTS.find((p) => p.slug === slug);
       expect(product, `Product ${slug} should exist`).toBeDefined();
       expect(product!.price).toBe(expectedPrice);
+    }
+  });
+
+  it("no table lamp should exceed $99", () => {
+    const tableLampSlugs = [
+      "edison-vintage-night-lamp",
+      "japanese-bedside-lamp",
+      "woven-bamboo-table-lamp",
+      "ceramic-bedside-lamp",
+      "artisan-table-lamp",
+      "round-linen-table-lamp",
+      "square-linen-table-lamp",
+    ];
+    for (const slug of tableLampSlugs) {
+      const product = PRODUCTS.find((p) => p.slug === slug);
+      if (product) {
+        expect(product.price, `Lamp ${slug} should be <= $99`).toBeLessThanOrEqual(99);
+      }
     }
   });
 

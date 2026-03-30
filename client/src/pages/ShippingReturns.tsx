@@ -230,7 +230,7 @@ export default function ShippingReturns() {
     >
       <SEOHead
         title="Shipping & Returns — Hearth Curated"
-        description="Free worldwide shipping on orders over $60. $4.90 flat rate shipping worldwide. Easy 14-day returns on all unused items. Learn about our shipping rates, delivery times, and return policy."
+        description="Free worldwide shipping on orders over $70. $4.90 flat rate shipping worldwide. Easy 14-day returns on all unused items. Learn about our shipping rates, delivery times, and return policy."
         canonicalPath="/shipping-returns"
       />
       <Nav />
@@ -286,8 +286,8 @@ export default function ShippingReturns() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 max-w-4xl mx-auto">
               <PolicyCard
                 icon={Truck}
-                title="Free Over $60"
-                description="Complimentary worldwide shipping on all orders above $60 SGD. $4.90 flat rate on all other orders."
+                title="Free Over $70"
+                description="Complimentary worldwide shipping on all orders above $70 SGD. $4.90 flat rate on all other orders."
                 delay={0}
               />
               <PolicyCard
@@ -403,12 +403,12 @@ export default function ShippingReturns() {
                         {[
                           {
                             dest: "Asia-Pacific",
-                            rate: "Free over $60 / $4.90 flat",
+                            rate: "Free over $70 / $4.90 flat",
                             time: "7–15 business days",
                           },
                           {
                             dest: "International",
-                            rate: "Free over $60 / $4.90 flat",
+                            rate: "Free over $70 / $4.90 flat",
                             time: "15–25 business days",
                           },
                         ].map((row, i) => (

@@ -41,7 +41,7 @@ export interface Collection {
   products: Product[];
 }
 
-const FREE_SHIPPING_THRESHOLD = 60;
+const FREE_SHIPPING_THRESHOLD = 70;
 export { FREE_SHIPPING_THRESHOLD };
 
 export const PRODUCTS: Product[] = [
@@ -73,7 +73,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "Hand-finished teak utensils — spoon, ladle, turner, spatula — that never scratch non-stick.",
     description:
       "A set of hand-finished teak wood cooking utensils — spoon, ladle, turner, and spatula — each one carved from natural teak with the density and oil content that makes this wood the material of choice for serious kitchens. Teak is naturally antimicrobial, heat-resistant, and develops a rich patina over years of use.",
-    price: 38.00,
+    price: 48.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/1_LOo4TvZe4CwtOLCRmkrlJ6_1774801321323_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy90ZWFrX2tpdGNoZW5fdXRlbnNpbF9zZXQ_95d7e2bc.jpg",
@@ -81,9 +81,9 @@ export const PRODUCTS: Product[] = [
     notes: "Teak wood · Antimicrobial · Heat-resistant",
     available: true,
     variants: [
-      { id: "feast-2-4pc", label: "4-Piece Set", price: 38.00, available: true },
-      { id: "feast-2-6pc", label: "6-Piece Set", price: 48.00, available: true },
-      { id: "feast-2-8pc", label: "8-Piece Set", price: 58.00, available: true },
+      { id: "feast-2-4pc", label: "4-Piece Set", price: 48.00, available: true },
+      { id: "feast-2-6pc", label: "6-Piece Set", price: 58.00, available: true },
+      { id: "feast-2-8pc", label: "8-Piece Set", price: 68.00, available: true },
     ],
     crossSells: ["feast-21", "feast-22", "feast-1"],
   },
@@ -199,7 +199,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A hand-finished wooden bowl for fruit, salad, or simply being beautiful.",
     description:
       "A natural wooden bowl with the kind of quiet presence that makes you want to fill it with something beautiful — or leave it empty and let the grain speak for itself. Hand-finished from a single piece of solid acacia wood.",
-    price: 58.00,
+    price: 68.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wooden-bowl-natural-TkYrmhoM7fEfyQSxASBKHJ.webp",
@@ -823,7 +823,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A ceramic diffuser shaped like a miniature fireplace — warm light and scent without a flame.",
     description:
       "A ceramic aroma diffuser shaped like a miniature fireplace — complete with a warm LED glow that simulates flickering flames. The combination of warm light and essential oil diffusion creates an atmosphere of comfort and calm without any open flame.",
-    price: 58.00,
+    price: 59.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-2_e58fdd57_f59ad19d.webp",
@@ -1106,7 +1106,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A hand-finished Edison bulb on a reclaimed wooden base — warm amber glow sourced from artisan workshops.",
     description:
       "A vintage-style Edison bulb lamp on a hand-finished reclaimed wooden base — the kind of light that makes a room feel like a library in a country house. Each base is individually selected for its grain character and hand-sanded to a silken finish. The exposed filament produces a warm amber glow that is gentle on the eyes and creates a cosy atmosphere.",
-    price: 68.00,
+    price: 78.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/edison-vintage-night-lamp_6fa91aea.jpg",
@@ -1170,7 +1170,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A handcrafted wooden lamp with fabric shade — artisan-made, warm quiet light for the bedside.",
     description:
       "A minimalist bedside lamp with a hand-turned solid wood base and a hand-sewn fabric shade — the kind of light that makes a bedroom feel calm and considered. Each base is individually turned on a lathe by skilled woodworkers, giving every piece its own subtle character. The warm-toned shade filters the light into a soft glow that is perfect for reading or winding down.",
-    price: 88.00,
+    price: 98.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/japanese-bedside-lamp_1fe34f7a.png",
@@ -1265,7 +1265,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A hand-woven bamboo shade by traditional artisans — intricate shadow patterns on walls and ceiling.",
     description:
       "A table lamp with a hand-woven bamboo shade crafted by traditional artisans using techniques passed down through generations. The shade casts beautiful, intricate shadow patterns on surrounding walls and ceiling. The natural bamboo has a warm golden tone, and each weave pattern is unique to the artisan who made it — transforming any room into a gallery of light and shadow.",
-    price: 88.00,
+    price: 98.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-1_4c56282f_81e8dad6.webp",
@@ -1283,7 +1283,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A hand-glazed ceramic lamp — each one unique, artisan-crafted warm light for the bedside.",
     description:
       "A ceramic bedside lamp with a hand-applied reactive glaze that creates unique colour variations on every piece — no two are exactly alike. Each base is individually thrown, glazed, and kiln-fired by skilled ceramicists, making every lamp a one-of-a-kind artisan piece. The linen shade softens the light into a warm glow, and the ceramic base has a satisfying weight that keeps it stable.",
-    price: 98.00,
+    price: 99.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ceramic-bedside-lamp_4d19a161.png",
@@ -1291,9 +1291,9 @@ export const PRODUCTS: Product[] = [
     notes: "Reactive glaze · Linen shade · Each piece unique",
     available: true,
     variants: [
-      { id: "glow-12-snd", label: "Sand", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-sand-39PFucBomL5XbcAYMrdjT6.webp" },
-      { id: "glow-12-sge", label: "Sage", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-sage-aP76kxwRt2VafGZqM2gmUd.webp" },
-      { id: "glow-12-blu", label: "Ocean Blue", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-blue-B7USbMnm4GshmkWquj2aFq.webp" },
+      { id: "glow-12-snd", label: "Sand", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-sand-39PFucBomL5XbcAYMrdjT6.webp" },
+      { id: "glow-12-sge", label: "Sage", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-sage-aP76kxwRt2VafGZqM2gmUd.webp" },
+      { id: "glow-12-blu", label: "Ocean Blue", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-blue-B7USbMnm4GshmkWquj2aFq.webp" },
     ],
     crossSells: ["glow-5", "glow-1", "glow-8"],
   },
@@ -1322,7 +1322,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A handmade ceramic and linen lamp — crafted by artisan potters, warm ambient light.",
     description:
       "A handmade table lamp with a textured ceramic base and a natural linen shade — crafted by artisan potters in small-batch studio production. Each base is hand-thrown and hand-textured, with surface variations that catch light in interesting ways and mark it unmistakably as a handmade object. The linen shade creates a warm, even glow that transforms any corner into something considered.",
-    price: 128.00,
+    price: 99.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/artisan-table-lamp_f4fa5e6f.png",

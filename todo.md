@@ -330,3 +330,26 @@
 - [x] Update lamp descriptions to emphasize artisanal, handcrafted, antique-sourced nature (8 lamps updated)
 - [ ] Consider increasing free shipping threshold marginally
 - [x] Run tests and save checkpoint (45/45 tests pass)
+
+## Free Shipping Threshold Update (Mar 30)
+- [x] Update FREE_SHIPPING_THRESHOLD from $60 to $70 in products.ts
+- [x] Update all UI references to the free shipping threshold (banner, cart drawer, etc.)
+- [x] Update pricing test to expect $70 threshold
+- [x] Competitive shipping benchmark: compare free shipping threshold with similar home goods e-commerce stores
+- [x] Verify at least 2 comparable stores charge $70 or higher for free shipping (10 of 15 stores >= $70)
+- [x] Research international shipping rates charged by similar stores (most calculate; flat-rate is rare)
+- [ ] Run tests and save checkpoint
+
+## Competitive Repricing Round 2 — User-Approved (Mar 30)
+- [x] Edison Vintage Night Lamp: $68 → $78
+- [x] Japanese Bedside Lamp: $88 → $98
+- [x] Woven Bamboo Table Lamp: $88 → $98
+- [x] Ceramic Bedside Lamp: $98 → $99
+- [x] Artisan Table Lamp: $128 → $99
+- [x] Acacia Serving Bowl: $58 → $68
+- [x] Teak Kitchen Utensil Set: $38 → $48
+- [x] Fireplace Aroma Diffuser: $58 → $59
+- [x] Keep Japanese Irregular Dinner Plate at $28 (no change)
+- [x] Keep Magnetic Levitating Planter at $128 (no change)
+- [x] Update pricing tests
+- [x] Run tests and save checkpoint (46/46 tests pass)
