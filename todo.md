@@ -409,3 +409,18 @@
 - [x] Japanese Stoneware Mug: aligned with Shopify (4 variants: Grey·Small, Grey·Large, Apricot·Small, Apricot·Large)
 - [x] shopifyMap already had correct entries — variant IDs now embedded in products.ts variants
 - [x] All 46 tests passing
+
+## Colour Variant Image Generation — Batch 2 (Mar 30)
+- [x] Velvet Stripe Cushion Cover: 7 colour variant images (Ivory White, Silver Grey, Mustard Yellow, Charcoal Black, Wine Red, Navy Blue, White & Pink Set)
+- [x] Knit Nap Blanket: 3 colour variant images (Khaki, Dark Grey, Light Grey)
+- [x] Fireplace Aroma Diffuser: 2 colour variant images (Black, White)
+- [x] Japanese Stoneware Mug: 2 colour variant images (Grey, Apricot — shared across Small/Large)
+- [x] Dried Lavender Bundle: 2 colour variant images (White, Pink)
+- [x] Woven Hanging Planter: 3 colour variant images (Grey, Coffee, Yellow)
+- [x] Ceramic Seasoning Pot Set: 3 colour variant images (Classic White, Matte Grey, Sage Green)
+- [ ] Mixed Dried Flower Bouquet: 5 colour variant images
+- [ ] Dried Reed Arrangement: 6 variant images
+- [ ] LED Aroma Diffuser: 8 variant images
+- [ ] Sculptural Glass Vase: 3 colour variant images (Light Blue, Dark Blue, Yellow)
+- [ ] All variant images added to products.ts with image URLs
+- [ ] All 46 tests passing

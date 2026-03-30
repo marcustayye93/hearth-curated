@@ -66,9 +66,9 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["feast-14", "feast-2", "feast-19"],
       variants: [
-        { id: "ceramic-seasoning-pot-set-a", label: "Classic White", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250895978577" },
-        { id: "ceramic-seasoning-pot-set-b", label: "Matte Grey", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250896011345" },
-        { id: "ceramic-seasoning-pot-set-c", label: "Sage Green", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250896044113" }
+        { id: "ceramic-seasoning-pot-set-a", label: "Classic White", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250895978577", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/seasoning-pot-white-SbuJsUDGvhJ6sNhHsWy5Zc.webp" },
+        { id: "ceramic-seasoning-pot-set-b", label: "Matte Grey", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250896011345", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/seasoning-pot-grey-P7VPzDJny3JvXjdTJPmonN.webp" },
+        { id: "ceramic-seasoning-pot-set-c", label: "Sage Green", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250896044113", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/seasoning-pot-sage-cDMmL7Bb8gEiV9turTSrr3.webp" }
       ]
   },
   {
@@ -699,10 +699,10 @@ export const PRODUCTS: Product[] = [
     notes: "Stoneware · 400ml · Keeps drinks warm",
     available: true,
     variants: [
-      { id: "japanese-stoneware-mug-grey-s", label: "Grey · Small", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558900817" },
-      { id: "japanese-stoneware-mug-grey-l", label: "Grey · Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558933585" },
-      { id: "japanese-stoneware-mug-apricot-s", label: "Apricot · Small", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558999121" },
-      { id: "japanese-stoneware-mug-apricot-l", label: "Apricot · Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558966353" },
+      { id: "japanese-stoneware-mug-grey-s", label: "Grey · Small", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558900817", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-mug-grey-4ENLh5QRKKR8kMyaPRzm46.webp" },
+      { id: "japanese-stoneware-mug-grey-l", label: "Grey · Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558933585", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-mug-grey-4ENLh5QRKKR8kMyaPRzm46.webp" },
+      { id: "japanese-stoneware-mug-apricot-s", label: "Apricot · Small", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558999121", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-mug-apricot-WxVP3BxcsUwfTm25k3bVsJ.webp" },
+      { id: "japanese-stoneware-mug-apricot-l", label: "Apricot · Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558966353", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-mug-apricot-WxVP3BxcsUwfTm25k3bVsJ.webp" },
     ],
     crossSells: ["feast-29", "feast-31", "feast-26"],
   },
@@ -931,8 +931,8 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["adorn-1", "adorn-7", "glow-5"],
       variants: [
-        { id: "fireplace-aroma-diffuser-black-gift-remote-co", label: "Black", price: 59.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305545809" },
-        { id: "fireplace-aroma-diffuser-white-gift-remote-co", label: "White", price: 59.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305578577" }
+        { id: "fireplace-aroma-diffuser-black-gift-remote-co", label: "Black", price: 59.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305545809", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/fireplace-diffuser-black-CpQb9YNG4VkG6X4JZdBMtX.webp" },
+        { id: "fireplace-aroma-diffuser-white-gift-remote-co", label: "White", price: 59.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305578577", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/fireplace-diffuser-white-6EponoFw9eAe6vQucefci7.webp" }
       ]
   },
   // ═══════════════════════════════════════════════════════════════════════
@@ -981,8 +981,8 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["bloom-1", "bloom-5", "adorn-6"],
       variants: [
-        { id: "dried-lavender-bundle-white", label: "White", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914263121" },
-        { id: "dried-lavender-bundle-pink", label: "Pink", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914295889" }
+        { id: "dried-lavender-bundle-white", label: "White", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914263121", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-lavender-white-K9rHcG9dsSMAYmSMWt9a38.webp" },
+        { id: "dried-lavender-bundle-pink", label: "Pink", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914295889", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-lavender-pink-SuXpfeRpfycgyj3BxoMTuT.webp" }
       ]
   },
   {
@@ -1199,9 +1199,9 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["bloom-11", "adorn-4", "bloom-13"],
       variants: [
-        { id: "woven-hanging-planter-grey", label: "Grey", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307315281" },
-        { id: "woven-hanging-planter-coffee", label: "Coffee", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307348049" },
-        { id: "woven-hanging-planter-yellow", label: "Yellow", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307380817" }
+        { id: "woven-hanging-planter-grey", label: "Grey", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307315281", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/hanging-planter-grey-aHocnvaiGDNRiVJK4Cjh6U.webp" },
+        { id: "woven-hanging-planter-coffee", label: "Coffee", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307348049", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/hanging-planter-coffee-6nFfdsxnELfytx9LjzNvDp.webp" },
+        { id: "woven-hanging-planter-yellow", label: "Yellow", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307380817", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/hanging-planter-yellow-TdKiKJCrjtbTymXNaNP6iK.webp" }
       ]
   },
   {
@@ -1738,9 +1738,9 @@ export const PRODUCTS: Product[] = [
     notes: "Chunky knit · 130×170cm · Machine washable",
     available: true,
     variants: [
-        { id: "knit-nap-blanket-khaki", label: "Khaki", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309215825" },
-        { id: "knit-nap-blanket-dark-grey", label: "Dark Grey", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309248593" },
-        { id: "knit-nap-blanket-light-grey", label: "Light Grey", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309281361" }
+        { id: "knit-nap-blanket-khaki", label: "Khaki", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309215825", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knit-blanket-khaki-8AfvwHjXGKinttmQbqziQh.webp" },
+        { id: "knit-nap-blanket-dark-grey", label: "Dark Grey", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309248593", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knit-blanket-dark-grey-m8w6JACVjLFfhrFBTG9TxK.webp" },
+        { id: "knit-nap-blanket-light-grey", label: "Light Grey", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309281361", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knit-blanket-light-grey-U2okFj6tsHro4FXFxeJ49b.webp" }
       ],
     crossSells: ["dwell-7", "dwell-9", "dwell-10"],
   },
@@ -1881,13 +1881,13 @@ export const PRODUCTS: Product[] = [
     notes: "Velvet · Tonal stripes · 45×45cm · Hidden zip · Insert not included",
     available: true,
     variants: [
-        { id: "velvet-stripe-cushion-cover-white", label: "Ivory White", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304824913" },
-        { id: "velvet-stripe-cushion-cover-silver-gray", label: "Silver Grey", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304857681" },
-        { id: "velvet-stripe-cushion-cover-yellow", label: "Mustard Yellow", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304890449" },
-        { id: "velvet-stripe-cushion-cover-black", label: "Charcoal Black", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304923217" },
-        { id: "velvet-stripe-cushion-cover-wine-red", label: "Wine Red", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304955985" },
-        { id: "velvet-stripe-cushion-cover-blue", label: "Navy Blue", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304988753" },
-        { id: "velvet-stripe-cushion-cover-white-and-pink-towel", label: "White & Pink Set", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305021521" }
+        { id: "velvet-stripe-cushion-cover-white", label: "Ivory White", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304824913", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-ivory-white-d5iEgp94Y2FG3VModWqDXj.webp" },
+        { id: "velvet-stripe-cushion-cover-silver-gray", label: "Silver Grey", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304857681", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-silver-grey-RxTWphjdFomUTHZbTN5PD4.webp" },
+        { id: "velvet-stripe-cushion-cover-yellow", label: "Mustard Yellow", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304890449", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-mustard-yellow-gNnQVd92YVoSEfnzsT3j6E.webp" },
+        { id: "velvet-stripe-cushion-cover-black", label: "Charcoal Black", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304923217", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-charcoal-black-a4v7HfH2PpSTLU3WJ6zfVv.webp" },
+        { id: "velvet-stripe-cushion-cover-wine-red", label: "Wine Red", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304955985", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-wine-red-9UT7dnuPihYuYFwXbq9wvh.webp" },
+        { id: "velvet-stripe-cushion-cover-blue", label: "Navy Blue", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304988753", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-navy-blue-fYMRURuxaDzaJT4jDFAqEM.webp" },
+        { id: "velvet-stripe-cushion-cover-white-and-pink-towel", label: "White & Pink Set", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305021521", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-white-pink-set-AdYgYaVB9tsUedSnpJjzTa.webp" }
       ],
     crossSells: ["dwell-9", "dwell-11", "dwell-10"],
   },
