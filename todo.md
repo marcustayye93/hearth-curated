@@ -442,3 +442,21 @@
 - [x] Include unavailable products in collection.products and ShopAll (was previously filtered out)
 - [x] Replace old "Returning Soon" overlay with diagonal ribbon on Product detail page
 - [x] All 46 tests passing
+
+## Lavender Sachet Product Update (Mar 30)
+- [ ] Research CJ/source listing to find grams per bag
+- [ ] Update product description: dried Xinjiang lavender, comes without pouch
+- [ ] Update 6 variant descriptions with grade details (Supreme French Blue, 5A, Super British, 4A, 3A, A)
+- [ ] Set up upsell/bundle opportunity with lavender pouch product
+
+## Sold Out Ribbon Centering Fix (Mar 30)
+- [x] Fix "SOLD OUT" ribbon text not centered on the diagonal stripe — now uses translate(-50%, -50%) for true center positioning
+
+## Lavender Sachet Product Update (Mar 30)
+- [x] Upload CJ stock images to CDN for lavender sachet
+- [x] Update product name to "Dried Xinjiang Lavender" and description with 500g weight, no-pouch, origin details
+- [x] Update variant names with grade descriptions (Supreme French Blue, 5A, etc.)
+- [x] Apply pricing chart: A=$28, B=$22, C=$20, D=$18, E=$14, F=$12 (mid-range prices)
+- [x] Remove variant G from products.ts
+- [x] Remove variant G from Shopify shopifyMap
+- [x] Position F grade ($12) as threshold closer item for free shipping

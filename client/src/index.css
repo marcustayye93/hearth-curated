@@ -240,12 +240,12 @@
   .hc-sold-out-ribbon::after {
     content: 'SOLD OUT';
     position: absolute;
-    /* Position the ribbon running from bottom-left to top-right */
-    bottom: 12%;
-    left: -20%;
-    width: 140%;
+    /* Center the ribbon diagonally across the image (bottom-left to top-right) */
+    top: 50%;
+    left: 50%;
+    width: 150%;
     text-align: center;
-    padding: 6px 0;
+    padding: 8px 0;
     background-color: rgba(60, 55, 48, 0.82);
     color: rgba(242, 237, 228, 0.92);
     font-family: 'Karla', sans-serif;
@@ -253,7 +253,7 @@
     font-weight: 600;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    transform: rotate(-35deg);
+    transform: translate(-50%, -50%) rotate(-35deg);
     transform-origin: center center;
     box-shadow: 0 1px 4px rgba(28, 16, 8, 0.15);
   }

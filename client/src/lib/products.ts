@@ -22,6 +22,7 @@ export interface Product {
   collection: string;
   collectionSlug: string;
   image: string;
+  additionalImages?: string[];
   tags: string[];
   notes?: string;
   variants?: Variant[];
@@ -940,28 +941,32 @@ export const PRODUCTS: Product[] = [
   // ═══════════════════════════════════════════════════════════════════════
   {
     id: "bloom-1",
-    slug: "lavender-sachet",
-    name: "Lavender Sachet",
+    slug: "dried-xinjiang-lavender",
+    name: "Dried Xinjiang Lavender",
     headline: "The Quiet Scent",
-    hookLine: "Dried lavender in linen sachets — for drawers, pillows, and quiet moments.",
+    hookLine: "500g of dried Xinjiang lavender buds — six grades from premium sachet-fill to everyday aromatherapy.",
     description:
-      "A set of dried lavender sachets in natural linen pouches — the kind of small, thoughtful object that transforms a drawer or a pillow into something that smells like a Provençal summer. The lavender is sourced from high-altitude farms where the essential oil concentration is highest.",
-    price: 18.00,
+      "Pure dried lavender buds harvested in Xinjiang's Yili Valley — China's lavender heartland, where altitude and climate produce some of the most aromatic lavender in the world. Each 500g bag contains loose buds only (no pouch included), perfect for filling your own sachets, pillows, bath blends, or potpourri. Six grades available, from Supreme French Blue with near-zero impurity to cost-effective A-grade for bulk filling. Pairs beautifully with our Lavender Pouch for a complete sachet set.",
+    price: 12.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/lavender-sachet_a97f9ce5.png",
-    tags: ["lavender", "sachet", "linen", "dried", "fragrance"],
-    notes: "Set of 4 · Natural linen · Lasts 6-12 months",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/lavender-sachet-main_818b027e.jpg",
+    additionalImages: [
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/lavender-sachet-pile_9ece81c5.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/lavender-sachet-hand_32997d62.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/lavender-sachet-detail3_eb83233f.jpg"
+    ],
+    tags: ["lavender", "xinjiang", "dried", "buds", "fragrance", "aromatherapy", "sachet-fill"],
+    notes: "500g per bag · Loose buds, no pouch · Dried Xinjiang Yili Valley lavender",
     available: true,
     crossSells: ["bloom-2", "adorn-7", "adorn-1"],
       variants: [
-        { id: "lavender-sachet-a", label: "A", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913476689" },
-        { id: "lavender-sachet-b", label: "B", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913509457" },
-        { id: "lavender-sachet-c", label: "C", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913542225" },
-        { id: "lavender-sachet-d", label: "D", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913574993" },
-        { id: "lavender-sachet-e", label: "E", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913607761" },
-        { id: "lavender-sachet-f", label: "F", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913640529" },
-        { id: "lavender-sachet-g", label: "G", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913673297" }
+        { id: "lavender-sachet-a", label: "Supreme French Blue", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913476689" },
+        { id: "lavender-sachet-b", label: "5A French Blue", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913509457" },
+        { id: "lavender-sachet-c", label: "Super British Blue", price: 20.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913542225" },
+        { id: "lavender-sachet-d", label: "4A French Blue", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913574993" },
+        { id: "lavender-sachet-e", label: "3A French Blue", price: 14.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913607761" },
+        { id: "lavender-sachet-f", label: "A French Blue", price: 12.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913640529" }
       ]
   },
   {

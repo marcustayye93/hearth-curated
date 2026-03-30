@@ -506,17 +506,16 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59251309281361", title: "Light Grey", price: 10.86, available: true },
     ],
   },
-  "lavender-sachet": {
+  "dried-xinjiang-lavender": {
     handle: "a-variety-of-xinjiang-lavender-fragrant-lavender-sachet-toy-filled-with-dried-flower-particles",
     shopifyId: "gid://shopify/Product/15738954154065",
     variants: [
-      { id: "gid://shopify/ProductVariant/59250913476689", title: "A", price: 7.11, available: true },
-      { id: "gid://shopify/ProductVariant/59250913509457", title: "B", price: 6.31, available: true },
-      { id: "gid://shopify/ProductVariant/59250913542225", title: "C", price: 5.51, available: true },
-      { id: "gid://shopify/ProductVariant/59250913574993", title: "D", price: 5.51, available: true },
-      { id: "gid://shopify/ProductVariant/59250913607761", title: "E", price: 4.92, available: true },
-      { id: "gid://shopify/ProductVariant/59250913640529", title: "F", price: 4.36, available: true },
-      { id: "gid://shopify/ProductVariant/59250913673297", title: "G", price: 3.81, available: true },
+      { id: "gid://shopify/ProductVariant/59250913476689", title: "Supreme French Blue", price: 7.11, available: true },
+      { id: "gid://shopify/ProductVariant/59250913509457", title: "5A French Blue", price: 6.31, available: true },
+      { id: "gid://shopify/ProductVariant/59250913542225", title: "Super British Blue", price: 5.51, available: true },
+      { id: "gid://shopify/ProductVariant/59250913574993", title: "4A French Blue", price: 5.51, available: true },
+      { id: "gid://shopify/ProductVariant/59250913607761", title: "3A French Blue", price: 4.92, available: true },
+      { id: "gid://shopify/ProductVariant/59250913640529", title: "A French Blue", price: 4.36, available: true },
     ],
   },
   "led-aroma-diffuser": {
