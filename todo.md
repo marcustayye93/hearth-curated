@@ -426,6 +426,6 @@
 - [x] All tests passing (41 passed; 5 pre-existing Shopify API timeout failures unrelated to variant images)
 
 ## New Product Requests (Mar 30)
-- [ ] Add new product: Wax Melt Aromatherapy Lamp (Shopify: 15738951958609) — assign to GLOW collection
-- [ ] Add new product: Edison Vintage Night Lamp (Shopify: 15738951434321) — assign to GLOW collection
-- [ ] Remove product: Artisan Table Lamp
+- [x] Add new product: Wax Melt Aromatherapy Lamp (Shopify: 15738951958609) — updated with real Shopify data, new images, $23 price
+- [x] Add new product: Edison Vintage Night Lamp (Shopify: 15738951434321) — updated with real Shopify data, new images, $16 price, marked unavailable
+- [x] Remove product: Artisan Table Lamp

@@ -1252,20 +1252,25 @@ export const PRODUCTS: Product[] = [
     slug: "edison-vintage-night-lamp",
     name: "Edison Vintage Night Lamp",
     headline: "The Warm Filament",
-    hookLine: "A hand-finished Edison bulb on a reclaimed wooden base — warm amber glow sourced from artisan workshops.",
+    hookLine: "A vintage Edison G95 spiral bulb on a geometric wooden base — warm amber glow, retro-industrial charm.",
     description:
-      "A vintage-style Edison bulb lamp on a hand-finished reclaimed wooden base — the kind of light that makes a room feel like a library in a country house. Each base is individually selected for its grain character and hand-sanded to a silken finish. The exposed filament produces a warm amber glow that is gentle on the eyes and creates a cosy atmosphere.",
-    price: 78.00,
+      "A vintage-style Edison G95 spiral filament bulb on a hand-cut geometric wooden base — the kind of light that makes a room feel like a library in a country house. Each faceted base is individually cut and sanded from natural hardwood, giving every piece its own subtle character. The exposed spiral filament produces a warm amber glow that is gentle on the eyes and creates a cosy atmosphere. Bulb diameter 9.5 cm, total height 17.5 cm.",
+    price: 16.00,
     collection: "GLOW",
     collectionSlug: "glow",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/edison-vintage-night-lamp_6fa91aea.jpg",
-    tags: ["lamp", "edison", "vintage", "night-light", "warm"],
-    notes: "Wooden base · Edison bulb included · Dimmer switch",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/edison-lamp-main-GuxiK9tjrx4XtKp94G8hY7.webp",
+    images: [
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/edison-lamp-main-GuxiK9tjrx4XtKp94G8hY7.webp",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/edison-lamp-dimensions-Vyk3vxEbZbMXWEWBpgyvh9.webp"
+    ],
+    tags: ["lamp", "edison", "vintage", "night-light", "warm", "geometric", "wood"],
+    notes: "Geometric wooden base · G95 spiral bulb · 220V · 40W warm yellow",
+    shopifyHandle: "edison-vintage-bulb-small-night-lamp-japanese-atmosphere",
         variants: [
-        { id: "edison-vintage-night-lamp-g95-spiral-bulb-cn", label: "G95 Spiral Bulb / Cn", price: 78.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59250896207953" },
-        { id: "edison-vintage-night-lamp-g95-spiral-bulb-with", label: "G95 Spiral Bulb / With Adapter Plug", price: 78.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59250896240721" }
+        { id: "edison-vintage-night-lamp-g95-spiral-bulb-cn", label: "CN Plug", price: 16.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59250896207953" },
+        { id: "edison-vintage-night-lamp-g95-spiral-bulb-with", label: "With Adapter Plug", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59250896240721" }
       ],
-    available: true,
+    available: false,
     crossSells: ["glow-5", "glow-12", "glow-13"],
   },
 
@@ -1274,21 +1279,26 @@ export const PRODUCTS: Product[] = [
     slug: "wax-melt-aromatherapy-lamp",
     name: "Wax Melt Aromatherapy Lamp",
     headline: "The Scented Light",
-    hookLine: "A handcrafted ceramic lamp that melts wax from above — artisan-made, warm light and fragrance in one.",
+    hookLine: "A Japanese-style bamboo wood candle warmer — melts wax from above for warm light and fragrance in one.",
     description:
-      "A handcrafted ceramic aromatherapy lamp that melts scented wax from above using a halogen bulb — combining warm, ambient light with home fragrance in a single beautiful object. Each piece is hand-thrown and finished by artisan ceramicists, giving every lamp subtle variations in glaze and form. The top-down heating method releases fragrance more evenly than traditional candle warmers.",
-    price: 78.00,
+      "A Japanese-style wax melt aromatherapy lamp with a natural bamboo wood frame and white conical shade — combining warm, ambient light with home fragrance in a single beautiful object. The inverted J-shaped frame holds a halogen bulb inside the cone that gently melts scented wax in the round bamboo dish below. The top-down heating method releases fragrance more evenly than traditional candle warmers, while the warm light creates a cosy atmosphere.",
+    price: 23.00,
     collection: "GLOW",
     collectionSlug: "glow",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wax-melt-aromatherapy-lamp_a6d3abc6.png",
-    tags: ["lamp", "wax-melt", "aromatherapy", "ceramic", "fragrance"],
-    notes: "Ceramic · Halogen bulb · Dimmer control · Wax dish included",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wax-melt-lamp-main-CvwzWf7Pg3j4YZ43BHR9Pv.webp",
+    images: [
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wax-melt-lamp-main-CvwzWf7Pg3j4YZ43BHR9Pv.webp",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wax-melt-lamp-dimensions-9e3ZN4T5AnmxMXrrWthbwP.webp"
+    ],
+    tags: ["lamp", "wax-melt", "aromatherapy", "bamboo", "fragrance", "japanese"],
+    notes: "Bamboo wood frame · White cone shade · Dimmer switch · Wax dish included",
+    shopifyHandle: "japanese-style-melting-wax-lamp-decoration-bedroom-creative-personality-aromatherapy-light",
         variants: [
-        { id: "wax-melt-aromatherapy-lamp-white-cover-dimmer-s", label: "220V (Asia)", price: 78.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903875665" },
-        { id: "wax-melt-aromatherapy-lamp-white-cover-dimmer-s", label: "110V (Taiwan)", price: 78.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903908433" },
-        { id: "wax-melt-aromatherapy-lamp-white-cover-dimmer-s", label: "220V (HK/Macau)", price: 78.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903941201" },
-        { id: "wax-melt-aromatherapy-lamp-white-cover-dimmer-s", label: "110V (US/Japan)", price: 78.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903973969" },
-        { id: "wax-melt-aromatherapy-lamp-white-cover-dimmer-s", label: "220V (EU/Korea)", price: 78.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250904006737" }
+        { id: "wax-melt-lamp-220v-asia", label: "220V (Asia)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903875665" },
+        { id: "wax-melt-lamp-110v-taiwan", label: "110V (Taiwan)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903908433" },
+        { id: "wax-melt-lamp-220v-hk-macau", label: "220V (HK/Macau)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903941201" },
+        { id: "wax-melt-lamp-110v-us-japan", label: "110V (US/Japan)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903973969" },
+        { id: "wax-melt-lamp-220v-eu-korea", label: "220V (EU/Korea)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250904006737" }
       ],
     available: true,
     crossSells: ["adorn-1", "adorn-7", "glow-1"],
@@ -1505,23 +1515,7 @@ export const PRODUCTS: Product[] = [
       { id: "mushroom-d-beech", label: "Beech", price: 22.00, available: true, designGroup: "Design D", shopifyVariantId: "gid://shopify/ProductVariant/59250893914193", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-d-beech-ga6kpMdEGFAKzTguriw4gY.webp" },
     ],
   },
-  {
-    id: "glow-14",
-    slug: "artisan-table-lamp",
-    name: "Artisan Table Lamp",
-    headline: "The Handmade Light",
-    hookLine: "A handmade ceramic and linen lamp — crafted by artisan potters, warm ambient light.",
-    description:
-      "A handmade table lamp with a textured ceramic base and a natural linen shade — crafted by artisan potters in small-batch studio production. Each base is hand-thrown and hand-textured, with surface variations that catch light in interesting ways and mark it unmistakably as a handmade object. The linen shade creates a warm, even glow that transforms any corner into something considered.",
-    price: 99.00,
-    collection: "GLOW",
-    collectionSlug: "glow",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/artisan-table-lamp_f4fa5e6f.png",
-    tags: ["lamp", "artisan", "ceramic", "handmade", "linen"],
-    notes: "Handmade ceramic · Linen shade · E27 bulb compatible",
-    available: true,
-    crossSells: ["glow-12", "glow-8", "glow-5"],
-  },
+
   // ═══════════════════════════════════════════════════════════════════════
   // DWELL — The Fabric of Home
   // ═══════════════════════════════════════════════════════════════════════

@@ -25,7 +25,7 @@ describe("Full Product Catalog (5 Collections)", () => {
   it("should contain exactly 79 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
-    expect(PRODUCTS.length).toBe(78); // 79 - 1 (Faux Reed & Pampas Bundle consolidated into Pampas Grass Bouquet)
+    expect(PRODUCTS.length).toBe(77); // 79 - 1 (Faux Reed & Pampas Bundle consolidated) - 1 (Artisan Table Lamp removed)
   });
 
   it("should have 5 collections: FEAST, ADORN, BLOOM, GLOW, DWELL", async () => {
@@ -60,7 +60,7 @@ describe("Full Product Catalog (5 Collections)", () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     const glowProducts = PRODUCTS.filter((p) => p.collectionSlug === "glow");
-    expect(glowProducts.length).toBe(12);
+    expect(glowProducts.length).toBe(11); // 12 - 1 (Artisan Table Lamp removed)
   });
 
   it("DWELL collection should have 14 products", async () => {

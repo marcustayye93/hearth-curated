@@ -85,9 +85,9 @@ describe("Catalog Pricing Integrity", () => {
       "woven-bamboo-table-lamp": 98,
       "motion-sensing-cabinet-light": 32,
       "mushroom-night-light": 22,
-      "artisan-table-lamp": 99,
       "ceramic-bedside-lamp": 99,
-      "edison-vintage-night-lamp": 78,
+      "edison-vintage-night-lamp": 16,
+      "wax-melt-aromatherapy-lamp": 23,
       "round-linen-table-lamp": 98,
       "japanese-bedside-lamp": 98,
     };
