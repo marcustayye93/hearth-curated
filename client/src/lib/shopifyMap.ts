@@ -1111,5 +1111,19 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59251307348049", title: "Coffee", price: 3.88, available: true },
       { id: "gid://shopify/ProductVariant/59251307380817", title: "Yellow", price: 3.88, available: true },
     ],
+  },
+  "mushroom-night-light": {
+    handle: "ins-wooden-cute-mushroom-led-night-light-with-touch-switch-bedside-table-lamp-for-bedroom-childrens-room-sleeping-night-lamps-home-decor",
+    shopifyId: "gid://shopify/Product/15738951008337",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59250893684817", title: "A / Walnut Color / 2.4W", price: 18.37, available: true },
+      { id: "gid://shopify/ProductVariant/59250893717585", title: "A / Beech / 2.4W", price: 18.37, available: true },
+      { id: "gid://shopify/ProductVariant/59250893750353", title: "B / Walnut Color / 2.4W", price: 18.37, available: true },
+      { id: "gid://shopify/ProductVariant/59250893783121", title: "B / Beech / 2.4W", price: 18.37, available: true },
+      { id: "gid://shopify/ProductVariant/59250893815889", title: "C / Walnut Color / 2.4W", price: 15.79, available: true },
+      { id: "gid://shopify/ProductVariant/59250893848657", title: "C / Beech / 2.4W", price: 15.79, available: true },
+      { id: "gid://shopify/ProductVariant/59250893881425", title: "D / Walnut Color / 2.4W", price: 15.79, available: true },
+      { id: "gid://shopify/ProductVariant/59250893914193", title: "D / Beech / 2.4W", price: 15.79, available: true },
+    ],
   }
 };

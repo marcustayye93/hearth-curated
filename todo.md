@@ -367,3 +367,19 @@
 - [x] Run tests and verify checkout routing integrity (46/46 tests pass, cart lifecycle confirmed)
 - [ ] Save checkpoint
 - [ ] Resolve 8 shared-source product pairs (pending user input on lighting especially)
+
+## Shared-Source Product Resolution (Mar 30)
+- [x] Mushroom Night Light: implement 2-tier variant selection (Design A/B/C/D × Walnut/Beech colour)
+- [x] Mushroom Night Light: generate variant images for each design+colour combination (8 images)
+- [x] Mushroom Night Light: add shopifyMap entry with all 8 variant GIDs
+- [x] Mushroom Night Light: 2-tier UI tested — design thumbnails + colour buttons working
+- [ ] All plug-variant lamps: keep plug variants in same listing, no new images needed
+- [ ] Vintage Japanese Ceramic Mug vs Japanese Stoneware Mug: split into separate listings
+- [ ] Investigate missing Artisan Table Lamp and Japanese Bedside Lamp listings
+- [ ] Pampas Grass: consolidate all 24 combinations into one product listing
+- [ ] Pampas Grass: use original Shopify images, crop away any text/words while preserving flower images
+- [ ] Run tests and save checkpoint
+
+## REMINDER — Lamp Shopify Listings (Pending User Input)
+- [ ] User to provide correct Shopify listings for: Artisan Table Lamp, Edison Vintage Night Lamp, Wax Melt Aromatherapy Lamp, Motion-Sensing Cabinet Light
+- [ ] Do NOT delete any lamp products — user will supply correct mappings later

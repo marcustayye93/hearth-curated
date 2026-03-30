@@ -228,44 +228,147 @@ export default function Product() {
                 </div>
 
                 {/* ── VARIANT SELECTOR ─────────────────────────── */}
-                {product.variants && product.variants.length > 1 && (
-                  <div className="mb-6">
-                    <p
-                      className="text-xs tracking-widest uppercase mb-3"
-                      style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif", fontWeight: 500 }}
-                    >
-                      {selectedVariant?.label ?? "Select option"}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {product.variants.map((variant) => {
-                        const isSelected = selectedVariant?.id === variant.id;
-                        return (
-                          <button
-                            key={variant.id}
-                            onClick={() => setSelectedVariant(variant)}
-                            disabled={!variant.available}
-                            className="px-4 py-2.5 text-xs tracking-wide transition-all duration-200"
-                            style={{
-                              fontFamily: "'Karla', sans-serif",
-                              border: `1px solid ${isSelected ? "var(--hc-espresso)" : "var(--hc-stone)"}`,
-                              backgroundColor: isSelected ? "var(--hc-espresso)" : "transparent",
-                              color: isSelected ? "var(--hc-parchment)" : variant.available ? "var(--hc-espresso)" : "var(--hc-stone)",
-                              opacity: variant.available ? 1 : 0.5,
-                              textDecoration: variant.available ? "none" : "line-through",
-                            }}
-                          >
-                            {variant.label}
-                            {variant.price !== product.price && (
-                              <span className="ml-1 opacity-70">
-                                · ${variant.price.toFixed(0)}
-                              </span>
-                            )}
-                          </button>
-                        );
-                      })}
+                {product.variants && product.variants.length > 1 && (() => {
+                  // Check if this product has 2-tier variants (designGroup field)
+                  const hasDesignGroups = product.variants!.some(v => v.designGroup);
+
+                  if (hasDesignGroups) {
+                    // 2-tier variant: Design → Colour
+                    const designGroups = Array.from(new Set(product.variants!.map(v => v.designGroup!).filter(Boolean)));
+                    const selectedDesign = selectedVariant?.designGroup ?? designGroups[0];
+                    const variantsForDesign = product.variants!.filter(v => v.designGroup === selectedDesign);
+
+                    return (
+                      <div className="mb-6">
+                        {/* Tier 1: Design selector */}
+                        <p
+                          className="text-xs tracking-widest uppercase mb-3"
+                          style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif", fontWeight: 500 }}
+                        >
+                          {selectedDesign}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-5">
+                          {designGroups.map((design) => {
+                            const isSelected = selectedDesign === design;
+                            const designVariant = product.variants!.find(v => v.designGroup === design);
+                            return (
+                              <button
+                                key={design}
+                                onClick={() => {
+                                  const currentLabel = selectedVariant?.label;
+                                  const matchingVariant = product.variants!.find(
+                                    v => v.designGroup === design && v.label === currentLabel && v.available
+                                  ) ?? product.variants!.find(
+                                    v => v.designGroup === design && v.available
+                                  );
+                                  if (matchingVariant) setSelectedVariant(matchingVariant);
+                                }}
+                                className="relative overflow-hidden transition-all duration-200"
+                                style={{
+                                  width: "72px",
+                                  height: "72px",
+                                  border: isSelected
+                                    ? "2px solid var(--hc-espresso)"
+                                    : "1px solid var(--hc-stone)",
+                                  opacity: isSelected ? 1 : 0.65,
+                                  padding: 0,
+                                }}
+                              >
+                                {designVariant?.image ? (
+                                  <img
+                                    src={designVariant.image}
+                                    alt={design}
+                                    className="w-full h-full object-cover"
+                                    loading="lazy"
+                                    decoding="async"
+                                  />
+                                ) : (
+                                  <span
+                                    className="flex items-center justify-center w-full h-full text-xs"
+                                    style={{ fontFamily: "'Karla', sans-serif", color: "var(--hc-espresso)" }}
+                                  >
+                                    {design}
+                                  </span>
+                                )}
+                              </button>
+                            );
+                          })}
+                        </div>
+
+                        {/* Tier 2: Colour selector within selected design */}
+                        <p
+                          className="text-xs tracking-widest uppercase mb-3"
+                          style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif", fontWeight: 500 }}
+                        >
+                          {selectedVariant?.label ?? "Select colour"}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {variantsForDesign.map((variant) => {
+                            const isSelected = selectedVariant?.id === variant.id;
+                            return (
+                              <button
+                                key={variant.id}
+                                onClick={() => setSelectedVariant(variant)}
+                                disabled={!variant.available}
+                                className="px-4 py-2.5 text-xs tracking-wide transition-all duration-200"
+                                style={{
+                                  fontFamily: "'Karla', sans-serif",
+                                  border: `1px solid ${isSelected ? "var(--hc-espresso)" : "var(--hc-stone)"}`,
+                                  backgroundColor: isSelected ? "var(--hc-espresso)" : "transparent",
+                                  color: isSelected ? "var(--hc-parchment)" : variant.available ? "var(--hc-espresso)" : "var(--hc-stone)",
+                                  opacity: variant.available ? 1 : 0.5,
+                                  textDecoration: variant.available ? "none" : "line-through",
+                                }}
+                              >
+                                {variant.label}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  }
+
+                  // Standard flat variant selector (no design groups)
+                  return (
+                    <div className="mb-6">
+                      <p
+                        className="text-xs tracking-widest uppercase mb-3"
+                        style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif", fontWeight: 500 }}
+                      >
+                        {selectedVariant?.label ?? "Select option"}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {product.variants!.map((variant) => {
+                          const isSelected = selectedVariant?.id === variant.id;
+                          return (
+                            <button
+                              key={variant.id}
+                              onClick={() => setSelectedVariant(variant)}
+                              disabled={!variant.available}
+                              className="px-4 py-2.5 text-xs tracking-wide transition-all duration-200"
+                              style={{
+                                fontFamily: "'Karla', sans-serif",
+                                border: `1px solid ${isSelected ? "var(--hc-espresso)" : "var(--hc-stone)"}`,
+                                backgroundColor: isSelected ? "var(--hc-espresso)" : "transparent",
+                                color: isSelected ? "var(--hc-parchment)" : variant.available ? "var(--hc-espresso)" : "var(--hc-stone)",
+                                opacity: variant.available ? 1 : 0.5,
+                                textDecoration: variant.available ? "none" : "line-through",
+                              }}
+                            >
+                              {variant.label}
+                              {variant.price !== product.price && (
+                                <span className="ml-1 opacity-70">
+                                  · ${variant.price.toFixed(0)}
+                                </span>
+                              )}
+                            </button>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </div>
-                )}
+                  );
+                })()}
 
                 {/* ── ADD TO CART ──────────────────────────────── */}
                 <button

@@ -9,6 +9,7 @@ export interface Variant {
   available: boolean;
   shopifyVariantId?: string;
   image?: string;
+  designGroup?: string; // For 2-tier variants: groups variants by design (e.g., "Design A")
 }
 
 export interface Product {
@@ -1477,17 +1478,27 @@ export const PRODUCTS: Product[] = [
     slug: "mushroom-night-light",
     name: "Mushroom Night Light",
     headline: "The Forest Glow",
-    hookLine: "A whimsical mushroom-shaped night light — soft LED glow for hallways and children's rooms.",
+    hookLine: "A whimsical mushroom-shaped night light in four distinct designs — choose your silhouette, then your wood tone.",
     description:
-      "A whimsical mushroom-shaped night light with a soft LED glow — the kind of object that makes a hallway, a bathroom, or a child's room feel magical. The silicone cap is soft to the touch and the warm light is gentle enough to sleep by.",
+      "A whimsical mushroom-shaped night light carved from solid wood with a soft LED glow — the kind of object that makes a hallway, a bathroom, or a child's room feel magical. Available in four distinct mushroom silhouettes (A through D), each in your choice of dark Walnut or light Beech wood. The warm light is gentle enough to sleep by, with touch-activated brightness control and USB-C rechargeable battery lasting 6–8 hours.",
     price: 22.00,
     collection: "GLOW",
     collectionSlug: "glow",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-night-light_bd345808.png",
-    tags: ["night-light", "mushroom", "led", "whimsical", "soft"],
-    notes: "Silicone · USB rechargeable · Touch on/off · 3 brightness levels",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-a-walnut-LqSZMeWNdBamHHmbp9B85z.webp",
+    tags: ["night-light", "mushroom", "led", "whimsical", "soft", "wooden", "rechargeable"],
+    notes: "Solid wood · USB-C rechargeable · Touch on/off · 3 brightness levels · 6–8 hour battery",
     available: true,
     crossSells: ["glow-1", "glow-7", "bloom-9"],
+    variants: [
+      { id: "mushroom-a-walnut", label: "Walnut", price: 22.00, available: true, designGroup: "Design A", shopifyVariantId: "gid://shopify/ProductVariant/59250893684817", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-a-walnut-LqSZMeWNdBamHHmbp9B85z.webp" },
+      { id: "mushroom-a-beech", label: "Beech", price: 22.00, available: true, designGroup: "Design A", shopifyVariantId: "gid://shopify/ProductVariant/59250893717585", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-a-beech-kqgZSWReF5cUEXWLo6VzUk.webp" },
+      { id: "mushroom-b-walnut", label: "Walnut", price: 22.00, available: true, designGroup: "Design B", shopifyVariantId: "gid://shopify/ProductVariant/59250893750353", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-b-walnut-5GmbcxoWXW5MVCXgAkgc58.webp" },
+      { id: "mushroom-b-beech", label: "Beech", price: 22.00, available: true, designGroup: "Design B", shopifyVariantId: "gid://shopify/ProductVariant/59250893783121", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-b-beech-52v4HQEb3Qf8so4fgmAttj.webp" },
+      { id: "mushroom-c-walnut", label: "Walnut", price: 22.00, available: true, designGroup: "Design C", shopifyVariantId: "gid://shopify/ProductVariant/59250893815889", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-c-walnut-WQ8iRqRFZCguEKWz4QzyRH.webp" },
+      { id: "mushroom-c-beech", label: "Beech", price: 22.00, available: true, designGroup: "Design C", shopifyVariantId: "gid://shopify/ProductVariant/59250893848657", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-c-beech-MmZnefoqwiP2GxwL7rH5ks.webp" },
+      { id: "mushroom-d-walnut", label: "Walnut", price: 22.00, available: true, designGroup: "Design D", shopifyVariantId: "gid://shopify/ProductVariant/59250893881425", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-d-walnut-MKXfDgxbuck7ztnvgjCLXx.webp" },
+      { id: "mushroom-d-beech", label: "Beech", price: 22.00, available: true, designGroup: "Design D", shopifyVariantId: "gid://shopify/ProductVariant/59250893914193", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-d-beech-ga6kpMdEGFAKzTguriw4gY.webp" },
+    ],
   },
   {
     id: "glow-14",
