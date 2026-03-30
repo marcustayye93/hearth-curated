@@ -414,10 +414,14 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "japanese-ceramic-spoon-set": {
-    handle: "ravioli-ceramic-spoon-rest-for-stove-top-and-kitchen-counter-large-and-dishwasher-safe",
-    shopifyId: "gid://shopify/Product/15735782441041",
+    handle: "japanese-style-creative-ceramic-spoon-small-kitchen-restaurant",
+    shopifyId: "gid://shopify/Product/15738951565393",
     variants: [
-      { id: "gid://shopify/ProductVariant/59244860997713", title: "Default Title", price: 22.0, available: false },
+      { id: "gid://shopify/ProductVariant/59250896830545", title: "Purplish Blue", price: 1.75, available: true },
+      { id: "gid://shopify/ProductVariant/59250896896081", title: "Lunar December", price: 1.75, available: true },
+      { id: "gid://shopify/ProductVariant/59250896961617", title: "Sky", price: 1.75, available: true },
+      { id: "gid://shopify/ProductVariant/59250897059921", title: "Black Rhyme", price: 1.75, available: true },
+      { id: "gid://shopify/ProductVariant/59250897092689", title: "Follow The Fate", price: 1.75, available: true },
     ],
   },
   "japanese-irregular-dinner-plate": {
@@ -1077,7 +1081,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59250904006737", title: "White Cover Dimmer Switch / Europeankorean Conversion Hea", price: 22.86, available: true },
     ],
   },
-  "whole-wood-log-snack-plate": {
+  "acacia-wood-serving-plate": {
     handle: "whole-wood-log-snack-plate",
     shopifyId: "gid://shopify/Product/15738954186833",
     variants: [

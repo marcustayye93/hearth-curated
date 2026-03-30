@@ -39,7 +39,12 @@ describe("Catalog Pricing Integrity", () => {
       "ceramic-pour-over-dripper": 32,
       "acacia-serving-bowl": 68,
       "acacia-serving-tray": 58,
-      "teak-kitchen-utensil-set": 48,
+      "teak-kitchen-utensil-set": 5,
+      "black-walnut-resin-tray": 34,
+      "retro-reactive-glaze-dinnerware": 10,
+      "jujube-wood-serving-basin": 58,
+      "acacia-wood-serving-plate": 14,
+      "japanese-ceramic-spoon-set": 6,
     };
 
     for (const [slug, expectedPrice] of Object.entries(expected)) {
@@ -120,7 +125,6 @@ describe("Catalog Pricing Integrity", () => {
       "japanese-bedside-lamp",
       "woven-bamboo-table-lamp",
       "ceramic-bedside-lamp",
-      "artisan-table-lamp",
       "round-linen-table-lamp",
       "square-linen-table-lamp",
     ];

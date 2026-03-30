@@ -38,10 +38,9 @@ export default function Product() {
     // Add main product image (skip if same as variant image)
     if (mainImg && mainImg !== variantImg) imgs.push(mainImg);
     // Add additional images (dimension photos, etc.)
-    if (product?.images) {
-      for (const img of product.images) {
-        if (!imgs.includes(img)) imgs.push(img);
-      }
+    const extraImages = product?.images ?? product?.additionalImages ?? [];
+    for (const img of extraImages) {
+      if (!imgs.includes(img)) imgs.push(img);
     }
     return imgs;
   }, [product, selectedVariant]);

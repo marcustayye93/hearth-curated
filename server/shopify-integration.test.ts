@@ -22,9 +22,9 @@ function createPublicContext(): TrpcContext {
   };
 }
 
-// Known product handle from the Shopify store (Rapid Defrosting Board)
+// Known product handle from the Shopify store (Linen Cushion Cover)
 const KNOWN_HANDLE =
-  "rapid-defrosting-board-aluminium-thawing-plate";
+  "solid-pillow-case-cotton-linen-cushion-cover-45x45cm-55x55cm-beige-black-red-grey";
 
 describe("Shopify Product Queries", () => {
   const caller = appRouter.createCaller(createPublicContext());
@@ -85,7 +85,7 @@ describe("Shopify Cart Lifecycle", () => {
   const caller = appRouter.createCaller(createPublicContext());
 
   // Use a known variant GID from the store
-  const VARIANT_GID = "gid://shopify/ProductVariant/59248122298449"; // Rapid Defrosting Board
+  const VARIANT_GID = "gid://shopify/ProductVariant/59244809748561"; // Linen Cushion Cover - Natural Linen 45x45cm
 
   it("should perform a full cart lifecycle: create → add → update → remove", { timeout: 15000 }, async () => {
     // Step 1: Create an empty cart
@@ -152,7 +152,7 @@ describe("Shopify Cart - Normalized Data Shape", () => {
   const caller = appRouter.createCaller(createPublicContext());
 
   it("should return a fully normalized cart with cost breakdown", async () => {
-    const VARIANT_GID = "gid://shopify/ProductVariant/59248122298449"; // Rapid Defrosting Board
+    const VARIANT_GID = "gid://shopify/ProductVariant/59244809748561"; // Linen Cushion Cover - Natural Linen 45x45cm
 
     const cart = await caller.shopify.cartCreate({
       lines: [{ merchandiseId: VARIANT_GID, quantity: 1 }],

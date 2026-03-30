@@ -460,3 +460,20 @@
 - [x] Remove variant G from products.ts
 - [x] Remove variant G from Shopify shopifyMap
 - [x] Position F grade ($12) as threshold closer item for free shipping
+
+## User Audit Fixes (Mar 30)
+
+### Systemic Issues
+- [ ] Image compression: All product images too heavy, slow to load
+- [ ] Variant image swapping: Photos do not update when other variants are selected on product detail page
+
+### Individual Product Fixes
+- [ ] Teak Kitchen Utensil Set: photos/prices don't change across variants, some variant names in Chinese
+- [ ] Japanese Ceramic Spoon Set: remap to correct Shopify product (15738951565393)
+- [ ] Japanese Matcha Ceremony Set: brown and green 7-piece sets highlight simultaneously; photos don't change; description says 6 pieces but title says 7
+- [ ] Stoneware Travel Tea Set: picture doesn't update when variants selected
+- [ ] Black Walnut Serving Tray: variant names misleading (transparent, blue, blue plate); product is actually a walnut tray with resin inlay — fix description
+- [ ] Japanese Irregular Dinner Plate: pictures don't update; all variant prices same (should differ)
+- [ ] Acacia Serving Bowl: verify colour matches Shopify photo
+- [ ] Jujube Wood Serving Basin: measurements "16 TO" and "20 TO" unclear — find correct units
+- [ ] Whole Wood Lock Snack Plate: entire product rendered wrongly — replace with correct Shopify product data
