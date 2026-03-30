@@ -394,3 +394,12 @@
 - [x] Remove old Faux Reed & Pampas Bundle from catalog (consolidated)
 - [x] Update tests (product count 79→78, BLOOM 14→13, min price $9→$2)
 - [x] All 46 tests passing, variant image switching verified in browser
+
+## Pampas Variant Images Redo — Full AI Rendering (Mar 30)
+- [x] Re-render all 24 pampas variant images using full AI generation (not background removal)
+- [x] Use original Shopify photos as references for accurate shapes and colours
+- [x] Combo 21 approved as quality benchmark
+- [x] Combo 23 refined: elongated fuzzy orange shapes, muted amber tone (not round balls)
+- [x] All 24 variant images uploaded to CDN and updated in products.ts
+- [x] Added natural variation disclaimer to Product page (shows for dried/pampas/cotton/natural products)
+- [x] All 46 tests passing

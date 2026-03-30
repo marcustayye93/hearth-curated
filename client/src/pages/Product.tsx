@@ -427,6 +427,16 @@ export default function Product() {
                   </div>
                 )}
 
+                {/* ── NATURAL VARIATION DISCLAIMER ────────────── */}
+                {product.tags.some(t => ["dried", "pampas", "cotton", "natural"].includes(t)) && (
+                  <p
+                    className="text-xs leading-relaxed mb-5 italic"
+                    style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+                  >
+                    These products are made from naturally sourced materials. Due to the organic nature of the botanicals, slight variations in colour, shape, and size are to be expected and are part of what makes each piece unique. Product images are representative and the item you receive may differ slightly from what is shown.
+                  </p>
+                )}
+
                 {/* ── TRUST SIGNALS ────────────────────────────── */}
                 <div
                   className="grid grid-cols-3 gap-4 py-5 mt-auto"
