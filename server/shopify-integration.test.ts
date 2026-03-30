@@ -87,7 +87,7 @@ describe("Shopify Cart Lifecycle", () => {
   // Use a known variant GID from the store
   const VARIANT_GID = "gid://shopify/ProductVariant/59248122298449"; // Rapid Defrosting Board
 
-  it("should perform a full cart lifecycle: create → add → update → remove", async () => {
+  it("should perform a full cart lifecycle: create → add → update → remove", { timeout: 15000 }, async () => {
     // Step 1: Create an empty cart
     const emptyCart = await caller.shopify.cartCreate();
     expect(emptyCart).toBeDefined();

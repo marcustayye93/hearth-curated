@@ -373,13 +373,24 @@
 - [x] Mushroom Night Light: generate variant images for each design+colour combination (8 images)
 - [x] Mushroom Night Light: add shopifyMap entry with all 8 variant GIDs
 - [x] Mushroom Night Light: 2-tier UI tested — design thumbnails + colour buttons working
+- [x] Run tests and save checkpoint (46/46 tests pass, checkpoint 30586525)
 - [ ] All plug-variant lamps: keep plug variants in same listing, no new images needed
 - [ ] Vintage Japanese Ceramic Mug vs Japanese Stoneware Mug: split into separate listings
 - [ ] Investigate missing Artisan Table Lamp and Japanese Bedside Lamp listings
-- [ ] Pampas Grass: consolidate all 24 combinations into one product listing
-- [ ] Pampas Grass: use original Shopify images, crop away any text/words while preserving flower images
+- [x] Pampas Grass Bouquet: consolidate all 24 combinations into one product listing (keep editorial name)
+- [x] Pampas Grass Bouquet: use original Shopify images, remove text/words while preserving flower images
 - [ ] Run tests and save checkpoint
 
 ## REMINDER — Lamp Shopify Listings (Pending User Input)
 - [ ] User to provide correct Shopify listings for: Artisan Table Lamp, Edison Vintage Night Lamp, Wax Melt Aromatherapy Lamp, Motion-Sensing Cabinet Light
 - [ ] Do NOT delete any lamp products — user will supply correct mappings later
+
+## Pampas Grass Bouquet Consolidation (Mar 30)
+- [x] Fetch Shopify pampas product data with all 24 variants and images
+- [x] Download and crop/clean all 24 variant images (remove text/watermarks, keep flower photos)
+- [x] Generate one AI hero image for the product thumbnail
+- [x] Create single "Pampas Grass Bouquet" product in products.ts with 24 variants (editorial name kept)
+- [x] Add shopifyMap entry with all 24 variant GIDs
+- [x] Remove old Faux Reed & Pampas Bundle from catalog (consolidated)
+- [x] Update tests (product count 79→78, BLOOM 14→13, min price $9→$2)
+- [x] All 46 tests passing, variant image switching verified in browser
