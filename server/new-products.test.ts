@@ -25,7 +25,7 @@ describe("Full Product Catalog (5 Collections)", () => {
   it("should contain exactly 79 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
-    expect(PRODUCTS.length).toBe(77); // 79 - 1 (Faux Reed & Pampas Bundle consolidated) - 1 (Artisan Table Lamp removed)
+    expect(PRODUCTS.length).toBe(75); // 77 - 4 deleted + 2 figurine split additions
   });
 
   it("should have 5 collections: FEAST, ADORN, BLOOM, GLOW, DWELL", async () => {
@@ -39,7 +39,7 @@ describe("Full Product Catalog (5 Collections)", () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     const feastProducts = PRODUCTS.filter((p) => p.collectionSlug === "feast");
-    expect(feastProducts.length).toBe(30);
+    expect(feastProducts.length).toBe(28); // 30 - 2 deleted (Borosilicate Glass Canister, Acacia Serving Tray)
   });
 
   it("ADORN collection should have 9 products", async () => {

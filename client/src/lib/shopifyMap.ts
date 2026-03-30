@@ -64,13 +64,6 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59241557885009", title: "14X7.5Cm", price: 27, available: true },
     ],
   },
-  "acacia-serving-tray": {
-    handle: "serving-tray-17x12-2-inch-acacia-food-serving-table-laptop-desk-with-handles",
-    shopifyId: "gid://shopify/Product/15738954612817",
-    variants: [
-      { id: "gid://shopify/ProductVariant/59250915573841", title: "Pallet", price: 30.9, available: true },
-    ],
-  },
   "acacia-wooden-utensil-set": {
     handle: "best-wooden-spoons-for-cooking-acacia-wooden-kitchen-utensils-set-smooth-non-toxic-wood-cooking-spatula-turner-serving-spoon",
     shopifyId: "gid://shopify/Product/15734964060241",
@@ -89,7 +82,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59248122265681", title: "Default Title", price: 28, available: true },
     ],
   },
-  "autumn-harvest-garland": {
+  "autumn-harvest-wreath": {
     handle: "halloween-thanksgiving-autumn-frost-leaf-pumpkin-simulation-garland-props-home-decor",
     shopifyId: "gid://shopify/Product/15739020214353",
     variants: [
@@ -259,7 +252,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "dried-cotton-stem": {
-    handle: "dried-cotton-stem-natural-botanical-accent",
+    handle: "natural-dried-flower-cotton-home-living-room-decoration",
     shopifyId: "gid://shopify/Product/15737818579025",
     variants: [
       { id: "gid://shopify/ProductVariant/59248122167377", title: "Default Title", price: 9.0, available: true },
@@ -732,16 +725,28 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59241558802513", title: "8.3Cmx7.5Cm", price: 17.26, available: true },
     ],
   },
-  "nordic-decorative-figurine": {
-    handle: "household-nordic-creative-furnishings-decoration",
-    shopifyId: "gid://shopify/Product/15739019919441",
+    "nordic-figurine-monochrome": {
+    handle: "halloween-thanksgiving-autumn-frost-leaf-pumpkin-simulation-garland-props-home-decor",
+    shopifyId: "gid://shopify/Product/15739020247121",
     variants: [
-      { id: "gid://shopify/ProductVariant/59251309379665", title: "White Black Spot High", price: 10.13, available: false },
-      { id: "gid://shopify/ProductVariant/59251309412433", title: "White Black Dot Round Style", price: 10.13, available: false },
-      { id: "gid://shopify/ProductVariant/59251309445201", title: "Yellow Black Dot High Style", price: 10.13, available: false },
-      { id: "gid://shopify/ProductVariant/59251309477969", title: "Yellow Black Dot Round Style", price: 10.13, available: false },
-      { id: "gid://shopify/ProductVariant/59251309510737", title: "White Red Dot High Style", price: 10.13, available: false },
-      { id: "gid://shopify/ProductVariant/59251309543505", title: "White Red Dot Round Style", price: 10.13, available: false },
+      { id: "gid://shopify/ProductVariant/59251309379665", title: "White Black Spot High", price: 14.27, available: false },
+      { id: "gid://shopify/ProductVariant/59251309412433", title: "White Black Dot Round Style", price: 14.27, available: false },
+    ],
+  },
+  "nordic-figurine-golden": {
+    handle: "halloween-thanksgiving-autumn-frost-leaf-pumpkin-simulation-garland-props-home-decor",
+    shopifyId: "gid://shopify/Product/15739020247121",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59251309445201", title: "Yellow Black Dot High Style", price: 14.27, available: false },
+      { id: "gid://shopify/ProductVariant/59251309477969", title: "Yellow Black Dot Round Style", price: 14.27, available: false },
+    ],
+  },
+  "nordic-figurine-blush": {
+    handle: "halloween-thanksgiving-autumn-frost-leaf-pumpkin-simulation-garland-props-home-decor",
+    shopifyId: "gid://shopify/Product/15739020247121",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59251309510737", title: "White Red Dot High Style", price: 14.27, available: false },
+      { id: "gid://shopify/ProductVariant/59251309543505", title: "White Red Dot Round Style", price: 14.27, available: false },
     ],
   },
   "nordic-espresso-cup-saucer": {
@@ -841,7 +846,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "rapid-defrosting-board": {
-    handle: "rapid-defrosting-board-aluminium-thawing-plate",
+    handle: "fast-defrosting-tray-thaw-kitchen-quick-aluminum-thaw-plate",
     shopifyId: "gid://shopify/Product/15737818710097",
     variants: [
       { id: "gid://shopify/ProductVariant/59248122298449", title: "Default Title", price: 22.0, available: true },
@@ -868,15 +873,6 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59250915082321", title: "Uk", price: 11.65, available: true },
       { id: "gid://shopify/ProductVariant/59250915115089", title: "Us", price: 11.65, available: true },
       { id: "gid://shopify/ProductVariant/59250915147857", title: "Eu", price: 11.65, available: true },
-    ],
-  },
-  "sculptural-glass-vase": {
-    handle: "shape-creative-glass-vase-decoration-living-room-vase",
-    shopifyId: "gid://shopify/Product/15739019558993",
-    variants: [
-      { id: "gid://shopify/ProductVariant/59251307774033", title: "Light Blue", price: 15.06, available: false },
-      { id: "gid://shopify/ProductVariant/59251307806801", title: "Dark Blue", price: 7.86, available: false },
-      { id: "gid://shopify/ProductVariant/59251307839569", title: "Yellow", price: 7.86, available: false },
     ],
   },
   "silence-figurine": {

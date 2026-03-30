@@ -34,11 +34,11 @@ describe("Catalog Pricing Integrity", () => {
       "acacia-magnetic-knife-block": 148,
       "hand-painted-ceramic-oil-cruet": 48,
       "rapid-defrosting-board": 28,
-      "multi-function-grater": 22,
-      "japanese-sake-set": 52,
+      "multi-function-grater": 18,
+      "japanese-sake-set": 18,
       "ceramic-pour-over-dripper": 32,
       "acacia-serving-bowl": 68,
-      "acacia-serving-tray": 58,
+
       "teak-kitchen-utensil-set": 5,
       "black-walnut-resin-tray": 34,
       "retro-reactive-glaze-dinnerware": 10,
@@ -58,6 +58,7 @@ describe("Catalog Pricing Integrity", () => {
     const expected: Record<string, number> = {
       "led-aroma-diffuser": 48,
       "ceramic-incense-holder": 22,
+      "nordic-figurine-monochrome": 65,
       "fireplace-aroma-diffuser": 59,
       "abstract-figurine": 42,
     };
@@ -141,6 +142,10 @@ describe("Catalog Pricing Integrity", () => {
       "rattan-floor-lamp",
       "rice-paper-table-lamp",
       "acacia-round-dish-set",
+      "borosilicate-glass-canister",
+      "sculptural-glass-vase",
+      "minimalist-ceramic-vase",
+      "acacia-serving-tray",
     ];
     for (const slug of deletedSlugs) {
       const product = PRODUCTS.find((p) => p.slug === slug);

@@ -140,8 +140,7 @@ export const PRODUCTS: Product[] = [
         { id: "japanese-ceramic-spoon-lunar-december", label: "Lunar December", price: 6.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250896896081" },
         { id: "japanese-ceramic-spoon-sky", label: "Sky", price: 6.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250896961617" },
         { id: "japanese-ceramic-spoon-black-rhyme", label: "Black Rhyme", price: 6.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250897059921" },
-        { id: "japanese-ceramic-spoon-follow-the-fate", label: "Follow The Fate", price: 6.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250897092689" },
-      ],
+        { id: "japanese-ceramic-spoon-follow-the-fate", label: "Follow The Fate", price: 6.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250897092689" }],
     crossSells: ["feast-6", "feast-5", "feast-27"],
   },
   {
@@ -257,8 +256,7 @@ export const PRODUCTS: Product[] = [
     variants: [
       { id: "feast-8-s", label: "Small (12×6cm)", price: 28.00, available: true },
       { id: "feast-8-m", label: "Medium (18×7.5cm)", price: 48.00, available: true },
-      { id: "feast-8-l", label: "Large (24×8cm)", price: 68.00, available: true },
-    ],
+      { id: "feast-8-l", label: "Large (24×8cm)", price: 68.00, available: true }],
     crossSells: ["feast-9", "feast-10", "feast-8"],
   },
   {
@@ -342,11 +340,11 @@ export const PRODUCTS: Product[] = [
     notes: "Borosilicate glass · Bamboo lid · Airtight seal",
     available: true,
     variants: [
-      { id: "feast-12-s", label: "Small (500ml)", price: 22.00, available: true },
-      { id: "feast-12-m", label: "Medium (1L)", price: 28.00, available: true },
-      { id: "feast-12-l", label: "Large (1.5L)", price: 34.00, available: true },
-    ],
-    crossSells: ["feast-1", "feast-14", "feast-28"],
+      { id: "bamboo-glass-crisper-s", label: "Small", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914820177" },
+      { id: "bamboo-glass-crisper-m", label: "Medium", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914918481" },
+      { id: "bamboo-glass-crisper-l", label: "Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914885713" },
+      { id: "bamboo-glass-crisper-set", label: "Complete Set", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914852945" }],
+    crossSells: ["feast-1", "feast-14"],
   },
 
   {
@@ -366,10 +364,9 @@ export const PRODUCTS: Product[] = [
     available: true,
     variants: [
       { id: "feast-14-base", label: "Wooden Display Base", price: 38.00, available: true },
-      { id: "feast-14-6", label: "6-Inch Mill", price: 58.00, available: true },
-      { id: "feast-14-8", label: "8-Inch Mill", price: 68.00, available: true },
-      { id: "feast-14-10", label: "10-Inch Mill", price: 78.00, available: true },
-    ],
+      { id: "feast-14-6", label: "6-Inch Mill (170g)", price: 58.00, available: true },
+      { id: "feast-14-8", label: "8-Inch Mill (190g)", price: 68.00, available: true },
+      { id: "feast-14-10", label: "10-Inch Mill (275g)", price: 78.00, available: true }],
     crossSells: ["feast-1", "feast-2", "feast-15"],
   },
   {
@@ -430,27 +427,7 @@ export const PRODUCTS: Product[] = [
     variants: [
         { id: "rattan-serving-tray-brown", label: "Brown", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250916098129" }
       ],
-    crossSells: ["feast-7", "feast-18", "feast-8"],
-  },
-  {
-    id: "feast-18",
-    slug: "acacia-serving-tray",
-    name: "Acacia Serving Tray",
-    headline: "The Honest Tray",
-    hookLine: "Solid acacia wood tray with raised edges — for serving, display, or organisation.",
-    description:
-      "A solid acacia wood serving tray with gently raised edges and a smooth, food-safe finish. The natural grain patterns make each tray unique, and the generous proportions make it equally at home on a dining table or a coffee table.",
-    price: 58.00,
-    collection: "FEAST",
-    collectionSlug: "feast",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/acacia-snack-board-JsRznA9VJK3iezhSZ3Kvvv_1d53083f.jpg",
-    tags: ["tray", "acacia", "wood", "serving"],
-    notes: "Solid acacia · Food-safe finish · Raised edges",
-    available: true,
-    crossSells: ["feast-7", "feast-17", "feast-8"],
-      variants: [
-        { id: "acacia-serving-tray-pallet", label: "Natural Acacia", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915573841" }
-      ]
+    crossSells: ["feast-7", "feast-8"],
   },
   {
     id: "feast-19",
@@ -459,13 +436,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Small Detail",
     hookLine: "Minimalist wooden coasters with a holder — the detail that completes a table.",
     description:
-      "A set of six wooden coasters in a matching holder — minimalist, warm, and precisely the kind of small detail that separates a considered home from a merely furnished one. Each coaster is sanded smooth with bevelled edges that prevent cups from sliding.",
+      "A set of six wooden coasters in a matching holder — minimalist, warm, and precisely the kind of small detail that separates a considered home from a merely furnished one. Each coaster is sanded smooth with bevelled edges that prevent cups from sliding. The coasters are waterproof-treated and come with a matching wooden holder for tidy storage.",
     price: 22.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/japanese-wooden-coaster-set_1dab6171_51b2002e.jpg",
     tags: ["coaster", "wood", "japanese", "minimalist", "set"],
-    notes: "Set of 6 · Wooden holder included · Bevelled edges",
+    notes: "Set of 6 · Wooden holder included · Waterproof · Bevelled edges",
     available: true,
     crossSells: ["feast-11", "feast-10", "feast-5"],
       variants: [
@@ -487,11 +464,11 @@ export const PRODUCTS: Product[] = [
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-9_ab4ca976_2615d612.webp",
     tags: ["defrosting", "aluminium", "kitchen", "practical"],
-    notes: "Aluminium alloy · No electricity · Dishwasher safe",
+    notes: "Aluminium alloy · 35.5 × 20.5 × 0.3 cm · No electricity · Dishwasher safe",
     available: true,
     crossSells: ["feast-21", "feast-22", "feast-2"],
       variants: [
-        { id: "rapid-defrosting-board-1", label: "Standard", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59248122298449" }
+        { id: "rapid-defrosting-board-1", label: "Standard (35.5 × 20.5 cm)", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59256196563025" }
       ]
   },
   {
@@ -499,10 +476,10 @@ export const PRODUCTS: Product[] = [
     slug: "ebony-cutting-board",
     name: "Ebony Cutting Board",
     headline: "The Dark Edge",
-    hookLine: "Dense ebony wood cutting board — naturally antimicrobial, dramatically dark.",
+    hookLine: "Dense ebony wood cutting board with handle — naturally antimicrobial, dramatically dark.",
     description:
-      "A cutting board in ebony wood — one of the densest, hardest woods available. The dramatic dark colour and fine grain make it as much a display piece as a kitchen tool. Ebony is naturally antimicrobial and resists knife marks better than softer woods.",
-    price: 68.00,
+      "A cutting board in ebony wood with an integrated handle — one of the densest, hardest woods available. The dramatic dark colour and fine grain make it as much a display piece as a kitchen tool. Ebony is naturally antimicrobial and resists knife marks better than softer woods. Available in six sizes from 28 × 18 cm to 45 × 30 cm, all 2 cm thick.",
+    price: 48.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ebony-cutting-board_e694c163_d46fa257.jpg",
@@ -510,12 +487,12 @@ export const PRODUCTS: Product[] = [
     notes: "Ebony wood · Naturally antimicrobial · Dense grain",
     available: true,
     variants: [
-        { id: "ebony-cutting-board-ebony-cutting-board", label: "Ebony Cutting Board / 28X18X2.", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311837265" },
-        { id: "ebony-cutting-board-ebony-cutting-board", label: "Ebony Cutting Board / 33X22X2.", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311870033" },
-        { id: "ebony-cutting-board-ebony-cutting-board", label: "Ebony Cutting Board / 36X24X2.", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311902801" },
-        { id: "ebony-cutting-board-ebony-cutting-board", label: "Ebony Cutting Board / 38X26X2.", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311935569" },
-        { id: "ebony-cutting-board-ebony-cutting-board", label: "Ebony Cutting Board / 40X28X2.", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311968337" },
-        { id: "ebony-cutting-board-ebony-cutting-board", label: "Ebony Cutting Board / 45X30X2.", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312001105" }
+        { id: "ebony-cutting-board-28x18", label: "28 × 18 cm", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311837265" },
+        { id: "ebony-cutting-board-33x22", label: "33 × 22 cm", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311870033" },
+        { id: "ebony-cutting-board-36x24", label: "36 × 24 cm", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311902801" },
+        { id: "ebony-cutting-board-38x26", label: "38 × 26 cm", price: 78.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311935569" },
+        { id: "ebony-cutting-board-40x28", label: "40 × 28 cm", price: 88.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311968337" },
+        { id: "ebony-cutting-board-45x30", label: "45 × 30 cm", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312001105" }
       ],
     crossSells: ["feast-22", "feast-2", "feast-7"],
   },
@@ -527,7 +504,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "Thick black walnut board with juice groove — the board you reach for every day.",
     description:
       "A thick black walnut cutting board with a juice groove and generous proportions — the kind of board that becomes the centre of your kitchen. Black walnut is self-healing, meaning light knife marks close over time, and the deep chocolate colour hides stains gracefully.",
-    price: 58.00,
+    price: 42.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/13_YNbiGfSvxxxG7ygySVfRs7_1774801324944_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9ibGFjay13YWxudXQtY3V0dGluZy1ib2FyZA_cba0bb79_f531457b.jpg",
@@ -536,28 +513,27 @@ export const PRODUCTS: Product[] = [
     available: true,
     variants: [
         { id: "black-walnut-cutting-board-round", label: "Round", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310592081" },
-        { id: "black-walnut-cutting-board-rectangula-l", label: "Rectangula L", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310624849" },
-        { id: "black-walnut-cutting-board-rectangular-s", label: "Rectangular S", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310657617" }
+        { id: "black-walnut-cutting-board-rectangular-l", label: "Rectangular Large", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310624849" },
+        { id: "black-walnut-cutting-board-rectangular-s", label: "Rectangular Small", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310657617" }
       ],
     crossSells: ["feast-21", "feast-7", "feast-2"],
   },
   {
     id: "feast-23",
     slug: "ceramic-butter-dish",
-    name: "Ceramic Butter Dish",
+    name: "European Ceramic Butter Dish",
     headline: "The Soft Keeper",
-    hookLine: "A ceramic dish with bamboo lid — keeps butter at the perfect spreadable temperature.",
+    hookLine: "Hand-painted ceramic butter dish with lid — European in-glaze colour artistry for your table.",
     description:
-      "A ceramic butter dish with a bamboo lid that keeps butter at room temperature — soft, spreadable, and ready for toast. The ceramic base is heavy enough to stay put, and the bamboo lid adds warmth to a simple kitchen essential.",
-    price: 28.00,
+      "A European-style ceramic butter dish with a fitted lid, crafted in pottery with delicate in-glaze colour patterns. The rectangular shape accommodates a standard butter block, and the lid keeps butter fresh at room temperature. Each piece features hand-painted botanical motifs in the European tradition. Material: Pottery. Style: European. Dishwasher safe. Approximate weight: 0.63 kg. Size: 8 inches.",
+    price: 32.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ceramic-butter-dish_f1e41069_44e0112b.jpg",
-    tags: ["butter", "dish", "ceramic", "bamboo", "kitchen"],
-    notes: "Ceramic · Bamboo lid · Room temperature storage",
+    tags: ["butter", "dish", "ceramic", "european", "kitchen", "in-glaze"],
+    notes: "Pottery · In-glaze colour · 8 inches · 0.63 kg · European style",
         variants: [
-        { id: "ceramic-butter-dish-blue", label: "Blue", price: 28.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310723153" },
-        { id: "ceramic-butter-dish-white", label: "Classic White", price: 28.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310755921", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-23-white-hRVkMYyVFg4GvAceYvPGWD.webp" }
+        { id: "ceramic-butter-dish-green-polka", label: "Green Polka", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59256195940433" }
       ],
     available: true,
     crossSells: ["feast-1", "feast-16", "feast-6"],
@@ -570,7 +546,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "Stainless steel grater with four surfaces — fine, medium, coarse, and slicer.",
     description:
       "A stainless steel box grater with four distinct surfaces — fine for hard cheese and nutmeg, medium for soft cheese and vegetables, coarse for potatoes and cabbage, and a slicer for clean, even cuts. The non-slip base and comfortable handle make it stable during use.",
-    price: 22.00,
+    price: 18.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-10_651b26cd_f80d2ee7.webp",
@@ -579,10 +555,10 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["feast-25", "feast-2", "feast-20"],
       variants: [
-        { id: "multi-function-grater-bagged", label: "Basic Set", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310919761" },
-        { id: "multi-function-grater-two-cheese-grates-bo", label: "Double Grater Box Set", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310952529" },
-        { id: "multi-function-grater-single-cheese-planer", label: "Planer Box Set", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310985297" },
-        { id: "multi-function-grater-boxed", label: "Premium Box Set", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311018065" }
+        { id: "multi-function-grater-bagged", label: "Basic Set", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310919761" },
+        { id: "multi-function-grater-two-cheese-grates-bo", label: "Double Grater Box Set", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310952529" },
+        { id: "multi-function-grater-single-cheese-planer", label: "Planer Box Set", price: 24.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310985297" },
+        { id: "multi-function-grater-boxed", label: "Premium Box Set", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311018065" }
       ]
   },
   {
@@ -631,10 +607,10 @@ export const PRODUCTS: Product[] = [
     slug: "japanese-sake-set",
     name: "Japanese Sake Set",
     headline: "The Evening Ritual",
-    hookLine: "A ceramic tokkuri and four ochoko cups — for warm sake and quiet evenings.",
+    hookLine: "A ceramic tokkuri and ochoko cups — for warm sake and quiet evenings.",
     description:
-      "A traditional Japanese sake set — one tokkuri (pouring vessel) and four ochoko (cups) — in a matte ceramic glaze that feels warm in the hand. The tokkuri is designed for warming sake in a hot water bath, and the small cups encourage the Japanese practice of pouring for others.",
-    price: 52.00,
+      "A traditional Japanese sake set in a matte ceramic glaze that feels warm in the hand. The tokkuri (pouring vessel) is designed for warming sake in a hot water bath, and the small ochoko cups encourage the Japanese practice of pouring for others. Available as a jug or individual cups.",
+    price: 18.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/2_umcPIyWr84IjxiTRZVEqhg_1774599070451_na1fn_L2hvbWUvdWJ1bnR1L2phcGFuZXNlX3Nha2Vfc2V0_f12fd4f3_ecdeb8da.webp",
@@ -643,31 +619,9 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["feast-4", "feast-5", "feast-6"],
       variants: [
-        { id: "japanese-sake-set-black-gold-jug", label: "Black Gold Jug", price: 52.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304759377" },
-        { id: "japanese-sake-set-black-gin-wine-cup", label: "Black Gin Wine Cup", price: 52.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304792145" }
+        { id: "japanese-sake-set-black-gold-jug", label: "Black & Gold Sake Jug", price: 52.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304759377" },
+        { id: "japanese-sake-set-black-gin-wine-cup", label: "Black Sake Cup", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304792145" }
       ]
-  },
-  {
-    id: "feast-28",
-    slug: "borosilicate-glass-canister",
-    name: "Borosilicate Glass Canister",
-    headline: "The Clear Store",
-    hookLine: "Heat-resistant glass canisters with bamboo lids — for tea, coffee, grains, and spices.",
-    description:
-      "A borosilicate glass canister with a bamboo lid and silicone seal — the kind of storage that makes a pantry look curated rather than cluttered. The glass is heat-resistant and won't absorb odours, and the bamboo lid adds warmth.",
-    price: 32.00,
-    collection: "FEAST",
-    collectionSlug: "feast",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-8_bb5b97aa_b5fcb2b9.webp",
-    tags: ["canister", "glass", "borosilicate", "bamboo", "storage"],
-    notes: "Borosilicate glass · Bamboo lid · Silicone seal",
-    available: true,
-    variants: [
-      { id: "feast-28-s", label: "Small (500ml)", price: 18.00, available: true },
-      { id: "feast-28-m", label: "Medium (1L)", price: 22.00, available: true },
-      { id: "feast-28-l", label: "Large (1.5L)", price: 28.00, available: true },
-    ],
-    crossSells: ["feast-12", "feast-1", "feast-14"],
   },
   {
     id: "feast-29",
@@ -683,10 +637,9 @@ export const PRODUCTS: Product[] = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-6_7c8d1cb6_756ad08a.webp",
     tags: ["mug", "ceramic", "japanese", "vintage", "reactive-glaze"],
     notes: "Reactive glaze · 350ml · Microwave safe",
-    available: true,
+    available: false,
     variants: [
-      { id: "vintage-japanese-ceramic-coffee-mug-cup-200ml", label: "Cup · 200ml", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241560014929" },
-    ],
+      { id: "vintage-japanese-ceramic-coffee-mug-cup-200ml", label: "Cup · 200ml", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241560014929" }],
     crossSells: ["feast-30", "feast-31", "feast-26"],
   },
   {
@@ -705,11 +658,11 @@ export const PRODUCTS: Product[] = [
     notes: "Stoneware · 400ml · Keeps drinks warm",
     available: true,
     variants: [
-      { id: "japanese-stoneware-mug-grey-s", label: "Grey · Small", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558900817", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-mug-grey-4ENLh5QRKKR8kMyaPRzm46_1c86840f.jpg" },
-      { id: "japanese-stoneware-mug-grey-l", label: "Grey · Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558933585", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-mug-grey-4ENLh5QRKKR8kMyaPRzm46_1c86840f.jpg" },
-      { id: "japanese-stoneware-mug-apricot-s", label: "Apricot · Small", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558999121", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-mug-apricot-WxVP3BxcsUwfTm25k3bVsJ.webp" },
-      { id: "japanese-stoneware-mug-apricot-l", label: "Apricot · Large", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59241558966353", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-mug-apricot-WxVP3BxcsUwfTm25k3bVsJ.webp" },
-    ],
+        { id: "stoneware-mug-yellow", label: "Yellow", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312033873" },
+        { id: "stoneware-mug-green", label: "Green", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312066641" },
+        { id: "stoneware-mug-khaki", label: "Khaki", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312099409" },
+        { id: "stoneware-mug-set", label: "Set of Three", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312132177" }
+      ],
     crossSells: ["feast-29", "feast-31", "feast-26"],
   },
   {
@@ -720,7 +673,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A ceramic espresso cup with matching saucer — for the person who takes their coffee seriously.",
     description:
       "A ceramic espresso cup with a matching saucer in a matte Nordic glaze — the kind of set that makes a single shot of espresso feel like an event. The cup is sized for a proper double shot (80ml), and the saucer has a subtle indent that keeps the cup centred.",
-    price: 32.00,
+    price: 18.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-4_4f727665_14db9acd.webp",
@@ -728,12 +681,12 @@ export const PRODUCTS: Product[] = [
     notes: "Ceramic · 80ml · Cup + saucer set",
     available: true,
     variants: [
-        { id: "nordic-espresso-cup-saucer-a", label: "Style A", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307053137" },
-        { id: "nordic-espresso-cup-saucer-b", label: "Style B", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307085905" },
-        { id: "nordic-espresso-cup-saucer-c", label: "Style C", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307118673" },
-        { id: "nordic-espresso-cup-saucer-d", label: "Style D", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307151441" },
-        { id: "nordic-espresso-cup-saucer-e", label: "Style E", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307184209" },
-        { id: "nordic-espresso-cup-saucer-f", label: "Style F", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307216977" }
+        { id: "nordic-espresso-honey-pomelo-full", label: "Honey Pomelo — Cup, Saucer & Spoon", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312164945" },
+        { id: "nordic-espresso-olive-green-full", label: "Olive Green — Cup, Saucer & Spoon", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312197713" },
+        { id: "nordic-espresso-honey-pomelo-spoon", label: "Honey Pomelo — Cup & Spoon", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312230481" },
+        { id: "nordic-espresso-olive-green-spoon", label: "Olive Green — Cup & Spoon", price: 26.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312263249" },
+        { id: "nordic-espresso-honey-pomelo-cup", label: "Honey Pomelo — Single Cup", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312296017" },
+        { id: "nordic-espresso-olive-green-cup", label: "Olive Green — Single Cup", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312328785" }
       ],
     crossSells: ["feast-29", "feast-30", "feast-26"],
   },
@@ -757,62 +710,72 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["adorn-9", "adorn-7", "bloom-1"],
       variants: [
-        { id: "led-aroma-diffuser-set-1-usb", label: "Set 1 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900271185", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set1_5fdf236a.jpg" },
-        { id: "led-aroma-diffuser-shallow-wood-grain-u", label: "Shallow Wood Grain / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900303953", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-shallow-wood_53ff6da2.jpg" },
-        { id: "led-aroma-diffuser-set-6-usb", label: "Set 6 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900336721", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set6_c3f604bf.jpg" },
-        { id: "led-aroma-diffuser-deep-wood-grain-usb", label: "Deep Wood Grain / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900369489", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-deep-wood_4c2e83cb.jpg" },
-        { id: "led-aroma-diffuser-set-2-usb", label: "Set 2 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900402257", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set2_a15a10ed.jpg" },
-        { id: "led-aroma-diffuser-set-3-usb", label: "Set 3 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900435025", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set3_c96fb588.jpg" },
-        { id: "led-aroma-diffuser-set-4-usb", label: "Set 4 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900467793", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set4_ab78ee6b.jpg" },
-        { id: "led-aroma-diffuser-set-5-usb", label: "Set 5 / Usb", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900500561", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diffuser-set5_fe12e4a5.jpg" }
+        { id: "led-aroma-diffuser-light-oak", label: "Light Oak", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305218129" },
+        { id: "led-aroma-diffuser-dark-walnut", label: "Dark Walnut", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305250897" }
       ]
   },
   {
     id: "adorn-2",
-    slug: "nordic-decorative-figurine",
-    name: "Nordic Decorative Figurine",
+    slug: "nordic-figurine-monochrome",
+    name: "Nordic Figurine — Monochrome",
     headline: "The Quiet Companion",
-    hookLine: "Minimalist resin figurines in matte finishes — for shelves, mantels, and quiet corners.",
+    hookLine: "White resin figurine with black spots — minimalist, sculptural, and quietly bold.",
     description:
-      "A minimalist decorative figurine in matte resin — the kind of object that adds personality to a shelf or mantel without demanding attention. The clean lines and neutral tones make it versatile enough for any interior, while the weight and finish give it a reassuring solidity.",
-    price: 38.00,
+      "A minimalist decorative figurine in matte white resin with black spot detailing — the kind of object that adds personality to a shelf or mantel without demanding attention. Available in a tall, elegant silhouette or a rounded, compact form. The weight and finish give it a reassuring solidity.",
+    price: 65.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg",
-    tags: ["figurine", "nordic", "decorative", "resin", "minimalist"],
-    notes: "Matte resin · Multiple poses available",
-        variants: [
-        { id: "nordic-decorative-figurine-white-black-spot-hig", label: "White Black Spot High", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309379665", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-2-white-SJkGzuH9NiHi7dTAVMii2B.webp" },
-        { id: "nordic-decorative-figurine-white-black-dot-roun", label: "White Black Dot Round Style", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309412433", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-2-white-SJkGzuH9NiHi7dTAVMii2B.webp" },
-        { id: "nordic-decorative-figurine-yellow-black-dot-hig", label: "Yellow Black Dot High Style", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309445201" },
-        { id: "nordic-decorative-figurine-yellow-black-dot-rou", label: "Yellow Black Dot Round Style", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309477969" },
-        { id: "nordic-decorative-figurine-white-red-dot-high-s", label: "White Red Dot High Style", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309510737", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-2-white-SJkGzuH9NiHi7dTAVMii2B.webp" },
-        { id: "nordic-decorative-figurine-white-red-dot-round", label: "White Red Dot Round Style", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309543505", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-2-white-SJkGzuH9NiHi7dTAVMii2B.webp" }
+    tags: ["figurine", "nordic", "decorative", "resin", "minimalist", "monochrome"],
+    notes: "Matte white resin · Black spot detail · Two poses",
+    variants: [
+        { id: "nordic-figurine-mono-high", label: "Tall Silhouette", price: 65.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309379665" },
+        { id: "nordic-figurine-mono-round", label: "Round Form", price: 65.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309412433" }
       ],
     available: true,
-    crossSells: ["adorn-8", "adorn-3", "adorn-5"],
+    crossSells: ["adorn-2b", "adorn-2c", "adorn-8"],
   },
   {
-    id: "adorn-3",
-    slug: "sculptural-glass-vase",
-    name: "Sculptural Glass Vase",
-    headline: "The Light Catcher",
-    hookLine: "Hand-blown glass vase with organic curves — beautiful empty or filled.",
+    id: "adorn-2b",
+    slug: "nordic-figurine-golden",
+    name: "Nordic Figurine — Golden",
+    headline: "The Warm Accent",
+    hookLine: "Yellow resin figurine with black dot accents — a warm, playful statement piece.",
     description:
-      "A hand-blown glass vase with organic, sculptural curves that catch and refract light. The kind of object that is equally beautiful empty — as a pure form — or filled with a single stem. The thick glass base gives it stability and a satisfying weight.",
-    price: 58.00,
+      "A minimalist decorative figurine in matte yellow resin with black dot accents — warm, playful, and quietly bold. Available in a tall, elegant silhouette or a rounded, compact form. The weight and finish give it a reassuring solidity that belies its whimsical colour.",
+    price: 65.00,
     collection: "ADORN",
     collectionSlug: "adorn",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/sculptural-glass-vase_2d1cc214_950178ba.jpg",
-    tags: ["vase", "glass", "sculptural", "hand-blown", "decorative"],
-    notes: "Hand-blown glass · Thick base · Multiple colours",
-    available: true,
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg",
+    tags: ["figurine", "nordic", "decorative", "resin", "minimalist", "golden"],
+    notes: "Matte yellow resin · Black dot detail · Two poses",
     variants: [
-        { id: "sculptural-glass-vase-light-blue", label: "Light Blue", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307774033", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glass-vase-light-blue_c5abdea1.jpg" },
-        { id: "sculptural-glass-vase-dark-blue", label: "Dark Blue", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307806801", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glass-vase-dark-blue_335ff390.jpg" },
-        { id: "sculptural-glass-vase-yellow", label: "Yellow", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307839569", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glass-vase-yellow_afe528c4.jpg" }
+        { id: "nordic-figurine-gold-high", label: "Tall Silhouette", price: 65.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309445201" },
+        { id: "nordic-figurine-gold-round", label: "Round Form", price: 65.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309477969" }
       ],
-    crossSells: ["adorn-5", "adorn-6", "bloom-5"],
+    available: true,
+    crossSells: ["adorn-2", "adorn-2c", "adorn-8"],
+  },
+  {
+    id: "adorn-2c",
+    slug: "nordic-figurine-blush",
+    name: "Nordic Figurine — Blush",
+    headline: "The Soft Statement",
+    hookLine: "White resin figurine with red dot accents — soft, feminine, and subtly striking.",
+    description:
+      "A minimalist decorative figurine in matte white resin with red dot accents — soft, feminine, and subtly striking. Available in a tall, elegant silhouette or a rounded, compact form. The weight and finish give it a reassuring solidity.",
+    price: 65.00,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg",
+    tags: ["figurine", "nordic", "decorative", "resin", "minimalist", "blush"],
+    notes: "Matte white resin · Red dot detail · Two poses",
+    variants: [
+        { id: "nordic-figurine-blush-high", label: "Tall Silhouette", price: 65.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309510737" },
+        { id: "nordic-figurine-blush-round", label: "Round Form", price: 65.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309543505" }
+      ],
+    available: true,
+    crossSells: ["adorn-2", "adorn-2b", "adorn-8"],
   },
   {
     id: "adorn-4",
@@ -855,24 +818,7 @@ export const PRODUCTS: Product[] = [
         { id: "ceramic-bud-vase-green", label: "Sage Green", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251306528849", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-5-black-dNf5rN69tQ33zABp5DJ5LM_a1cae79d.jpg" },
         { id: "ceramic-bud-vase-orange", label: "Burnt Orange", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251306561617" }
       ],
-    crossSells: ["adorn-6", "adorn-3", "bloom-5"],
-  },
-  {
-    id: "adorn-6",
-    slug: "minimalist-ceramic-vase",
-    name: "Minimalist Ceramic Vase",
-    headline: "The Quiet Form",
-    hookLine: "A tall ceramic vase with clean lines — statement piece for dried or fresh arrangements.",
-    description:
-      "A tall ceramic vase with clean, architectural lines — the kind of object that makes a statement without saying a word. The matte finish and neutral tones make it a versatile canvas for dried grasses, fresh flowers, or nothing at all.",
-    price: 42.00,
-    collection: "ADORN",
-    collectionSlug: "adorn",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/minimalist-ceramic-vase_74358e82_97860a7c.jpg",
-    tags: ["vase", "ceramic", "minimalist", "tall", "decorative"],
-    notes: "Ceramic · Matte finish · 30cm tall",
-    available: true,
-    crossSells: ["adorn-5", "adorn-3", "bloom-3"],
+    crossSells: ["bloom-5"],
   },
   {
     id: "adorn-7",
@@ -891,7 +837,7 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["adorn-1", "adorn-9", "bloom-1"],
       variants: [
-        { id: "ceramic-incense-holder-incense-stick-and-ba", label: "Stick & Backflow Set", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305349201" },
+        { id: "ceramic-incense-holder-incense-stick-and-ba", label: "Stick & Backflow Set", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305349201" },
         { id: "ceramic-incense-holder-incense-stick", label: "Stick Holder Only", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305381969" }
       ]
   },
@@ -918,7 +864,7 @@ export const PRODUCTS: Product[] = [
         { id: "abstract-figurine-3style", label: "3Style", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305807953" }
       ],
     available: true,
-    crossSells: ["adorn-2", "adorn-4", "adorn-6"],
+    crossSells: ["adorn-2", "adorn-4"],
   },
   {
     id: "adorn-9",
@@ -989,7 +935,7 @@ export const PRODUCTS: Product[] = [
     tags: ["lavender", "dried", "bundle", "stems", "fragrance"],
     notes: "Naturally dried · Tied with twine · Fragrance lasts months",
     available: true,
-    crossSells: ["bloom-1", "bloom-5", "adorn-6"],
+    crossSells: ["bloom-1", "bloom-5"],
       variants: [
         { id: "dried-lavender-bundle-white", label: "White", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914263121", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-lavender-white-K9rHcG9dsSMAYmSMWt9a38_dc5b54a4.jpg" },
         { id: "dried-lavender-bundle-pink", label: "Pink", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914295889", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-lavender-pink-SuXpfeRpfycgyj3BxoMTuT_03d02831.jpg" }
@@ -1034,9 +980,8 @@ export const PRODUCTS: Product[] = [
       { id: "pampas-combo-21", label: "Combo 21 · 100 Pcs", price: 4.80, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312820305", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/pampas-combo21-editorial-4Kq3VhNAXTN3xjzqVdCRgR.webp" },
       { id: "pampas-combo-22", label: "Combo 22 · 80 Pcs", price: 4.24, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312853073", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/pampas-v2-combo22-TfagWVcijaW3b8sKFezDzs_065b824d.jpg" },
       { id: "pampas-combo-23", label: "Combo 23 · 100 Pcs", price: 5.14, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312885841", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/pampas-v2-combo23-SsaKErAFj9ifAEZLvMyahZ_382b0eca.jpg" },
-      { id: "pampas-combo-24", label: "Combo 24 · 30 Pcs", price: 5.09, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312918609", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/pampas-v2-combo24-B2U9WyFHYknBRMkZWFjpDL_da35d29c.jpg" },
-    ],
-    crossSells: ["bloom-5", "bloom-8", "adorn-6"],
+      { id: "pampas-combo-24", label: "Combo 24 · 30 Pcs", price: 5.09, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312918609", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/pampas-v2-combo24-B2U9WyFHYknBRMkZWFjpDL_da35d29c.jpg" }],
+    crossSells: ["bloom-5", "bloom-8"],
   },
   {
     id: "bloom-5",
@@ -1046,7 +991,7 @@ export const PRODUCTS: Product[] = [
     hookLine: "A curated mix of dried flowers — roses, daisies, grasses, and seed pods.",
     description:
       "A curated bouquet of mixed dried flowers — roses, daisies, grasses, and seed pods — arranged with the kind of casual elegance that looks like you gathered them on a country walk. Each bouquet is slightly different, reflecting the natural variation of dried botanicals.",
-    price: 42.00,
+    price: 36.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mixed-dried-flower-bouquet_ac1959d8_d490d298.jpg",
@@ -1055,12 +1000,12 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["bloom-2", "bloom-3", "adorn-5"],
       variants: [
-        { id: "mixed-dried-flower-bouquet-champagne", label: "Champagne", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309019217", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-champagne_c7dca804.jpg" },
-        { id: "mixed-dried-flower-bouquet-orange", label: "Orange", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309051985", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-orange_bcfd0230.jpg" },
-        { id: "mixed-dried-flower-bouquet-pink", label: "Pink", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309084753", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-pink_e82108c5.jpg" },
-        { id: "mixed-dried-flower-bouquet-white", label: "White", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309117521", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-white_5162ebce.jpg" },
-        { id: "mixed-dried-flower-bouquet-mix-colors-4pcs", label: "Mix Colors 4Pcs", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309150289", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-mix-colors_8e40f9f9.jpg" },
-        { id: "mixed-dried-flower-bouquet-orange-2pcs", label: "Orange 2Pcs", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309183057", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-orange-2pcs_8af05a8b.jpg" }
+        { id: "mixed-dried-flower-bouquet-champagne", label: "Champagne", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309019217", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-champagne_c7dca804.jpg" },
+        { id: "mixed-dried-flower-bouquet-orange", label: "Orange", price: 36.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309051985", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-orange_bcfd0230.jpg" },
+        { id: "mixed-dried-flower-bouquet-pink", label: "Pink", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309084753", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-pink_e82108c5.jpg" },
+        { id: "mixed-dried-flower-bouquet-white", label: "White", price: 36.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309117521", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-white_5162ebce.jpg" },
+        { id: "mixed-dried-flower-bouquet-mix-colors-4pcs", label: "Mix Colors 4Pcs", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309150289", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-mix-colors_8e40f9f9.jpg" },
+        { id: "mixed-dried-flower-bouquet-orange-2pcs", label: "Orange 2Pcs", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309183057", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-flower-orange-2pcs_8af05a8b.jpg" }
       ]
   },
   {
@@ -1079,30 +1024,30 @@ export const PRODUCTS: Product[] = [
     notes: "Naturally dried · 3-5 bolls per stem · 60cm tall",
     available: true,
     variants: [
-        { id: "dried-cotton-stem-1", label: "Default Title", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59248122167377" }
+        { id: "dried-cotton-stem-1", label: "Single Stem", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59256239325265" }
       ],
     crossSells: ["bloom-3", "bloom-5", "adorn-5"],
   },
   {
     id: "bloom-7",
-    slug: "autumn-harvest-garland",
-    name: "Autumn Harvest Garland",
-    headline: "The Seasonal Drape",
-    hookLine: "A faux garland of autumn leaves, berries, and seed pods — for mantels, tables, and doorways.",
+    slug: "autumn-harvest-wreath",
+    name: "Autumn Harvest Wreath",
+    headline: "The Seasonal Circle",
+    hookLine: "A circular autumn wreath of leaves, berries, pumpkins, and seed pods — for doors, walls, and mantels.",
     description:
-      "A faux garland of autumn leaves, berries, and seed pods — the kind of seasonal decoration that transforms a mantel, a table centre, or a doorway into something that feels like a harvest celebration. The colours are rich and warm without being garish.",
-    price: 38.00,
+      "A circular autumn harvest wreath featuring faux leaves, berries, pumpkins, and seed pods — the kind of seasonal decoration that transforms a front door, a wall, or a mantel into something that feels like a harvest celebration. The colours are rich and warm without being garish.",
+    price: 32.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/autumn-harvest-garland_09548486_53b9ca20.jpg",
-    tags: ["garland", "autumn", "faux", "leaves", "seasonal"],
-    notes: "Faux · 180cm length · Flexible wire base",
+    tags: ["wreath", "autumn", "faux", "leaves", "seasonal"],
+    notes: "Faux · Circular wreath · Flexible wire base",
     available: true,
     crossSells: ["bloom-10", "bloom-13", "adorn-4"],
       variants: [
-        { id: "autumn-harvest-garland-pumpkin-wreath-35x35", label: "Pumpkin Wreath / 35X35Cm", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310788689" },
-        { id: "autumn-harvest-garland-pumpkin-wreath-40x40", label: "Pumpkin Wreath / 40X40Cm", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310821457" },
-        { id: "autumn-harvest-garland-pumpkin-wreath-45x45", label: "Pumpkin Wreath / 45X45Cm", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310854225" }
+        { id: "autumn-harvest-garland-pumpkin-wreath-35x35", label: "Small (35 cm)", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310788689" },
+        { id: "autumn-harvest-garland-pumpkin-wreath-40x40", label: "Medium (40 cm)", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310821457" },
+        { id: "autumn-harvest-garland-pumpkin-wreath-45x45", label: "Large (45 cm)", price: 44.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310854225" }
       ]
   },
   {
@@ -1120,7 +1065,7 @@ export const PRODUCTS: Product[] = [
     tags: ["reed", "dried", "tall", "natural", "architectural"],
     notes: "Naturally dried · 100-120cm tall · Bundle of 10",
     available: true,
-    crossSells: ["bloom-3", "bloom-5", "adorn-6"],
+    crossSells: ["bloom-3", "bloom-5"],
       variants: [
         { id: "dried-reed-arrangement-pink-fron", label: "Pink Fron", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311050833", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-pink-fron_31b0ac2f.jpg" },
         { id: "dried-reed-arrangement-black-beans", label: "Black Beans", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311083601", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-black-beans_8ffc60ab.jpg" },
@@ -1168,7 +1113,7 @@ export const PRODUCTS: Product[] = [
     tags: ["faux", "flowers", "autumn", "bouquet", "warm-tones"],
     notes: "High-quality faux · Flexible stems · Warm palette",
     available: true,
-    crossSells: ["bloom-7", "bloom-5", "adorn-3"],
+    crossSells: ["bloom-7", "bloom-5"],
   },
   {
     id: "bloom-11",
@@ -1188,8 +1133,7 @@ export const PRODUCTS: Product[] = [
     variants: [
       { id: "bloom-11-s", label: "Small (12cm)", price: 22.00, available: true },
       { id: "bloom-11-m", label: "Medium (16cm)", price: 32.00, available: true },
-      { id: "bloom-11-l", label: "Large (20cm)", price: 42.00, available: true },
-    ],
+      { id: "bloom-11-l", label: "Large (20cm)", price: 42.00, available: true }],
     crossSells: ["bloom-12", "bloom-9", "bloom-13"],
   },
   {
@@ -1494,8 +1438,7 @@ export const PRODUCTS: Product[] = [
     variants: [
       { id: "glow-12-snd", label: "Sand", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-sand-39PFucBomL5XbcAYMrdjT6.webp" },
       { id: "glow-12-sge", label: "Sage", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-sage-aP76kxwRt2VafGZqM2gmUd.webp" },
-      { id: "glow-12-blu", label: "Ocean Blue", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-blue-B7USbMnm4GshmkWquj2aFq.webp" },
-    ],
+      { id: "glow-12-blu", label: "Ocean Blue", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-blue-B7USbMnm4GshmkWquj2aFq.webp" }],
     crossSells: ["glow-5", "glow-1", "glow-8"],
   },
   {
@@ -1522,8 +1465,7 @@ export const PRODUCTS: Product[] = [
       { id: "mushroom-c-walnut", label: "Walnut", price: 22.00, available: true, designGroup: "Design C", shopifyVariantId: "gid://shopify/ProductVariant/59250893815889", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-c-walnut-WQ8iRqRFZCguEKWz4QzyRH.webp" },
       { id: "mushroom-c-beech", label: "Beech", price: 22.00, available: true, designGroup: "Design C", shopifyVariantId: "gid://shopify/ProductVariant/59250893848657", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-c-beech-MmZnefoqwiP2GxwL7rH5ks.webp" },
       { id: "mushroom-d-walnut", label: "Walnut", price: 22.00, available: true, designGroup: "Design D", shopifyVariantId: "gid://shopify/ProductVariant/59250893881425", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-d-walnut-MKXfDgxbuck7ztnvgjCLXx.webp" },
-      { id: "mushroom-d-beech", label: "Beech", price: 22.00, available: true, designGroup: "Design D", shopifyVariantId: "gid://shopify/ProductVariant/59250893914193", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-d-beech-ga6kpMdEGFAKzTguriw4gY.webp" },
-    ],
+      { id: "mushroom-d-beech", label: "Beech", price: 22.00, available: true, designGroup: "Design D", shopifyVariantId: "gid://shopify/ProductVariant/59250893914193", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-d-beech-ga6kpMdEGFAKzTguriw4gY.webp" }],
   },
 
   // ═══════════════════════════════════════════════════════════════════════
@@ -1722,8 +1664,7 @@ export const PRODUCTS: Product[] = [
     variants: [
       { id: "dwell-7-crm", label: "Cream", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-7-cream-b9wX7dhnGgyPapEDi2QSeC_d258602e.jpg" },
       { id: "dwell-7-gry", label: "Grey", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-7-grey-FsZrVWkUD4TSfZA4EFw8Wt_6172bef5.jpg" },
-      { id: "dwell-7-sge", label: "Sage", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-7-sage-BPYwbLwCrTbx9eBXk4x5Xh_8bc4d3d7.jpg" },
-    ],
+      { id: "dwell-7-sge", label: "Sage", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-7-sage-BPYwbLwCrTbx9eBXk4x5Xh_8bc4d3d7.jpg" }],
     crossSells: ["dwell-8", "dwell-9", "dwell-10"],
   },
   {
@@ -1915,8 +1856,7 @@ export const PRODUCTS: Product[] = [
         { id: "pet-blanket-random-color-large-1", label: "Large (100×70cm)", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309346897" }
       ],
     crossSells: ["dwell-7", "dwell-8", "dwell-12"],
-  },
-];
+  }];
 
 // ═══════════════════════════════════════════════════════════════════════
 // COLLECTIONS
@@ -1967,8 +1907,7 @@ export const COLLECTIONS: Collection[] = [
       "Rugs, blankets, cushions, table linens, and soft furnishings. The textiles and surfaces that make a home feel warm, layered, and lived-in.",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/collection-dwell-hero-c5XLa39hG9yv5HoqPXHuY7_050c45ee.jpg",
     products: [],
-  },
-];
+  }];
 
 // Populate collection products (show all products, including sold-out)
 COLLECTIONS.forEach((col) => {

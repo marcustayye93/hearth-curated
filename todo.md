@@ -477,3 +477,51 @@
 - [ ] Acacia Serving Bowl: verify colour matches Shopify photo
 - [ ] Jujube Wood Serving Basin: measurements "16 TO" and "20 TO" unclear — find correct units
 - [ ] Whole Wood Lock Snack Plate: entire product rendered wrongly — replace with correct Shopify product data
+
+## Audit Comments — Column L (Mar 30)
+
+### Deletions
+- [x] Delete feast-28 Borosilicate Glass Canister
+- [x] Delete adorn-3 Sculptural Glass Vase (user deleted from Shopify)
+- [x] Delete adorn-6 Minimalist Ceramic Vase
+- [x] Unlist feast-18 Acacia Serving Tray (shows different brand name)
+
+### Remappings
+- [x] Remap feast-12 Bamboo & Glass Storage Container to Shopify 15738954383441
+- [x] Remap feast-20 Rapid Defrosting Board to Shopify 15742001610833 (35.5x20.5x0.3CM)
+- [x] Remap feast-23 Ceramic Butter Dish to Shopify 15742001545297
+- [x] Remap bloom-6 Dried Cotton Stem to Shopify 15742008459345
+
+### Pricing Fixes
+- [x] feast-21 Ebony Cutting Board — differentiate variant prices by size ($48-$98)
+- [x] feast-22 Black Walnut Cutting Board — Rect Small $42, Rect Large $58, Round $58
+- [x] feast-24 Multi-Function Grater — Basic $18, Planer $24, Double $28, Premium $32
+- [x] feast-27 Japanese Sake Set — Jug $52, Cup $18, renamed gin→sake
+- [x] adorn-7 Ceramic Incense Holder — Stick & Backflow Set $28, Stick Only $22
+- [x] bloom-5 Mixed Dried Flower Bouquet — singles $36-38, Orange 2Pcs $48, Mix 4Pcs $58
+- [x] bloom-7 Autumn Harvest Wreath — renamed, Small $32, Medium $38, Large $44
+
+### Variant Name Fixes
+- [x] feast-30 Japanese Stoneware Mug — variants: Yellow, Green, Khaki, Set of Three
+- [x] feast-31 Nordic Espresso Cup & Saucer — renamed variants (Honey Pomelo/Olive Green × Full/Spoon/Cup), differentiated pricing $18-$32
+- [x] adorn-1 LED Aroma Diffuser — reduced to 2 variants: Light Oak, Dark Walnut
+
+### Product Details
+- [x] feast-11 Handmade Wooden Cup — added ~200ml capacity
+- [x] feast-14 Acacia Salt & Pepper Mill — added weights (170g/190g/275g)
+- [x] feast-16 Hand-Painted Ceramic Oil Cruet — added ~350ml capacity, 530g weight
+- [x] feast-17 Rattan Serving Tray — added 8.7×1.4×2.6 inches, rattan, round
+- [x] feast-19 Japanese Wooden Coaster Set — added coaster holder mention + waterproof
+
+### Product Split
+- [x] adorn-2 Nordic Decorative Figurine — split into 3 products (Monochrome, Golden, Blush) at $65
+
+### Image Fixes
+- [ ] feast-15 Acacia Magnetic Knife Block — use correct Shopify images
+- [ ] feast-21 Ebony Cutting Board — render handle in images
+- [ ] adorn-8 Abstract Figurine — ensure variant images match actual product
+- [ ] bloom-5 Mixed Dried Flower Bouquet — verify images from CJ dropshipping
+- [ ] bloom-7 Autumn Harvest Wreath — show circular wreath image
+
+### Investigate
+- [x] feast-29 Vintage Japanese Ceramic Mug — marked unavailable (user can't find product)
