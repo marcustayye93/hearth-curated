@@ -647,3 +647,15 @@
 - [x] All 7 products display correctly in browser (FEAST: 32, ADORN: 10, BLOOM: 14, DWELL: 15)
 - [x] Cross-sell between Cotton Lavender Sachet Bag and Dried Xinjiang Lavender working
 - [x] All 67 tests passing
+
+### Shopify Price Sync — 7 Threshold Closers (March 31, 2026)
+- [x] Sync CRO-optimized prices to Shopify Admin API for all 7 threshold closer products (7/7 variants updated)
+- [x] Verify checkout amounts match website prices after sync
+
+### Image Likeness Audit — 7 Threshold Closers (March 31, 2026)
+- [x] Fetch original Shopify/CJ product photos for all 7 threshold closer products
+- [x] Compare AI-generated images against originals side-by-side
+- [x] Flag any products needing image regeneration for better likeness
+- [x] 6/7 products PASS with excellent likeness
+- [x] 1/7 (Sakura Dish) UNVERIFIABLE — Shopify listing has wrong variant images (chopstick rests instead of dishes)
+- [x] Compile findings report with recommendations
