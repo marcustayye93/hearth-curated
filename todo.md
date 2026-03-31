@@ -659,3 +659,10 @@
 - [x] 6/7 products PASS with excellent likeness
 - [x] 1/7 (Sakura Dish) UNVERIFIABLE — Shopify listing has wrong variant images (chopstick rests instead of dishes)
 - [x] Compile findings report with recommendations
+
+### Sakura Dish Image — Source from CJ Dropshipping (March 31, 2026)
+- [x] Find the actual sakura dish product on CJ Dropshipping
+- [x] Capture the white variant product photos (user provided 2 CJ photos)
+- [x] Regenerate AI image to match the real CJ product photo (white dish with hidden sakura ridges + soy sauce reveal)
+- [x] Upload new image to CDN and update products.ts
+- [x] Updated description and hookLine to match real product feature (hidden sakura revealed by soy sauce)
