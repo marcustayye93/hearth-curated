@@ -7,6 +7,7 @@
 import { useState, useEffect } from "react";
 import { COLLECTIONS } from "@/lib/products";
 import { trpc } from "@/lib/trpc";
+import CurrencySelector from "@/components/CurrencySelector";
 
 const SUBSCRIBED_KEY = "hc-newsletter-subscribed";
 
@@ -280,12 +281,15 @@ export default function Footer() {
           className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mt-12 pt-8"
           style={{ borderTop: "1px solid rgba(196,185,170,0.15)" }}
         >
-          <p
-            className="text-xs"
-            style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
-          >
-            © 2026 Hearth Curated. All rights reserved.
-          </p>
+          <div className="flex items-center gap-4">
+            <CurrencySelector variant="light" />
+            <p
+              className="text-xs"
+              style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+            >
+              © 2026 Hearth Curated. All rights reserved.
+            </p>
+          </div>
           <div className="flex flex-wrap gap-4 sm:gap-6">
             <a
               href="/privacy-policy"

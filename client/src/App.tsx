@@ -7,6 +7,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { captureUTMParams } from "./lib/utm";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { CartProvider } from "./contexts/CartContext";
+import { CurrencyProvider } from "./contexts/CurrencyContext";
 import CartDrawer from "./components/CartDrawer";
 import EmailCapture from "./components/EmailCapture";
 import Home from "./pages/Home";
@@ -57,6 +58,7 @@ function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
+        <CurrencyProvider>
         <CartProvider>
           <TooltipProvider>
             <Toaster />
@@ -65,6 +67,7 @@ function App() {
             <Router />
           </TooltipProvider>
         </CartProvider>
+        </CurrencyProvider>
       </ThemeProvider>
     </ErrorBoundary>
   );

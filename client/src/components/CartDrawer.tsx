@@ -5,10 +5,12 @@
 
 import { X, Minus, Plus, ShoppingBag, Truck, ArrowRight, Loader2 } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
 import { Link } from "wouter";
 import { getShopifyVariantGid } from "@/lib/products";
 
 export default function CartDrawer() {
+  const { formatPrice } = useCurrency();
   const {
     items,
     itemCount,
@@ -94,7 +96,7 @@ export default function CartDrawer() {
             >
               {hasFreeShipping
                 ? "You've unlocked complimentary shipping"
-                : `$${amountToFreeShipping.toFixed(0)} away from complimentary shipping`}
+                : `${formatPrice(amountToFreeShipping, { compact: true })} away from complimentary shipping`}
             </span>
           </div>
           <div
@@ -255,7 +257,7 @@ export default function CartDrawer() {
                               fontWeight: 500,
                             }}
                           >
-                            ${(item.price * item.quantity).toFixed(2)}
+                            {formatPrice(item.price * item.quantity)}
                           </span>
                           <button
                             onClick={() => removeItem(item.lineId)}
@@ -339,7 +341,7 @@ export default function CartDrawer() {
                               color: "var(--hc-sienna)",
                             }}
                           >
-                            + ${product.price.toFixed(0)}
+                            + {formatPrice(product.price, { compact: true })}
                             <Plus size={10} />
                           </p>
                         </button>
@@ -378,7 +380,7 @@ export default function CartDrawer() {
                   color: "var(--hc-espresso)",
                 }}
               >
-                ${subtotal.toFixed(2)}
+                {formatPrice(subtotal)}
               </span>
             </div>
             <p

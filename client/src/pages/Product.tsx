@@ -4,24 +4,35 @@
 // Below-fold: Trust signals, "You May Also Like" cross-sells
 // Mobile: Sticky bottom Add to Cart bar
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link, useParams } from "wouter";
 import { ShoppingBag, Truck, Shield, RotateCcw, ChevronDown } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { getProductBySlug, getCrossSells, type Variant, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
 import SEOHead from "@/components/SEOHead";
 
 export default function Product() {
   const params = useParams<{ slug: string }>();
   const product = getProductBySlug(params.slug);
   const { addItem } = useCart();
+  const { formatPrice, currency } = useCurrency();
 
   // Variant state
   const [selectedVariant, setSelectedVariant] = useState<Variant | undefined>(
     () => product?.variants?.find((v) => v.available) ?? product?.variants?.[0]
   );
+
+  // Reset variant and image state when navigating to a different product (e.g. via cross-sells)
+  useEffect(() => {
+    if (product) {
+      const defaultVariant = product.variants?.find((v) => v.available) ?? product.variants?.[0];
+      setSelectedVariant(defaultVariant);
+      setActiveImageIndex(0);
+    }
+  }, [params.slug]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const currentPrice = selectedVariant?.price ?? product?.price ?? 0;
   const isAvailable = selectedVariant
@@ -90,7 +101,7 @@ export default function Product() {
     offers: {
       "@type": "Offer",
       price: currentPrice.toFixed(2),
-      priceCurrency: "USD",
+      priceCurrency: currency,
       availability: isAvailable
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
@@ -205,7 +216,7 @@ export default function Product() {
                     className="text-2xl"
                     style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)" }}
                   >
-                    ${currentPrice.toFixed(2)}
+                    {formatPrice(currentPrice)}
                   </span>
                 </div>
 
@@ -341,7 +352,7 @@ export default function Product() {
                               {variant.label}
                               {variant.price !== product.price && (
                                 <span className="ml-1 opacity-70">
-                                  · ${variant.price.toFixed(0)}
+                                  · {formatPrice(variant.price, { compact: true })}
                                 </span>
                               )}
                             </button>
@@ -500,7 +511,7 @@ export default function Product() {
                       className="text-sm"
                       style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
                     >
-                      ${rel.price.toFixed(2)}
+                      {formatPrice(rel.price, { compact: true })}
                     </p>
                   </Link>
                 ))}
@@ -535,7 +546,7 @@ export default function Product() {
               className="text-sm"
               style={{ fontFamily: "'Karla', sans-serif", color: "var(--hc-sienna)" }}
             >
-              ${currentPrice.toFixed(2)}
+              {formatPrice(currentPrice)}
             </p>
           </div>
           <button

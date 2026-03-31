@@ -570,3 +570,34 @@
 - [x] Source/assign images for variants — 9 Shopify variant images + 136 product-level fallbacks = 350/350 (100% coverage)
 - [x] Create dimension overlay images for 10 size-variant products (cutting boards, serving plates, runners, tablecloths, wreath, cabinet light, rug)
 - [x] Upload 10 dimension overlays to CDN and inject as additionalImages into product data
+
+## E-Commerce Audit Fixes (Mar 31)
+### Critical (Before Launch)
+- [x] C1.1: Set 6 unpurchasable products to available=false (bloom-10, bloom-11, bloom-13, glow-5, glow-12, dwell-7)
+- [x] C1.2: Set 7 ghost products to available=false (10 products total set to available=false)
+- [x] C1.3: Add shopifyVariantId to feast-8 (3 variants) and feast-14 (4 variants)
+- [x] C1.4: Fix JSON-LD priceCurrency from USD to SGD
+- [x] C1.5: Fix product.price to match min variant price (6 products)
+- [x] C1.6: Fix cart drawer to show variant image instead of product image
+- [x] C1.7: Fix figurine shopifyMap handle/shopifyId
+### High (Customer Journey)
+- [x] H2.1: Implement search functionality (SearchDialog with Cmd+K shortcut)
+- [x] H2.2: Fix account button (links to login when unauthenticated, shows user profile when logged in)
+- [x] H2.3: Fix variant state reset on cross-sell navigation (useEffect on slug change)
+- [x] H2.4: Fix Quick Add for multi-variant products (navigates to PDP with "Choose Option" label)
+- [x] H2.5: Add sorting to Collection and Shop All pages (Curated/Price/Name)
+### Medium
+- [x] M3.1: dwell-6 correctly unavailable (all 27 variants sold out); feast-29 kept unavailable per user instruction
+- [x] M3.2: Fix ALL crossSells — converted 70 old ID refs to slugs, removed unavailable refs, rebuilt with same-collection alternatives
+- [x] M3.3: Breadcrumbs already exist on product pages (Home · Collection · Product)
+- [x] M3.4: Product count already shown on collection pages ("X objects")
+### Currency Feature
+- [x] Implement multi-currency selector for major currencies (USD, SGD, EUR, GBP, AUD, JPY, CAD)
+- [x] Store currency preference in localStorage
+- [x] Display prices in selected currency across all pages
+- [x] Update JSON-LD priceCurrency dynamically based on selection
+### Low (SEO & Technical)
+- [ ] L5.1: Create robots.txt
+- [ ] L5.2: Create sitemap.xml
+- [ ] L5.3: Add collection page structured data
+- [ ] L5.4: Add newsletter signup to footer

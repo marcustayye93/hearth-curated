@@ -5,14 +5,21 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Search, ShoppingBag, User } from "lucide-react";
-import { COLLECTIONS } from "@/lib/products";
+import { COLLECTIONS, FREE_SHIPPING_THRESHOLD } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
+import { useAuth } from "@/_core/hooks/useAuth";
+import { getLoginUrl } from "@/const";
+import SearchDialog from "@/components/SearchDialog";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [location] = useLocation();
   const { itemCount, openCart } = useCart();
+  const { formatPrice } = useCurrency();
+  const { user, isAuthenticated } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
@@ -32,7 +39,7 @@ export default function Nav() {
         className="w-full text-center py-2.5 text-xs tracking-widest uppercase"
         style={{ backgroundColor: "var(--hc-espresso)", color: "var(--hc-parchment)" }}
       >
-        Complimentary worldwide shipping on orders over $70
+        Complimentary worldwide shipping on orders over {formatPrice(FREE_SHIPPING_THRESHOLD, { compact: true })}
       </div>
 
       {/* Main nav */}
@@ -79,12 +86,18 @@ export default function Nav() {
 
           {/* Right — icons */}
           <div className="flex items-center gap-4 md:gap-5" style={{ color: "var(--hc-espresso)" }}>
-            <button aria-label="Search" className="p-1">
+            <button aria-label="Search" className="p-1 transition-opacity hover:opacity-60" onClick={() => setSearchOpen(true)}>
               <Search size={18} strokeWidth={1.5} />
             </button>
-            <button aria-label="Account" className="p-1 hidden md:block">
-              <User size={18} strokeWidth={1.5} />
-            </button>
+            {isAuthenticated ? (
+              <Link href="/about" aria-label="Account" className="p-1 hidden md:block transition-opacity hover:opacity-60" title={user?.name || "Account"}>
+                <User size={18} strokeWidth={1.5} />
+              </Link>
+            ) : (
+              <a href={getLoginUrl()} aria-label="Sign in" className="p-1 hidden md:block transition-opacity hover:opacity-60">
+                <User size={18} strokeWidth={1.5} />
+              </a>
+            )}
             <button
               aria-label="Cart"
               className="p-1 relative"
@@ -233,6 +246,7 @@ export default function Nav() {
           onClick={() => setMenuOpen(false)}
         />
       </div>
+      <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </>
   );
 }

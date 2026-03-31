@@ -144,6 +144,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
             (v) => v.shopifyVariantId === line.variant.id
           );
 
+          // Prefer variant-specific image, then Shopify variant image, then static product image
+          const variantImage = staticVariant?.image
+            || line.variant.image?.url
+            || staticProduct?.image
+            || line.product.image?.url
+            || "";
+
           return {
             lineId: line.id,
             variantId: line.variant.id,
@@ -152,10 +159,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
             name: staticProduct?.name || line.product.title,
             variantLabel: staticVariant?.label
               || (line.variant.title !== "Default Title" ? line.variant.title : ""),
-            image: staticProduct?.image
-              || line.variant.image?.url
-              || line.product.image?.url
-              || "",
+            image: variantImage,
             price: line.variant.price,
             quantity: line.quantity,
           };

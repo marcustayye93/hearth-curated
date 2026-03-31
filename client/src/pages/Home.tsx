@@ -4,12 +4,13 @@
 //           Brand manifesto (text-heavy editorial), Featured products (horizontal scroll),
 //           Editorial feature (split image/text), Footer
 
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Plus } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { COLLECTIONS, PRODUCTS, type Product, getShopifyVariantGid } from "@/lib/products";
 import { useCart } from "@/contexts/CartContext";
+import { useCurrency } from "@/contexts/CurrencyContext";
 import SEOHead from "@/components/SEOHead";
 
 const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/hero-banner-v2-WGnoQge2ivaCcYKVnDSYX9_240f3315.webp";
@@ -19,9 +20,17 @@ const FEATURED_PRODUCTS = PRODUCTS.slice(0, 8);
 
 function FeaturedCard({ product }: { product: Product }) {
   const { addItem } = useCart();
+  const { formatPrice } = useCurrency();
+  const [, navigate] = useLocation();
+  const hasMultipleVariants = (product.variants?.length ?? 0) > 1;
   const handleQuickAdd = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
+    if (!product.available) return;
+    if (hasMultipleVariants) {
+      navigate(`/products/${product.slug}`);
+      return;
+    }
     const defaultVariant = product.variants?.find((v) => v.available);
     const variantGid = getShopifyVariantGid(product, defaultVariant);
     if (variantGid) addItem(variantGid, 1);
@@ -56,7 +65,7 @@ function FeaturedCard({ product }: { product: Product }) {
             }}
           >
             <Plus size={12} strokeWidth={2} />
-            <span>Quick Add</span>
+            <span>{hasMultipleVariants ? "Choose Option" : "Quick Add"}</span>
           </button>
         )}
         {!product.available && <div className="hc-sold-out-ribbon" />}
@@ -87,8 +96,8 @@ function FeaturedCard({ product }: { product: Product }) {
           style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
         >
           {product.variants && product.variants.length > 1
-            ? `From $${product.price.toFixed(0)}`
-            : `$${product.price.toFixed(0)}`}
+            ? `From ${formatPrice(product.price, { compact: true })}`
+            : formatPrice(product.price, { compact: true })}
         </p>
       </div>
     </Link>

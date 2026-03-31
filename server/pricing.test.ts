@@ -30,14 +30,14 @@ describe("Catalog Pricing Integrity", () => {
 
   it("should have correct prices for key FEAST products", () => {
     const expected: Record<string, number> = {
-      "acacia-salt-pepper-mill": 58,
+      "acacia-salt-pepper-mill": 38,
       "acacia-magnetic-knife-block": 148,
       "hand-painted-ceramic-oil-cruet": 48,
       "rapid-defrosting-board": 28,
       "multi-function-grater": 18,
       "japanese-sake-set": 18,
       "ceramic-pour-over-dripper": 32,
-      "acacia-serving-bowl": 68,
+      "acacia-serving-bowl": 28,
 
       "stoneware-travel-tea-set": 32,
       "teak-kitchen-utensil-set": 5,
@@ -89,7 +89,7 @@ describe("Catalog Pricing Integrity", () => {
 
   it("should have correct prices for key GLOW products", () => {
     const expected: Record<string, number> = {
-      "woven-bamboo-table-lamp": 98,
+      "woven-bamboo-table-lamp": 88,
       "motion-sensing-cabinet-light": 18,
       "mushroom-night-light": 22,
       "ceramic-bedside-lamp": 99,

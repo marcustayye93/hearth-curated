@@ -83,7 +83,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "autumn-harvest-wreath": {
-    handle: "halloween-thanksgiving-autumn-frost-leaf-pumpkin-simulation-garland-props-home-decor",
+    handle: "household-nordic-creative-furnishings-decoration",
     shopifyId: "gid://shopify/Product/15739020214353",
     variants: [
       { id: "gid://shopify/ProductVariant/59251310788689", title: "Pumpkin Wreath / 35X35Cm", price: 9.79, available: false },
@@ -726,7 +726,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
     "nordic-figurine-monochrome": {
-    handle: "halloween-thanksgiving-autumn-frost-leaf-pumpkin-simulation-garland-props-home-decor",
+    handle: "household-nordic-creative-furnishings-decoration",
     shopifyId: "gid://shopify/Product/15739020247121",
     variants: [
       { id: "gid://shopify/ProductVariant/59251309379665", title: "White Black Spot High", price: 14.27, available: false },
@@ -734,7 +734,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "nordic-figurine-golden": {
-    handle: "halloween-thanksgiving-autumn-frost-leaf-pumpkin-simulation-garland-props-home-decor",
+    handle: "household-nordic-creative-furnishings-decoration",
     shopifyId: "gid://shopify/Product/15739020247121",
     variants: [
       { id: "gid://shopify/ProductVariant/59251309445201", title: "Yellow Black Dot High Style", price: 14.27, available: false },
@@ -742,7 +742,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "nordic-figurine-blush": {
-    handle: "halloween-thanksgiving-autumn-frost-leaf-pumpkin-simulation-garland-props-home-decor",
+    handle: "household-nordic-creative-furnishings-decoration",
     shopifyId: "gid://shopify/Product/15739020247121",
     variants: [
       { id: "gid://shopify/ProductVariant/59251309510737", title: "White Red Dot High Style", price: 14.27, available: false },
