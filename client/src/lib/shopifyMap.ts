@@ -32,16 +32,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59250914951249", title: "Yellow", price: 28.54, available: true },
     ],
   },
-  "acacia-salt-pepper-mill": {
-    handle: "salt-and-pepper-grinder-acacia-wooden-spice-pepper-mill-with-strong-adjustable-ceramic-grinder-kitchen-cooking-tools-1",
-    shopifyId: "gid://shopify/Product/15735272112209",
-    variants: [
-      { id: "gid://shopify/ProductVariant/59243760877649", title: "Wooden Base 1Pcs", price: 11.03, available: true },
-      { id: "gid://shopify/ProductVariant/59243760943185", title: "6 Inch 1Pcs", price: 19.57, available: true },
-      { id: "gid://shopify/ProductVariant/59243760910417", title: "8 Inch 1Pcs", price: 22.84, available: true },
-      { id: "gid://shopify/ProductVariant/59243760975953", title: "10 Inch 1Pcs", price: 25.12, available: true },
-    ],
-  },
+  "acacia-salt-pepper-mill": null, // Shopify product/variant deleted
   "acacia-salt-pepper-mill-old": {
     handle: "salt-and-pepper-grinder-acacia-wooden-spice-pepper-mill-with-strong-adjustable-ceramic-grinder-kitchen-cooking-tools",
     shopifyId: "gid://shopify/Product/15734963994705",
@@ -52,18 +43,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59241559130193", title: "6 Inch 1Pcs", price: 18.03, available: true },
     ],
   },
-  "acacia-serving-bowl": {
-    handle: "acacia-wooden-bowl-japanese-style-wooden-tableware-household-and-basin-fruit-plate-salad-bowl-whole-wooden-soup-bowl-wooden-bowl",
-    shopifyId: "gid://shopify/Product/15734963699793",
-    variants: [
-      { id: "gid://shopify/ProductVariant/59241557721169", title: "12X6Cm", price: 20.5, available: true },
-      { id: "gid://shopify/ProductVariant/59241557753937", title: "16X7.5Cm", price: 32.31, available: true },
-      { id: "gid://shopify/ProductVariant/59241557786705", title: "18X7.5Cm", price: 40.27, available: true },
-      { id: "gid://shopify/ProductVariant/59241557819473", title: "20X7.5Cm", price: 43.79, available: true },
-      { id: "gid://shopify/ProductVariant/59241557852241", title: "24X8Cm", price: 61.69, available: true },
-      { id: "gid://shopify/ProductVariant/59241557885009", title: "14X7.5Cm", price: 27, available: true },
-    ],
-  },
+  "acacia-serving-bowl": null, // Shopify product/variant deleted
   "acacia-wooden-utensil-set": {
     handle: "best-wooden-spoons-for-cooking-acacia-wooden-kitchen-utensils-set-smooth-non-toxic-wood-cooking-spatula-turner-serving-spoon",
     shopifyId: "gid://shopify/Product/15734964060241",
@@ -460,16 +440,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59251304792145", title: "Black Gin Wine Cup", price: 0.63, available: true },
     ],
   },
-  "japanese-stoneware-mug": {
-    handle: "300-600ml-japanese-stoneware-retro-coffee-mug-breakfast-milk-oatmeal-cups-office-couple-water-mug-design-style-mug-birthday-gift",
-    shopifyId: "gid://shopify/Product/15734963961937",
-    variants: [
-      { id: "gid://shopify/ProductVariant/59241558900817", title: "Grey-S / 264-574Ml", price: 32.01, available: true },
-      { id: "gid://shopify/ProductVariant/59241558933585", title: "Grey-L / 264-574Ml", price: 36.98, available: true },
-      { id: "gid://shopify/ProductVariant/59241558966353", title: "Spricot-L / 264-574Ml", price: 36.98, available: true },
-      { id: "gid://shopify/ProductVariant/59241558999121", title: "Spricot-S / 264-574Ml", price: 32.01, available: true },
-    ],
-  },
+  "japanese-stoneware-mug": null, // Shopify product/variant deleted
   "japanese-wooden-coaster-set": {
     handle: "japanese-style-wooden-coaster-set",
     shopifyId: "gid://shopify/Product/15738954645585",
@@ -1042,13 +1013,7 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59251305021521", title: "White And Pink Towel Set", price: 7.67, available: true },
     ],
   },
-  "vintage-japanese-ceramic-mug": {
-    handle: "vintage-japanese-ceramic-coffee-mug-elegant-breakfast-milk-mug-for-your-morning-latte-stylish-water-cup-for-the-office",
-    shopifyId: "gid://shopify/Product/15734964584529",
-    variants: [
-      { id: "gid://shopify/ProductVariant/59241560014929", title: "Cup / 200Ml", price: 28.79, available: true },
-    ],
-  },
+  "vintage-japanese-ceramic-mug": null, // Shopify product/variant deleted
   "wabi-sabi-ceramic-dispenser": {
     handle: "wabi-sabi-ceramic-lotion-bottle-450ml-squeeze-bottle-soap-dispenser-shampoo-lotion-conditioner-bottle-bathroom-accessories",
     shopifyId: "gid://shopify/Product/15734964093009",
@@ -1133,5 +1098,98 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59250893881425", title: "D / Walnut Color / 2.4W", price: 15.79, available: true },
       { id: "gid://shopify/ProductVariant/59250893914193", title: "D / Beech / 2.4W", price: 15.79, available: true },
     ],
-  }
+  },
+  "retro-reactive-glaze-dinnerware": {
+    handle: "retro-bowls-and-plates",
+    shopifyId: "gid://shopify/Product/15737946800209",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59248630890577", title: "Big Flat 4Pcs", price: 42.53, available: true },
+      { id: "gid://shopify/ProductVariant/59248630923345", title: "Bowl 4Pcs", price: 27.63, available: true },
+      { id: "gid://shopify/ProductVariant/59248630956113", title: "Mug 4Pcs", price: 24.36, available: true },
+      { id: "gid://shopify/ProductVariant/59248630988881", title: "Small Plate 4Pcs", price: 27.63, available: true },
+      { id: "gid://shopify/ProductVariant/59248631021649", title: "4Pcs Set", price: 30.54, available: true },
+      { id: "gid://shopify/ProductVariant/59248631054417", title: "Bowl", price: 7.14, available: true },
+      { id: "gid://shopify/ProductVariant/59248631087185", title: "Mug", price: 8.29, available: true },
+      { id: "gid://shopify/ProductVariant/59248631119953", title: "Big Flat", price: 10.86, available: true },
+      { id: "gid://shopify/ProductVariant/59248631152721", title: "Small Plate", price: 7.14, available: true },
+    ],
+  },
+  "black-walnut-resin-tray": {
+    handle: "black-walnut-resin-rectangular-household-fruit-solid-wood-small-tea-table-tray",
+    shopifyId: "gid://shopify/Product/15738951794769",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59250901057617", title: "Walnut Transparent Square 29Cm", price: 33.5, available: true },
+      { id: "gid://shopify/ProductVariant/59250901090385", title: "Walnut Blue Square 29Cm", price: 35.93, available: true },
+      { id: "gid://shopify/ProductVariant/59250901123153", title: "Walnut Blue Square 36Cm", price: 53.74, available: true },
+      { id: "gid://shopify/ProductVariant/59250901155921", title: "Walnut Blue Square Plate", price: 24.48, available: true },
+    ],
+  },
+  "bamboo-glass-storage-container": {
+    handle: "household-bamboo-and-wood-cover-glass-crisper",
+    shopifyId: "gid://shopify/Product/15738954383441",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59250914820177", title: "S", price: 5.06, available: true },
+      { id: "gid://shopify/ProductVariant/59250914852945", title: "Set", price: 17.37, available: true },
+      { id: "gid://shopify/ProductVariant/59250914885713", title: "L", price: 7.03, available: true },
+      { id: "gid://shopify/ProductVariant/59250914918481", title: "M", price: 5.91, available: true },
+    ],
+  },
+  "autumn-faux-flower-bouquet": {
+    handle: "straw-hanging-baskets-flower-baskets-woven-flower-pots-rattan-baskets-chlorophytum-potted-plants-flower-baskets-flower-pots-bamboo-baskets-flower-baskets",
+    shopifyId: "gid://shopify/Product/15739019329617",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59251307315281", title: "Grey", price: 3.88, available: true },
+      { id: "gid://shopify/ProductVariant/59251307348049", title: "Coffee", price: 3.88, available: true },
+      { id: "gid://shopify/ProductVariant/59251307380817", title: "Yellow", price: 3.88, available: true },
+    ],
+  },
+  "minimalist-ceramic-planter": {
+    handle: "straw-hanging-baskets-flower-baskets-woven-flower-pots-rattan-baskets-chlorophytum-potted-plants-flower-baskets-flower-pots-bamboo-baskets-flower-baskets",
+    shopifyId: "gid://shopify/Product/15739019329617",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59251307315281", title: "Grey", price: 3.88, available: true },
+      { id: "gid://shopify/ProductVariant/59251307348049", title: "Coffee", price: 3.88, available: true },
+      { id: "gid://shopify/ProductVariant/59251307380817", title: "Yellow", price: 3.88, available: true },
+    ],
+  },
+  "faux-potted-arrangement": {
+    handle: "70-135cm-large-artificial-ficus-tree-fake-rubber-plants-branch-plastic-fiddle-leaf-fig-tree",
+    shopifyId: "gid://shopify/Product/15735782735953",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59244810436689", title: "70Cm", price: 48, available: true },
+      { id: "gid://shopify/ProductVariant/59244810469457", title: "70Cm And105Cm", price: 68, available: true },
+      { id: "gid://shopify/ProductVariant/59244810502225", title: "135Cm 3Forks", price: 78, available: true },
+      { id: "gid://shopify/ProductVariant/59244810534993", title: "140Cm 3Forks", price: 88, available: true },
+    ],
+  },
+  "japanese-bedside-lamp": {
+    handle: "japanese-table-lamp-bedside-lamp",
+    shopifyId: "gid://shopify/Product/15738952024145",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59250904924241", title: "Eu / Gyt0059", price: 42.21, available: true },
+    ],
+  },
+  "ceramic-bedside-lamp": {
+    handle: "bedroom-bedside-ceramic-table-lamp-warm-creative-living-room-study-household-lamps",
+    shopifyId: "gid://shopify/Product/15738951139409",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59250894897233", title: "Dimmer Switch / Dark Green Water Drop / Uk", price: 31.61, available: true },
+      { id: "gid://shopify/ProductVariant/59250894930001", title: "Dimmer Switch / Dark Green Water Drop / Us", price: 31.61, available: true },
+      { id: "gid://shopify/ProductVariant/59250894962769", title: "Dimmer Switch / Dark Green Water Drop / Eu", price: 31.61, available: true },
+      { id: "gid://shopify/ProductVariant/59250894995537", title: "Dimmer Switch / Light Water Drops Lack Mask / Uk", price: 31.61, available: true },
+      { id: "gid://shopify/ProductVariant/59250895028305", title: "Dimmer Switch / Light Water Drops Lack Mask / Us", price: 31.61, available: true },
+      { id: "gid://shopify/ProductVariant/59250895061073", title: "Dimmer Switch / Light Water Drops Lack Mask / Eu", price: 31.61, available: true },
+      { id: "gid://shopify/ProductVariant/59250895093841", title: "Dimmer Switch / Tower Shaped Notch Cover Small / Uk", price: 28.95, available: true },
+      { id: "gid://shopify/ProductVariant/59250895126609", title: "Dimmer Switch / Tower Shaped Notch Cover Small / Us", price: 28.95, available: true },
+      { id: "gid://shopify/ProductVariant/59250895159377", title: "Dimmer Switch / Tower Shaped Notch Cover Small / Eu", price: 28.95, available: true },
+    ],
+  },
+  "coral-fleece-throw-blanket": {
+    handle: "pet-quilt-blanket-winter-thick-coral-fleece-pet-winter-blanket-cushion-nest",
+    shopifyId: "gid://shopify/Product/15739019886673",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59251309314129", title: "Random Color / Small 50X70Cm", price: 2.07, available: true },
+      { id: "gid://shopify/ProductVariant/59251309346897", title: "Random Color / Large 100X70Cm", price: 2.52, available: true },
+    ],
+  },
 };

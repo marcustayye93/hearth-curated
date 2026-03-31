@@ -610,3 +610,10 @@
 - [x] Update 59 product descriptions with enriched content from Shopify source data
 - [x] Ensure variant-specific details are explained in product body text
 - [x] Verify all updated descriptions are accurate and customer-facing ready (67 tests pass)
+
+### Fix Unmapped Product Shopify Handles
+- [x] Identify correct Shopify handles for 15 unmapped products via variant ID lookup
+- [x] Fix incorrect shopifyHandle values in products.ts (8 fixed, 3 added new)
+- [x] Update shopifyMap.ts with correct handles (9 new entries, 4 set to null for deleted)
+- [x] Enrich descriptions for 11 newly-matched products from Shopify source data
+- [x] Flag 4 products whose Shopify listings have been removed (acacia-serving-bowl, acacia-salt-pepper-mill, vintage-japanese-ceramic-mug, japanese-stoneware-mug)
