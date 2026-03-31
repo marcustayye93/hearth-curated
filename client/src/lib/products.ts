@@ -705,6 +705,83 @@ export const PRODUCTS: Product[] = [
       ],
     crossSells: ["japanese-stoneware-mug", "ceramic-pour-over-dripper", "black-walnut-resin-tray"],
   },
+  // ── Threshold Closers (FEAST) ──────────────────────────────────────
+  {
+    id: "feast-32",
+    slug: "japanese-sakura-dipping-dish",
+    name: "Japanese Sakura Dipping Dish (One Piece)",
+    headline: "The Petal Plate",
+    hookLine: "A sakura-shaped ceramic dipping dish — for soy sauce, vinegar, or condiments.",
+    description:
+      "A delicate ceramic dipping dish moulded in the shape of a sakura blossom — the kind of small, considered detail that transforms an ordinary meal into something quietly ceremonial. Each dish features a raised petal motif with a soft pink glaze that catches the light, creating a gentle gradient from white to blush. Perfectly sized for soy sauce, ponzu, chilli oil, or a small serving of pickled ginger, it brings a touch of Japanese tabletop poetry to your everyday dining. Sold individually so you can collect exactly the number you need.",
+    price: 8.00,
+    collection: "FEAST",
+    collectionSlug: "feast",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/sakura-dish-aieKznCr2F7QTcSM75PMNN.webp",
+    tags: ["dipping-dish", "sakura", "ceramic", "japanese", "tableware", "threshold-closer"],
+    notes: "Material: Ceramic · Style: Japanese Zakka · Size: Approx. 8cm diameter · Sold individually · Dishwasher safe",
+    available: true,
+    shopifyHandle: "zakka-creative-japanese-sakura-soy-sauce-dipping-dish-snack-dish-vinegar-dish-tableware-small-dish-small-dish",
+    shopifyVariantId: "gid://shopify/ProductVariant/59258095698001",
+    crossSells: ["brass-crescent-chopstick-rest", "ceramic-seasoning-pot-set", "japanese-wooden-coaster-set"],
+  },
+  {
+    id: "feast-33",
+    slug: "brass-crescent-chopstick-rest",
+    name: "Brass Crescent Chopstick Rest",
+    headline: "The Quiet Crescent",
+    hookLine: "A solid brass crescent-moon chopstick rest — anti-oxidation finish, weighty and warm.",
+    description:
+      "A solid brass chopstick rest shaped like a crescent moon — small enough to disappear into the rhythm of a meal, substantial enough to feel like a considered object. The anti-oxidation coating preserves the warm gold finish over time, while the weighted base keeps it firmly in place on the table. Each rest is precision-cast with a smooth, polished surface and subtle feet that lift it just above the tablecloth. A small gesture of intention that elevates the everyday act of setting a table.",
+    price: 7.00,
+    collection: "FEAST",
+    collectionSlug: "feast",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/brass-chopstick-rest-h9MjmjGf3seArrPKSt44ki.webp",
+    tags: ["chopstick-rest", "brass", "gold", "tableware", "japanese", "threshold-closer"],
+    notes: "Material: Brass with anti-oxidation coating · Finish: Polished gold · Dimensions: Approx. 4×3cm · Weight: Solid brass, pleasingly heavy",
+    available: true,
+    shopifyHandle: "crescent-shaped-anti-oxidation-brass-rest-304-stainless-steel-chopsticks-pillow",
+    shopifyVariantId: "gid://shopify/ProductVariant/59258098090065",
+    crossSells: ["japanese-sakura-dipping-dish", "ceramic-seasoning-pot-set", "teak-kitchen-utensil-set"],
+  },
+  {
+    id: "feast-34",
+    slug: "natural-loofah-kitchen-sponge",
+    name: "Natural Loofah Kitchen Sponge (One Piece)",
+    headline: "The Honest Scrub",
+    hookLine: "A dual-layer carbon-black loofah sponge — firm scrubbing face, soft cleaning face.",
+    description:
+      "A thickened dual-layer kitchen sponge with a dark carbon-black scouring face and a soft white cleaning face — designed to handle both stubborn residue and delicate surfaces without switching tools. The loofah-derived material provides natural antibacterial properties and excellent water absorption, while the compressed construction ensures it holds its shape through weeks of daily use. Sold individually so you can replace only what you need, when you need it. A small, practical upgrade that makes the kitchen sink feel a little more intentional.",
+    price: 4.00,
+    collection: "FEAST",
+    collectionSlug: "feast",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/loofah-sponge-E2eX9dXTBNnsDB94Nz8y2H.webp",
+    tags: ["sponge", "loofah", "kitchen", "cleaning", "natural", "threshold-closer"],
+    notes: "Material: Natural loofah fibre (carbon black) · Dual-layer: Scouring + soft cleaning · Sold individually · Replace every 2–4 weeks",
+    available: true,
+    shopifyHandle: "loofah-sponge-brush-bowl-thickened-kitchen-cleaning",
+    shopifyVariantId: "gid://shopify/ProductVariant/59258095861841",
+    crossSells: ["natural-loofah-dish-scrubber", "teak-kitchen-utensil-set", "ceramic-seasoning-pot-set"],
+  },
+  {
+    id: "feast-35",
+    slug: "natural-loofah-dish-scrubber",
+    name: "Natural Loofah Dish Scrubber",
+    headline: "The Kitchen Workhorse",
+    hookLine: "A corded natural loofah scrubber — biodegradable, absorbent, and built for daily dishwashing.",
+    description:
+      "A natural loofah dish scrubber with a woven cord loop for hanging — the kind of unpretentious kitchen tool that quietly replaces synthetic sponges without any compromise on performance. Cut from mature loofah gourd, the dense fibrous structure provides excellent scrubbing power for pots, pans, and dishes while remaining gentle enough for non-stick surfaces. Naturally antibacterial and highly absorbent, it dries quickly between uses to resist odour. Fully biodegradable at end of life — simply compost it. Sold individually in its natural, unbleached state.",
+    price: 8.00,
+    collection: "FEAST",
+    collectionSlug: "feast",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/loofah-scrubber-mju9JedDNgD3Jm6uxVQiCm.webp",
+    tags: ["scrubber", "loofah", "kitchen", "cleaning", "natural", "biodegradable", "threshold-closer"],
+    notes: "Material: Natural loofah gourd · Features: Cotton cord loop, quick-drying, antibacterial · Biodegradable · Replace every 4–6 weeks",
+    available: true,
+    shopifyHandle: "household-cleaning-loofah-sponge-dish-cloth-absorbent-old-loofah-wipes",
+    shopifyVariantId: "gid://shopify/ProductVariant/59258095730769",
+    crossSells: ["natural-loofah-kitchen-sponge", "teak-kitchen-utensil-set", "japanese-sakura-dipping-dish"],
+  },
   // ═══════════════════════════════════════════════════════════════════════
   // ADORN — Objects of Intention
   // ═══════════════════════════════════════════════════════════════════════
@@ -901,6 +978,26 @@ export const PRODUCTS: Product[] = [
         { id: "fireplace-aroma-diffuser-white-gift-remote-co", label: "White", price: 59.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305578577", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/fireplace-diffuser-white-6EponoFw9eAe6vQucefci7.webp" }
       ]
   },
+  // ── Threshold Closer (ADORN) ──────────────────────────────────────
+  {
+    id: "adorn-10",
+    slug: "hollow-glass-votive-candle",
+    name: "Hollow Glass Votive Candle (10cm)",
+    headline: "The Quiet Glow",
+    hookLine: "A round hollow glass votive holder — European-style, for tealights or small candles.",
+    description:
+      "A round, hollow glass votive candle holder in the European style — the kind of object that transforms a room simply by being lit. The spherical form creates a gentle magnification effect, amplifying the warm glow of a single tealight into something atmospheric and enveloping. The open top allows easy placement and removal of standard tealight candles, while the weighted base provides stability on any surface. At 10cm diameter, it is perfectly proportioned for a bedside table, a dining centrepiece, or a bathroom shelf. Tealight candle not included.",
+    price: 12.00,
+    collection: "ADORN",
+    collectionSlug: "adorn",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glass-candle-DCWMzrYmME7WmVrBacdSSA.webp",
+    tags: ["candle-holder", "glass", "votive", "tealight", "european", "threshold-closer"],
+    notes: "Material: Clear glass · Diameter: 10cm · Style: European round hollow · Tealight candle not included",
+    available: true,
+    shopifyHandle: "europe-style-round-hollow-glass-candle",
+    shopifyVariantId: "gid://shopify/ProductVariant/59258098122833",
+    crossSells: ["fireplace-aroma-diffuser", "ceramic-incense-holder", "led-aroma-diffuser"],
+  },
   // ═══════════════════════════════════════════════════════════════════════
   // BLOOM — Everlasting Greenery
   // ═══════════════════════════════════════════════════════════════════════
@@ -939,7 +1036,7 @@ export const PRODUCTS: Product[] = [
 </table>
 </div>`,
     available: true,
-    crossSells: ["dried-lavender-bundle", "ceramic-incense-holder", "led-aroma-diffuser"],
+    crossSells: ["cotton-lavender-sachet-bag", "dried-lavender-bundle", "ceramic-incense-holder"],
       variants: [
         { id: "lavender-sachet-a", label: "Supreme French Blue", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-1_A_91f68fb5.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913476689" },
         { id: "lavender-sachet-b", label: "5A French Blue", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-1_B_b205a982.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913509457" },
@@ -1230,6 +1327,26 @@ export const PRODUCTS: Product[] = [
         { id: "faux-banyan-tree-140cm-3forks", label: "140cm — 3 Forks", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/faux-banyan-tree_5145e5a4_2db5ad93.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59244810534993" }
       ],
     crossSells: ["faux-potted-arrangement", "minimalist-ceramic-planter", "magnetic-levitating-planter"],
+  },
+  // ── Threshold Closer (BLOOM) ──────────────────────────────────────
+  {
+    id: "bloom-15",
+    slug: "cotton-lavender-sachet-bag",
+    name: "Cotton Lavender Sachet Bag",
+    headline: "The Empty Vessel",
+    hookLine: "A natural cotton drawstring sachet bag — fill with dried lavender, herbs, or potpourri. Bag only.",
+    description:
+      "A simple, unbleached cotton drawstring bag designed to hold dried lavender, herbs, or potpourri — the kind of small, practical object that bridges the gap between a beautiful botanical and a functional home fragrance. The 10×12cm size is perfectly proportioned for a drawer, wardrobe, or linen closet. The natural cotton canvas is breathable, allowing scent to permeate gently while keeping contents contained. Please note: this listing is for the bag only — dried lavender is not included. For the perfect pairing, add our Dried Xinjiang Lavender to your order.",
+    price: 4.00,
+    collection: "BLOOM",
+    collectionSlug: "bloom",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/cotton-sachet-bag-2QJ3gNuBm4ZJY2suxNnNfV.webp",
+    tags: ["sachet", "cotton", "bag", "lavender", "drawstring", "threshold-closer"],
+    notes: "Material: Natural unbleached cotton canvas · Size: 10×12cm · Closure: Drawstring · BAG ONLY — dried lavender not included",
+    available: true,
+    shopifyHandle: "cotton-drawstring-canvas-bag",
+    shopifyVariantId: "gid://shopify/ProductVariant/59258095894609",
+    crossSells: ["dried-xinjiang-lavender", "dried-lavender-bundle", "mixed-dried-flower-bouquet"],
   },
   // ═══════════════════════════════════════════════════════════════════════
   // GLOW — The Light Within
@@ -1893,6 +2010,29 @@ export const PRODUCTS: Product[] = [
         { id: "pet-blanket-random-color-large-1", label: "Large (100×70cm)", price: 24.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-14_Random-Color-_-Large-100X70Cm_de3d0427.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309346897" }
       ],
     crossSells: ["coral-fleece-throw-blanket", "knit-nap-blanket", "plush-round-rug"],
+  },
+  // ── Threshold Closer (DWELL) ──────────────────────────────────────
+  {
+    id: "dwell-15",
+    slug: "organic-wool-dryer-ball",
+    name: "Organic Wool Dryer Ball",
+    headline: "The Laundry Ritual",
+    hookLine: "Reusable organic wool dryer balls — soften fabric, reduce drying time, replace chemical softeners.",
+    description:
+      "Reusable organic wool dryer balls that shorten drying time, soften fabric naturally, and reduce static — a quiet replacement for chemical-laden dryer sheets and liquid fabric softener. Each ball is hand-felted from 100% organic New Zealand wool, dense enough to last over a thousand cycles. As they tumble, they separate layers of fabric, improving air circulation and cutting drying time by up to 25%. Add a few drops of essential oil (lavender, lemon, eucalyptus) to infuse your laundry with a gentle, natural fragrance. Usage guide: 3 balls for a small load, 5–6 for a full load. Diameter approximately 7cm each.",
+    price: 3.00,
+    collection: "DWELL",
+    collectionSlug: "dwell",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wool-dryer-ball-CRvuBFxNTtWb2Ukekoohwq.webp",
+    tags: ["dryer-ball", "wool", "organic", "laundry", "natural", "reusable", "threshold-closer"],
+    notes: "Material: 100% organic New Zealand wool · Diameter: ~7cm each · Lifespan: 1000+ cycles · Usage: 3 for small load, 5–6 for full load",
+    available: true,
+    shopifyHandle: "reusable-organic-wool-dryer-balls",
+    variants: [
+      { id: "wool-dryer-ball-1pc", label: "One Piece", price: 3.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59258095763537" },
+      { id: "wool-dryer-ball-3pack", label: "3-Pack", price: 8.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59258095763537" }
+    ],
+    crossSells: ["cotton-lavender-sachet-bag", "coral-fleece-throw-blanket", "knit-nap-blanket"],
   }];
 
 // ═══════════════════════════════════════════════════════════════════════

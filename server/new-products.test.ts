@@ -25,7 +25,7 @@ describe("Full Product Catalog (5 Collections)", () => {
   it("should contain exactly 79 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
-    expect(PRODUCTS.length).toBe(75); // 77 - 4 deleted + 2 figurine split additions
+    expect(PRODUCTS.length).toBe(82); // 75 + 7 threshold closers
   });
 
   it("should have 5 collections: FEAST, ADORN, BLOOM, GLOW, DWELL", async () => {
@@ -39,21 +39,21 @@ describe("Full Product Catalog (5 Collections)", () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     const feastProducts = PRODUCTS.filter((p) => p.collectionSlug === "feast");
-    expect(feastProducts.length).toBe(28); // 30 - 2 deleted (Borosilicate Glass Canister, Acacia Serving Tray)
+    expect(feastProducts.length).toBe(32); // 28 + 4 threshold closers (Sakura Dish, Chopstick Rest, Loofah Sponge, Loofah Scrubber)
   });
 
   it("ADORN collection should have 9 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     const adornProducts = PRODUCTS.filter((p) => p.collectionSlug === "adorn");
-    expect(adornProducts.length).toBe(9);
+    expect(adornProducts.length).toBe(10); // 9 + 1 threshold closer (Glass Votive Candle)
   });
 
   it("BLOOM collection should have 14 products", async () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     const bloomProducts = PRODUCTS.filter((p) => p.collectionSlug === "bloom");
-    expect(bloomProducts.length).toBe(13); // 14 - 1 (Faux Reed & Pampas Bundle consolidated)
+    expect(bloomProducts.length).toBe(14); // 13 + 1 threshold closer (Cotton Lavender Sachet Bag)
   });
 
   it("GLOW collection should have 12 products", async () => {
@@ -67,7 +67,7 @@ describe("Full Product Catalog (5 Collections)", () => {
     const mod = await import("../client/src/lib/products");
     PRODUCTS = mod.PRODUCTS;
     const dwellProducts = PRODUCTS.filter((p) => p.collectionSlug === "dwell");
-    expect(dwellProducts.length).toBe(14);
+    expect(dwellProducts.length).toBe(15); // 14 + 1 threshold closer (Organic Wool Dryer Ball)
   });
 
   it("every product should have required fields", async () => {

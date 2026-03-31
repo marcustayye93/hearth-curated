@@ -1191,4 +1191,54 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59251309346897", title: "Random Color / Large 100X70Cm", price: 2.52, available: true },
     ],
   },
+  // ── Threshold Closers ──────────────────────────────────────────────
+  "japanese-sakura-dipping-dish": {
+    handle: "zakka-creative-japanese-sakura-soy-sauce-dipping-dish-snack-dish-vinegar-dish-tableware-small-dish-small-dish",
+    shopifyId: "gid://shopify/Product/15742347706449",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59258095698001", title: "A", price: 3.0, available: true },
+    ],
+  },
+  "brass-crescent-chopstick-rest": {
+    handle: "crescent-shaped-anti-oxidation-brass-rest-304-stainless-steel-chopsticks-pillow",
+    shopifyId: "gid://shopify/Product/15742348984401",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59258098090065", title: "Gold", price: 3.03, available: true },
+    ],
+  },
+  "natural-loofah-kitchen-sponge": {
+    handle: "loofah-sponge-brush-bowl-thickened-kitchen-cleaning",
+    shopifyId: "gid://shopify/Product/15742347870289",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59258095861841", title: "5Packs Of Carbon Black", price: 1.14, available: true },
+    ],
+  },
+  "natural-loofah-dish-scrubber": {
+    handle: "household-cleaning-loofah-sponge-dish-cloth-absorbent-old-loofah-wipes",
+    shopifyId: "gid://shopify/Product/15742347739217",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59258095730769", title: "Corded / Primary Color / 1Pc", price: 1.97, available: true },
+    ],
+  },
+  "hollow-glass-votive-candle": {
+    handle: "europe-style-round-hollow-glass-candle",
+    shopifyId: "gid://shopify/Product/15742349017169",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59258098122833", title: "10Cm", price: 1.41, available: true },
+    ],
+  },
+  "cotton-lavender-sachet-bag": {
+    handle: "cotton-drawstring-canvas-bag",
+    shopifyId: "gid://shopify/Product/15742347903057",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59258095894609", title: "Quality / 10X12Cm", price: 0.64, available: true },
+    ],
+  },
+  "organic-wool-dryer-ball": {
+    handle: "reusable-organic-wool-dryer-balls",
+    shopifyId: "gid://shopify/Product/15742347771985",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59258095763537", title: "1", price: 1.44, available: true },
+    ],
+  },
 };

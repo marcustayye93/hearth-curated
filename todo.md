@@ -629,3 +629,21 @@
 
 ### Dried Xinjiang Lavender Variant Comparison Table
 - [x] Add detailed variant comparison table (Supreme French Blue, 5A, Super British, 4A, 3A, A) with purity, character, and ideal use case
+
+### Add 7 Threshold Closer Products (March 31, 2026)
+- [x] Fetch all 7 products from Shopify API with exact images, variant IDs, prices
+- [x] Generate AI product photos matching original Shopify photos for all 7 products
+- [x] Add Organic Wool Dryer Ball (One Piece S$3 / 3-Pack S$8) to DWELL collection
+- [x] Add Japanese Sakura Dipping Dish (One Piece, S$8) to FEAST collection
+- [x] Add Hollow Glass Votive Candle (10cm, S$12) to ADORN collection
+- [x] Add Brass Crescent Chopstick Rest (S$7) to FEAST collection
+- [x] Add Cotton Lavender Sachet Bag (S$4) to BLOOM collection — sachet only, no lavender included
+- [x] Add Natural Loofah Kitchen Sponge (One Piece, S$4) to FEAST collection
+- [x] Add Natural Loofah Dish Scrubber (S$8) to FEAST collection
+- [x] Implement cross-sell nudge between lavender sachet bag and Dried Xinjiang Lavender
+- [x] Add reciprocal cross-sell on Dried Xinjiang Lavender page for sachet bag
+- [x] Update shopifyMap.ts with correct handles and variant IDs for all 7 products
+- [x] Verify all AI product images match original Shopify photos closely
+- [x] All 7 products display correctly in browser (FEAST: 32, ADORN: 10, BLOOM: 14, DWELL: 15)
+- [x] Cross-sell between Cotton Lavender Sachet Bag and Dried Xinjiang Lavender working
+- [x] All 67 tests passing
