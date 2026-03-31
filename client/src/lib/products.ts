@@ -384,19 +384,18 @@ export const PRODUCTS: Product[] = [
     price: 148.00,
     collection: "FEAST",
     collectionSlug: "feast",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-1_3e705eb9.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knife-block-hero-GRDmzD3N6PKNrVr8Fo4gUT.webp",
     additionalImages: [
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-2_9c489e93.jpg",
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-3_d2d150f6.jpg",
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-4_e134e00e.jpg",
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-5_018571d4.jpg"
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knife-block-with-knives-cpkFQCBwT2D94gCu6eFu7w.webp",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knife-block-detail-nfWZV97qbXBbtrezAKDgx9.webp",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knife-block-lifestyle-YFz5uoUiuRvfGQ9KTPMPLU.webp"
     ],
     tags: ["knife-block", "acacia", "magnetic", "kitchen"],
     notes: "Solid acacia · Rare-earth magnets · Holds full set",
     available: true,
     crossSells: ["ebony-cutting-board", "teak-kitchen-utensil-set", "acacia-salt-pepper-mill"],
       variants: [
-        { id: "acacia-magnetic-knife-block-yellow", label: "Natural Acacia", price: 148.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-15_Yellow_da645d16.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250914951249" }
+        { id: "acacia-magnetic-knife-block-yellow", label: "Natural Acacia", price: 148.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knife-block-hero-GRDmzD3N6PKNrVr8Fo4gUT.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250914951249" }
       ]
   },
   {

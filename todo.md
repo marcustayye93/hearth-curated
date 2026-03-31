@@ -666,3 +666,10 @@
 - [x] Regenerate AI image to match the real CJ product photo (white dish with hidden sakura ridges + soy sauce reveal)
 - [x] Upload new image to CDN and update products.ts
 - [x] Updated description and hookLine to match real product feature (hidden sakura revealed by soy sauce)
+
+### Acacia Magnetic Knife Block — Editorial AI Image Regeneration (March 31, 2026)
+- [x] Review current Shopify stock images used for knife block (6 images: front/back empty, with knives moody, detail, transparent bg, variant)
+- [x] Regenerate main product image in editorial AI style matching Shopify original (hero: empty block on linen/marble)
+- [x] Regenerate 3 additional images in editorial AI style (with knives moody, wood grain detail, lifestyle kitchen vignette)
+- [x] Upload new images to CDN and update products.ts (main + 3 additional + variant image)
+- [x] All 67 tests passing, TypeScript clean
