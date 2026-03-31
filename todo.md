@@ -601,3 +601,12 @@
 - [ ] L5.2: Create sitemap.xml
 - [ ] L5.3: Add collection page structured data
 - [ ] L5.4: Add newsletter signup to footer
+
+### Product Description Audit (Marketing Agency Review)
+- [x] Fetch all Shopify product descriptions via Storefront API (91 products fetched)
+- [x] Compare Shopify body_html against website descriptions for all 80 products
+- [x] Identify products with missing variant explanations (e.g. Dried Lavender grades)
+- [x] Identify products missing material details, dimensions, usage notes
+- [x] Update 59 product descriptions with enriched content from Shopify source data
+- [x] Ensure variant-specific details are explained in product body text
+- [x] Verify all updated descriptions are accurate and customer-facing ready (67 tests pass)

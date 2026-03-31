@@ -57,13 +57,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Considered Counter",
     hookLine: "Three ceramic pots with bamboo lids on an acacia tray — for salt, sugar, and spice.",
     description:
-      "A set of three white ceramic seasoning pots with bamboo lids, arranged on an acacia wood tray. The kind of quiet upgrade that transforms a kitchen counter from functional to considered. Each pot is sized for daily-use condiments — salt, sugar, pepper — and the bamboo lids seal with a satisfying click that keeps moisture out and freshness in.",
+      "A collection of white ceramic seasoning pots with bamboo lids, thoughtfully arranged to bring a quiet, Japanese-inspired aesthetic to your kitchen counter. Available in versatile configurations to perfectly suit your culinary space, this elegantly retro-styled collection transforms a simple cooking area from purely functional to deeply considered. Each vessel is crafted to hold your essential salts, sugars, and beloved spices while maintaining a serene visual harmony in your home. The substantial two-kilogram weight of the complete set ensures steadfast stability during your daily cooking rituals, making every pinch of seasoning feel like a deliberate, mindful act.",
     price: 38.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ceramic-seasoning-pot-set_ca07ef7c_f15ff217.jpg",
     tags: ["seasoning", "ceramic", "bamboo", "kitchen", "storage"],
-    notes: "3 pots · Bamboo lids · Acacia tray included",
+    notes: "Material: Ceramic and bamboo · Style: Japanese retro · Weight: 2kg",
     available: true,
     crossSells: ["acacia-salt-pepper-mill", "teak-kitchen-utensil-set", "japanese-wooden-coaster-set"],
       variants: [
@@ -79,13 +79,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Natural Kitchen",
     hookLine: "Hand-finished teak utensils — spoons, ladles, turners, and spatulas — that never scratch non-stick.",
     description:
-      "A collection of hand-finished Thailand teak wood cooking utensils — each one carved from natural teak with the density and oil content that makes this wood the material of choice for serious kitchens. Teak is naturally antimicrobial, heat-resistant, and develops a rich patina over years of use. Available as individual pieces or curated sets.",
+      "A collection of hand-finished Thailand teak wood cooking utensils — each one carved from natural teak with the density and oil content that makes this wood the material of choice for serious kitchens. Designed to be lightweight and rust-free, these beautifully shaped tools feature long handles for a delicate, comfortable grasp. Safe for use on hot surfaces and all cooking pans, including non-stick, they bring both ecological mindfulness and lasting function to your daily culinary rituals.",
     price: 5.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/1_LOo4TvZe4CwtOLCRmkrlJ6_1774801321323_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy90ZWFrX2tpdGNoZW5fdXRlbnNpbF9zZXQ_95d7e2bc_e7ede2e3.jpg",
     tags: ["utensils", "teak", "wood", "cooking", "natural"],
-    notes: "Thailand teak · Antimicrobial · Heat-resistant",
+    notes: "Material: Natural teak wood · Care: Hand wash with mild soap and water, store in a dry place · Heat-resistant and safe for non-stick surfaces",
     available: true,
     variants: [
         { id: "teak-utensil-soup-ladle", label: "Soup Ladle", price: 5.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/1_LOo4TvZe4CwtOLCRmkrlJ6_1774801321323_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy90ZWFrX2tpdGNoZW5fdXRlbnNpbF9zZXQ_95d7e2bc_e7ede2e3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250897223761" },
@@ -126,13 +126,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Small Ritual",
     hookLine: "Hand-glazed ceramic spoons in five artisan finishes — for condiments, tasting, and quiet beauty.",
     description:
-      "A collection of Japanese-style creative ceramic spoons, each finished in a distinctive reactive glaze. From the deep Purplish Blue to the ethereal Sky, every spoon carries the subtle imperfections of handcraft. Perfect for condiments, tasting portions, or as decorative accents on a curated table.",
+      "A collection of Japanese-style ceramic spoons, each finished in a distinctive reactive glaze that speaks to the artistry of traditional craftsmanship. From the deep Purplish Blue to the ethereal Sky and the grounded Black Rhyme, every piece carries subtle imperfections that make it entirely unique. Designed with a retro sensibility suitable for both intimate home dining and bustling commercial spaces, these spoons bring quiet beauty to condiments, tasting menus, and daily rituals. Each ceramic spoon is sold individually, allowing you to curate your own eclectic set or gather a uniform collection for your table.",
     price: 6.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/2_0vwmvyqWfusKeHnHfDXxa2_1774801314343_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9qYXBhbmVzZV9jZXJhbWljX3Nwb29uX3NldA_1b80e712_88d36389.jpg",
     tags: ["spoon", "ceramic", "japanese", "condiment", "tabletop"],
-    notes: "Reactive glaze · Sold individually · Dishwasher safe",
+    notes: "Material: Ceramic · Finish: Reactive glaze · Sold individually · Dishwasher safe",
     available: true,
     shopifyHandle: "japanese-style-creative-ceramic-spoon-small-kitchen-restaurant",
     variants: [
@@ -150,13 +150,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Complete Ritual",
     hookLine: "A seven-piece matcha set — bowl, whisk, holder, scoop, sieve, spoon, and caddy.",
     description:
-      "A complete matcha ceremony set in seven pieces — everything you need to transform a morning cup of green tea into a meditative ritual. The bamboo chasen (whisk) has 80 fine tines for a perfect froth, the ceramic chawan (bowl) has a smooth matte finish and pouring spout, and the bamboo scoop and spoon are carved from a single piece. Available in three finishes: classic black, warm painted brown, and fresh green.",
+      "A complete matcha ceremony set  —  everything you need to transform a morning cup of green tea into a meditative ritual. Crafted from heat-resistant ceramic with a distinctive colored glaze, the collection is designed to withstand high temperatures while remaining comfortably cool to the touch. The essential bamboo chasen features eighty fine tines, meticulously carved to ensure a perfectly frothed bowl of matcha every time. Thoughtfully considered for both daily use and travel, this elegantly portable set invites you to pause and cultivate tranquility wherever you are.",
     price: 52.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/matcha-ceremony-set-YzUfx6sWuYvgwA4dBTVmrq.webp",
     tags: ["matcha", "tea", "ceremony", "bamboo", "whisk", "ceramic", "bowl", "japanese"],
-    notes: "7 pieces: bowl, whisk, holder, scoop, sieve, spoon, caddy · Gift box included",
+    notes: "Material: Ceramic · Finish: Colored glaze · Features: Heat-resistant, anti-scald, portable",
     available: true,
     variants: [
         { id: "matcha-set-7pieces-black", label: "7-Piece Black", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-4_Clear-Glaze-_-7Pieces-Black_bef1da1f.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59248631316561" },
@@ -172,13 +172,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Portable Ceremony",
     hookLine: "Compact stoneware teapot with one cup — ritual wherever you go.",
     description:
-      "A compact stoneware tea set — one teapot and one cup — designed for the person who refuses to compromise on their tea ritual, even on the move. The teapot nests perfectly inside the cup for travel, and the matte glaze has the tactile warmth of traditional Japanese pottery. Available as the set alone or with a carry case.",
+      "A compact stoneware tea set, featuring one teapot and one matching cup, designed for the person who refuses to compromise on their daily tea ritual even while on the move. Expertly crafted from coarse ceramic with a tactile antique pottery finish, the teapot nests perfectly inside the cup for effortless and secure travel. Suitable for brewing a mindful serving for one to two people, this modern yet remarkably simple set ensures a moment of grounded tranquility wherever your journey may take you. The thoughtful nesting design speaks to a philosophy of minimalism, allowing you to carry the comforts of home across any distance.",
     price: 32.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kungfu-tea-black_5dfadd01_adcc3d76.jpg",
     tags: ["tea", "stoneware", "travel", "japanese", "portable"],
-    notes: "Stoneware · Nesting design · Matte glaze",
+    notes: "Material: Coarse ceramic · Capacity: 1-2 people · Finish: Antique pottery · Design: Nesting",
     available: true,
     variants: [
         { id: "stoneware-travel-tea-set-one-pot-one-cup-with", label: "Tea Set Only (Pot + Cup + Lid)", price: 32.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-5_One-Pot-One-Cup-With-Cover_a5bd3bcb.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250898141265" },
@@ -267,14 +267,14 @@ export const PRODUCTS: Product[] = [
     headline: "The Generous Bowl",
     hookLine: "A deep basin carved from solid wood — for salads, fruit, or centrepiece arrangements.",
     description:
-      "A generous serving basin hand-carved from solid natural wood. Each piece is unique in shape, size, and grain pattern — no two are alike. The warm, organic form makes it equally suited to serving salads, displaying fruit, or anchoring a table as a sculptural centrepiece. Available in two diameter ranges.",
+      "A generous serving basin hand-carved from solid natural wood, ensuring that each piece remains entirely unique in its shape, size, and intricate grain pattern. Crafted carefully from cedar root, its warm, organic form is perfectly suited for serving vibrant salads, fresh fruits, or acting as a striking centrepiece in your home. Available in two versatile size ranges to accommodate different culinary needs, these bowls vary naturally, meaning no two are exactly alike. This durable, eco-friendly vessel brings an earthy elegance to any table setting, making it a wonderful addition to your daily rituals or a thoughtful gift for loved ones.",
     price: 58.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/6_oWQNG9GJH3EqBrrdX5CaOs_1774801319016_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9qdWp1YmVfd29vZF9zZXJ2aW5nX2Jhc2lu_7101675f_89b5623c.jpg",
     additionalImages: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-9-dimensions_a981c7ad.jpg"],
     tags: ["basin", "jujube", "wood", "serving", "large"],
-    notes: "Jujube wood · Hand-carved · Food-safe finish",
+    notes: "Material: Cedar root wood · Dimensions: 16-20cm or 20-24cm diameter · Hand-carved",
     available: true,
     variants: [
         { id: "jujube-wood-serving-basin-small", label: "Small (16–20cm diameter)", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-9_16To20Cm_d564a987.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913411153" },
@@ -289,14 +289,14 @@ export const PRODUCTS: Product[] = [
     headline: "The Quiet Surface",
     hookLine: "Hand-polished Philippine acacia plates in five shapes — for snacks, cheese, or everyday serving.",
     description:
-      "Carved from solid Philippine acacia and hand-polished to a smooth, satin finish. Each plate showcases the wood’s natural grain — rich swirls of honey and walnut tones that make every piece unique. Available in five shapes and sizes, from a compact square to a generous rectangular platter. Ideal for serving snacks, cheese, bread, or as a decorative tray.",
+      "Carved from solid Philippine acacia and hand-polished to a smooth, satin finish, these serving plates bring a touch of organic warmth to any table setting. Each plate showcases the wood's natural grain, featuring rich swirls of honey and walnut tones that ensure no two pieces are exactly alike. Designed as versatile flat plates for tea tableware, they are equally suited for presenting a carefully curated dinner, an assortment of snacks, or your favorite cheeses. Available in five distinct shapes, they invite you to mix and match, creating a personalized and inviting presentation for everyday dining or special gatherings.",
     price: 14.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/7_cYtwWWqJZM8E12sp1BLDSO_1774801329804_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9ydXN0aWNfbG9nX3NuYWNrX3BsYXRl_3d20143b_bc5f28d2.jpg",
     additionalImages: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-10-dimensions_1b0a7738.jpg"],
     tags: ["plate", "acacia", "wood", "serving", "snack"],
-    notes: "Philippine acacia · Hand-polished · Food-safe finish",
+    notes: "Material: Philippine acacia · Finish: Hand-polished · Application: Dinner, snacks, and tea tableware",
     available: true,
     variants: [
         { id: "acacia-plate-rectangle-25cm", label: "Rectangle (25 × 12.5cm)", price: 16.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-10_C_c2b53791.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913706065" },
@@ -314,13 +314,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Warm Vessel",
     hookLine: "A solid wood drinking cup, handmade with visible grain — warm to the touch.",
     description:
-      "A single solid wood drinking cup, handmade with visible grain and a warm honey tone. The kind of vessel that changes the way you drink — the wood is warm to the touch, the weight is reassuring, and the natural grain makes each cup a unique object.",
+      "A single solid wood drinking cup, handmade with visible grain and a warm honey tone that deepens beautifully over time. The kind of vessel that completely changes the way you experience your daily rituals, as the natural wood is inherently warm to the touch and the gentle weight is incredibly reassuring in the hand. Available in an array of thoughtful silhouettes and capacities ranging from 150ml to 340ml, each piece is designed to bring an earthy, tactile joy to your everyday life. Whether you are enjoying a quiet morning coffee or sharing a comforting evening tea, this meticulously crafted cup transforms an ordinary moment into something truly special.",
     price: 22.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wooden-water-cup-fix_5431b50a_542dd6dd.jpg",
     tags: ["cup", "wood", "handmade", "natural", "drinking"],
-    notes: "Solid wood · Handmade · Food-safe lacquer",
+    notes: "Material: Solid wood · Dimensions: Various sizes from 7.5x6.8cm to 8.5x11cm · Capacities: 150ml to 340ml · Care: Hand wash only",
     available: false,
     crossSells: ["stoneware-travel-tea-set", "acacia-wood-serving-plate", "acacia-serving-bowl"],
       variants: [
@@ -405,13 +405,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Daily Pour",
     hookLine: "A ceramic cruet with a drip-free spout — hand-painted in the tradition of Mediterranean pottery.",
     description:
-      "A ceramic oil cruet with a drip-free spout, hand-painted in the tradition of Mediterranean pottery. The kind of object that makes you reach for the olive oil more often.",
+      "A ceramic oil cruet with a thoughtfully designed drip-free spout, hand-painted in the timeless tradition of Mediterranean pottery and finished in a deep, rich olive green hue. This beautifully considered vessel brings an element of rustic elegance to your kitchen counter, seamlessly blending practical utility with artisanal charm to ensure your favorite oils are poured with grace. It is the kind of object that makes you reach for the olive oil more often, transforming a simple ingredient into a celebrated part of your daily culinary rituals. Whether dressing a vibrant salad or finishing a warm loaf of bread, this single cruet elevates the everyday act of cooking into a moment of mindful appreciation.",
     price: 48.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-7_d51e71cc_5c98de32.webp",
     tags: ["oil", "cruet", "ceramic", "hand-painted", "kitchen"],
-    notes: "Ceramic · Drip-free spout · Hand-painted",
+    notes: "Material: Ceramic · Color: Olive green · Drip-free spout · Hand-painted",
     available: true,
     variants: [
         { id: "hand-painted-ceramic-oil-cruet-olive-green", label: "Olive Green", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-16_Olive-Green_b3d40e52.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915541073" }
@@ -425,13 +425,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Woven Surface",
     hookLine: "Hand-woven rattan tray with handles — for breakfast in bed or afternoon tea.",
     description:
-      "A hand-woven rattan serving tray with sturdy handles — the kind of surface that transforms a cup of tea and a biscuit into a ritual. The natural rattan is lightweight yet strong, and develops a beautiful golden patina over time.",
+      "A hand-woven round rattan serving tray with sturdy handles, thoughtfully designed to transform a simple cup of tea and a biscuit into a considered daily ritual. Crafted from high-quality natural rattan, this lightweight yet remarkably durable piece is perfectly suited for both indoor gatherings and relaxed outdoor entertaining. Measuring 8.7 inches in diameter with a subtle 1.4-inch depth, it offers an elegant foundation for morning coffees or afternoon desserts while bringing a warm, tactile presence to your coffee table, desk, or ottoman.",
     price: 38.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-3_62131da8_b12fb5bf.webp",
     tags: ["tray", "rattan", "woven", "serving", "natural"],
-    notes: "Hand-woven rattan · Sturdy handles · Multiple sizes",
+    notes: "Material: Natural rattan · Dimensions: 8.7x1.4 inches (2.6 inches with handles) · Shape: Round",
     available: true,
     variants: [
         { id: "rattan-serving-tray-brown", label: "Brown", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-17_Brown_97dee588.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250916098129" }
@@ -445,13 +445,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Small Detail",
     hookLine: "Minimalist wooden coasters with a holder — the detail that completes a table.",
     description:
-      "A set of six wooden coasters in a matching holder — minimalist, warm, and precisely the kind of small detail that separates a considered home from a merely furnished one. Each coaster is sanded smooth with bevelled edges that prevent cups from sliding. The coasters are waterproof-treated and come with a matching wooden holder for tidy storage.",
+      "A set of six wooden coasters in a matching holder  —  minimalist, warm, and precisely the kind of small detail that separates a considered home from a merely furnished one. Available in your choice of light beech or rich black walnut, each 9cm coaster is sanded smooth and finished with a subtle protective coating to beautifully highlight the natural wood grain. These tactile pieces offer an elegant, enduring resting place for your morning coffee or evening wine, effortlessly preserving your tabletops while bringing a touch of organic serenity to your daily rituals.",
     price: 22.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/japanese-wooden-coaster-set_1dab6171_51b2002e.jpg",
     tags: ["coaster", "wood", "japanese", "minimalist", "set"],
-    notes: "Set of 6 · Wooden holder included · Waterproof · Bevelled edges",
+    notes: "Material: Beech or Black Walnut · Dimensions: 9cm diameter · Set of 6 with matching holder · Waterproof finish",
     available: true,
     crossSells: ["acacia-wood-serving-plate", "stoneware-travel-tea-set", "multi-function-grater"],
       variants: [
@@ -467,13 +467,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Practical Slab",
     hookLine: "Aluminium alloy board that defrosts food 5× faster than a countertop — no electricity needed.",
     description:
-      "A heavy aluminium alloy board that uses thermal conductivity to defrost frozen food up to five times faster than leaving it on a countertop. No electricity, no microwave, no compromise on food texture. The board works by rapidly transferring ambient heat into the frozen food.",
+      "Crafted from a heavy aluminum alloy and thoughtfully finished with silica gel, this board harnesses natural thermal conductivity to defrost frozen provisions up to five times faster than traditional countertop thawing. By entirely eliminating the need for electricity, microwaves, or hot water baths, it meticulously preserves the delicate texture, flavor, and cellular integrity of your ingredients. Available in an array of carefully considered dimensions and thicknesses to suit any culinary endeavor, this minimalist tool seamlessly integrates into the modern kitchen, offering a quiet, efficient, and natural approach to meal preparation.",
     price: 28.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-9_ab4ca976_2615d612.webp",
     tags: ["defrosting", "aluminium", "kitchen", "practical"],
-    notes: "Aluminium alloy · 35.5 × 20.5 × 0.3 cm · No electricity · Dishwasher safe",
+    notes: "Material: Aluminum and silica gel · Dimensions: Multiple sizes available · Care: Dishwasher safe · Power: No electricity required",
     available: true,
     crossSells: ["ebony-cutting-board", "black-walnut-cutting-board", "teak-kitchen-utensil-set"],
       variants: [
@@ -487,7 +487,7 @@ export const PRODUCTS: Product[] = [
     headline: "The Dark Edge",
     hookLine: "Dense ebony wood cutting board with handle — naturally antimicrobial, dramatically dark.",
     description:
-      "A cutting board in ebony wood with an integrated handle — one of the densest, hardest woods available. The dramatic dark colour and fine grain make it as much a display piece as a kitchen tool. Ebony is naturally antimicrobial and resists knife marks better than softer woods. Available in six sizes from 28 × 18 cm to 45 × 30 cm, all 2 cm thick.",
+      "Crafted from one of the densest and hardest woods available, this exceptional ebony cutting board with an integrated handle features a dramatic dark hue and fine grain. It serves beautifully as both an essential kitchen tool and an elegant display piece for your home. Naturally antimicrobial and inherently durable, the thick wooden construction provides a resilient surface for all your daily culinary preparations. The more compact boards offer a clean, seamless surface, while the larger dimensions thoughtfully incorporate a perimeter groove to catch juices during carving.",
     price: 48.00,
     collection: "FEAST",
     collectionSlug: "feast",
@@ -497,7 +497,7 @@ export const PRODUCTS: Product[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/cb-sizes_d1960837.jpg",
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/cb-lifestyle_6ba64234.jpg", "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-21-dimensions_486cb492.jpg"],
     tags: ["cutting-board", "ebony", "wood", "kitchen"],
-    notes: "Ebony wood · Naturally antimicrobial · Dense grain",
+    notes: "Material: Ebony wood · Thickness: 2.5cm · Features: Integrated handle · Care: Naturally antimicrobial",
     available: true,
     variants: [
         { id: "ebony-cutting-board-28x18", label: "28 × 18 cm", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-21_Ebony-Cutting-Board-_-28X18X2.5Cm_3b5f10c1.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251311837265" },
@@ -516,14 +516,14 @@ export const PRODUCTS: Product[] = [
     headline: "The Workhorse",
     hookLine: "Thick black walnut board with juice groove — the board you reach for every day.",
     description:
-      "A thick black walnut cutting board with a juice groove and generous proportions — the kind of board that becomes the centre of your kitchen. Black walnut is self-healing, meaning light knife marks close over time, and the deep chocolate colour hides stains gracefully.",
+      "A substantial North American black walnut cutting board with a thoughtful juice groove and generous proportions, designed to become the enduring centre of your kitchen. The self-healing solid wood surface gracefully absorbs light knife marks while remaining remarkably durable for carving, shredding, or presenting charcuterie. Crafted with a double-sided design and seamlessly engraved side handles, this versatile piece transitions effortlessly from a heavy-duty preparation block to an elegant serving tray. Regular oil maintenance will preserve the unique natural grain patterns of each board, ensuring it remains a steadfast companion for your daily culinary rituals.",
     price: 42.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/13_YNbiGfSvxxxG7ygySVfRs7_1774801324944_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9ibGFjay13YWxudXQtY3V0dGluZy1ib2FyZA_cba0bb79_f531457b.jpg",
     additionalImages: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-22-dimensions_01f029fc.jpg"],
     tags: ["cutting-board", "walnut", "wood", "kitchen"],
-    notes: "Black walnut · Juice groove · Self-healing surface",
+    notes: "Material: North American black walnut · Dimensions: Round 28cm, Rectangular S 33x22.8cm, Rectangular L 40x28cm · Features: Double-sided, side handles, juice groove · Care: Regular oil maintenance",
     available: true,
     variants: [
         { id: "black-walnut-cutting-board-round", label: "Round", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-22_Round_ed94f722.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310592081" },
@@ -559,13 +559,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Sharp Edge",
     hookLine: "Stainless steel grater with four surfaces — fine, medium, coarse, and slicer.",
     description:
-      "A stainless steel box grater with four distinct surfaces — fine for hard cheese and nutmeg, medium for soft cheese and vegetables, coarse for potatoes and cabbage, and a slicer for clean, even cuts. The non-slip base and comfortable handle make it stable during use.",
+      "Crafted from premium 304 stainless steel, this multi-function box grater is an essential instrument for the thoughtful kitchen. It features four distinct grating surfaces meticulously designed to handle a variety of culinary tasks with ease and precision. Utilize the fine surface for delicate shavings of hard cheeses and nutmeg, the medium for softer cheeses and tender vegetables, the coarse for robust root vegetables like potatoes, and the dedicated slicer for clean, even cuts. The collection accommodates different kitchen needs by offering various configurations, ranging from simple bagged or boxed standalone graters to comprehensive sets that include additional cheese planers for the dedicated home chef.",
     price: 18.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-10_651b26cd_f80d2ee7.webp",
     tags: ["grater", "stainless-steel", "kitchen", "multi-function"],
-    notes: "Stainless steel · 4 surfaces · Non-slip base",
+    notes: "Material: 304 Stainless steel · Features: 4 grating surfaces · Base: Non-slip",
     available: true,
     crossSells: ["hand-crank-pasta-maker", "teak-kitchen-utensil-set", "rapid-defrosting-board"],
       variants: [
@@ -582,13 +582,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Slow Meal",
     hookLine: "Chrome-plated pasta machine with adjustable thickness — fresh pasta in minutes.",
     description:
-      "A chrome-plated hand-crank pasta maker with adjustable thickness settings — from paper-thin angel hair to thick pappardelle. The heavy base clamps securely to any countertop, and the smooth rollers produce consistent, restaurant-quality pasta sheets every time.",
+      "Crafted from durable 410 stainless steel, this classic hand-crank pasta maker brings the authentic Italian kitchen experience directly to your home. The sturdy machine features adjustable thickness settings ranging from a delicate 0.3mm to a hearty 5mm, allowing you to create everything from paper-thin angel hair to robust pappardelle with ease. Designed for both novice cooks and seasoned chefs, it includes precise cutting rollers that perfectly slice your dough into 2mm or 4mm widths. Weighing a substantial 2.2kg and measuring 21 by 20 centimeters, the heavy base clamps securely to any countertop, ensuring smooth and effortless rolling every time you prepare fresh pasta.",
     price: 68.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/hand-crank-pasta-maker_28d0f9c6_341df55f.jpg",
     tags: ["pasta", "maker", "hand-crank", "kitchen", "cooking"],
-    notes: "Chrome-plated · Adjustable thickness · Table clamp included",
+    notes: "Material: 410 Stainless Steel · Dimensions: 21x20x13cm · Weight: 2.2kg · Adjustable thickness: 0.3-5mm",
     available: true,
     crossSells: ["teak-kitchen-utensil-set", "multi-function-grater", "retro-reactive-glaze-dinnerware"],
       variants: [
@@ -602,13 +602,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Morning Ritual",
     hookLine: "A ceramic dripper for single-cup pour-over coffee — slow, deliberate, perfect.",
     description:
-      "A ceramic pour-over coffee dripper designed for the person who believes that the best cup of coffee is the one you make yourself, slowly and deliberately. The spiral ridges inside the cone create air channels that allow the coffee to bloom properly.",
+      "A ceramic pour-over coffee dripper designed for the person who believes that the best cup of coffee is the one you make yourself, slowly and deliberately. Crafted from premium ceramic, this elegant dripper features internal spiral ridges that allow for optimal airflow and an even extraction of your favorite roast. Perfectly sized to brew one to two servings, it transforms your morning routine into a quiet, meditative ritual. The dripper is microwave safe for gentle warming and arrives thoughtfully packaged, ready to pair with standard filters for your daily brew.",
     price: 32.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/11_MnEFKNQg3FIQnVUCz7yM2I_1774599101341_na1fn_L2hvbWUvdWJ1bnR1L2NlcmFtaWNfcG91cl9vdmVyX2NvZmZlZV9kcmlwcGVy_f962c605_509b90d0.webp",
     tags: ["coffee", "pour-over", "ceramic", "dripper", "brewing"],
-    notes: "Ceramic · Spiral ridges · Fits standard filters",
+    notes: "Material: Premium ceramic · Capacity: 1-2 servings · Care: Microwave safe · Includes: 1 dripper · Compatibility: Fits standard filters",
     available: true,
     variants: [
         { id: "ceramic-pour-over-dripper-black-1-to-2-serving", label: "Matte Black", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307249745", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-26-black-cLjEFo7asMgcJRYweaSRyQ.webp" },
@@ -623,13 +623,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Evening Ritual",
     hookLine: "A ceramic tokkuri and ochoko cups — for warm sake and quiet evenings.",
     description:
-      "A traditional Japanese sake set in a matte ceramic glaze that feels warm in the hand. The tokkuri (pouring vessel) is designed for warming sake in a hot water bath, and the small ochoko cups encourage the Japanese practice of pouring for others. Available as a jug or individual cups.",
+      "A traditional Japanese sake set crafted in a matte ceramic glaze that feels inherently warm and grounding in the hand. The tokkuri pouring vessel, which holds up to 250ml, is thoughtfully designed for gently warming your favorite sake in a hot water bath before serving. Accompanying the vessel are the small, delicately proportioned ochoko cups that encourage slow, deliberate sipping and meaningful conversation during quiet evenings. Each piece features a striking black and gold finish that elevates the ritual of drinking. The jug measures 13.8 by 7 centimeters, while the cups stand at a modest 3.4 by 5.2 centimeters, making them an elegant addition to any curated table setting.",
     price: 18.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/2_umcPIyWr84IjxiTRZVEqhg_1774599070451_na1fn_L2hvbWUvdWJ1bnR1L2phcGFuZXNlX3Nha2Vfc2V0_f12fd4f3_ecdeb8da.webp",
     tags: ["sake", "japanese", "ceramic", "set", "drinking"],
-    notes: "Ceramic · 1 tokkuri + 4 cups · Microwave safe",
+    notes: "Material: Ceramic · Jug Capacity: 250ml · Jug Dimensions: 13.8x7cm · Cup Dimensions: 3.4x5.2cm · Microwave safe",
     available: true,
     crossSells: ["japanese-matcha-ceremony-set", "stoneware-travel-tea-set", "retro-reactive-glaze-dinnerware"],
       variants: [
@@ -686,13 +686,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Small Pleasure",
     hookLine: "A ceramic espresso cup with matching saucer — for the person who takes their coffee seriously.",
     description:
-      "A ceramic espresso cup with a matching saucer in a matte Nordic glaze — the kind of set that makes a single shot of espresso feel like an event. The cup is sized for a proper double shot (80ml), and the saucer has a subtle indent that keeps the cup centred.",
+      "A porcelain espresso cup in a matte Nordic glaze — the kind of considered piece that makes a single shot feel like a deliberate event rather than a rushed habit. Sized perfectly for a proper double shot at 80ml, this durable porcelain is designed to withstand the rigors of daily rituals. It is fully safe for the dishwasher, microwave, and oven, ensuring your focus remains on the coffee itself. Available in warm honey pomelo or earthy olive green, these cups invite you to slow down and savor the morning.",
     price: 18.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-4_4f727665_14db9acd.webp",
     tags: ["espresso", "cup", "saucer", "ceramic", "nordic"],
-    notes: "Ceramic · 80ml · Cup + saucer set",
+    notes: "Material: Porcelain · Capacity: 80ml · Care: Dishwasher, microwave, and oven safe",
     available: true,
     variants: [
         { id: "nordic-espresso-honey-pomelo-full", label: "Honey Pomelo — Cup, Saucer & Spoon", price: 32.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-4_4f727665_14db9acd.webp", shopifyVariantId: "gid://shopify/ProductVariant/59251312164945" },
@@ -714,13 +714,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Atmosphere Machine",
     hookLine: "Ultrasonic diffuser with warm LED glow — transforms any room with scent and light.",
     description:
-      "An ultrasonic aroma diffuser with a warm LED glow that transforms any room into a sanctuary. The ceramic-finish exterior looks like a decorative object rather than an appliance, and the whisper-quiet operation means you forget it is there — until you notice how much better the room feels.",
+      "An ultrasonic aroma diffuser with a warm LED glow that transforms any room into a tranquil sanctuary. Crafted from durable, fire-resistant materials in your choice of a shallow or deep wood grain finish, its sculptural exterior looks like a decorative object rather than an appliance. The whisper-quiet misting technology softens dry air while enveloping your surroundings in pleasant aromas, creating a spa-like feeling at home. Weighing just over two hundred grams, this compact piece is easily maintained by periodically cleansing the atomizer plate and replacing the internal cotton swabs.",
     price: 48.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/led-aroma-diffuser_545cee70_f4d85c72.jpg",
     tags: ["diffuser", "aroma", "led", "ultrasonic", "home-fragrance"],
-    notes: "Ultrasonic · Warm LED · 300ml capacity · Auto shut-off",
+    notes: "Material: ABS and PP · Dimensions: 12x11cm · Weight: 205g · Care: Clean atomizer with alcohol and replace cotton swabs",
     available: true,
     crossSells: ["fireplace-aroma-diffuser", "ceramic-incense-holder", "dried-xinjiang-lavender"],
       variants: [
@@ -735,13 +735,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Quiet Companion",
     hookLine: "White resin figurine with black spots — minimalist, sculptural, and quietly bold.",
     description:
-      "A minimalist decorative figurine in matte white resin with black spot detailing — the kind of object that adds personality to a shelf or mantel without demanding attention. Available in a tall, elegant silhouette or a rounded, compact form. The weight and finish give it a reassuring solidity.",
+      "A minimalist decorative figurine crafted from durable resin, featuring striking spotted detailing that naturally draws the eye. This European-inspired sculptural object adds quiet personality to a curated shelf, desktop, or mantel without demanding undue attention. Available in elegantly tall or pleasingly round silhouettes, the collection includes charming pumpkin and owl motifs that bring a touch of playful sophistication to your living spaces. Whether you select the classic monochrome palette or opt for warm yellow and vibrant red accents, each piece serves as a thoughtful conversation starter that perfectly complements a modern, considered home aesthetic.",
     price: 65.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg",
     tags: ["figurine", "nordic", "decorative", "resin", "minimalist", "monochrome"],
-    notes: "Matte white resin · Black spot detail · Two poses",
+    notes: "Material: Resin · Variations: Tall and round silhouettes · Motifs: Pumpkin and owl designs",
     variants: [
         { id: "nordic-figurine-mono-high", label: "Tall Silhouette", price: 65.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309379665" },
         { id: "nordic-figurine-mono-round", label: "Round Form", price: 65.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309412433" }
@@ -756,13 +756,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Warm Accent",
     hookLine: "Yellow resin figurine with black dot accents — a warm, playful statement piece.",
     description:
-      "A minimalist decorative figurine in matte yellow resin with black dot accents — warm, playful, and quietly bold. Available in a tall, elegant silhouette or a rounded, compact form. The weight and finish give it a reassuring solidity that belies its whimsical colour.",
+      "A minimalist decorative figurine crafted from solid resin, offering a warm, playful, and quietly bold statement for any space. Available in a tall, elegant silhouette or a rounded, compact form, these sculptural pieces come in versatile white or yellow finishes with striking black or red dot accents. Whether you are drawn to the abstract pumpkin shapes or the whimsical art owl motifs, each carefully cast decoration brings a touch of modern European charm to your curated home. The smooth, matte finish and substantial weight make it a perfect standalone accent or part of a thoughtful vignette.",
     price: 65.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg",
     tags: ["figurine", "nordic", "decorative", "resin", "minimalist", "golden"],
-    notes: "Matte yellow resin · Black dot detail · Two poses",
+    notes: "Material: Resin · Styles: Tall or Round · Accents: Black or Red dots · Includes: 1 figurine",
     variants: [
         { id: "nordic-figurine-gold-high", label: "Tall Silhouette", price: 65.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309445201" },
         { id: "nordic-figurine-gold-round", label: "Round Form", price: 65.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309477969" }
@@ -777,13 +777,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Soft Statement",
     hookLine: "White resin figurine with red dot accents — soft, feminine, and subtly striking.",
     description:
-      "A minimalist decorative figurine in matte white resin with red dot accents — soft, feminine, and subtly striking. Available in a tall, elegant silhouette or a rounded, compact form. The weight and finish give it a reassuring solidity.",
+      "A minimalist decorative figurine cast in smooth resin, defined by its playful dotted accents and European-inspired artistry. Available in a selection of refined palettes — including classic white or warm yellow with contrasting spots — each piece feels soft, feminine, and subtly striking. Choose between a tall, elegant silhouette or a rounded, compact form to bring a touch of considered whimsy to your curated spaces.",
     price: 65.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg",
     tags: ["figurine", "nordic", "decorative", "resin", "minimalist", "blush"],
-    notes: "Matte white resin · Red dot detail · Two poses",
+    notes: "Material: Resin · Styles: Tall or Round · Includes: 1 Figurine",
     variants: [
         { id: "nordic-figurine-blush-high", label: "Tall Silhouette", price: 65.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309510737" },
         { id: "nordic-figurine-blush-round", label: "Round Form", price: 65.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/nordic-decorative-figurine_a74b89cc_6a022001.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309543505" }
@@ -798,13 +798,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Textile Wall",
     hookLine: "Hand-knotted cotton macrame — adds texture and warmth to any wall.",
     description:
-      "A hand-knotted cotton macrame wall hanging that adds texture, warmth, and visual interest to any wall. The natural cotton cord has a soft, organic quality that softens hard surfaces and adds a bohemian elegance to both modern and traditional interiors.",
+      "A hand-knotted cotton macrame wall hanging that brings inviting texture, warmth, and visual interest to any living room or bedroom. Carefully crafted from durable natural cotton with subtle polyester fibers, this artisanal piece offers a soft, organic quality that effortlessly softens hard surfaces and infuses your space with a considered bohemian spirit. Measuring 55 by 70 centimeters, it serves as a striking yet minimalist focal point above a bed, desk, or mantel. To maintain its pristine appearance over time, simply dust it regularly with a gentle breeze or hand wash delicately without rubbing.",
     price: 48.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/19_D3IdJqGKNigmvANciogXFl_1774801330247_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9tYWNyYW1lLXdhbGwtaGFuZ2luZw_0a1f430f_00b1bc90.jpg",
     tags: ["macrame", "wall-hanging", "cotton", "textile", "bohemian"],
-    notes: "Hand-knotted cotton · Wooden dowel · Multiple sizes",
+    notes: "Material: Cotton and polyester · Dimensions: 55x70cm · Hand wash only",
     available: true,
     variants: [
         { id: "macrame-wall-hanging-beige", label: "Beige", price: 48.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-4_Beige_a5fa9eb2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251308560465" }
@@ -818,13 +818,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Single Stem",
     hookLine: "A small ceramic vase designed for one or two stems — the art of less.",
     description:
-      "A small ceramic bud vase designed for one or two stems — the art of less. The narrow opening holds stems upright without a frog or foam, and the matte glaze has a tactile quality that invites touch. Perfect for a bedside table, a bathroom shelf, or a windowsill.",
+      "A small ceramic bud vase designed for one or two stems, celebrating the art of less. The narrow opening gracefully holds stems upright without the need for a frog or foam, while the matte glaze offers a tactile quality that invites touch. Available in a curated palette of Nordic-inspired hues, each vase features a unique silhouette to complement your space, with the brown and black vessels offering taller profiles up to 16cm, and the green and orange variations presenting a more grounded, stout form. Whether displayed individually or as a thoughtful collection, these pieces bring a quiet, sculptural elegance to any surface.",
     price: 18.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/20_culZmmwAa0oXGnliXCigNL_1774801403133_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9jZXJhbWljX2J1ZF92YXNl_f935a947_d7230385.jpg",
     tags: ["vase", "ceramic", "bud", "minimalist", "small"],
-    notes: "Ceramic · Matte glaze · Multiple colours",
+    notes: "Material: Ceramic · Dimensions: 7-16cm height depending on variant · Style: Nordic · Finish: Matte glaze",
     available: false,
     variants: [
         { id: "ceramic-bud-vase-brown", label: "Earth Brown", price: 18.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-5_Brown_cbe5cb87.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251306463313" },
@@ -840,13 +840,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Slow Burn",
     hookLine: "A ceramic holder for incense sticks and cones — minimalist, functional, beautiful.",
     description:
-      "A ceramic incense holder designed for both sticks and cones — minimalist in form, functional in use, and beautiful as an object. The ash tray catches residue cleanly, and the matte glaze complements any interior.",
+      "A considered ceramic incense holder designed to anchor your living space in tranquility, merging quiet aesthetics with everyday utility. Minimalist in form and beautiful as an object, it functions seamlessly to catch ash residue while its matte glaze complements any interior setting. Available in two distinct silhouettes, this piece accommodates either traditional incense sticks or a combination of sticks and mesmerizing backflow cones. Whether placed in a living room or a dedicated meditation corner, this solitary burner invites a moment of quiet reflection into your daily ritual.",
     price: 22.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-8_c0b37044_a301959d.webp",
     tags: ["incense", "holder", "ceramic", "minimalist", "home-fragrance"],
-    notes: "Ceramic · Fits sticks and cones · Ash tray",
+    notes: "Material: Ceramic · Dimensions: 11.8x11.8x4cm (Backflow) or 10.7x10.7x3.8cm (Stick) · Includes: 1 incense burner",
     available: true,
     crossSells: ["led-aroma-diffuser", "fireplace-aroma-diffuser", "dried-xinjiang-lavender"],
       variants: [
@@ -861,13 +861,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Conversation Piece",
     hookLine: "A resin figurine with abstract human form — art for the shelf.",
     description:
-      "An abstract figurine in matte resin — a stylised human form that sits comfortably between art and decoration. The kind of object that starts conversations and adds a layer of personality to a bookshelf or mantel.",
+      "An abstract figurine crafted from a thoughtful blend of matte resin and sandstone, presenting a stylized human form that sits comfortably between art and decoration. Each piece is finished by hand using traditional crafting techniques, lending it an artisanal texture and unique character that starts conversations and adds a distinct layer of personality to any bookshelf or mantelpiece. It is the kind of considered object that brings quiet sophistication to your living space, inviting contemplation while seamlessly integrating into a modern aesthetic.",
     price: 42.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/5_vuklseE9dxJx7voH81mTnb_1774599096409_na1fn_L2hvbWUvdWJ1bnR1L3NpbGVuY2VfZmlndXJpbmU_09e5f1f5_918fb661.webp",
     tags: ["figurine", "abstract", "resin", "art", "decorative"],
-    notes: "Matte resin · Abstract form · 20cm tall",
+    notes: "Material: Resin and sandstone · Dimensions: 20cm tall · Handcrafted finish",
         variants: [
         { id: "abstract-figurine-1style", label: "Thinker — Matte White", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/5_vuklseE9dxJx7voH81mTnb_1774599096409_na1fn_L2hvbWUvdWJ1bnR1L3NpbGVuY2VfZmlndXJpbmU_09e5f1f5_918fb661.webp", shopifyVariantId: "gid://shopify/ProductVariant/59251305644113" },
         { id: "abstract-figurine-gold-1style", label: "Thinker — Gold", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/5_vuklseE9dxJx7voH81mTnb_1774599096409_na1fn_L2hvbWUvdWJ1bnR1L3NpbGVuY2VfZmlndXJpbmU_09e5f1f5_918fb661.webp", shopifyVariantId: "gid://shopify/ProductVariant/59251305676881" },
@@ -886,13 +886,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Flame Without Fire",
     hookLine: "A ceramic diffuser shaped like a miniature fireplace — warm light and scent without a flame.",
     description:
-      "A ceramic aroma diffuser shaped like a miniature fireplace — complete with a warm LED glow that simulates flickering flames. The combination of warm light and essential oil diffusion creates an atmosphere of comfort and calm without any open flame.",
+      "Evoke the comforting ambiance of a hearth in any room with this ceramic aroma diffuser, thoughtfully shaped like a miniature fireplace. A built-in LED casts a realistic, flickering glow across the mist, while seven ambient color settings allow you to tailor the mood to your exact preference. Designed for effortless tranquility, it features a generous 150ml water tank, three timer presets, and an automatic shut-off function for complete peace of mind. Simply use the included remote control to adjust the mist and lighting, allowing the gentle diffusion of your favorite essential oils to transform your space into a serene sanctuary.",
     price: 59.00,
     collection: "ADORN",
     collectionSlug: "adorn",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-2_e58fdd57_f59ad19d.webp",
     tags: ["diffuser", "fireplace", "ceramic", "led", "aroma"],
-    notes: "Ceramic · LED flame effect · Essential oil compatible",
+    notes: "Material: Ceramic · Capacity: 150ml · Features: 7-color LED, 3 timer settings, Auto shut-off · Includes: Diffuser, remote control, USB-C cable",
     available: true,
     crossSells: ["led-aroma-diffuser", "ceramic-incense-holder", "japanese-bedside-lamp"],
       variants: [
@@ -910,7 +910,7 @@ export const PRODUCTS: Product[] = [
     headline: "The Quiet Scent",
     hookLine: "500g of dried Xinjiang lavender buds — six grades from premium sachet-fill to everyday aromatherapy.",
     description:
-      "Pure dried lavender buds harvested in Xinjiang's Yili Valley — China's lavender heartland, where altitude and climate produce some of the most aromatic lavender in the world. Each 500g bag contains loose buds only (no pouch included), perfect for filling your own sachets, pillows, bath blends, or potpourri. Six grades available, from Supreme French Blue with near-zero impurity to cost-effective A-grade for bulk filling. Pairs beautifully with our Lavender Pouch for a complete sachet set.",
+      "Pure dried lavender buds harvested in the high altitudes of Xinjiang's Yili Valley, China's celebrated lavender heartland where the unique climate produces some of the most intensely aromatic botanicals in the world. Offering a long-lasting natural fragrance, these loose buds are wonderfully versatile and perfectly suited for crafting bespoke pillow sachets or elevating your daily aromatherapy rituals. Available in an array of meticulously graded varieties, you can select the perfect botanical profile for your needs, ranging from the exceptionally pure Supreme French Blue to robust selections cultivated specifically for extracting rich essential oils.",
     price: 12.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
@@ -921,7 +921,7 @@ export const PRODUCTS: Product[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/lavender-sachet-detail3_d34e6124.jpg"
     ],
     tags: ["lavender", "xinjiang", "dried", "buds", "fragrance", "aromatherapy", "sachet-fill"],
-    notes: "500g per bag · Loose buds, no pouch · Dried Xinjiang Yili Valley lavender",
+    notes: "Material: Dried lavender buds · Origin: Xinjiang Yili Valley · Weight: 500g · Use: Aromatherapy and filling",
     available: true,
     crossSells: ["dried-lavender-bundle", "ceramic-incense-holder", "led-aroma-diffuser"],
       variants: [
@@ -940,13 +940,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Purple Calm",
     hookLine: "A generous bundle of dried lavender stems — for vases, wreaths, or simply the scent.",
     description:
-      "A generous bundle of dried lavender stems — the kind of object that fills a room with calm before you even notice it. The stems are dried naturally to preserve both colour and fragrance, and the bundle is tied with natural twine.",
+      "A generous bundle of dried lavender stems  —  the kind of object that fills a room with calm before you even notice it. The stems are dried naturally to preserve both colour and fragrance, reaching an elegant length of forty-three centimeters. Available in both classic white and soft pink, this natural botanical accent offers enduring beauty for any corner of your home. Whether arranged simply in a favorite vase, woven into a seasonal wreath, or placed gently on a shelf to scent a space, it brings a touch of quiet serenity.",
     price: 22.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/8_NNuHRXV7PHupFuXRWHQu2C_1774599052593_na1fn_L2hvbWUvdWJ1bnR1L2RyaWVkX2xhdmVuZGVyX2J1bmRsZQ_b807e823_7527a82d.webp",
     tags: ["lavender", "dried", "bundle", "stems", "fragrance"],
-    notes: "Naturally dried · Tied with twine · Fragrance lasts months",
+    notes: "Material: Naturally dried flower · Dimensions: 43cm length · Includes: 1 bundle · Fragrance lasts months",
     available: true,
     crossSells: ["dried-xinjiang-lavender", "mixed-dried-flower-bouquet", "magnetic-levitating-planter"],
       variants: [
@@ -1003,13 +1003,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Gathered Bouquet",
     hookLine: "A curated mix of dried flowers — roses, daisies, grasses, and seed pods.",
     description:
-      "A curated bouquet of mixed dried flowers — roses, daisies, grasses, and seed pods — arranged with the kind of casual elegance that looks like you gathered them on a country walk. Each bouquet is slightly different, reflecting the natural variation of dried botanicals.",
+      "A curated bouquet of mixed dried flowers  —  roses, daisies, grasses, and seed pods  —  arranged with the kind of casual elegance that looks like you gathered them on a country walk. Available in an array of considered hues, including champagne, vibrant orange, soft pink, and classic white, these naturally dried blooms offer enduring beauty without the need for maintenance. Each delicate bundle is slightly unique, reflecting the natural variations of the botanical elements. They are perfect for styling individually in a favorite slender vessel, or grouping together into a more abundant, textured display that brings a touch of the outdoors into your living space.",
     price: 36.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mixed-dried-flower-bouquet_ac1959d8_d490d298.jpg",
     tags: ["dried", "flowers", "bouquet", "mixed", "natural"],
-    notes: "Naturally dried · Mixed varieties · Each bouquet unique",
+    notes: "Material: Naturally dried flowers · Options: Single bundle, 2-piece, or 4-piece sets · Mixed varieties · Each bouquet unique",
     available: true,
     crossSells: ["dried-lavender-bundle", "pampas-grass-bouquet", "dried-xinjiang-lavender"],
       variants: [
@@ -1028,13 +1028,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Soft Sculpture",
     hookLine: "Natural dried cotton stems — sculptural, soft, and endlessly photogenic.",
     description:
-      "Natural dried cotton stems with fluffy white bolls — the kind of botanical that looks like a sculpture and photographs beautifully in any light. The stems are naturally dried and preserved, maintaining their soft, cloud-like appearance indefinitely.",
+      "Natural dried cotton stems with fluffy white bolls offer a sculptural, botanical element that photographs beautifully in any light, bringing an understated elegance to your space. Each stem features approximately ten generously sized cotton heads, naturally dried and preserved to maintain their soft texture and organic shape. Measuring over half a meter in length, these botanicals provide striking vertical interest whether displayed as a solitary minimalist accent or woven into a larger seasonal arrangement. Upon arrival, these delicate stems may require a moment of gentle arranging to restore their full, voluminous appearance and naturally shed any loose botanical elements, ensuring they look perfect in your favorite vase.",
     price: 18.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-2_683cc3a4_78d26145.webp",
     tags: ["cotton", "dried", "stem", "natural", "sculptural"],
-    notes: "Naturally dried · 3-5 bolls per stem · 60cm tall",
+    notes: "Material: Natural dried cotton · Dimensions: 52cm length, 5cm bolls · Features: 10 bolls per stem · Care: Gently arrange upon arrival",
     available: true,
     variants: [
         { id: "dried-cotton-stem-1", label: "Single Stem", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-6_Q1Pcs_b2689149.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59256239325265" }
@@ -1048,7 +1048,7 @@ export const PRODUCTS: Product[] = [
     headline: "The Seasonal Circle",
     hookLine: "A circular autumn wreath of leaves, berries, pumpkins, and seed pods — for doors, walls, and mantels.",
     description:
-      "A circular autumn harvest wreath featuring faux leaves, berries, pumpkins, and seed pods — the kind of seasonal decoration that transforms a front door, a wall, or a mantel into something that feels like a harvest celebration. The colours are rich and warm without being garish.",
+      "Welcome the changing seasons with our Autumn Harvest Wreath, a thoughtfully crafted circular arrangement featuring a lush gathering of faux leaves, berries, and seed pods. This inviting piece is beautifully accented by European-style resin ornaments, including intricately modeled dotted pumpkins and whimsical art owls woven throughout the flexible wire base. Whether displayed on a front door to greet guests, hung above a mantelpiece, or positioned as a striking wall feature, it transforms your home into a cozy autumnal retreat. The durable resin construction of the decorative elements ensures they remain vibrant and pristine, offering a timeless seasonal decoration you can return to year after year.",
     price: 32.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
@@ -1058,7 +1058,7 @@ export const PRODUCTS: Product[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wreath-detail_fc5dccfd.jpg",
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wreath-close_f53b88d6.jpg", "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-7-dimensions_3b8d2fd8.jpg"],
     tags: ["wreath", "autumn", "faux", "leaves", "seasonal"],
-    notes: "Faux · Circular wreath · Flexible wire base",
+    notes: "Material: Resin and faux foliage · Style: European-inspired · Base: Flexible wire · Includes: 1 Wreath",
     available: false,
     crossSells: ["autumn-faux-flower-bouquet", "faux-potted-arrangement", "macrame-wall-hanging"],
       variants: [
@@ -1074,13 +1074,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Tall Whisper",
     hookLine: "Tall dried reeds in natural tones — architectural height for any corner.",
     description:
-      "A bundle of tall dried reeds in natural tones — the kind of arrangement that adds architectural height and movement to a corner, an entryway, or beside a fireplace. The reeds sway gently in air currents, adding a living quality to a dried arrangement.",
+      "A thoughtfully composed artificial floral arrangement that brings enduring architectural movement to a corner, an entryway, or beside a fireplace. Crafted from delicate silk to capture the essence of natural blooms, each piece is thoughtfully paired with a complementary vase for effortless styling. The resilient stems offer the everlasting beauty of botanical forms without the need for maintenance, gracefully swaying in the gentle air currents of your curated home. Whether you select a single vibrant hue or a complex medley of botanical textures, this arrangement serves as a quiet yet captivating focal point in any room.",
     price: 22.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-reed-arrangement_b5a53838_4d99d835.jpg",
     tags: ["reed", "dried", "tall", "natural", "architectural"],
-    notes: "Naturally dried · 100-120cm tall · Bundle of 10",
+    notes: "Material: Silk artificial flowers and vase · Dimensions: 12x14x28cm · Includes: 1 artificial arrangement with vase",
     available: false,
     crossSells: ["pampas-grass-bouquet", "mixed-dried-flower-bouquet", "faux-potted-arrangement"],
       variants: [
@@ -1099,13 +1099,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Floating Garden",
     hookLine: "A planter that floats and rotates in mid-air — science meets nature.",
     description:
-      "A magnetic levitating planter that suspends a small plant pot in mid-air, rotating slowly and silently above its base. The electromagnetic system is hidden inside a minimalist wooden base, and the floating pot can hold small succulents, air plants, or herbs. It is part science experiment, part living sculpture.",
+      "A magnetic levitating planter that suspends a small plant pot in mid-air, rotating slowly and silently above its base to create a captivating focal point in any room. The electromagnetic system is elegantly concealed within a minimalist 21 by 6 centimeter base, allowing the floating pot to showcase your favorite greenery without distraction. Available with various international power adapters, this piece effortlessly blends modern science with natural beauty, making it a thoughtful gift or a striking addition to your own curated space.",
     price: 128.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/magnetic-levitating-planter_32662aeb_979f6259.jpg",
     tags: ["planter", "magnetic", "levitating", "floating", "modern"],
-    notes: "Electromagnetic base · Rotating · Includes pot · USB powered",
+    notes: "Material: Magnetic system with minimalist base · Dimensions: 21x6cm · Includes floating pot · USB powered · Available with international power adapters",
     available: true,
     variants: [
         { id: "magnetic-levitating-planter-image-uk", label: "UK Plug", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-9_Image-_-Uk_d8778d2a.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305414737" },
@@ -1160,13 +1160,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Suspended Garden",
     hookLine: "A hand-woven hanging planter in natural jute — brings greenery to eye level.",
     description:
-      "A hand-woven hanging planter in natural jute rope — the kind of object that transforms a bare corner or window into a suspended garden. The macrame-style weave creates a decorative cradle for any standard pot, and the adjustable hanging cord fits any ceiling height.",
+      "A purely hand-woven hanging planter crafted from natural grass, this piece effortlessly transforms a bare corner or sunlit window into a suspended indoor garden. The intricate macrame-style weave creates a secure and decorative cradle for your favorite botanicals, offering a beautiful way to bring vibrant greenery up to eye level. Each package includes one meticulously woven grass basket that adds a touch of organic texture to your home, available in a selection of grounding, earthy tones to complement any interior space.",
     price: 28.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/woven-hanging-planter_c4b82362_df135370.jpg",
     tags: ["planter", "hanging", "woven", "jute", "macrame"],
-    notes: "Natural jute · Adjustable cord · Fits pots up to 18cm",
+    notes: "Material: Woven grass · Includes: 1 hanging basket · Adjustable cord · Fits pots up to 18cm",
     available: false,
     crossSells: ["minimalist-ceramic-planter", "macrame-wall-hanging", "faux-potted-arrangement"],
       variants: [
@@ -1199,13 +1199,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Statement Tree",
     hookLine: "A large faux banyan tree — instant architectural greenery for any room.",
     description:
-      "A large faux banyan tree with realistic leaves and a textured trunk — the kind of statement piece that transforms a room instantly. The tree comes in a simple black nursery pot (designed to be placed inside a decorative planter) and the branches can be shaped to suit your space.",
+      "A striking faux banyan tree with meticulously detailed leaves and a textured trunk, offering the kind of architectural presence that transforms a room instantly. Arriving in a simple black nursery pot designed to be placed within your favorite decorative planter, it brings enduring vitality to any corner without the demands of watering or precise sunlight. Available in an array of heights and configurations — ranging from a single compact silhouette to fuller, multi-trunked statements — this botanical accent allows you to cultivate a lush, considered atmosphere with effortless grace.",
     price: 128.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/faux-banyan-tree_5145e5a4_2db5ad93.jpg",
     tags: ["faux", "banyan", "tree", "large", "statement"],
-    notes: "Realistic leaves · Shapeable branches · 120cm tall",
+    notes: "Faux botanical · Black nursery pot included · Multiple height options · Shapeable branches",
     available: true,
     variants: [
         { id: "faux-banyan-tree-70cm", label: "70cm", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/faux-banyan-tree_5145e5a4_2db5ad93.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59244810436689" },
@@ -1225,7 +1225,7 @@ export const PRODUCTS: Product[] = [
     headline: "The Warm Filament",
     hookLine: "A vintage Edison G95 spiral bulb on a geometric wooden base — warm amber glow, retro-industrial charm.",
     description:
-      "A vintage-style Edison G95 spiral filament bulb on a hand-cut geometric wooden base — the kind of light that makes a room feel like a library in a country house. Each faceted base is individually cut and sanded from natural hardwood, giving every piece its own subtle character. The exposed spiral filament produces a warm amber glow that is gentle on the eyes and creates a cosy atmosphere. Bulb diameter 9.5 cm, total height 17.5 cm.",
+      "A vintage-style Edison G95 spiral filament bulb rests upon a hand-cut geometric wooden base, casting a warm amber glow that transforms any room into a quiet country library. Each faceted base is individually crafted to cradle the retro-industrial bulb, offering an enduring aesthetic that feels both nostalgic and deeply comforting. The thoughtful design features a flat plug and a diamond dimming lamp holder, allowing you to perfectly adjust the mood of your evening retreat. Choose between the standalone lamp for standard setups, or select the option that thoughtfully includes an adapter plug for seamless integration into your curated space.",
     price: 16.00,
     collection: "GLOW",
     collectionSlug: "glow",
@@ -1235,7 +1235,7 @@ export const PRODUCTS: Product[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/edison-lamp-dimensions_b5e74761.jpg"
     ],
     tags: ["lamp", "edison", "vintage", "night-light", "warm", "geometric", "wood"],
-    notes: "Geometric wooden base · G95 spiral bulb · 220V · 40W warm yellow",
+    notes: "Material: Wood · Bulb: G95 spiral · Voltage: 220V · Power: 40W warm yellow",
     shopifyHandle: "edison-vintage-bulb-small-night-lamp-japanese-atmosphere",
         variants: [
         { id: "edison-vintage-night-lamp-g95-spiral-bulb-cn", label: "CN Plug", price: 16.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-1_G95-Spiral-Bulb-_-Cn_d27ea6d6.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250896207953" },
@@ -1252,7 +1252,7 @@ export const PRODUCTS: Product[] = [
     headline: "The Scented Light",
     hookLine: "A Japanese-style bamboo wood candle warmer — melts wax from above for warm light and fragrance in one.",
     description:
-      "A Japanese-style wax melt aromatherapy lamp with a natural bamboo wood frame and white conical shade — combining warm, ambient light with home fragrance in a single beautiful object. The inverted J-shaped frame holds a halogen bulb inside the cone that gently melts scented wax in the round bamboo dish below. The top-down heating method releases fragrance more evenly than traditional candle warmers, while the warm light creates a cosy atmosphere.",
+      "A Japanese-style wax melt aromatherapy lamp crafted with a natural bamboo wood frame and a minimalist white conical shade — combining warm, ambient light with home fragrance in a single beautiful object. The gently curved, inverted J-shape design suspends the warming bulb perfectly over your favorite wax melts, safely releasing their soothing scent without the need for an open flame. Complete with an adjustable dimmer switch to control both light intensity and fragrance release, this elegant piece arrives with two included light sources to seamlessly illuminate and scent your sanctuary.",
     price: 23.00,
     collection: "GLOW",
     collectionSlug: "glow",
@@ -1262,7 +1262,7 @@ export const PRODUCTS: Product[] = [
       "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wax-melt-lamp-dimensions_d77a16f2.jpg"
     ],
     tags: ["lamp", "wax-melt", "aromatherapy", "bamboo", "fragrance", "japanese"],
-    notes: "Bamboo wood frame · White cone shade · Dimmer switch · Wax dish included",
+    notes: "Material: Bamboo wood · Features: Dimmer switch · Includes: 2 light sources",
     shopifyHandle: "japanese-style-melting-wax-lamp-decoration-bedroom-creative-personality-aromatherapy-light",
         variants: [
         { id: "wax-melt-lamp-220v-asia", label: "220V (Asia)", price: 23.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-3_White-Cover-Dimmer-Switch-_-Mainland-220_df7017e2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250903875665" },
@@ -1281,13 +1281,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Evening Path",
     hookLine: "Solar-powered garden torches with flickering flame effect — no wiring, no batteries.",
     description:
-      "Solar-powered garden torches with a realistic flickering flame effect — the kind of outdoor lighting that transforms a garden path or patio into something magical after sunset. The solar panel charges during the day and provides 8-10 hours of warm, dancing light.",
+      "Solar-powered garden torches with a realistic flickering flame effect — the kind of outdoor lighting that transforms a garden path or patio into something magical after sunset. Crafted from durable, IP65 waterproof ABS and PS plastic, these torches withstand the elements while providing enchanting illumination throughout the seasons. The intelligent solar panel charges efficiently by day, delivering up to 10 hours of warm, ambient light on summer evenings and 7 hours during winter. With no wiring required, simply stake the 32cm lamp into your lawn or walkway for an instant, captivating glow that automatically illuminates at dusk.",
     price: 58.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/solar-garden-torch_9241f670_469e1658.jpg",
     tags: ["solar", "garden", "torch", "outdoor", "flame-effect"],
-    notes: "Solar powered · Flickering flame effect · 8-10hr runtime",
+    notes: "Material: ABS and PS plastic · Dimensions: 32cm lamp, 30cm tube, 20cm stake · Waterproof: IP65 · Runtime: 7-10 hours",
     available: true,
     variants: [
         { id: "solar-garden-torch-96led-1pcs", label: "96 LED — Single", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-4_96Led-_-1Pcs_f3a681f3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251308593233" },
@@ -1321,13 +1321,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Garden Guide",
     hookLine: "Solar-powered pathway lights in warm white — line a path, edge a border, light a garden.",
     description:
-      "Solar-powered pathway lights that provide a warm white glow along garden paths, borders, and driveways. The stainless steel and glass construction is weather-resistant, and the solar panel provides reliable illumination from dusk to dawn.",
+      "Cast a gentle, enchanting glow across your garden paths and borders with our elegantly hollow-carved solar pathway lights. Crafted from durable, weather-resistant premium plastic, these understated luminaries are thoughtfully designed to withstand rain, snow, and frost while seamlessly blending into the quiet of the night. Each light harnesses the sun's energy by day, utilizing a built-in waterproof solar panel to offer up to eight hours of soft illumination after dusk without the need for cumbersome wires or complicated installation. Simply stake them directly into the soft earth to guide your evening strolls with a welcoming, ambient radiance.",
     price: 48.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/solar-pathway-light_b9935389_886018b6.jpg",
     tags: ["solar", "pathway", "light", "garden", "outdoor"],
-    notes: "Solar powered · Stainless steel · Warm white",
+    notes: "Material: Premium plastic · Dimensions: 6 × 6 × 28.5 cm · Working time: 4-8 hours · Solar powered",
     available: true,
     variants: [
         { id: "solar-pathway-light-warm-white-3pcs", label: "Warm White — 3 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_Warm-White-3Pcs_786f6df2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900631633" },
@@ -1344,14 +1344,14 @@ export const PRODUCTS: Product[] = [
     headline: "The Invisible Helper",
     hookLine: "Rechargeable LED strips that turn on when you open a door — for wardrobes, pantries, and drawers.",
     description:
-      "Rechargeable LED light strips with a built-in motion sensor — they turn on automatically when you open a wardrobe, pantry, or drawer, and turn off when you close it. The warm white light is bright enough to see clearly without being harsh. Available in Silver and Black, in lengths from 20cm to 60cm.",
+      "Cast a thoughtful glow over your daily rituals with our rechargeable LED light strips, crafted from sleek aluminum. Featuring a built-in motion sensor, they illuminate wardrobes, pantries, and drawers automatically upon opening, while offering three adjustable color temperatures to suit your space. The ultra-thin profile mounts effortlessly via a magnetic backing and adhesive, requiring no tools for installation. With an impressive battery life that lasts up to 60 days on sensor mode, these elegant strips ensure your darkest corners are always welcomingly lit.",
     price: 18.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-7_a6d7867e_421146b9.webp",
     additionalImages: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7-dimensions_a24d5f8f.jpg"],
     tags: ["led", "motion-sensor", "cabinet", "rechargeable", "practical"],
-    notes: "Rechargeable USB-C · Motion sensor · Warm white · Magnetic mount",
+    notes: "Material: Aluminum · Installation: Magnetic mount with 3M adhesive · Color Temperature: Adjustable (3000K/4000K/6000K) · Battery Life: Up to 60 days (sensor mode) · Power: Rechargeable USB-C",
     available: true,
     variants: [
         { id: "cabinet-light-silver-20cm", label: "Silver — 20cm", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Silver-Tricolor-Light-_-20Cm_ddce50a3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901188689" },
@@ -1373,13 +1373,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Soft Sphere",
     hookLine: "A hand-shaped linen sphere on an artisan ceramic base — soft, diffused light for any room.",
     description:
-      "A table lamp with a hand-shaped round linen shade on a hand-thrown ceramic base — the sphere shape creates an even, diffused glow that softens any room. Each ceramic base is individually crafted, with subtle variations in form and glaze that mark it as a genuine artisan piece. The natural linen texture adds warmth and visual interest.",
+      "A table lamp featuring a hand-shaped round linen shade resting gracefully upon an artisan-crafted bamboo and solid wood base. The sphere shape creates an even, diffused glow that softens the atmosphere of any room, operating reliably on a standard 220V to provide consistent, ambient illumination. Available in tailored plug variants to seamlessly suit UK, US, or EU outlets, each lamp is thoughtfully designed to bring enduring warmth, quiet elegance, and a considered aesthetic to your carefully curated home.",
     price: 98.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/round-linen-table-lamp_03ddd497_ceda7e0f.jpg",
     tags: ["lamp", "linen", "round", "table", "ceramic"],
-    notes: "Linen shade · Ceramic base · E27 bulb compatible",
+    notes: "Material: Linen, bamboo, and solid wood · Voltage: 220V · Plug Options: UK, US, EU",
     available: true,
     crossSells: ["square-linen-table-lamp", "japanese-bedside-lamp", "ceramic-bedside-lamp"],
       variants: [
@@ -1395,13 +1395,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Architectural Light",
     hookLine: "A hand-tailored linen shade on a hand-turned wooden base — structured artisan light.",
     description:
-      "A table lamp with a hand-tailored square linen shade on a hand-turned solid wooden base — the geometric shape creates a more structured, architectural light than its round counterpart. The base is individually turned from sustainably sourced hardwood, and the linen shade is cut and sewn by hand, giving each lamp the quiet authority of a handmade object.",
+      "A table lamp with a hand-tailored square linen shade on a hand-turned solid wooden base, offering a structured, architectural light that brings a quiet sophistication to any room. Standing at fourteen inches high, the geometric form is thoughtfully designed with a classic pull-wire switch and a modern USB charging port, seamlessly blending timeless aesthetics with everyday utility. Choose from UK, EU, or US plug configurations to ensure effortless integration into your home, illuminating your space with a warm, inviting glow.",
     price: 98.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/square-linen-table-lamp_90a4a291_f4fafab9.jpg",
     tags: ["lamp", "linen", "square", "table", "wood"],
-    notes: "Linen shade · Wooden base · E27 bulb compatible",
+    notes: "Material: Linen and wood · Dimensions: 135mm width, 14 inches high · Features: Pull-wire switch, USB charging port",
     available: true,
     crossSells: ["round-linen-table-lamp", "japanese-bedside-lamp", "ceramic-bedside-lamp"],
       variants: [
@@ -1417,13 +1417,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Woven Light",
     hookLine: "A hand-woven bamboo shade by traditional artisans — intricate shadow patterns on walls and ceiling.",
     description:
-      "A table lamp with a hand-woven bamboo shade crafted by traditional artisans using techniques passed down through generations. The shade casts beautiful, intricate shadow patterns on surrounding walls and ceiling. The natural bamboo has a warm golden tone, and each weave pattern is unique to the artisan who made it — transforming any room into a gallery of light and shadow.",
+      "Illuminate your living space with a thoughtfully designed table lamp featuring a hand-woven bamboo wood shade, meticulously crafted by traditional artisans using techniques passed down through generations. The intricate weave casts beautiful, mesmerizing shadow patterns on surrounding walls and ceilings, transforming any room into a tranquil sanctuary of warmth and texture. Designed to suit diverse aesthetic preferences and functional requirements, the lamp is available with either a dimmable wooden base for customizable ambiance or a sturdy, non-dimmable metal base. This versatile luminaire seamlessly adapts to your daily lighting needs while supporting a broad 111V to 240V voltage range, ensuring reliable and elegant illumination across the globe.",
     price: 88.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-1_4c56282f_81e8dad6.webp",
     tags: ["lamp", "bamboo", "woven", "table", "shadow-pattern"],
-    notes: "Hand-woven bamboo · Shadow patterns · E27 bulb compatible",
+    notes: "Material: Bamboo wood shade with wooden or metal base · Dimensions: 18x40cm or 23x36cm · Voltage: 111V-240V · Includes: 1 Lamp",
     available: true,
     crossSells: ["round-linen-table-lamp", "ceramic-bedside-lamp", "japanese-bedside-lamp"],
       variants: [
@@ -1466,13 +1466,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Forest Glow",
     hookLine: "A whimsical mushroom-shaped night light in four distinct designs — choose your silhouette, then your wood tone.",
     description:
-      "A whimsical mushroom-shaped night light carved from solid wood with a soft LED glow — the kind of object that makes a hallway, a bathroom, or a child's room feel magical. Available in four distinct mushroom silhouettes (A through D), each in your choice of dark Walnut or light Beech wood. The warm light is gentle enough to sleep by, with touch-activated brightness control and USB-C rechargeable battery lasting 6–8 hours.",
+      "A whimsical mushroom-shaped night light carved from solid beech or rubber wood with a soft LED glow, the kind of object that makes a hallway, a bathroom, or a childs room feel instantly magical. Available in four distinct cap silhouettes and your choice of a rich walnut or natural beech finish, each lamp measures a compact 16.5 by 10 centimeters. Emitting a gentle 2.4-watt illumination, this charming, artful piece invites a slow, comfortable, and warm atmosphere into any corner of your home.",
     price: 22.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/mushroom-design-a-walnut-LqSZMeWNdBamHHmbp9B85z.webp",
     tags: ["night-light", "mushroom", "led", "whimsical", "soft", "wooden", "rechargeable"],
-    notes: "Solid wood · USB-C rechargeable · Touch on/off · 3 brightness levels · 6–8 hour battery",
+    notes: "Material: Beech or rubber wood · Dimensions: 16.5x10cm · Power: 2.4W · USB-C rechargeable · Touch on/off · 3 brightness levels · 6 – 8 hour battery",
     available: true,
     crossSells: ["motion-sensing-cabinet-light", "magnetic-levitating-planter", "solar-garden-torch"],
     variants: [
@@ -1496,14 +1496,14 @@ export const PRODUCTS: Product[] = [
     headline: "The Grounding Layer",
     hookLine: "A woven area rug with bohemian patterns — warmth and character underfoot.",
     description:
-      "A woven area rug with bohemian-inspired geometric patterns in warm, earthy tones — the kind of rug that grounds a room and gives it character. The flat-weave construction is durable enough for high-traffic areas and easy to clean.",
+      "A woven area rug featuring bohemian-inspired geometric patterns in warm, earthy tones — the kind of foundational piece that effortlessly grounds a room and imbues it with enduring character. Crafted from durable polyester fiber through a precise machine-weaving process, this rectangular flat-weave design is exceptionally resilient and perfectly suited for high-traffic spaces such as the living room or dining room. Whether anchoring a cozy seating arrangement or adding warmth to a dining area, its robust construction ensures it remains a steadfast presence in your home. It seamlessly marries artistic expression with everyday practicality, offering both tactile comfort and lasting visual appeal.",
     price: 88.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bohemian-area-rug_de8776fb_3196a46c.jpg",
     additionalImages: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-1-dimensions_8d5095a2.jpg"],
     tags: ["rug", "bohemian", "woven", "area", "geometric"],
-    notes: "Flat-weave · Machine washable · Multiple sizes",
+    notes: "Material: Polyester fiber · Dimensions: 60x90cm, 80x120cm, 80x160cm · Process: Machine woven · Care: Machine washable",
     available: true,
     variants: [
         { id: "bohemian-area-rug-4style-60x90cm", label: "60×90cm", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-1_4Style-_-60X90Cm_cf3d3bec.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250897125457" },
@@ -1519,13 +1519,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Soft Landing",
     hookLine: "A deep-pile shag rug — the kind of surface you want to sink your feet into.",
     description:
-      "A deep-pile shag rug with a luxuriously soft texture — the kind of surface that makes you want to walk barefoot. The dense pile provides cushioning and warmth underfoot, and the neutral tones complement any interior.",
+      "A deep-pile shag rug with a luxuriously soft texture, crafted with a velvety cashmere-like surface that invites you to walk barefoot and sink into its warmth. Designed for ultimate comfort and stability, its thoughtful three-layer construction features a supportive sponge core for cushioning and a dotted, non-slip backing to ensure it stays perfectly in place on your floors. Available in an array of versatile sizes to beautifully suit any room, this lightweight piece is best cared for with a gentle hand wash to maintain its plush elegance and inviting feel for years to come.",
     price: 78.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/plush-shag-rug_a98aa96d_96f14d39.jpg",
     tags: ["rug", "shag", "plush", "soft", "deep-pile"],
-    notes: "Deep pile · Non-slip backing · Multiple sizes",
+    notes: "Material: Cashmere-feel fabric, sponge core, dotted non-slip backing · Sizes: 40x60cm to 120x160cm · Weight: 0.5kg · Care: Hand wash only",
     available: true,
     variants: [
         { id: "plush-shag-rug-beige-120x160cm", label: "Beige / 120X", price: 78.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/plush-shag-rug_a98aa96d_96f14d39.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250898763857" },
@@ -1548,13 +1548,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Instant Dry",
     hookLine: "A stone bath mat that absorbs water instantly and dries in minutes — no more soggy towels.",
     description:
-      "A diatomite stone bath mat that absorbs water on contact and dries within minutes — the kind of bathroom upgrade that makes you wonder why you ever used a fabric mat. The natural diatomite earth is antimicrobial, non-slip, and easy to clean.",
+      "A diatomite stone bath mat that absorbs water on contact and dries within minutes — the kind of bathroom upgrade that makes you wonder why you ever used a fabric mat. Crafted from natural diatomite earth, this porous stone quickly draws moisture away from your feet, preventing slips and resisting bacteria growth. Measuring 40 by 30 centimeters, its minimalist Nordic-inspired profile sits elegantly on your bathroom floor while effortlessly maintaining a dry, clean environment. The inherently antimicrobial surface requires minimal upkeep, ensuring your space remains fresh and thoughtfully considered.",
     price: 48.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/diatomite-bath-mat_70379962_81507473.jpg",
     tags: ["bath-mat", "diatomite", "stone", "quick-dry", "antimicrobial"],
-    notes: "Diatomite earth · Quick-dry · Antimicrobial · Non-slip",
+    notes: "Material: Natural diatomite earth · Dimensions: 40x30cm · Features: Quick-dry, antimicrobial, non-slip",
         variants: [
         { id: "diatomite-bath-mat-grey-40x30cm", label: "Grey / 40X", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-3_Grey-_-40X30Cm_4053128f.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250896175185" }
       ],
@@ -1568,13 +1568,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Table Foundation",
     hookLine: "Washed linen placemats with frayed edges — the base layer of a considered table.",
     description:
-      "A set of washed linen placemats with naturally frayed edges — the kind of table foundation that makes even a simple weeknight dinner feel intentional. The pre-washed linen has a soft, lived-in quality from the first use.",
+      "A single washed linen placemat with naturally frayed edges  —  the kind of table foundation that makes even a simple weeknight dinner feel intentional. Measuring a generous 32 by 44 centimeters, the pre-washed pure linen has a soft, lived-in quality that offers an earthy, tactile texture which only grows more inviting with time. Whether hosting a formal gathering or enjoying a quiet morning coffee, this versatile layer sets a beautifully considered tone. Sold individually to encourage creative expression, it invites you to effortlessly mix and match our nature-inspired hues to curate a personalized tablescape.",
     price: 32.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/3_peZFc31SZBd42XjBrRwPaY_1774599125668_na1fn_L2hvbWUvdWJ1bnR1L2xpbmVuX2N1c2hpb25fY292ZXI_acc2473b_348a64ab.webp",
     tags: ["placemats", "linen", "washed", "frayed", "table"],
-    notes: "Washed linen · Set of 4 · Machine washable",
+    notes: "Material: 99% Linen · Dimensions: 32x44cm · Sold individually",
     available: false,
     variants: [
         { id: "linen-placemats-original-hemp-color", label: "Natural Hemp", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914361425", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-4-natural-kY8wtKLGtykFAvApg3ewiq_1900aedc.jpg" },
@@ -1591,14 +1591,14 @@ export const PRODUCTS: Product[] = [
     headline: "The Gathered Table",
     hookLine: "A washed linen tablecloth that drapes beautifully — the foundation of a considered table.",
     description:
-      "A washed linen tablecloth that drapes with the kind of casual elegance that makes a table look like it belongs in a French farmhouse. The pre-washed linen is soft from the first use and develops more character with every wash. Available in two colours and eight lengths from 35×120cm to 35×350cm.",
+      "A washed linen blend tablecloth that drapes with the kind of casual elegance that makes a dining space feel effortlessly gathered, reminiscent of a rustic French farmhouse. Woven from a durable yet soft blend of linen and polyester, it features a subtle botanical pattern that adds quiet texture to your setting. Its considered 35cm width allows it to function beautifully as a versatile table runner, while the extensive range of lengths from 120cm to 350cm ensures a perfect, graceful drape for any occasion.",
     price: 28.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/linen-tablecloth_b60ca17a_f18a7b2b.jpg",
     additionalImages: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-5-dimensions_e660391c.jpg"],
     tags: ["tablecloth", "linen", "washed", "table", "dining"],
-    notes: "Washed linen · Machine washable · Multiple sizes",
+    notes: "Material: Linen and polyester blend · Dimensions: 35cm width, lengths from 120cm to 350cm · Pattern: Botanical · Machine washable",
     available: false,
     variants: [
         { id: "linen-tablecloth-royal-gray-35x120", label: "Royal Grey / 35X120", price: 28.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/linen-tablecloth_b60ca17a_f18a7b2b.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251307905105" },
@@ -1627,14 +1627,14 @@ export const PRODUCTS: Product[] = [
     headline: "The Centre Line",
     hookLine: "A washed linen table runner — the simplest way to make a table feel dressed.",
     description:
-      "A washed linen table runner — the simplest, most effective way to make a dining table feel dressed and considered. The natural linen has a beautiful drape and the frayed edges add a relaxed, lived-in quality. Available in three colours and nine lengths from 30×50cm to 30×300cm.",
+      "The simplest, most effective way to make a dining table feel dressed and considered, this versatile runner instantly elevates your space. Woven from soft, durable cotton that mimics the beautiful drape of natural linen, it features subtle stripes and relaxed edges for a warm, lived-in aesthetic. Whether you are hosting an intimate dinner party or enjoying a quiet morning coffee, the varied lengths and earthy color palettes ensure a perfect fit for any table. It effortlessly anchors your tablescape, bringing a touch of understated elegance to both everyday meals and special gatherings.",
     price: 18.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/linen-table-runner_cc2c966a_277a3f45.jpg",
     additionalImages: ["https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6-dimensions_19905399.jpg"],
     tags: ["table-runner", "linen", "washed", "dining", "natural"],
-    notes: "Washed linen · Machine washable · 30cm wide · 9 lengths from 50cm to 300cm",
+    notes: "Material: Cotton · Dimensions: 30cm wide, lengths from 50cm to 300cm · Pattern: Striped · Care: Machine washable",
         variants: [
         { id: "linen-runner-brown-30x50", label: "Warm Brown / 30X50", price: 18.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X50_fb8e20d8.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309707345" },
         { id: "linen-runner-brown-30x120", label: "Warm Brown / 30X120", price: 24.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X120_56765c7d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309740113" },
@@ -1695,13 +1695,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Afternoon Layer",
     hookLine: "A chunky knit blanket for naps, reading, and slow afternoons.",
     description:
-      "A chunky knit blanket designed for naps, reading, and slow afternoons — the kind of blanket that becomes your favourite possession. The open knit provides warmth without weight, and the textured pattern adds visual interest to any sofa or bed.",
+      "A chunky knit blanket thoughtfully designed for naps, reading, and slow afternoons — the kind of piece that effortlessly becomes your most treasured possession. Expertly crafted from soft, durable polyester fiber, the open knit provides comforting warmth without unnecessary weight, while the beautifully textured pattern adds a tactile richness to your living space. Measuring a generous 127 by 170 centimeters, it is perfectly sized to envelop you in comfort, inviting you to pause, unwind, and embrace moments of quiet reflection.",
     price: 48.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knit-nap-blanket_b575cb1e_2b8e9e47.jpg",
     tags: ["blanket", "knit", "chunky", "nap", "textured"],
-    notes: "Chunky knit · 130×170cm · Machine washable",
+    notes: "Material: Polyester fiber · Dimensions: 127x170cm · Machine washable",
     available: true,
     variants: [
         { id: "knit-nap-blanket-khaki", label: "Khaki", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309215825", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knit-blanket-khaki-8AfvwHjXGKinttmQbqziQh_8ca25e4c.jpg" },
@@ -1717,13 +1717,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Textured Touch",
     hookLine: "A hand-knit cushion cover in chunky yarn — instant texture for any sofa.",
     description:
-      "A hand-knit cushion cover in chunky yarn — the kind of texture that makes a sofa look and feel more inviting. The oversized cable knit pattern adds visual depth, and the natural cotton yarn is soft against the skin.",
+      "A hand-knit cushion cover in chunky yarn offers the kind of texture that makes any sofa look and feel instantly more inviting. The oversized cable knit pattern adds profound visual depth, creating a warm, tactile focal point in your living space. Crafted from a soft and durable acrylic blend, this piece provides both enduring comfort and effortless style for your daily lounging. Designed to perfectly accommodate standard 45x45cm inserts, it effortlessly elevates your home decor with a touch of cozy, considered craftsmanship.",
     price: 28.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/chunky-knit-cushion-cover_8caea939_cbc04b56.jpg",
     tags: ["cushion", "cover", "knit", "chunky", "textured"],
-    notes: "Cotton yarn · 45×45cm · Hidden zip · Insert not included",
+    notes: "Material: Acrylic blend · Dimensions: 45x45cm · Insert not included",
     available: true,
     variants: [
         { id: "chunky-knit-cushion-cover-yellow", label: "Mustard Yellow", price: 28.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-9_Yellow_491c2fb3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251306266705" },
@@ -1742,13 +1742,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Soft Sphere",
     hookLine: "A round boucle cushion — playful, tactile, and irresistibly soft.",
     description:
-      "A round boucle cushion with a playful sphere shape — the kind of object that adds personality and texture to a sofa or bed. The boucle fabric is irresistibly soft to the touch, and the sphere shape makes it a conversation piece.",
+      "A round boucle cushion with a playful sphere shape — the kind of object that effortlessly adds personality and texture to a sofa or bed. Crafted from soft lamb wool in an intricate knotted rope design, its tactile fabric is irresistibly soft to the touch, inviting moments of quiet comfort. The Nordic-inspired spherical form breaks up the traditional lines of your furniture, bringing warmth, dimension, and a modern sculptural element to your living space. Available in two versatile sizes, it serves as a perfect standalone statement piece or a cozy companion to your existing decor collection.",
     price: 32.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/boucle-sphere-cushion_8076d6d8_953be498.jpg",
     tags: ["cushion", "boucle", "sphere", "round", "soft"],
-    notes: "Boucle fabric · 35cm diameter · Filled",
+    notes: "Material: Lamb wool · Dimensions: 22cm or 28cm diameter · Style: Nordic knot design",
     available: true,
     variants: [
         { id: "boucle-sphere-cushion-creamy-white-22cm", label: "Creamy White", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251306594385", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-10-cream-jDjVShooeVXkPZBneoGvqL.webp" },
@@ -1775,13 +1775,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Artisan Pillow",
     hookLine: "A tufted cushion with corner tassels — handcraft details for the sofa.",
     description:
-      "A tufted cushion cover with decorative corner tassels — the kind of handcraft detail that adds warmth and character to any sofa or bed. The tufted texture creates a raised pattern that catches light beautifully.",
+      "A tufted cotton canvas cushion cover with decorative corner tassels — the kind of handcraft detail that adds warmth and character to any sofa or bed. The tufted texture creates a raised pattern that catches the light beautifully, bringing a tactile dimension to your living space. Woven from durable yet breathable cotton canvas, it offers both visual intrigue and everyday comfort. Available in versatile square or elongated lumbar profiles, this piece adapts effortlessly to your styling needs. It can be selected as a standalone cover to refresh your existing decor, or complete with a plush PP cotton insert for immediate, sink-in comfort.",
     price: 28.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/tufted-tassel-cushion_cbe1a4f2_6b522a76.jpg",
     tags: ["cushion", "tufted", "tassel", "artisan", "decorative"],
-    notes: "Cotton · Tufted · Corner tassels · 45×45cm · Insert not included",
+    notes: "Material: Cotton canvas cover · Optional PP cotton insert · Tufted texture with corner tassels · Available in square and lumbar shapes",
     available: true,
     crossSells: ["chunky-knit-cushion-cover", "boucle-sphere-cushion", "plush-round-rug"],
       variants: [
@@ -1802,13 +1802,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Soft Circle",
     hookLine: "A round plush rug — soft underfoot, perfect for bedrooms and reading nooks.",
     description:
-      "A round plush rug with a deep, soft pile — the kind of surface that defines a space within a room. Perfect beside a bed, under a reading chair, or in a nursery. The non-slip backing keeps it in place on hard floors.",
+      "A round plush rug featuring a deep, exceptionally soft pile  —  the kind of tactile surface that beautifully defines an intimate space within any room. Machine-woven from durable, high-quality acrylic fibers, this piece is perfectly suited for placement beside a bed, tucked under a favorite reading chair, or anchoring a nursery. The reliable non-slip backing keeps it securely positioned, while the hand-washable design ensures effortless everyday maintenance. Available in multiple versatile sizes to seamlessly complement any corner of your curated home.",
     price: 48.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/plush-round-rug_9061c6fd_c94b7257.jpg",
     tags: ["rug", "round", "plush", "soft", "bedroom"],
-    notes: "Deep pile · Non-slip backing · 100cm diameter",
+    notes: "Material: Acrylic plush · Care: Hand wash only · Backing: Non-slip · Sizes: 35cm to 60cm diameter",
     available: true,
     variants: [
         { id: "plush-round-rug-white-35-35cm", label: "White / 35*", price: 48.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/plush-round-rug_9061c6fd_c94b7257.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251304071249" },
@@ -1838,13 +1838,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Luxe Touch",
     hookLine: "A velvet cushion cover with tonal stripes — subtle luxury for the sofa.",
     description:
-      "A velvet cushion cover with tonal stripes that catch the light differently depending on the angle — the kind of subtle luxury that elevates a sofa without being ostentatious. The velvet is soft and durable, and the hidden zip keeps the closure invisible.",
+      "A velvet cushion cover with tonal stripes that catch the light differently depending on the angle, offering the kind of subtle luxury that elevates a sofa without being ostentatious. The plush velvet material is soft and durable, creating a warm, considered atmosphere in any living space. Available in an array of classic shades, each cover measures 45 by 45 centimeters and features a clean, plain pattern that seamlessly integrates with your existing decor.",
     price: 28.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-stripe-cushion-cover_58155c0e_3ee46b61.jpg",
     tags: ["cushion", "cover", "velvet", "stripe", "luxe"],
-    notes: "Velvet · Tonal stripes · 45×45cm · Hidden zip · Insert not included",
+    notes: "Material: Plush velvet · Dimensions: 45x45cm · Pattern: Plain · Insert not included",
     available: false,
     variants: [
         { id: "velvet-stripe-cushion-cover-white", label: "Ivory White", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304824913", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-ivory-white-d5iEgp94Y2FG3VModWqDXj.webp" },
@@ -1864,13 +1864,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Companion's Comfort",
     hookLine: "A soft fleece blanket sized for pets — for beds, crates, and favourite spots.",
     description:
-      "A soft fleece blanket sized and designed for pets — the kind of considered object that shows the same care for your companion's comfort as your own. The fleece is machine-washable, quick-drying, and resistant to pet hair clinging. Available in two sizes.",
+      "A soft flannel fleece blanket thoughtfully sized and designed for pets, offering a considered touch that shows the same care for your companions comfort as your own. Crafted from a breathable, lightweight fabric, it provides a gentle layer of warmth that remains comfortable across all seasons, from cool summer evenings to brisk winter nights. Whether draped over a favorite armchair, laid across the foot of your bed, or tucked neatly into a crate, this versatile piece integrates seamlessly into your shared living spaces. The durable material is machine-washable and quick-drying, ensuring that maintaining a clean, inviting resting spot for your pet is as effortless as it is elegant.",
     price: 18.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/pet-blanket_2643de40_e0d2ff1b.jpg",
     tags: ["blanket", "pet", "fleece", "soft", "washable"],
-    notes: "Fleece · 80×120cm · Machine washable · Pet-hair resistant",
+    notes: "Material: Flannel · Dimensions: Small 50x70cm, Large 100x70cm · Care: Machine washable · Features: All-season breathability",
     available: true,
     variants: [
         { id: "pet-blanket-random-color-small-5", label: "Small (50×70cm)", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-14_Random-Color-_-Small-50X70Cm_7b4c905d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309314129" },
