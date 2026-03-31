@@ -39,6 +39,7 @@ describe("Catalog Pricing Integrity", () => {
       "ceramic-pour-over-dripper": 32,
       "acacia-serving-bowl": 68,
 
+      "stoneware-travel-tea-set": 32,
       "teak-kitchen-utensil-set": 5,
       "black-walnut-resin-tray": 34,
       "retro-reactive-glaze-dinnerware": 10,
@@ -89,7 +90,7 @@ describe("Catalog Pricing Integrity", () => {
   it("should have correct prices for key GLOW products", () => {
     const expected: Record<string, number> = {
       "woven-bamboo-table-lamp": 98,
-      "motion-sensing-cabinet-light": 32,
+      "motion-sensing-cabinet-light": 18,
       "mushroom-night-light": 22,
       "ceramic-bedside-lamp": 99,
       "edison-vintage-night-lamp": 16,
@@ -108,7 +109,9 @@ describe("Catalog Pricing Integrity", () => {
   it("should have correct prices for key DWELL products", () => {
     const expected: Record<string, number> = {
       "bohemian-area-rug": 88,
-      "pet-blanket": 22,
+      "pet-blanket": 18,
+      "linen-table-runner": 18,
+      "linen-tablecloth": 28,
       "linen-placemats": 32,
       "coral-fleece-throw-blanket": 38,
     };

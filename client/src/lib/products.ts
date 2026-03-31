@@ -159,9 +159,9 @@ export const PRODUCTS: Product[] = [
     notes: "7 pieces: bowl, whisk, holder, scoop, sieve, spoon, caddy · Gift box included",
     available: true,
     variants: [
-        { id: "matcha-set-7pieces-black", label: "7-Piece Black", price: 52.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59248631316561" },
-        { id: "matcha-set-7piece-painted-brown", label: "7-Piece Painted Brown", price: 52.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59248631349329" },
-        { id: "matcha-set-7piece-green", label: "7-Piece Green", price: 52.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59248631414865" }
+        { id: "matcha-set-7pieces-black", label: "7-Piece Black", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-4_Clear-Glaze-_-7Pieces-Black_bef1da1f.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59248631316561" },
+        { id: "matcha-set-7piece-painted-brown", label: "7-Piece Painted Brown", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-4_Clear-Glaze-_-7Piece-Set-Painted-In-Brow_e53651cc.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59248631349329" },
+        { id: "matcha-set-7piece-green", label: "7-Piece Green", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-4_Clear-Glaze-_-7Piece-Set-Green_e99701aa.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59248631414865" }
       ],
     crossSells: ["feast-5", "feast-29", "feast-30"],
   },
@@ -172,8 +172,8 @@ export const PRODUCTS: Product[] = [
     headline: "The Portable Ceremony",
     hookLine: "Compact stoneware teapot with one cup — ritual wherever you go.",
     description:
-      "A compact stoneware tea set — one teapot and one cup — designed for the person who refuses to compromise on their tea ritual, even on the move. The teapot nests perfectly inside the cup for travel, and the matte glaze has the tactile warmth of traditional Japanese pottery.",
-    price: 42.00,
+      "A compact stoneware tea set — one teapot and one cup — designed for the person who refuses to compromise on their tea ritual, even on the move. The teapot nests perfectly inside the cup for travel, and the matte glaze has the tactile warmth of traditional Japanese pottery. Available as the set alone or with a carry case.",
+    price: 32.00,
     collection: "FEAST",
     collectionSlug: "feast",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kungfu-tea-black_5dfadd01_adcc3d76.jpg",
@@ -181,9 +181,9 @@ export const PRODUCTS: Product[] = [
     notes: "Stoneware · Nesting design · Matte glaze",
     available: true,
     variants: [
-        { id: "stoneware-travel-tea-set-one-pot-one-cup-with", label: "One Pot One Cup With Cover", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250898141265" },
-        { id: "stoneware-travel-tea-set-capsule-bag", label: "Capsule Bag", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250898174033" },
-        { id: "stoneware-travel-tea-set-travel-bag", label: "Travel Bag", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250898206801" }
+        { id: "stoneware-travel-tea-set-one-pot-one-cup-with", label: "Tea Set Only (Pot + Cup + Lid)", price: 32.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-5_One-Pot-One-Cup-With-Cover_a5bd3bcb.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250898141265" },
+        { id: "stoneware-travel-tea-set-capsule-bag", label: "Tea Set + Capsule Carry Case", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-5_Capsule-Bag_51e71d81.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250898174033" },
+        { id: "stoneware-travel-tea-set-travel-bag", label: "Tea Set + Padded Travel Bag", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-5_Travel-Bag_e07a1873.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250898206801" }
       ],
     crossSells: ["feast-4", "feast-29", "feast-30"],
   },
@@ -257,7 +257,7 @@ export const PRODUCTS: Product[] = [
       { id: "feast-8-s", label: "Small (12×6cm)", price: 28.00, available: true },
       { id: "feast-8-m", label: "Medium (18×7.5cm)", price: 48.00, available: true },
       { id: "feast-8-l", label: "Large (24×8cm)", price: 68.00, available: true }],
-    crossSells: ["feast-9", "feast-10", "feast-8"],
+    crossSells: ["feast-9", "feast-10", "feast-7"],
   },
   {
     id: "feast-9",
@@ -275,8 +275,8 @@ export const PRODUCTS: Product[] = [
     notes: "Jujube wood · Hand-carved · Food-safe finish",
     available: true,
     variants: [
-        { id: "jujube-wood-serving-basin-small", label: "Small (16–20cm diameter)", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913411153" },
-        { id: "jujube-wood-serving-basin-large", label: "Large (20–24cm diameter)", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913443921" }
+        { id: "jujube-wood-serving-basin-small", label: "Small (16–20cm diameter)", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-9_16To20Cm_d564a987.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913411153" },
+        { id: "jujube-wood-serving-basin-large", label: "Large (20–24cm diameter)", price: 68.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-9_20To24Cm_da21f702.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913443921" }
       ],
     crossSells: ["feast-8", "feast-10", "feast-7"],
   },
@@ -296,11 +296,11 @@ export const PRODUCTS: Product[] = [
     notes: "Philippine acacia · Hand-polished · Food-safe finish",
     available: true,
     variants: [
-        { id: "acacia-plate-rectangle-25cm", label: "Rectangle (25 × 12.5cm)", price: 16.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913706065" },
-        { id: "acacia-plate-small-square", label: "Small Square (12.5cm)", price: 14.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913738833" },
-        { id: "acacia-plate-large-rectangle", label: "Large Rectangle (30 × 15cm)", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913771601" },
-        { id: "acacia-plate-medium-rectangle", label: "Medium Rectangle (20 × 12cm)", price: 16.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913804369" },
-        { id: "acacia-plate-small-rectangle", label: "Small Rectangle (15 × 10cm)", price: 14.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913837137" }
+        { id: "acacia-plate-rectangle-25cm", label: "Rectangle (25 × 12.5cm)", price: 16.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-10_C_c2b53791.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913706065" },
+        { id: "acacia-plate-small-square", label: "Small Square (12.5cm)", price: 14.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-10_E_2f6ddc86.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913738833" },
+        { id: "acacia-plate-large-rectangle", label: "Large Rectangle (30 × 15cm)", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-10_D_cb08a726.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913771601" },
+        { id: "acacia-plate-medium-rectangle", label: "Medium Rectangle (20 × 12cm)", price: 16.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-10_B_2541bd09.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913804369" },
+        { id: "acacia-plate-small-rectangle", label: "Small Rectangle (15 × 10cm)", price: 14.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-10_A_6f0721ee.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913837137" }
       ],
     crossSells: ["feast-8", "feast-7", "feast-17"],
   },
@@ -321,7 +321,7 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["feast-5", "feast-10", "feast-8"],
       variants: [
-        { id: "handmade-wooden-cup-wooden-cup", label: "Natural Wood", price: 22.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59250914328657" }
+        { id: "handmade-wooden-cup-wooden-cup", label: "Natural Wood", price: 22.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-11_Wooden-Cup_e4b2b791.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250914328657" }
       ]
   },
   {
@@ -374,19 +374,25 @@ export const PRODUCTS: Product[] = [
     slug: "acacia-magnetic-knife-block",
     name: "Acacia Magnetic Knife Block",
     headline: "Blades on Display",
-    hookLine: "Solid acacia with rare-earth magnets for a full knife set.",
+    hookLine: "Freestanding A-frame acacia block with rare-earth magnets — holds a full knife set on both sides.",
     description:
-      "A magnetic knife block carved from solid acacia wood, with embedded rare-earth magnets strong enough to hold a full set of kitchen knives. The open design keeps blades visible, accessible, and properly aired.",
+      "A freestanding magnetic knife block in solid acacia wood with an A-frame easel design. Embedded rare-earth magnets hold a full set of kitchen knives securely on both sides. The open design keeps blades visible, accessible, and properly aired — far more elegant than a drawer or a slotted block.",
     price: 148.00,
     collection: "FEAST",
     collectionSlug: "feast",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/knife-block-main_b9237421_d333efb4.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-1_3e705eb9.jpg",
+    additionalImages: [
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-2_9c489e93.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-3_d2d150f6.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-4_e134e00e.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/kb-5_018571d4.jpg"
+    ],
     tags: ["knife-block", "acacia", "magnetic", "kitchen"],
     notes: "Solid acacia · Rare-earth magnets · Holds full set",
     available: true,
     crossSells: ["feast-21", "feast-2", "feast-14"],
       variants: [
-        { id: "acacia-magnetic-knife-block-yellow", label: "Natural Acacia", price: 148.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914951249" }
+        { id: "acacia-magnetic-knife-block-yellow", label: "Natural Acacia", price: 148.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-15_Yellow_da645d16.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250914951249" }
       ]
   },
   {
@@ -405,7 +411,7 @@ export const PRODUCTS: Product[] = [
     notes: "Ceramic · Drip-free spout · Hand-painted",
     available: true,
     variants: [
-        { id: "hand-painted-ceramic-oil-cruet-olive-green", label: "Olive Green", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915541073" }
+        { id: "hand-painted-ceramic-oil-cruet-olive-green", label: "Olive Green", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-16_Olive-Green_b3d40e52.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915541073" }
       ],
     crossSells: ["feast-1", "feast-14", "feast-6"],
   },
@@ -425,7 +431,7 @@ export const PRODUCTS: Product[] = [
     notes: "Hand-woven rattan · Sturdy handles · Multiple sizes",
     available: true,
     variants: [
-        { id: "rattan-serving-tray-brown", label: "Brown", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250916098129" }
+        { id: "rattan-serving-tray-brown", label: "Brown", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-17_Brown_97dee588.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250916098129" }
       ],
     crossSells: ["feast-7", "feast-8"],
   },
@@ -446,9 +452,9 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["feast-11", "feast-10", "feast-5"],
       variants: [
-        { id: "japanese-wooden-coaster-set-beech-6-piece-set", label: "Beech 6-Piece Set", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915606609" },
-        { id: "japanese-wooden-coaster-set-walnut-coaster-set-a", label: "Walnut Coaster Set", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915934289" },
-        { id: "japanese-wooden-coaster-set-walnut-6-piece-set", label: "Walnut 6-Piece Set", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250916065361" }
+        { id: "japanese-wooden-coaster-set-beech-6-piece-set", label: "Beech 6-Piece Set", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-19_Beech-_-6-Piece-Set_8b16ba16.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915606609" },
+        { id: "japanese-wooden-coaster-set-walnut-coaster-set-a", label: "Walnut Coaster Set", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-19_Walnut-_-Coaster-Set-A_f9e96031.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915934289" },
+        { id: "japanese-wooden-coaster-set-walnut-6-piece-set", label: "Walnut 6-Piece Set", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-19_Walnut-_-6-Piece-Set_d6509f05.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250916065361" }
       ]
   },
   {
@@ -468,7 +474,7 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["feast-21", "feast-22", "feast-2"],
       variants: [
-        { id: "rapid-defrosting-board-1", label: "Standard (35.5 × 20.5 cm)", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59256196563025" }
+        { id: "rapid-defrosting-board-1", label: "Standard (35.5 × 20.5 cm)", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-20_6Style-_-1Pc_cc2c6f47.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59256196563025" }
       ]
   },
   {
@@ -482,17 +488,23 @@ export const PRODUCTS: Product[] = [
     price: 48.00,
     collection: "FEAST",
     collectionSlug: "feast",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ebony-cutting-board_e694c163_d46fa257.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/cb-main_765d4900.jpg",
+    additionalImages: [
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/cb-handle_b115d5db.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/cb-detail_ecb6fb8e.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/cb-sizes_d1960837.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/cb-lifestyle_6ba64234.jpg"
+    ],
     tags: ["cutting-board", "ebony", "wood", "kitchen"],
     notes: "Ebony wood · Naturally antimicrobial · Dense grain",
     available: true,
     variants: [
-        { id: "ebony-cutting-board-28x18", label: "28 × 18 cm", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311837265" },
-        { id: "ebony-cutting-board-33x22", label: "33 × 22 cm", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311870033" },
-        { id: "ebony-cutting-board-36x24", label: "36 × 24 cm", price: 68.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311902801" },
-        { id: "ebony-cutting-board-38x26", label: "38 × 26 cm", price: 78.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311935569" },
-        { id: "ebony-cutting-board-40x28", label: "40 × 28 cm", price: 88.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311968337" },
-        { id: "ebony-cutting-board-45x30", label: "45 × 30 cm", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251312001105" }
+        { id: "ebony-cutting-board-28x18", label: "28 × 18 cm", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-21_Ebony-Cutting-Board-_-28X18X2.5Cm_3b5f10c1.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251311837265" },
+        { id: "ebony-cutting-board-33x22", label: "33 × 22 cm", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-21_Ebony-Cutting-Board-_-33X22X2.5Cm_fbc103fd.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251311870033" },
+        { id: "ebony-cutting-board-36x24", label: "36 × 24 cm", price: 68.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-21_Ebony-Cutting-Board-_-36X24X2.5Cm_0b0b78d3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251311902801" },
+        { id: "ebony-cutting-board-38x26", label: "38 × 26 cm", price: 78.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-21_Ebony-Cutting-Board-_-38X26X2.5Cm_cd5a9032.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251311935569" },
+        { id: "ebony-cutting-board-40x28", label: "40 × 28 cm", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-21_Ebony-Cutting-Board-_-40X28X2.5Cm_b3f7bf8c.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251311968337" },
+        { id: "ebony-cutting-board-45x30", label: "45 × 30 cm", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-21_Ebony-Cutting-Board-_-45X30X2.5Cm_93240885.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251312001105" }
       ],
     crossSells: ["feast-22", "feast-2", "feast-7"],
   },
@@ -512,9 +524,9 @@ export const PRODUCTS: Product[] = [
     notes: "Black walnut · Juice groove · Self-healing surface",
     available: true,
     variants: [
-        { id: "black-walnut-cutting-board-round", label: "Round", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310592081" },
-        { id: "black-walnut-cutting-board-rectangular-l", label: "Rectangular Large", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310624849" },
-        { id: "black-walnut-cutting-board-rectangular-s", label: "Rectangular Small", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310657617" }
+        { id: "black-walnut-cutting-board-round", label: "Round", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-22_Round_ed94f722.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310592081" },
+        { id: "black-walnut-cutting-board-rectangular-l", label: "Rectangular Large", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-22_Rectangula-L_7266371a.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310624849" },
+        { id: "black-walnut-cutting-board-rectangular-s", label: "Rectangular Small", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-22_Rectangular-S_325a4b96.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310657617" }
       ],
     crossSells: ["feast-21", "feast-7", "feast-2"],
   },
@@ -555,10 +567,10 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["feast-25", "feast-2", "feast-20"],
       variants: [
-        { id: "multi-function-grater-bagged", label: "Basic Set", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310919761" },
-        { id: "multi-function-grater-two-cheese-grates-bo", label: "Double Grater Box Set", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310952529" },
-        { id: "multi-function-grater-single-cheese-planer", label: "Planer Box Set", price: 24.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251310985297" },
-        { id: "multi-function-grater-boxed", label: "Premium Box Set", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251311018065" }
+        { id: "multi-function-grater-bagged", label: "Basic Set", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-24_Bagged_bbed9d2f.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310919761" },
+        { id: "multi-function-grater-two-cheese-grates-bo", label: "Double Grater Box Set", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-24_Two-Cheese-Grates-Boxed_1b52be53.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310952529" },
+        { id: "multi-function-grater-single-cheese-planer", label: "Planer Box Set", price: 24.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-24_Single-Cheese-Planer-Set-Boxe_6b0d6d57.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310985297" },
+        { id: "multi-function-grater-boxed", label: "Premium Box Set", price: 32.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-24_Boxed_d84631ae.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251311018065" }
       ]
   },
   {
@@ -619,8 +631,8 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["feast-4", "feast-5", "feast-6"],
       variants: [
-        { id: "japanese-sake-set-black-gold-jug", label: "Black & Gold Sake Jug", price: 52.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304759377" },
-        { id: "japanese-sake-set-black-gin-wine-cup", label: "Black Sake Cup", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304792145" }
+        { id: "japanese-sake-set-black-gold-jug", label: "Black & Gold Sake Jug", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-27_Black-Gold-Jug_bfa506e4.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251304759377" },
+        { id: "japanese-sake-set-black-gin-wine-cup", label: "Black Sake Cup", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-27_Black-Gin-Wine-Cup_a0df4074.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251304792145" }
       ]
   },
   {
@@ -793,7 +805,7 @@ export const PRODUCTS: Product[] = [
     notes: "Hand-knotted cotton · Wooden dowel · Multiple sizes",
     available: true,
     variants: [
-        { id: "macrame-wall-hanging-beige", label: "Beige", price: 48.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308560465" }
+        { id: "macrame-wall-hanging-beige", label: "Beige", price: 48.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-4_Beige_a5fa9eb2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251308560465" }
       ],
     crossSells: ["dwell-9", "dwell-11", "adorn-2"],
   },
@@ -816,8 +828,7 @@ export const PRODUCTS: Product[] = [
         { id: "ceramic-bud-vase-brown", label: "Earth Brown", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251306463313" },
         { id: "ceramic-bud-vase-black", label: "Matte Black", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251306496081" },
         { id: "ceramic-bud-vase-green", label: "Sage Green", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251306528849", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-5-black-dNf5rN69tQ33zABp5DJ5LM_a1cae79d.jpg" },
-        { id: "ceramic-bud-vase-orange", label: "Burnt Orange", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251306561617" }
-      ],
+        { id: "ceramic-bud-vase-orange", label: "Burnt Orange", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251306561617" }],
     crossSells: ["bloom-5"],
   },
   {
@@ -837,8 +848,8 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["adorn-1", "adorn-9", "bloom-1"],
       variants: [
-        { id: "ceramic-incense-holder-incense-stick-and-ba", label: "Stick & Backflow Set", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305349201" },
-        { id: "ceramic-incense-holder-incense-stick", label: "Stick Holder Only", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305381969" }
+        { id: "ceramic-incense-holder-incense-stick-and-ba", label: "Stick & Backflow Set", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-7_Incense-Stick-And-Backflow-Inc_0a6c6819.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305349201" },
+        { id: "ceramic-incense-holder-incense-stick", label: "Stick Holder Only", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-7_Incense-Stick_e2033ead.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305381969" }
       ]
   },
   {
@@ -856,12 +867,12 @@ export const PRODUCTS: Product[] = [
     tags: ["figurine", "abstract", "resin", "art", "decorative"],
     notes: "Matte resin · Abstract form · 20cm tall",
         variants: [
-        { id: "abstract-figurine-1style", label: "1Style", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305644113" },
-        { id: "abstract-figurine-gold-1style", label: "Gold 1Style", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305676881" },
-        { id: "abstract-figurine-gold-2style", label: "Gold 2Style", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305709649" },
-        { id: "abstract-figurine-gold-3style", label: "Gold 3Style", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305742417" },
-        { id: "abstract-figurine-2style", label: "2Style", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305775185" },
-        { id: "abstract-figurine-3style", label: "3Style", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305807953" }
+        { id: "abstract-figurine-1style", label: "Thinker — Matte White", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305644113" },
+        { id: "abstract-figurine-gold-1style", label: "Thinker — Gold", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305676881" },
+        { id: "abstract-figurine-gold-2style", label: "Reader — Gold", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305709649" },
+        { id: "abstract-figurine-gold-3style", label: "Dreamer — Gold", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305742417" },
+        { id: "abstract-figurine-2style", label: "Reader — Matte White", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305775185" },
+        { id: "abstract-figurine-3style", label: "Dreamer — Matte White", price: 42.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305807953" }
       ],
     available: true,
     crossSells: ["adorn-2", "adorn-4"],
@@ -912,12 +923,12 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["bloom-2", "adorn-7", "adorn-1"],
       variants: [
-        { id: "lavender-sachet-a", label: "Supreme French Blue", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913476689" },
-        { id: "lavender-sachet-b", label: "5A French Blue", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913509457" },
-        { id: "lavender-sachet-c", label: "Super British Blue", price: 20.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913542225" },
-        { id: "lavender-sachet-d", label: "4A French Blue", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913574993" },
-        { id: "lavender-sachet-e", label: "3A French Blue", price: 14.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913607761" },
-        { id: "lavender-sachet-f", label: "A French Blue", price: 12.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250913640529" }
+        { id: "lavender-sachet-a", label: "Supreme French Blue", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-1_A_91f68fb5.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913476689" },
+        { id: "lavender-sachet-b", label: "5A French Blue", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-1_B_b205a982.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913509457" },
+        { id: "lavender-sachet-c", label: "Super British Blue", price: 20.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-1_C_90a8149c.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913542225" },
+        { id: "lavender-sachet-d", label: "4A French Blue", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-1_D_c2f63642.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913574993" },
+        { id: "lavender-sachet-e", label: "3A French Blue", price: 14.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-1_E_bdce06bb.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913607761" },
+        { id: "lavender-sachet-f", label: "A French Blue", price: 12.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-1_F_ac285d78.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250913640529" }
       ]
   },
   {
@@ -1024,7 +1035,7 @@ export const PRODUCTS: Product[] = [
     notes: "Naturally dried · 3-5 bolls per stem · 60cm tall",
     available: true,
     variants: [
-        { id: "dried-cotton-stem-1", label: "Single Stem", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59256239325265" }
+        { id: "dried-cotton-stem-1", label: "Single Stem", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-6_Q1Pcs_b2689149.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59256239325265" }
       ],
     crossSells: ["bloom-3", "bloom-5", "adorn-5"],
   },
@@ -1039,15 +1050,21 @@ export const PRODUCTS: Product[] = [
     price: 32.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/autumn-harvest-garland_09548486_53b9ca20.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wreath-main_415f961e.jpg",
+    additionalImages: [
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wreath-2_e22145e4.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wreath-3_c6e748f2.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wreath-detail_fc5dccfd.jpg",
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/wreath-close_f53b88d6.jpg"
+    ],
     tags: ["wreath", "autumn", "faux", "leaves", "seasonal"],
     notes: "Faux · Circular wreath · Flexible wire base",
     available: true,
     crossSells: ["bloom-10", "bloom-13", "adorn-4"],
       variants: [
-        { id: "autumn-harvest-garland-pumpkin-wreath-35x35", label: "Small (35 cm)", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310788689" },
-        { id: "autumn-harvest-garland-pumpkin-wreath-40x40", label: "Medium (40 cm)", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310821457" },
-        { id: "autumn-harvest-garland-pumpkin-wreath-45x45", label: "Large (45 cm)", price: 44.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310854225" }
+        { id: "autumn-harvest-garland-pumpkin-wreath-35x35", label: "Small (35 cm)", price: 32.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-7_Pumpkin-Wreath-_-35X35Cm_3a6790f6.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310788689" },
+        { id: "autumn-harvest-garland-pumpkin-wreath-40x40", label: "Medium (40 cm)", price: 38.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-7_Pumpkin-Wreath-_-40X40Cm_319daf72.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310821457" },
+        { id: "autumn-harvest-garland-pumpkin-wreath-45x45", label: "Large (45 cm)", price: 44.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-7_Pumpkin-Wreath-_-45X45Cm_0e0952df.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310854225" }
       ]
   },
   {
@@ -1091,10 +1108,10 @@ export const PRODUCTS: Product[] = [
     notes: "Electromagnetic base · Rotating · Includes pot · USB powered",
     available: true,
     variants: [
-        { id: "magnetic-levitating-planter-image-uk", label: "UK Plug", price: 128.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305414737" },
-        { id: "magnetic-levitating-planter-image-au", label: "AU Plug", price: 128.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305447505" },
-        { id: "magnetic-levitating-planter-image-eu", label: "EU Plug", price: 128.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305480273" },
-        { id: "magnetic-levitating-planter-image-us", label: "US Plug", price: 128.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305513041" }
+        { id: "magnetic-levitating-planter-image-uk", label: "UK Plug", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-9_Image-_-Uk_d8778d2a.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305414737" },
+        { id: "magnetic-levitating-planter-image-au", label: "AU Plug", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-9_Image-_-Au_1c1264d3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305447505" },
+        { id: "magnetic-levitating-planter-image-eu", label: "EU Plug", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-9_Image-_-Eu_aae0ce0f.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305480273" },
+        { id: "magnetic-levitating-planter-image-us", label: "US Plug", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-9_Image-_-Us_e6fcafa8.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305513041" }
       ],
     crossSells: ["bloom-11", "bloom-13", "glow-13"],
   },
@@ -1221,8 +1238,8 @@ export const PRODUCTS: Product[] = [
     notes: "Geometric wooden base · G95 spiral bulb · 220V · 40W warm yellow",
     shopifyHandle: "edison-vintage-bulb-small-night-lamp-japanese-atmosphere",
         variants: [
-        { id: "edison-vintage-night-lamp-g95-spiral-bulb-cn", label: "CN Plug", price: 16.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59250896207953" },
-        { id: "edison-vintage-night-lamp-g95-spiral-bulb-with", label: "With Adapter Plug", price: 18.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59250896240721" }
+        { id: "edison-vintage-night-lamp-g95-spiral-bulb-cn", label: "CN Plug", price: 16.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-1_G95-Spiral-Bulb-_-Cn_d27ea6d6.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250896207953" },
+        { id: "edison-vintage-night-lamp-g95-spiral-bulb-with", label: "With Adapter Plug", price: 18.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-1_G95-Spiral-Bulb-_-With-Adapter-Plug_cadc7d40.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250896240721" }
       ],
     available: false,
     crossSells: ["glow-5", "glow-12", "glow-13"],
@@ -1248,11 +1265,11 @@ export const PRODUCTS: Product[] = [
     notes: "Bamboo wood frame · White cone shade · Dimmer switch · Wax dish included",
     shopifyHandle: "japanese-style-melting-wax-lamp-decoration-bedroom-creative-personality-aromatherapy-light",
         variants: [
-        { id: "wax-melt-lamp-220v-asia", label: "220V (Asia)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903875665" },
-        { id: "wax-melt-lamp-110v-taiwan", label: "110V (Taiwan)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903908433" },
-        { id: "wax-melt-lamp-220v-hk-macau", label: "220V (HK/Macau)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903941201" },
-        { id: "wax-melt-lamp-110v-us-japan", label: "110V (US/Japan)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250903973969" },
-        { id: "wax-melt-lamp-220v-eu-korea", label: "220V (EU/Korea)", price: 23.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250904006737" }
+        { id: "wax-melt-lamp-220v-asia", label: "220V (Asia)", price: 23.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-3_White-Cover-Dimmer-Switch-_-Mainland-220_df7017e2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250903875665" },
+        { id: "wax-melt-lamp-110v-taiwan", label: "110V (Taiwan)", price: 23.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-3_White-Cover-Dimmer-Switch-_-Taiwan-110V2_c5b0267b.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250903908433" },
+        { id: "wax-melt-lamp-220v-hk-macau", label: "220V (HK/Macau)", price: 23.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-3_White-Cover-Dimmer-Switch-_-Hong-Kong-An_16bed4b8.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250903941201" },
+        { id: "wax-melt-lamp-110v-us-japan", label: "110V (US/Japan)", price: 23.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-3_White-Cover-Dimmer-Switch-_-American-And_31f79e98.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250903973969" },
+        { id: "wax-melt-lamp-220v-eu-korea", label: "220V (EU/Korea)", price: 23.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-3_White-Cover-Dimmer-Switch-_-Europeankore_a2d9f90b.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250904006737" }
       ],
     available: true,
     crossSells: ["adorn-1", "adorn-7", "glow-1"],
@@ -1273,10 +1290,10 @@ export const PRODUCTS: Product[] = [
     notes: "Solar powered · Flickering flame effect · 8-10hr runtime",
     available: true,
     variants: [
-        { id: "solar-garden-torch-96led-1pcs", label: "96 LED — Single", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251308593233" },
-        { id: "solar-garden-torch-51led-4pc", label: "51 LED — 4 Pack", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251308626001" },
-        { id: "solar-garden-torch-96led-4pc", label: "96 LED — 4 Pack", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251308658769" },
-        { id: "solar-garden-torch-51led-1pcs", label: "51 LED — Single", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251308691537" }
+        { id: "solar-garden-torch-96led-1pcs", label: "96 LED — Single", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-4_96Led-_-1Pcs_f3a681f3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251308593233" },
+        { id: "solar-garden-torch-51led-4pc", label: "51 LED — 4 Pack", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-4_51Led-_-4Pc_9bd258cf.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251308626001" },
+        { id: "solar-garden-torch-96led-4pc", label: "96 LED — 4 Pack", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-4_96Led-_-4Pc_658758bb.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251308658769" },
+        { id: "solar-garden-torch-51led-1pcs", label: "51 LED — Single", price: 58.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-4_51Led-_-1Pcs_0a942564.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251308691537" }
       ],
     crossSells: ["glow-6", "bloom-7", "bloom-9"],
   },
@@ -1313,10 +1330,10 @@ export const PRODUCTS: Product[] = [
     notes: "Solar powered · Stainless steel · Warm white",
     available: true,
     variants: [
-        { id: "solar-pathway-light-warm-white-3pcs", label: "Warm White — 3 Pack", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900631633" },
-        { id: "solar-pathway-light-white-light-3pcs", label: "Cool White — 3 Pack", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900664401" },
-        { id: "solar-pathway-light-10-pcs-white-light", label: "Cool White — 10 Pack", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900729937" },
-        { id: "solar-pathway-light-10-pcs-warm-white", label: "Warm White — 10 Pack", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250900959313" }
+        { id: "solar-pathway-light-warm-white-3pcs", label: "Warm White — 3 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_Warm-White-3Pcs_786f6df2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900631633" },
+        { id: "solar-pathway-light-white-light-3pcs", label: "Cool White — 3 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_White-Light-3Pcs_b21dfbc9.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900664401" },
+        { id: "solar-pathway-light-10-pcs-white-light", label: "Cool White — 10 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_10-Pcs-White-Light_f2df4cb6.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900729937" },
+        { id: "solar-pathway-light-10-pcs-warm-white", label: "Warm White — 10 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_10-Pcs-Warm-White_20fdf565.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900959313" }
       ],
     crossSells: ["glow-4", "bloom-7", "bloom-9"],
   },
@@ -1327,8 +1344,8 @@ export const PRODUCTS: Product[] = [
     headline: "The Invisible Helper",
     hookLine: "Rechargeable LED strips that turn on when you open a door — for wardrobes, pantries, and drawers.",
     description:
-      "Rechargeable LED light strips with a built-in motion sensor — they turn on automatically when you open a wardrobe, pantry, or drawer, and turn off when you close it. The warm white light is bright enough to see clearly without being harsh.",
-    price: 32.00,
+      "Rechargeable LED light strips with a built-in motion sensor — they turn on automatically when you open a wardrobe, pantry, or drawer, and turn off when you close it. The warm white light is bright enough to see clearly without being harsh. Available in Silver and Black, in lengths from 20cm to 60cm.",
+    price: 18.00,
     collection: "GLOW",
     collectionSlug: "glow",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/adorn-7_a6d7867e_421146b9.webp",
@@ -1336,15 +1353,15 @@ export const PRODUCTS: Product[] = [
     notes: "Rechargeable USB-C · Motion sensor · Warm white · Magnetic mount",
     available: true,
     variants: [
-        { id: "motion-sensing-cabinet-light-silver-tricolor-ligh", label: "Silver Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901188689" },
-        { id: "motion-sensing-cabinet-light-silver-tricolor-ligh", label: "Silver Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901221457" },
-        { id: "motion-sensing-cabinet-light-silver-tricolor-ligh", label: "Silver Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901254225" },
-        { id: "motion-sensing-cabinet-light-silver-tricolor-ligh", label: "Silver Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901286993" },
-        { id: "motion-sensing-cabinet-light-black-tricolor-light", label: "Black Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901319761" },
-        { id: "motion-sensing-cabinet-light-black-tricolor-light", label: "Black Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901352529" },
-        { id: "motion-sensing-cabinet-light-black-tricolor-light", label: "Black Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901385297" },
-        { id: "motion-sensing-cabinet-light-black-tricolor-light", label: "Black Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901418065" },
-        { id: "motion-sensing-cabinet-light-black-tricolor-light", label: "Black Tricolor Light", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250901549137" }
+        { id: "cabinet-light-silver-20cm", label: "Silver — 20cm", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Silver-Tricolor-Light-_-20Cm_ddce50a3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901188689" },
+        { id: "cabinet-light-silver-30cm", label: "Silver — 30cm", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Silver-Tricolor-Light-_-30Cm_73b0e36d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901221457" },
+        { id: "cabinet-light-silver-40cm", label: "Silver — 40cm", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Silver-Tricolor-Light-_-40Cm_0f456497.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901254225" },
+        { id: "cabinet-light-silver-50cm", label: "Silver — 50cm", price: 32.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Silver-Tricolor-Light-_-60Cm_e3c03507.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901286993" },
+        { id: "cabinet-light-black-20cm", label: "Black — 20cm", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Black-Tricolor-Light-_-20Cm_48ae0022.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901319761" },
+        { id: "cabinet-light-black-30cm", label: "Black — 30cm", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Black-Tricolor-Light-_-30Cm_50452046.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901352529" },
+        { id: "cabinet-light-black-40cm", label: "Black — 40cm", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Black-Tricolor-Light-_-40Cm_cafd94e1.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901385297" },
+        { id: "cabinet-light-black-50cm", label: "Black — 50cm", price: 32.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Black-Tricolor-Light-_-60Cm_0492b48a.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901418065" },
+        { id: "cabinet-light-black-60cm", label: "Black — 60cm", price: 36.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-7_Black-Tricolor-Light-_-80Cm_2dc94cee.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250901549137" }
       ],
     crossSells: ["glow-13", "glow-1", "feast-12"],
   },
@@ -1365,9 +1382,9 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["glow-9", "glow-5", "glow-12"],
       variants: [
-        { id: "round-linen-table-lamp-uk", label: "Uk", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915082321" },
-        { id: "round-linen-table-lamp-us", label: "Us", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915115089" },
-        { id: "round-linen-table-lamp-eu", label: "Eu", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915147857" }
+        { id: "round-linen-table-lamp-uk", label: "UK Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-8_Uk_ca24aa33.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915082321" },
+        { id: "round-linen-table-lamp-us", label: "US Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-8_Us_a9cc0d24.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915115089" },
+        { id: "round-linen-table-lamp-eu", label: "EU Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-8_Eu_9223bdef.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915147857" }
       ]
   },
   {
@@ -1387,9 +1404,9 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["glow-8", "glow-5", "glow-12"],
       variants: [
-        { id: "square-linen-table-lamp-photo-color-uk", label: "UK Plug", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915442769" },
-        { id: "square-linen-table-lamp-photo-color-eu", label: "EU Plug", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915475537" },
-        { id: "square-linen-table-lamp-photo-color-us", label: "US Plug", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915508305" }
+        { id: "square-linen-table-lamp-photo-color-uk", label: "UK Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-9_Photo-Color-_-Uk_df52dcfd.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915442769" },
+        { id: "square-linen-table-lamp-photo-color-eu", label: "EU Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-9_Photo-Color-_-Eu_48a52f8e.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915475537" },
+        { id: "square-linen-table-lamp-photo-color-us", label: "US Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-9_Photo-Color-_-Us_5147e305.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250915508305" }
       ]
   },
   {
@@ -1409,14 +1426,14 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["glow-8", "glow-12", "glow-5"],
       variants: [
-        { id: "woven-bamboo-table-lamp-18x40cm-us", label: "18X40Cm / Us", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305054289" },
-        { id: "woven-bamboo-table-lamp-18x40cm-eu", label: "18X40Cm / Eu", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305087057" },
-        { id: "woven-bamboo-table-lamp-18x40cm-uk", label: "18X40Cm / Uk", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305119825" },
-        { id: "woven-bamboo-table-lamp-18x40cm-au", label: "18X40Cm / Au", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305152593" },
-        { id: "woven-bamboo-table-lamp-23x36cm-us", label: "23X36Cm / Us", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305185361" },
-        { id: "woven-bamboo-table-lamp-23x36cm-eu", label: "23X36Cm / Eu", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305218129" },
-        { id: "woven-bamboo-table-lamp-23x36cm-uk", label: "23X36Cm / Uk", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305250897" },
-        { id: "woven-bamboo-table-lamp-23x36cm-au", label: "23X36Cm / Au", price: 98.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305283665" }
+        { id: "woven-bamboo-table-lamp-18x40cm-us", label: "Tall (18×40cm) / US Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-10_18X40Cm-_-Us_1fae866f.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305054289" },
+        { id: "woven-bamboo-table-lamp-18x40cm-eu", label: "Tall (18×40cm) / EU Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-10_18X40Cm-_-Eu_d1d2f789.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305087057" },
+        { id: "woven-bamboo-table-lamp-18x40cm-uk", label: "Tall (18×40cm) / UK Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-10_18X40Cm-_-Uk_4c899fb2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305119825" },
+        { id: "woven-bamboo-table-lamp-18x40cm-au", label: "Tall (18×40cm) / AU Plug", price: 98.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-10_18X40Cm-_-Au_8cfee22d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305152593" },
+        { id: "woven-bamboo-table-lamp-23x36cm-us", label: "Wide (23×36cm) / US Plug", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-10_23X36Cm-_-Us_148ee350.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305185361" },
+        { id: "woven-bamboo-table-lamp-23x36cm-eu", label: "Wide (23×36cm) / EU Plug", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-10_23X36Cm-_-Eu_078e4358.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305218129" },
+        { id: "woven-bamboo-table-lamp-23x36cm-uk", label: "Wide (23×36cm) / UK Plug", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-10_23X36Cm-_-Uk_f52bf326.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305250897" },
+        { id: "woven-bamboo-table-lamp-23x36cm-au", label: "Wide (23×36cm) / AU Plug", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-10_23X36Cm-_-Au_f15b09f5.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305283665" }
       ]
   },
 
@@ -1487,9 +1504,9 @@ export const PRODUCTS: Product[] = [
     notes: "Flat-weave · Machine washable · Multiple sizes",
     available: true,
     variants: [
-        { id: "bohemian-area-rug-4style-60x90cm", label: "60×90cm", price: 88.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250897125457" },
-        { id: "bohemian-area-rug-4style-80x160cm", label: "80×160cm", price: 88.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250897158225" },
-        { id: "bohemian-area-rug-4style-80x120cm", label: "80×120cm", price: 88.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250897190993" }
+        { id: "bohemian-area-rug-4style-60x90cm", label: "60×90cm", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-1_4Style-_-60X90Cm_cf3d3bec.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250897125457" },
+        { id: "bohemian-area-rug-4style-80x160cm", label: "80×160cm", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-1_4Style-_-80X160Cm_142a3e81.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250897158225" },
+        { id: "bohemian-area-rug-4style-80x120cm", label: "80×120cm", price: 88.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-1_4Style-_-80X120Cm_bdbc20ac.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250897190993" }
       ],
     crossSells: ["dwell-12", "dwell-2", "dwell-9"],
   },
@@ -1537,7 +1554,7 @@ export const PRODUCTS: Product[] = [
     tags: ["bath-mat", "diatomite", "stone", "quick-dry", "antimicrobial"],
     notes: "Diatomite earth · Quick-dry · Antimicrobial · Non-slip",
         variants: [
-        { id: "diatomite-bath-mat-grey-40x30cm", label: "Grey / 40X", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250896175185" }
+        { id: "diatomite-bath-mat-grey-40x30cm", label: "Grey / 40X", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-3_Grey-_-40X30Cm_4053128f.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250896175185" }
       ],
     available: true,
     crossSells: ["dwell-1", "dwell-2", "feast-12"],
@@ -1572,8 +1589,8 @@ export const PRODUCTS: Product[] = [
     headline: "The Gathered Table",
     hookLine: "A washed linen tablecloth that drapes beautifully — the foundation of a considered table.",
     description:
-      "A washed linen tablecloth that drapes with the kind of casual elegance that makes a table look like it belongs in a French farmhouse. The pre-washed linen is soft from the first use and develops more character with every wash.",
-    price: 58.00,
+      "A washed linen tablecloth that drapes with the kind of casual elegance that makes a table look like it belongs in a French farmhouse. The pre-washed linen is soft from the first use and develops more character with every wash. Available in two colours and eight lengths from 35×120cm to 35×350cm.",
+    price: 28.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/linen-tablecloth_b60ca17a_f18a7b2b.jpg",
@@ -1581,21 +1598,21 @@ export const PRODUCTS: Product[] = [
     notes: "Washed linen · Machine washable · Multiple sizes",
     available: true,
     variants: [
-        { id: "linen-tablecloth-royal-gray-35x120", label: "Royal Gray / 35X120", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307905105" },
-        { id: "linen-tablecloth-royal-gray-35x160", label: "Royal Gray / 35X160", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307937873" },
-        { id: "linen-tablecloth-royal-gray-35x180", label: "Royal Gray / 35X180", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307970641" },
-        { id: "linen-tablecloth-royal-gray-35x210", label: "Royal Gray / 35X210", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308003409" },
-        { id: "linen-tablecloth-royal-gray-35x240", label: "Royal Gray / 35X240", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308036177" },
-        { id: "linen-tablecloth-royal-gray-35x270", label: "Royal Gray / 35X270", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308068945" },
-        { id: "linen-tablecloth-royal-gray-35x300", label: "Royal Gray / 35X300", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308101713" },
-        { id: "linen-tablecloth-royal-gray-35x350", label: "Royal Gray / 35X350", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308134481" },
-        { id: "linen-tablecloth-farrow-coffee-35x120", label: "Farrow Coffee / 35X120", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308167249" },
-        { id: "linen-tablecloth-farrow-coffee-35x160", label: "Farrow Coffee / 35X160", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308200017" },
-        { id: "linen-tablecloth-farrow-coffee-35x180", label: "Farrow Coffee / 35X180", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308232785" },
-        { id: "linen-tablecloth-farrow-coffee-35x210", label: "Farrow Coffee / 35X210", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308265553" },
-        { id: "linen-tablecloth-farrow-coffee-35x240", label: "Farrow Coffee / 35X240", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308298321" },
-        { id: "linen-tablecloth-farrow-coffee-35x270", label: "Farrow Coffee / 35X270", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308331089" },
-        { id: "linen-tablecloth-farrow-coffee-35x300", label: "Farrow Coffee / 35X300", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308363857" },
+        { id: "linen-tablecloth-royal-gray-35x120", label: "Royal Grey / 35X120", price: 28.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307905105" },
+        { id: "linen-tablecloth-royal-gray-35x160", label: "Royal Grey / 35X160", price: 34.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307937873" },
+        { id: "linen-tablecloth-royal-gray-35x180", label: "Royal Grey / 35X180", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251307970641" },
+        { id: "linen-tablecloth-royal-gray-35x210", label: "Royal Grey / 35X210", price: 42.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308003409" },
+        { id: "linen-tablecloth-royal-gray-35x240", label: "Royal Grey / 35X240", price: 44.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308036177" },
+        { id: "linen-tablecloth-royal-gray-35x270", label: "Royal Grey / 35X270", price: 48.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308068945" },
+        { id: "linen-tablecloth-royal-gray-35x300", label: "Royal Grey / 35X300", price: 52.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308101713" },
+        { id: "linen-tablecloth-royal-gray-35x350", label: "Royal Grey / 35X350", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308134481" },
+        { id: "linen-tablecloth-farrow-coffee-35x120", label: "Farrow Coffee / 35X120", price: 28.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308167249" },
+        { id: "linen-tablecloth-farrow-coffee-35x160", label: "Farrow Coffee / 35X160", price: 34.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308200017" },
+        { id: "linen-tablecloth-farrow-coffee-35x180", label: "Farrow Coffee / 35X180", price: 38.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308232785" },
+        { id: "linen-tablecloth-farrow-coffee-35x210", label: "Farrow Coffee / 35X210", price: 42.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308265553" },
+        { id: "linen-tablecloth-farrow-coffee-35x240", label: "Farrow Coffee / 35X240", price: 44.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308298321" },
+        { id: "linen-tablecloth-farrow-coffee-35x270", label: "Farrow Coffee / 35X270", price: 48.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308331089" },
+        { id: "linen-tablecloth-farrow-coffee-35x300", label: "Farrow Coffee / 35X300", price: 52.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308363857" },
         { id: "linen-tablecloth-farrow-coffee-35x350", label: "Farrow Coffee / 35X350", price: 58.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251308396625" }
       ],
     crossSells: ["dwell-4", "dwell-6", "feast-6"],
@@ -1607,41 +1624,41 @@ export const PRODUCTS: Product[] = [
     headline: "The Centre Line",
     hookLine: "A washed linen table runner — the simplest way to make a table feel dressed.",
     description:
-      "A washed linen table runner — the simplest, most effective way to make a dining table feel dressed and considered. The natural linen has a beautiful drape and the frayed edges add a relaxed, lived-in quality.",
-    price: 32.00,
+      "A washed linen table runner — the simplest, most effective way to make a dining table feel dressed and considered. The natural linen has a beautiful drape and the frayed edges add a relaxed, lived-in quality. Available in three colours and nine lengths from 30×50cm to 30×300cm.",
+    price: 18.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/linen-table-runner_cc2c966a_277a3f45.jpg",
     tags: ["table-runner", "linen", "washed", "dining", "natural"],
-    notes: "Washed linen · Machine washable · 40×180cm",
+    notes: "Washed linen · Machine washable · 30cm wide · 9 lengths from 50cm to 300cm",
         variants: [
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X50", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309707345" },
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X120", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309740113" },
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X160", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309772881" },
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X180", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309805649" },
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X200", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309838417" },
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X220", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309871185" },
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X240", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309903953" },
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X260", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309936721" },
-        { id: "linen-table-runner-light-enjoy-brown-30", label: "Light Enjoy Brown / 30X300", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251309969489" },
-        { id: "linen-table-runner-light-gray-30x50", label: "Light Gray / 30X50", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310002257" },
-        { id: "linen-table-runner-light-gray-30x120", label: "Light Gray / 30X120", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310035025" },
-        { id: "linen-table-runner-light-gray-30x160", label: "Light Gray / 30X160", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310067793" },
-        { id: "linen-table-runner-light-gray-30x180", label: "Light Gray / 30X180", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310100561" },
-        { id: "linen-table-runner-light-gray-30x200", label: "Light Gray / 30X200", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310133329" },
-        { id: "linen-table-runner-light-gray-30x220", label: "Light Gray / 30X220", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310166097" },
-        { id: "linen-table-runner-light-gray-30x240", label: "Light Gray / 30X240", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310198865" },
-        { id: "linen-table-runner-light-gray-30x260", label: "Light Gray / 30X260", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310231633" },
-        { id: "linen-table-runner-light-gray-30x300", label: "Light Gray / 30X300", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310264401" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X50", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310297169" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X120", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310329937" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X160", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310362705" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X180", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310395473" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X200", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310428241" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X220", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310461009" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X240", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310493777" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X260", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310526545" },
-        { id: "linen-table-runner-enjoy-the-navy-blue", label: "Enjoy The Navy Blue / 30X300", price: 32.00, available: false, shopifyVariantId: "gid://shopify/ProductVariant/59251310559313" }
+        { id: "linen-runner-brown-30x50", label: "Warm Brown / 30X50", price: 18.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X50_fb8e20d8.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309707345" },
+        { id: "linen-runner-brown-30x120", label: "Warm Brown / 30X120", price: 24.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X120_56765c7d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309740113" },
+        { id: "linen-runner-brown-30x160", label: "Warm Brown / 30X160", price: 28.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X160_ca8df696.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309772881" },
+        { id: "linen-runner-brown-30x180", label: "Warm Brown / 30X180", price: 30.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X180_b6305c60.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309805649" },
+        { id: "linen-runner-brown-30x200", label: "Warm Brown / 30X200", price: 32.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X200_12bc092d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309838417" },
+        { id: "linen-runner-brown-30x220", label: "Warm Brown / 30X220", price: 34.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X220_4c9e7f86.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309871185" },
+        { id: "linen-runner-brown-30x240", label: "Warm Brown / 30X240", price: 36.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X240_25c09f77.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309903953" },
+        { id: "linen-runner-brown-30x260", label: "Warm Brown / 30X260", price: 38.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X260_069dc677.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309936721" },
+        { id: "linen-runner-brown-30x300", label: "Warm Brown / 30X300", price: 42.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Enjoy-Brown-_-30X300_81cc86f3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309969489" },
+        { id: "linen-runner-gray-30x50", label: "Light Grey / 30X50", price: 18.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X50_bf7a2c79.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310002257" },
+        { id: "linen-runner-gray-30x120", label: "Light Grey / 30X120", price: 24.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X120_2cc0762e.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310035025" },
+        { id: "linen-runner-gray-30x160", label: "Light Grey / 30X160", price: 28.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X160_6bbd9112.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310067793" },
+        { id: "linen-runner-gray-30x180", label: "Light Grey / 30X180", price: 30.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X180_91ae6d07.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310100561" },
+        { id: "linen-runner-gray-30x200", label: "Light Grey / 30X200", price: 32.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X200_d3edb931.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310133329" },
+        { id: "linen-runner-gray-30x220", label: "Light Grey / 30X220", price: 34.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X220_d8788f25.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310166097" },
+        { id: "linen-runner-gray-30x240", label: "Light Grey / 30X240", price: 36.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X240_c8b0f1d5.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310198865" },
+        { id: "linen-runner-gray-30x260", label: "Light Grey / 30X260", price: 38.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X260_acd37505.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310231633" },
+        { id: "linen-runner-gray-30x300", label: "Light Grey / 30X300", price: 42.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Light-Gray-_-30X300_7c92f7e2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310264401" },
+        { id: "linen-runner-navy-30x50", label: "Navy Blue / 30X50", price: 18.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X50_cd99edc3.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310297169" },
+        { id: "linen-runner-navy-30x120", label: "Navy Blue / 30X120", price: 24.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X120_1e812810.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310329937" },
+        { id: "linen-runner-navy-30x160", label: "Navy Blue / 30X160", price: 28.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X160_f266147e.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310362705" },
+        { id: "linen-runner-navy-30x180", label: "Navy Blue / 30X180", price: 30.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X180_96229efc.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310395473" },
+        { id: "linen-runner-navy-30x200", label: "Navy Blue / 30X200", price: 32.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X200_017de267.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310428241" },
+        { id: "linen-runner-navy-30x220", label: "Navy Blue / 30X220", price: 34.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X220_03a0262a.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310461009" },
+        { id: "linen-runner-navy-30x240", label: "Navy Blue / 30X240", price: 36.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X240_2b02f5c9.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310493777" },
+        { id: "linen-runner-navy-30x260", label: "Navy Blue / 30X260", price: 38.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X260_93edb5a1.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310526545" },
+        { id: "linen-runner-navy-30x300", label: "Navy Blue / 30X300", price: 42.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X300_6672f1f8.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310559313" }
       ],
     available: true,
     crossSells: ["dwell-5", "dwell-4", "feast-6"],
@@ -1764,14 +1781,14 @@ export const PRODUCTS: Product[] = [
     available: true,
     crossSells: ["dwell-9", "dwell-10", "dwell-13"],
       variants: [
-        { id: "tufted-tassel-cushion-beige-square-pillow", label: "Beige Square Pillow / Pillowcase", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251303809105" },
-        { id: "tufted-tassel-cushion-beige-square-pillow", label: "Beige Square Pillow / Pillowcase And Pillow Core", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251303841873" },
-        { id: "tufted-tassel-cushion-beige-waist-pillow-p", label: "Beige Waist Pillow / Pillowcase", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251303874641" },
-        { id: "tufted-tassel-cushion-beige-waist-pillow-p", label: "Beige Waist Pillow / Pillowcase And Pillow Core", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251303907409" },
-        { id: "tufted-tassel-cushion-yellow-square-pillow", label: "Yellow Square Pillow / Pillowcase", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251303940177" },
-        { id: "tufted-tassel-cushion-yellow-square-pillow", label: "Yellow Square Pillow / Pillowcase And Pillow Core", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251303972945" },
-        { id: "tufted-tassel-cushion-yellow-waist-pillow", label: "Yellow Waist Pillow / Pillowcase", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304005713" },
-        { id: "tufted-tassel-cushion-yellow-waist-pillow", label: "Yellow Waist Pillow / Pillowcase And Pillow Core", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304038481" }
+        { id: "tufted-tassel-cushion-beige-square-pillow", label: "Beige Square Pillow / Pillowcase", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-11_Beige-Square-Pillow-_-Pillowcase_ed251572.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251303809105" },
+        { id: "tufted-tassel-cushion-beige-square-pillow", label: "Beige Square Pillow / Pillowcase And Pillow Core", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-11_Beige-Square-Pillow-_-Pillowcase-And-Pil_26e02533.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251303841873" },
+        { id: "tufted-tassel-cushion-beige-waist-pillow-p", label: "Beige Waist Pillow / Pillowcase", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-11_Beige-Waist-Pillow-_-Pillowcase_0792efd0.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251303874641" },
+        { id: "tufted-tassel-cushion-beige-waist-pillow-p", label: "Beige Waist Pillow / Pillowcase And Pillow Core", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-11_Beige-Waist-Pillow-_-Pillowcase-And-Pill_397d2188.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251303907409" },
+        { id: "tufted-tassel-cushion-yellow-square-pillow", label: "Yellow Square Pillow / Pillowcase", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-11_Yellow-Square-Pillow-_-Pillowcase_a04dd75d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251303940177" },
+        { id: "tufted-tassel-cushion-yellow-square-pillow", label: "Yellow Square Pillow / Pillowcase And Pillow Core", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-11_Yellow-Square-Pillow-_-Pillowcase-And-Pi_b968f706.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251303972945" },
+        { id: "tufted-tassel-cushion-yellow-waist-pillow", label: "Yellow Waist Pillow / Pillowcase", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-11_Yellow-Waist-Pillow-_-Pillowcase_13fffa1d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251304005713" },
+        { id: "tufted-tassel-cushion-yellow-waist-pillow", label: "Yellow Waist Pillow / Pillowcase And Pillow Core", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-11_Yellow-Waist-Pillow-_-Pillowcase-And-Pil_6a997d63.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251304038481" }
       ]
   },
   {
@@ -1843,8 +1860,8 @@ export const PRODUCTS: Product[] = [
     headline: "The Companion's Comfort",
     hookLine: "A soft fleece blanket sized for pets — for beds, crates, and favourite spots.",
     description:
-      "A soft fleece blanket sized and designed for pets — the kind of considered object that shows the same care for your companion's comfort as your own. The fleece is machine-washable, quick-drying, and resistant to pet hair clinging.",
-    price: 22.00,
+      "A soft fleece blanket sized and designed for pets — the kind of considered object that shows the same care for your companion's comfort as your own. The fleece is machine-washable, quick-drying, and resistant to pet hair clinging. Available in two sizes.",
+    price: 18.00,
     collection: "DWELL",
     collectionSlug: "dwell",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/pet-blanket_2643de40_e0d2ff1b.jpg",
@@ -1852,8 +1869,8 @@ export const PRODUCTS: Product[] = [
     notes: "Fleece · 80×120cm · Machine washable · Pet-hair resistant",
     available: true,
     variants: [
-        { id: "pet-blanket-random-color-small-5", label: "Small (50×70cm)", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309314129" },
-        { id: "pet-blanket-random-color-large-1", label: "Large (100×70cm)", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251309346897" }
+        { id: "pet-blanket-random-color-small-5", label: "Small (50×70cm)", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-14_Random-Color-_-Small-50X70Cm_7b4c905d.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309314129" },
+        { id: "pet-blanket-random-color-large-1", label: "Large (100×70cm)", price: 24.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-14_Random-Color-_-Large-100X70Cm_de3d0427.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251309346897" }
       ],
     crossSells: ["dwell-7", "dwell-8", "dwell-12"],
   }];

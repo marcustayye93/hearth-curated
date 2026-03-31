@@ -517,11 +517,50 @@
 - [x] adorn-2 Nordic Decorative Figurine — split into 3 products (Monochrome, Golden, Blush) at $65
 
 ### Image Fixes
-- [ ] feast-15 Acacia Magnetic Knife Block — use correct Shopify images
-- [ ] feast-21 Ebony Cutting Board — render handle in images
-- [ ] adorn-8 Abstract Figurine — ensure variant images match actual product
-- [ ] bloom-5 Mixed Dried Flower Bouquet — verify images from CJ dropshipping
-- [ ] bloom-7 Autumn Harvest Wreath — show circular wreath image
+- [x] feast-15 Acacia Magnetic Knife Block — replaced with Shopify A-frame images (main + 4 additional)
+- [x] feast-21 Ebony Cutting Board — replaced with Shopify image showing handle + 4 additional
+- [x] adorn-8 Abstract Figurine — Shopify has NO variant images; cannot fix from source (noted)
+- [x] bloom-5 Mixed Dried Flower Bouquet — already has per-variant images, verified correct
+- [x] bloom-7 Autumn Harvest Wreath — replaced with Shopify wreath image + 4 additional
 
 ### Investigate
 - [x] feast-29 Vintage Japanese Ceramic Mug — marked unavailable (user can't find product)
+
+## Systematic Audit — Unaudited Products (Mar 31)
+
+### Pricing Differentiation (size/bundle variants all same price)
+- [x] dwell-6 Linen Table Runner — 27 variants repriced $18-$42 by size, fixed duplicate IDs, cleaned colour names
+- [x] dwell-14 Pet Blanket — Small $18, Large $24
+- [x] glow-8 Round Linen Table Lamp — fixed variant labels to "UK Plug"/"US Plug"/"EU Plug" (single size, plug-only)
+- [x] glow-9 Square Linen Table Lamp — confirmed correct (single size, plug-only variants)
+
+### Variant Name Fixes
+- [x] adorn-5 Ceramic Bud Vase — removed misplaced variants (Stick & Backflow Set belongs to adorn-7)
+- [x] feast-1 Teak Kitchen Utensil Set — already fixed in earlier audit (descriptive names applied)
+
+### Earlier Audit Issues (from todo section "User Audit Fixes")
+- [x] feast-2 Japanese Ceramic Spoon Set — already remapped to correct Shopify product
+- [x] feast-3 Japanese Matcha Ceremony Set — description already says 7 pieces, variant labels correct
+- [x] feast-7 Black Walnut Serving Tray — variant names already descriptive (Clear Resin/Blue Resin + size)
+- [x] feast-8 Japanese Irregular Dinner Plate — already has differentiated pricing ($10-$58)
+- [x] feast-10 Jujube Wood Serving Basin — already fixed (Small 16-20cm / Large 20-24cm)
+- [x] feast-13 Whole Wood Log Snack Plate — verified, data matches Shopify
+
+### Image Fixes (5 flagged from Column L audit)
+- [x] feast-15 Acacia Magnetic Knife Block — replaced with Shopify A-frame images (main + 4 additional)
+- [x] feast-21 Ebony Cutting Board — replaced with Shopify image showing handle + 4 additional
+- [x] adorn-8 Abstract Figurine — Shopify has NO variant images; cannot fix from source (noted)
+- [x] bloom-5 Mixed Dried Flower Bouquet — already has per-variant images, verified correct
+- [x] bloom-7 Autumn Harvest Wreath — replaced with Shopify wreath image + 4 additional
+
+### Additional Systematic Fixes Applied
+- [x] glow-7 Motion-Sensing Cabinet Light — fixed 9 duplicate variant IDs/labels, added size-based pricing $18-$36
+- [x] glow-10 Woven Bamboo Table Lamp — differentiated pricing by size (Tall $98, Wide $88), fixed labels
+- [x] feast-5 Stoneware Travel Tea Set — differentiated pricing (Set Only $32, + Carry Case $42)
+- [x] dwell-5 Linen Tablecloth — 16 variants repriced $28-$58 by size
+- [x] adorn-8 Abstract Figurine — renamed 6 generic variants (Thinker/Reader/Dreamer × Matte White/Gold)
+- [x] feast-8 Acacia Serving Bowl — fixed self-referencing crossSells
+
+### Systemic Issues
+- [x] Variant image swapping — injected 132 Shopify variant images into 19 products (205/350 variants now have images)
+- [x] Image compression — all 310 images served via CloudFront CDN (60 WebP compressed, 250 JPG from Shopify at 800px); lazy loading + fetchPriority already in place
