@@ -159,11 +159,10 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
     ],
   },
   "ceramic-butter-dish": {
-    handle: "creative-ceramic-butter-box-european-cutlery-storage-box-with-lid",
-    shopifyId: "gid://shopify/Product/15739020181585",
+    handle: "creative-ceramic-butter-box-european-tableware-with-lid",
+    shopifyId: "gid://shopify/Product/15742001545297",
     variants: [
-      { id: "gid://shopify/ProductVariant/59251310723153", title: "Blue", price: 13.86, available: false },
-      { id: "gid://shopify/ProductVariant/59251310755921", title: "White", price: 10.34, available: false },
+      { id: "gid://shopify/ProductVariant/59256195940433", title: "Green Polka Butter Box", price: 18.83, available: true },
     ],
   },
   "ceramic-incense-holder": {

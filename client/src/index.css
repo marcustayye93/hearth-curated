@@ -258,3 +258,93 @@
     box-shadow: 0 1px 4px rgba(28, 16, 8, 0.15);
   }
 }
+
+
+/* ── VARIANT GUIDE TABLE ──────────────────────────────── */
+.variant-guide-wrapper .variant-guide h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--hc-espresso);
+  margin-bottom: 0.5rem;
+}
+
+.variant-guide-wrapper .variant-guide > p {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--hc-sienna);
+  margin-bottom: 1rem;
+}
+
+.variant-guide-wrapper .variant-guide table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.variant-guide-wrapper .variant-guide thead th {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--hc-stone);
+  border-bottom: 1px solid var(--hc-stone);
+}
+
+.variant-guide-wrapper .variant-guide tbody td {
+  padding: 0.5rem 0.75rem;
+  color: var(--hc-espresso);
+  border-bottom: 1px solid rgba(196, 185, 170, 0.3);
+  vertical-align: top;
+}
+
+.variant-guide-wrapper .variant-guide tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.variant-guide-wrapper .variant-guide tbody td strong {
+  color: var(--hc-espresso);
+  font-weight: 600;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 640px) {
+  .variant-guide-wrapper .variant-guide table,
+  .variant-guide-wrapper .variant-guide thead,
+  .variant-guide-wrapper .variant-guide tbody,
+  .variant-guide-wrapper .variant-guide th,
+  .variant-guide-wrapper .variant-guide td,
+  .variant-guide-wrapper .variant-guide tr {
+    display: block;
+  }
+
+  .variant-guide-wrapper .variant-guide thead {
+    display: none;
+  }
+
+  .variant-guide-wrapper .variant-guide tbody tr {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(196, 185, 170, 0.3);
+  }
+
+  .variant-guide-wrapper .variant-guide tbody td {
+    padding: 0.25rem 0;
+    border-bottom: none;
+  }
+
+  .variant-guide-wrapper .variant-guide tbody td:before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--hc-stone);
+    margin-bottom: 0.15rem;
+  }
+}

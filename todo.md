@@ -617,3 +617,15 @@
 - [x] Update shopifyMap.ts with correct handles (9 new entries, 4 set to null for deleted)
 - [x] Enrich descriptions for 11 newly-matched products from Shopify source data
 - [x] Flag 4 products whose Shopify listings have been removed (acacia-serving-bowl, acacia-salt-pepper-mill, vintage-japanese-ceramic-mug, japanese-stoneware-mug)
+
+### Restore 4 Incorrectly-Deleted Shopify Mappings
+- [ ] Look up correct Shopify handles/variants for Acacia Serving Bowl, Acacia Salt & Pepper Mill, Japanese Stoneware Mug, Vintage Japanese Ceramic Mug
+- [ ] Restore shopifyMap.ts entries with correct data
+- [ ] Fix shopifyHandle in products.ts for these 4 products
+- [ ] Enrich descriptions for these 4 products from Shopify source data
+
+### Verify Ceramic Butter Dish Shopify Link
+- [x] Confirm Ceramic Butter Dish variant IDs resolve to correct checkout item (handle fixed: creative-ceramic-butter-box-european-tableware-with-lid)
+
+### Dried Xinjiang Lavender Variant Comparison Table
+- [x] Add detailed variant comparison table (Supreme French Blue, 5A, Super British, 4A, 3A, A) with purity, character, and ideal use case

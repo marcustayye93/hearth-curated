@@ -420,6 +420,23 @@ export default function Product() {
                   </div>
                 )}
 
+                {/* ── VARIANT GUIDE ─────────────────────────── */}
+                {product.variantGuide && (
+                  <div className="mb-6 variant-guide-wrapper">
+                    <p
+                      className="text-xs tracking-widest uppercase mb-3"
+                      style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+                    >
+                      Variant Guide
+                    </p>
+                    <div
+                      className="text-sm leading-relaxed"
+                      style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
+                      dangerouslySetInnerHTML={{ __html: product.variantGuide }}
+                    />
+                  </div>
+                )}
+
                 {/* ── NATURAL VARIATION DISCLAIMER ────────────── */}
                 {product.tags.some(t => ["dried", "pampas", "cotton", "natural"].includes(t)) && (
                   <p

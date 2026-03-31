@@ -32,6 +32,7 @@ export interface Product {
   images?: string[];
   shopifyHandle?: string;
   shopifyVariantId?: string;
+  variantGuide?: string; // HTML string for variant comparison tables (rendered on PDP)
 }
 
 export interface Collection {
@@ -922,6 +923,21 @@ export const PRODUCTS: Product[] = [
     ],
     tags: ["lavender", "xinjiang", "dried", "buds", "fragrance", "aromatherapy", "sachet-fill"],
     notes: "Material: Dried lavender buds · Origin: Xinjiang Yili Valley · Weight: 500g · Use: Aromatherapy and filling",
+    variantGuide: `<div class="variant-guide">
+<h4>Lavender Grade Guide</h4>
+<p>Each grade is harvested from the same Xinjiang Yili Valley fields but sorted to different purity and bud-size standards. Choose the grade that best suits your intended use.</p>
+<table>
+<thead><tr><th>Grade</th><th>Purity</th><th>Character</th><th>Best For</th></tr></thead>
+<tbody>
+<tr><td><strong>Supreme French Blue</strong></td><td>≤ 2% impurity</td><td>Largest, most intact buds with the deepest violet-blue colour and strongest floral aroma</td><td>Display sachets, wedding favours, premium gifting</td></tr>
+<tr><td><strong>5A French Blue</strong></td><td>≤ 7% impurity</td><td>Excellent bud integrity with rich, consistent colour</td><td>Pillow sachets, drawer liners, decorative bowls</td></tr>
+<tr><td><strong>Super British Blue</strong></td><td>Luzhou-flavour type</td><td>Bold, camphoraceous aromatic profile — stronger scent throw than French varieties</td><td>Room fragrance, large-space aromatherapy, potpourri</td></tr>
+<tr><td><strong>4A French Blue</strong></td><td>Mid-grade</td><td>High essential-oil content with slightly smaller buds</td><td>Extracting essential oils and hydrosol (pure dew)</td></tr>
+<tr><td><strong>3A French Blue</strong></td><td>Standard</td><td>Good fragrance at an accessible price point</td><td>Bulk pillow filling, sleep sachets, everyday aromatherapy</td></tr>
+<tr><td><strong>A French Blue</strong></td><td>≤ 16% impurity</td><td>Smaller buds with a lighter, gentler scent</td><td>Bulk aromatherapy, craft projects, bath soaks</td></tr>
+</tbody>
+</table>
+</div>`,
     available: true,
     crossSells: ["dried-lavender-bundle", "ceramic-incense-holder", "led-aroma-diffuser"],
       variants: [
