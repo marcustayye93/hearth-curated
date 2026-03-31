@@ -564,3 +564,9 @@
 ### Systemic Issues
 - [x] Variant image swapping — injected 132 Shopify variant images into 19 products (205/350 variants now have images)
 - [x] Image compression — all 310 images served via CloudFront CDN (60 WebP compressed, 250 JPG from Shopify at 800px); lazy loading + fetchPriority already in place
+
+## Variant Image Coverage & Dimension Overlays
+- [x] Identify all 145 variants missing per-variant images (22 products, 149 variants)
+- [x] Source/assign images for variants — 9 Shopify variant images + 136 product-level fallbacks = 350/350 (100% coverage)
+- [x] Create dimension overlay images for 10 size-variant products (cutting boards, serving plates, runners, tablecloths, wreath, cabinet light, rug)
+- [x] Upload 10 dimension overlays to CDN and inject as additionalImages into product data
