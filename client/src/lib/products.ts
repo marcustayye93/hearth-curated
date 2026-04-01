@@ -1052,7 +1052,7 @@ export const PRODUCTS: Product[] = [
     headline: "The Purple Calm",
     hookLine: "A generous bundle of dried lavender stems — for vases, wreaths, or simply the scent.",
     description:
-      "A lush mixed dried flower bouquet featuring lavender stems alongside complementary dried blooms — the kind of arrangement that fills a room with calm before you even notice it. The White variant pairs white dried roses, daisies, and baby's breath with grey-blue lavender stems for a soft, romantic palette. The Pink variant features dominant purple-blue lavender stems accented with pink strawflowers and white baby's breath for a richer, more vibrant composition. Each bouquet reaches an elegant length of forty-three centimeters and requires no water or maintenance — simply place in your favourite vase and enjoy their quiet presence for months.",
+      "A lush mixed dried flower bouquet featuring lavender stems alongside complementary dried blooms — the kind of arrangement that fills a room with calm before you even notice it. The White variant pairs white dried roses, daisies, and baby’s breath with soft grey-blue lavender stems for a light, romantic palette. The Pink variant brings together rich purple-blue lavender stems with delicate pink strawflowers and white baby’s breath — a warmer, more vibrant composition where the lavender’s natural purple hue takes centre stage alongside soft pink accents. Each bouquet reaches an elegant length of forty-three centimeters and requires no water or maintenance — simply place in your favourite vase and enjoy their quiet presence for months.",
     price: 22.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
@@ -1211,13 +1211,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Floating Garden",
     hookLine: "A planter that floats and rotates in mid-air — science meets nature.",
     description:
-      "A magnetic levitating planter that suspends a plant pot in mid-air, rotating slowly and silently above its base to create a captivating focal point in any room. Both the base and floating pot are crafted from volcanic rock resin with a dramatic dark textured surface and amber-gold veins running through natural cracks — inspired by kintsugi aesthetics. The electromagnetic system is concealed within the wide 21 by 6 centimeter disc base. Comes complete with an asparagus fern plant, so it arrives ready to display. Available with various international power adapters, this piece effortlessly blends modern science with natural beauty.",
+      "A magnetic levitating planter that suspends a plant pot in mid-air, rotating slowly and silently above its base to create a captivating focal point in any room. Both the base and floating pot are crafted from volcanic rock resin with a rough, craggy bark-like texture in dark brown tones with amber-gold veins running through natural fissures. The electromagnetic system is concealed within the wide 21 by 6 centimeter irregular base. Comes complete with an asparagus fern plant, so it arrives ready to display. Available with various international power adapters, this piece effortlessly blends modern science with natural beauty.",
     price: 128.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-magnetic-levitating-planter-v2-SyZUoSisMf7H4AhVTBFpUm.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-magnetic-levitating-planter-v3-TfwVwVdbYkdAoYesuxRdq5.webp",
     tags: ["planter", "magnetic", "levitating", "floating", "modern"],
-    notes: "Material: Volcanic rock resin base & floating pot with amber-veined cracked texture · Dimensions: 21x6cm base · Includes asparagus fern plant & floating pot · USB powered · Available with international power adapters",
+    notes: "Material: Volcanic rock resin base & floating pot with rough bark-like texture · Dimensions: 21x6cm base · Includes asparagus fern plant & floating pot · USB powered · Available with international power adapters",
     available: true,
     variants: [
         { id: "magnetic-levitating-planter-image-uk", label: "UK Plug", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-9_Image-_-Uk_d8778d2a.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305414737" },

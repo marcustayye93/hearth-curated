@@ -708,3 +708,10 @@
 - [ ] Add collection page structured data (JSON-LD CollectionPage/ItemList)
 - [ ] Remove newsletter signup from footer
 - [ ] Add inventory awareness via Shopify Storefront API
+
+## Product Listing Fixes
+- [x] Magnetic Levitating Planter: Regenerated AI main image (v3) to accurately match real product (rough volcanic rock base, not smooth disc)
+- [x] Magnetic Levitating Planter: Updated description to remove kintsugi reference, describe rough bark-like texture accurately
+- [x] Magnetic Levitating Planter: Confirmed plant (asparagus fern) IS included per Shopify listing
+- [x] Dried Lavender Bundle: Verified variant colors against Shopify (White and Pink match exactly)
+- [x] Dried Lavender Bundle: Updated description to clarify Pink variant has dominant purple-blue lavender with pink strawflower accents
