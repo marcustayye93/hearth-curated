@@ -12,6 +12,48 @@ import { useCart } from "@/contexts/CartContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import SEOHead from "@/components/SEOHead";
 
+/** Build CollectionPage + ItemList JSON-LD for search engines */
+function buildCollectionJsonLd(collection: { name: string; slug: string; description: string; image: string; products: Product[] }, currency: string) {
+  const baseUrl = typeof window !== "undefined" ? window.location.origin : "https://www.hearthcurated.com";
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${collection.name} Collection — Hearth Curated`,
+    description: collection.description,
+    url: `${baseUrl}/collections/${collection.slug}`,
+    image: collection.image,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Hearth Curated",
+      url: baseUrl,
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: collection.products.length,
+      itemListElement: collection.products.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Product",
+          name: p.name,
+          url: `${baseUrl}/products/${p.slug}`,
+          image: p.image,
+          description: p.hookLine || p.description || `${p.name} from Hearth Curated`,
+          brand: { "@type": "Brand", name: "Hearth Curated" },
+          offers: {
+            "@type": "Offer",
+            price: p.price.toFixed(2),
+            priceCurrency: currency,
+            availability: p.available
+              ? "https://schema.org/InStock"
+              : "https://schema.org/OutOfStock",
+          },
+        },
+      })),
+    },
+  };
+}
+
 type SortOption = "curated" | "price-asc" | "price-desc" | "name-asc";
 
 function ProductCard({ product }: { product: Product }) {
@@ -188,6 +230,7 @@ function SortableProductGrid({ products }: { products: Product[] }) {
 export default function Collection() {
   const params = useParams<{ slug: string }>();
   const collection = getCollectionBySlug(params.slug);
+  const { currency } = useCurrency();
 
   if (!collection) {
     return (
@@ -212,6 +255,7 @@ export default function Collection() {
         canonicalPath={`/collections/${collection.slug}`}
         ogImage={collection.image}
         ogImageAlt={`${collection.name} Collection — Hearth Curated`}
+        jsonLd={buildCollectionJsonLd(collection, currency)}
       />
       <Nav />
 

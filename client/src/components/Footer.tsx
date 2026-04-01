@@ -1,62 +1,11 @@
 // HEARTH CURATED — Footer Component
 // Design: Minimal, editorial — espresso background, parchment text
-// Aesop-style quote, newsletter signup, clean link columns
-// Connected to Shopify Customers API via tRPC
-// Shares subscription state with EmailCapture popup via sessionStorage + custom event
+// Aesop-style quote, clean link columns
 
-import { useState, useEffect } from "react";
 import { COLLECTIONS } from "@/lib/products";
-import { trpc } from "@/lib/trpc";
 import CurrencySelector from "@/components/CurrencySelector";
 
-const SUBSCRIBED_KEY = "hc-newsletter-subscribed";
-
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(() => {
-    // Check if already subscribed this session (e.g. via popup)
-    try {
-      return sessionStorage.getItem(SUBSCRIBED_KEY) === "true";
-    } catch {
-      return false;
-    }
-  });
-  const [error, setError] = useState("");
-  const [submitting, setSubmitting] = useState(false);
-
-  const subscribe = trpc.shopify.newsletterSubscribe.useMutation();
-
-  // Listen for subscription events from the popup
-  useEffect(() => {
-    const handleSubscribed = () => setSubmitted(true);
-    window.addEventListener("hc-subscribed", handleSubscribed);
-    return () => window.removeEventListener("hc-subscribed", handleSubscribed);
-  }, []);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.trim() || submitting) return;
-    setError("");
-    setSubmitting(true);
-
-    try {
-      const result = await subscribe.mutateAsync({ email: email.trim() });
-      if (result.success) {
-        setSubmitted(true);
-        setEmail("");
-        try { sessionStorage.setItem(SUBSCRIBED_KEY, "true"); } catch {}
-        // Broadcast to popup in case it's still visible
-        window.dispatchEvent(new Event("hc-subscribed"));
-      } else {
-        setError(result.error ?? "Something went wrong.");
-      }
-    } catch {
-      setError("Something went wrong. Please try again.");
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
   return (
     <footer style={{ backgroundColor: "var(--hc-espresso)", color: "var(--hc-parchment)" }}>
       {/* Quote band */}
@@ -70,95 +19,6 @@ export default function Footer() {
         >
           "The objects we choose for our homes are a quiet autobiography."
         </blockquote>
-      </div>
-
-      {/* Newsletter */}
-      <div
-        className="py-12 px-6 text-center"
-        style={{ borderBottom: "1px solid rgba(196,185,170,0.15)" }}
-      >
-        <p className="hc-eyebrow mb-3" style={{ color: "var(--hc-stone)" }}>
-          Subscribe to Hearth Curated
-        </p>
-        <p
-          className="text-sm mb-6 max-w-sm mx-auto"
-          style={{ color: "var(--hc-sand)", fontFamily: "'Karla', sans-serif", lineHeight: 1.7 }}
-        >
-          New arrivals, considered essays, and occasional discoveries — delivered quietly.
-        </p>
-        {submitted ? (
-          <div>
-            <p
-              className="text-sm mb-3"
-              style={{ color: "var(--hc-parchment)", fontFamily: "'Karla', sans-serif" }}
-            >
-              Thank you — welcome to the Hearth.
-            </p>
-            <div
-              className="inline-block px-5 py-2.5 mb-2"
-              style={{
-                backgroundColor: "var(--hc-parchment)",
-                color: "var(--hc-espresso)",
-              }}
-            >
-              <span
-                className="text-base tracking-[0.2em] font-medium"
-                style={{ fontFamily: "'Karla', sans-serif" }}
-              >
-                WELCOME10
-              </span>
-            </div>
-            <p
-              className="text-xs"
-              style={{ fontFamily: "'Karla', sans-serif", color: "var(--hc-stone)" }}
-            >
-              Use this code at checkout for 10% off your first order.
-            </p>
-          </div>
-        ) : (
-          <>
-            <form
-              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-              onSubmit={handleSubmit}
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email address"
-                required
-                disabled={submitting}
-                className="flex-1 px-4 py-3 text-sm bg-transparent outline-none"
-                style={{
-                  border: "1px solid rgba(196,185,170,0.4)",
-                  color: "var(--hc-parchment)",
-                  fontFamily: "'Karla', sans-serif",
-                  opacity: submitting ? 0.6 : 1,
-                }}
-              />
-              <button
-                type="submit"
-                disabled={submitting}
-                className="hc-btn-outline text-xs"
-                style={{
-                  borderColor: "rgba(196,185,170,0.4)",
-                  color: "var(--hc-parchment)",
-                  opacity: submitting ? 0.6 : 1,
-                }}
-              >
-                {submitting ? "Subscribing..." : "Subscribe"}
-              </button>
-            </form>
-            {error && (
-              <p
-                className="text-xs mt-2"
-                style={{ fontFamily: "'Karla', sans-serif", color: "#e88" }}
-              >
-                {error}
-              </p>
-            )}
-          </>
-        )}
       </div>
 
       {/* Links */}

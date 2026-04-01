@@ -75,6 +75,7 @@ const PRODUCT_FRAGMENT = `
           id
           title
           availableForSale
+          quantityAvailable
           price { amount currencyCode }
           compareAtPrice { amount currencyCode }
           selectedOptions { name value }
@@ -219,6 +220,33 @@ export async function getCollectionByHandle(handle: string, productCount = 50) {
   const products = data.collectionByHandle.products.edges.map((e) => normalizeProduct(e.node));
 
   return { ...collection, products };
+}
+
+// ── Inventory Query ─────────────────────────────────────────────────
+
+export async function getInventoryByHandle(handle: string): Promise<Array<{ variantId: string; quantityAvailable: number | null }>> {
+  const query = `
+    query GetInventory($handle: String!) {
+      productByHandle(handle: $handle) {
+        variants(first: 50) {
+          edges {
+            node {
+              id
+              quantityAvailable
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const data = await shopifyFetch<{ productByHandle: { variants: { edges: Array<{ node: { id: string; quantityAvailable: number | null } }> } } | null }>(query, { handle });
+
+  if (!data.productByHandle) return [];
+  return data.productByHandle.variants.edges.map((e) => ({
+    variantId: e.node.id,
+    quantityAvailable: e.node.quantityAvailable,
+  }));
 }
 
 // ── Cart Mutations ───────────────────────────────────────────────────

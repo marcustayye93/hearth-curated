@@ -13,6 +13,7 @@ import { getProductBySlug, getCrossSells, type Variant, getShopifyVariantGid } f
 import { useCart } from "@/contexts/CartContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import SEOHead from "@/components/SEOHead";
+import { trpc } from "@/lib/trpc";
 
 export default function Product() {
   const params = useParams<{ slug: string }>();
@@ -69,6 +70,23 @@ export default function Product() {
     () => (product ? getCrossSells(product) : []),
     [product]
   );
+
+  // Real-time inventory from Shopify Storefront API
+  const shopifyHandle = product?.shopifyHandle;
+  const { data: inventoryData } = trpc.shopify.inventory.useQuery(
+    { handle: shopifyHandle ?? "" },
+    { enabled: !!shopifyHandle, staleTime: 60_000, refetchOnWindowFocus: false }
+  );
+
+  // Find quantity for the currently selected variant
+  const selectedVariantGid = selectedVariant?.shopifyVariantId ?? product?.shopifyVariantId;
+  const quantityAvailable = useMemo(() => {
+    if (!inventoryData || !selectedVariantGid) return null;
+    const match = inventoryData.find((v) => v.variantId === selectedVariantGid);
+    return match?.quantityAvailable ?? null;
+  }, [inventoryData, selectedVariantGid]);
+
+  const isLowStock = quantityAvailable !== null && quantityAvailable > 0 && quantityAvailable <= 3;
 
   if (!product) {
     return (
@@ -363,7 +381,21 @@ export default function Product() {
                   );
                 })()}
 
-                {/* ── ADD TO CART ──────────────────────────────── */}
+                  {/* ── LOW STOCK INDICATOR ──────────────────── */}
+                {isLowStock && (
+                  <p
+                    className="text-xs tracking-widest uppercase text-center mb-3"
+                    style={{
+                      color: "#b45309",
+                      fontFamily: "'Karla', sans-serif",
+                      fontWeight: 600,
+                    }}
+                  >
+                    Only {quantityAvailable} left in stock
+                  </p>
+                )}
+
+                {/* ── ADD TO CART ────────────────────────────── */}
                 <button
                   onClick={handleAddToCart}
                   disabled={!isAvailable}
@@ -564,6 +596,14 @@ export default function Product() {
               style={{ fontFamily: "'Karla', sans-serif", color: "var(--hc-sienna)" }}
             >
               {formatPrice(currentPrice)}
+              {isLowStock && (
+                <span
+                  className="ml-2 text-xs"
+                  style={{ color: "#b45309", fontWeight: 600 }}
+                >
+                  · Only {quantityAvailable} left
+                </span>
+              )}
             </p>
           </div>
           <button

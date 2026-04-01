@@ -31,7 +31,7 @@
 - [x] Remove quantityAvailable field (token lacks inventory scope)
 - [x] Write vitest tests for Shopify integration (10 tests passing)
 - [x] Add SEO meta tags for all pages (Home, Collection, Product, About, Shipping)
-- [ ] Add inventory awareness once Storefront token gets inventory scope
+- [x] Add inventory awareness once Storefront token gets inventory scope (quantityAvailable in GraphQL, tRPC endpoint, low stock indicator on PDP)
 
 ## Mobile Responsiveness Optimization
 - [x] Audit all pages on mobile viewport (Home, Collection, Product, CartDrawer, Nav, Footer, About, Shipping)
@@ -597,10 +597,10 @@
 - [x] Display prices in selected currency across all pages
 - [x] Update JSON-LD priceCurrency dynamically based on selection
 ### Low (SEO & Technical)
-- [ ] L5.1: Create robots.txt
-- [ ] L5.2: Create sitemap.xml
-- [ ] L5.3: Add collection page structured data
-- [ ] L5.4: Add newsletter signup to footer
+- [x] L5.1: Create robots.txt (static file in client/public/robots.txt)
+- [x] L5.2: Create sitemap.xml (dynamic server route with 82 product URLs + collections + static pages)
+- [x] L5.3: Add collection page structured data (CollectionPage + ItemList JSON-LD with currency-aware pricing)
+- [x] L5.4: Remove newsletter signup from footer (per user request)
 
 ### Product Description Audit (Marketing Agency Review)
 - [x] Fetch all Shopify product descriptions via Storefront API (91 products fetched)
@@ -701,3 +701,10 @@
 - [x] Regenerate both variant images to match actual Shopify photos
 - [x] Update description to accurately describe mixed bouquet composition
 - [x] Update main image + both variant images in products.ts
+
+### SEO & Feature Tasks (April 1, 2026)
+- [ ] Create robots.txt
+- [ ] Create sitemap.xml (dynamic, all products + collections + static pages)
+- [ ] Add collection page structured data (JSON-LD CollectionPage/ItemList)
+- [ ] Remove newsletter signup from footer
+- [ ] Add inventory awareness via Shopify Storefront API

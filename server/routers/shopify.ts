@@ -6,6 +6,7 @@ import {
   getProductRecommendations,
   getCollections,
   getCollectionByHandle,
+  getInventoryByHandle,
   createCart,
   addToCart,
   updateCartLines,
@@ -38,6 +39,14 @@ export const shopifyRouter = router({
     .input(z.object({ productId: z.string() }))
     .query(async ({ input }) => {
       return getProductRecommendations(input.productId);
+    }),
+
+  // ── Inventory ───────────────────────────────────────────────────
+
+  inventory: publicProcedure
+    .input(z.object({ handle: z.string() }))
+    .query(async ({ input }) => {
+      return getInventoryByHandle(input.handle);
     }),
 
   // ── Collections ──────────────────────────────────────────────────
