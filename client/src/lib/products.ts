@@ -1052,18 +1052,18 @@ export const PRODUCTS: Product[] = [
     headline: "The Purple Calm",
     hookLine: "A generous bundle of dried lavender stems — for vases, wreaths, or simply the scent.",
     description:
-      "A generous bundle of dried lavender stems  —  the kind of object that fills a room with calm before you even notice it. The stems are dried naturally to preserve both colour and fragrance, reaching an elegant length of forty-three centimeters. Available in both classic white and soft pink, this natural botanical accent offers enduring beauty for any corner of your home. Whether arranged simply in a favorite vase, woven into a seasonal wreath, or placed gently on a shelf to scent a space, it brings a touch of quiet serenity.",
+      "A lush mixed dried flower bouquet featuring lavender stems alongside complementary dried blooms — the kind of arrangement that fills a room with calm before you even notice it. The White variant pairs white dried roses, daisies, and baby's breath with grey-blue lavender stems for a soft, romantic palette. The Pink variant features dominant purple-blue lavender stems accented with pink strawflowers and white baby's breath for a richer, more vibrant composition. Each bouquet reaches an elegant length of forty-three centimeters and requires no water or maintenance — simply place in your favourite vase and enjoy their quiet presence for months.",
     price: 22.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/8_NNuHRXV7PHupFuXRWHQu2C_1774599052593_na1fn_L2hvbWUvdWJ1bnR1L2RyaWVkX2xhdmVuZGVyX2J1bmRsZQ_b807e823_7527a82d.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-dried-lavender-white-v2-YMmwqhHfJNRdgVGVZMFSsf.webp",
     tags: ["lavender", "dried", "bundle", "stems", "fragrance"],
     notes: "Material: Naturally dried flower · Dimensions: 43cm length · Includes: 1 bundle · Fragrance lasts months",
     available: true,
     crossSells: ["dried-xinjiang-lavender", "mixed-dried-flower-bouquet", "magnetic-levitating-planter"],
       variants: [
-        { id: "dried-lavender-bundle-white", label: "White", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914263121", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-lavender-white-K9rHcG9dsSMAYmSMWt9a38_dc5b54a4.jpg" },
-        { id: "dried-lavender-bundle-pink", label: "Pink", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914295889", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dried-lavender-pink-SuXpfeRpfycgyj3BxoMTuT_03d02831.jpg" }
+        { id: "dried-lavender-bundle-white", label: "White", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914263121", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-dried-lavender-white-v2-YMmwqhHfJNRdgVGVZMFSsf.webp" },
+        { id: "dried-lavender-bundle-pink", label: "Pink", price: 22.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914295889", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-dried-lavender-pink-v2-mrQ4FdE2YjdhVECHvHMkYc.webp" }
       ]
   },
   {
@@ -1211,13 +1211,13 @@ export const PRODUCTS: Product[] = [
     headline: "The Floating Garden",
     hookLine: "A planter that floats and rotates in mid-air — science meets nature.",
     description:
-      "A magnetic levitating planter that suspends a small plant pot in mid-air, rotating slowly and silently above its base to create a captivating focal point in any room. The electromagnetic system is elegantly concealed within a minimalist 21 by 6 centimeter base, allowing the floating pot to showcase your favorite greenery without distraction. Available with various international power adapters, this piece effortlessly blends modern science with natural beauty, making it a thoughtful gift or a striking addition to your own curated space.",
+      "A magnetic levitating planter that suspends a plant pot in mid-air, rotating slowly and silently above its base to create a captivating focal point in any room. Both the base and floating pot are crafted from volcanic rock resin with a dramatic dark textured surface and amber-gold veins running through natural cracks — inspired by kintsugi aesthetics. The electromagnetic system is concealed within the wide 21 by 6 centimeter disc base. Comes complete with an asparagus fern plant, so it arrives ready to display. Available with various international power adapters, this piece effortlessly blends modern science with natural beauty.",
     price: 128.00,
     collection: "BLOOM",
     collectionSlug: "bloom",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-magnetic-levitating-planter-fvaNfr6CX3nnPJjSvZvCmf.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-magnetic-levitating-planter-v2-SyZUoSisMf7H4AhVTBFpUm.webp",
     tags: ["planter", "magnetic", "levitating", "floating", "modern"],
-    notes: "Material: Magnetic system with minimalist base · Dimensions: 21x6cm · Includes floating pot · USB powered · Available with international power adapters",
+    notes: "Material: Volcanic rock resin base & floating pot with amber-veined cracked texture · Dimensions: 21x6cm base · Includes asparagus fern plant & floating pot · USB powered · Available with international power adapters",
     available: true,
     variants: [
         { id: "magnetic-levitating-planter-image-uk", label: "UK Plug", price: 128.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/bloom-9_Image-_-Uk_d8778d2a.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251305414737" },

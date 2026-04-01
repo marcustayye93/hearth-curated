@@ -688,3 +688,16 @@
 - [x] Look up correct Shopify handles for Vintage Japanese Ceramic Mug (nordic-style-classic-coffee-cup-set-ceramic-high-end-mug)
 - [x] Add all 4 products back to shopifyMap.ts with correct variant IDs
 - [x] Update shopifyVariantId in products.ts for all 4 products to match new Shopify IDs
+
+### Bug Fix: Magnetic Levitating Planter (April 1, 2026)
+- [x] Check why main image is still original Shopify photo instead of AI-generated
+- [x] Verify AI-generated image matches actual product — real product is volcanic rock resin base (not minimalist wood)
+- [x] Check Shopify listing to confirm plant is included (asparagus fern included)
+- [x] Regenerate AI image v2 to accurately match volcanic rock resin with amber veins
+- [x] Update products.ts with corrected image, description, and notes
+
+### Bug Fix: Dried Lavender Bundle Variants (April 1, 2026)
+- [x] Check Shopify listing — White = mixed white flowers + grey-blue lavender, Pink = purple lavender + pink strawflower accents
+- [x] Regenerate both variant images to match actual Shopify photos
+- [x] Update description to accurately describe mixed bouquet composition
+- [x] Update main image + both variant images in products.ts
