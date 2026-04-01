@@ -673,3 +673,18 @@
 - [x] Regenerate 3 additional images in editorial AI style (with knives moody, wood grain detail, lifestyle kitchen vignette)
 - [x] Upload new images to CDN and update products.ts (main + 3 additional + variant image)
 - [x] All 67 tests passing, TypeScript clean
+
+### Task 1: Regenerate Remaining Shopify Stock Photos (March 31, 2026)
+- [x] Audit all products to identify those still using raw Shopify/supplier images (49 found across 5 collections)
+- [x] Download all 49 original Shopify images for reference
+- [x] Regenerate all 49 products in editorial AI style (13 batches, 49/49 PASS audit)
+- [x] Upload new images to CDN and update products.ts (49/49 URLs replaced)
+- [x] TypeScript clean, 64/67 tests passing (3 pre-existing Shopify Admin auth failures)
+
+### Task 3: Restore 4 Deleted Shopify Mappings (March 31, 2026)
+- [x] Look up correct Shopify handles for Acacia Serving Bowl (kitchen-natural-wooden-bowl...)
+- [x] Look up correct Shopify handles for Acacia Salt & Pepper Mill (acacia-wood-small-waist-manual-pepper-mill-ceramic)
+- [x] Look up correct Shopify handles for Japanese Stoneware Mug (stoneware-coffee-cup-household-vintage-mug)
+- [x] Look up correct Shopify handles for Vintage Japanese Ceramic Mug (nordic-style-classic-coffee-cup-set-ceramic-high-end-mug)
+- [x] Add all 4 products back to shopifyMap.ts with correct variant IDs
+- [x] Update shopifyVariantId in products.ts for all 4 products to match new Shopify IDs

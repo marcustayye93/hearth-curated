@@ -32,18 +32,29 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59250914951249", title: "Yellow", price: 28.54, available: true },
     ],
   },
-  "acacia-salt-pepper-mill": null, // Shopify product/variant deleted
-  "acacia-salt-pepper-mill-old": {
-    handle: "salt-and-pepper-grinder-acacia-wooden-spice-pepper-mill-with-strong-adjustable-ceramic-grinder-kitchen-cooking-tools",
-    shopifyId: "gid://shopify/Product/15734963994705",
+  "acacia-salt-pepper-mill": {
+    handle: "acacia-wood-small-waist-manual-pepper-mill-ceramic",
+    shopifyId: "gid://shopify/Product/15738954416209",
     variants: [
-      { id: "gid://shopify/ProductVariant/59241559031889", title: "Wooden Base 1Pcs", price: 10.62, available: true },
-      { id: "gid://shopify/ProductVariant/59241559064657", title: "8 Inch 1Pcs", price: 21.99, available: true },
-      { id: "gid://shopify/ProductVariant/59241559097425", title: "10 Inch 1Pcs", price: 24.47, available: true },
-      { id: "gid://shopify/ProductVariant/59241559130193", title: "6 Inch 1Pcs", price: 18.03, available: true },
+      { id: "gid://shopify/ProductVariant/59250914984017", title: "6Inches", price: 6.96, available: true },
+      { id: "gid://shopify/ProductVariant/59250915016785", title: "8Inches", price: 6.19, available: true },
+      { id: "gid://shopify/ProductVariant/59250915049553", title: "10Inches", price: 8.37, available: true },
     ],
   },
-  "acacia-serving-bowl": null, // Shopify product/variant deleted
+  "acacia-serving-bowl": {
+    handle: "kitchen-natural-wooden-bowl-household-fruit-bowl-salad-bowl-for-home-restaurant-food-container-wooden-utensils-note-the-size-hot",
+    shopifyId: "gid://shopify/Product/15737818677329",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59248630497361", title: "Brown / 8X6Cm", price: 2.72, available: true },
+      { id: "gid://shopify/ProductVariant/59248630562897", title: "Brown / 12X6Cm", price: 6.74, available: true },
+      { id: "gid://shopify/ProductVariant/59248630333521", title: "Brown / 14X7Cm", price: 7.25, available: true },
+      { id: "gid://shopify/ProductVariant/59248630530129", title: "Brown / 16X7Cm", price: 8.85, available: true },
+      { id: "gid://shopify/ProductVariant/59248630366289", title: "Brown / 18X7.5Cm", price: 12.24, available: true },
+      { id: "gid://shopify/ProductVariant/59248630399057", title: "Brown / 20X7.5Cm", price: 12.83, available: true },
+      { id: "gid://shopify/ProductVariant/59248630431825", title: "Brown / 26X8Cm", price: 33.85, available: true },
+      { id: "gid://shopify/ProductVariant/59248630300753", title: "Brown / All Size", price: 25.13, available: true },
+    ],
+  },
   "acacia-wooden-utensil-set": {
     handle: "best-wooden-spoons-for-cooking-acacia-wooden-kitchen-utensils-set-smooth-non-toxic-wood-cooking-spatula-turner-serving-spoon",
     shopifyId: "gid://shopify/Product/15734964060241",
@@ -439,7 +450,16 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59251304792145", title: "Black Gin Wine Cup", price: 0.63, available: true },
     ],
   },
-  "japanese-stoneware-mug": null, // Shopify product/variant deleted
+  "japanese-stoneware-mug": {
+    handle: "stoneware-coffee-cup-household-vintage-mug",
+    shopifyId: "gid://shopify/Product/15739019329617",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59251304628305", title: "Retro Yellow / 300Ml", price: 9.15, available: true },
+      { id: "gid://shopify/ProductVariant/59251304661073", title: "Bronze Green / 300Ml", price: 9.15, available: true },
+      { id: "gid://shopify/ProductVariant/59251304693841", title: "Khaki / 300Ml", price: 9.15, available: true },
+      { id: "gid://shopify/ProductVariant/59251304726609", title: "Three Sets / 300Ml", price: 28.15, available: true },
+    ],
+  },
   "japanese-wooden-coaster-set": {
     handle: "japanese-style-wooden-coaster-set",
     shopifyId: "gid://shopify/Product/15738954645585",
@@ -1012,7 +1032,18 @@ export const shopifyMap: Record<string, ShopifyProductInfo | null> = {
       { id: "gid://shopify/ProductVariant/59251305021521", title: "White And Pink Towel Set", price: 7.67, available: true },
     ],
   },
-  "vintage-japanese-ceramic-mug": null, // Shopify product/variant deleted
+  "vintage-japanese-ceramic-mug": {
+    handle: "nordic-style-classic-coffee-cup-set-ceramic-high-end-mug",
+    shopifyId: "gid://shopify/Product/15739019395153",
+    variants: [
+      { id: "gid://shopify/ProductVariant/59251307053137", title: "A", price: 21.42, available: true },
+      { id: "gid://shopify/ProductVariant/59251307085905", title: "B", price: 21.42, available: true },
+      { id: "gid://shopify/ProductVariant/59251307118673", title: "C", price: 11.09, available: true },
+      { id: "gid://shopify/ProductVariant/59251307151441", title: "D", price: 11.09, available: true },
+      { id: "gid://shopify/ProductVariant/59251307184209", title: "E", price: 7.86, available: true },
+      { id: "gid://shopify/ProductVariant/59251307216977", title: "F", price: 7.86, available: true },
+    ],
+  },
   "wabi-sabi-ceramic-dispenser": {
     handle: "wabi-sabi-ceramic-lotion-bottle-450ml-squeeze-bottle-soap-dispenser-shampoo-lotion-conditioner-bottle-bathroom-accessories",
     shopifyId: "gid://shopify/Product/15734964093009",
