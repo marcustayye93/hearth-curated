@@ -734,3 +734,11 @@
 - [x] Regenerate: Ceramic Incense Holder (now shows teal mountain landscape incense holder)
 - [x] Regenerate: Autumn Faux Flower Bouquet (new image + fixed description from straw basket to faux flowers)
 - [x] Regenerate: Minimalist Ceramic Planter (new image + fixed description from straw basket to ceramic planter)
+
+### What's in the Box Section (Apr 2, 2026)
+- [x] Add 'includes' field to Product interface in products.ts
+- [x] Populate 'includes' data for all 82 products (parallel generation + manual pet-blanket)
+- [x] Build "What's in the Box" UI component on product detail page (Package icon header + Check icon list)
+- [x] Style consistently with existing PDP design language (matches Details section styling)
+- [x] Test rendering across products with different include counts (verified 1-item and 5-item products)
+- [x] Vitest tests passing (5 tests: data completeness, format validation, specific product checks)

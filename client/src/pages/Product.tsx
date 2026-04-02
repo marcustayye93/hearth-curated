@@ -6,7 +6,7 @@
 
 import { useState, useMemo, useEffect } from "react";
 import { Link, useParams } from "wouter";
-import { ShoppingBag, Truck, Shield, RotateCcw, ChevronDown } from "lucide-react";
+import { ShoppingBag, Truck, Shield, RotateCcw, ChevronDown, Package, Check } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { getProductBySlug, getCrossSells, type Variant, getShopifyVariantGid } from "@/lib/products";
@@ -449,6 +449,36 @@ export default function Product() {
                     >
                       {product.notes}
                     </p>
+                  </div>
+                )}
+
+                {/* ── WHAT'S IN THE BOX ────────────────────── */}
+                {product.includes && product.includes.length > 0 && (
+                  <div className="mb-6">
+                    <p
+                      className="text-xs tracking-widest uppercase mb-3 flex items-center gap-2"
+                      style={{ color: "var(--hc-stone)", fontFamily: "'Karla', sans-serif" }}
+                    >
+                      <Package size={13} strokeWidth={1.5} />
+                      What's in the Box
+                    </p>
+                    <ul className="space-y-1.5">
+                      {product.includes.map((item, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-start gap-2 text-sm"
+                          style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
+                        >
+                          <Check
+                            size={14}
+                            strokeWidth={2}
+                            className="mt-0.5 shrink-0"
+                            style={{ color: "var(--hc-sienna)" }}
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 )}
 
