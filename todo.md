@@ -723,7 +723,7 @@
 - [x] Comprehensive audit report generated (hearth-curated-audit-report.md)
 - [x] Fix 8 critical mismatches (wrong product type shown) — all 8 images regenerated + 2 descriptions fixed
 - [x] Fix 38 major mismatches (significant color/shape/pattern differences) — all 38 images regenerated from Shopify references
-- [ ] Fix 9 minor mismatches (small improvements)
+- [x] Fix 9 minor mismatches (small improvements) — all 9 images regenerated and updated
 
 ### Fix 8 Critical Image Mismatches (Apr 2, 2026)
 - [x] Regenerate: Linen Placemats (now shows natural linen placemat with gold spoon)
@@ -751,3 +751,14 @@
 - [x] Regenerate ADORN collection (6 products): led-aroma-diffuser, nordic-figurine-golden, nordic-figurine-blush, macrame-wall-hanging, ceramic-bud-vase, fireplace-aroma-diffuser
 - [x] Regenerate FEAST collection (17 products): japanese-matcha-ceremony-set, stoneware-travel-tea-set, black-walnut-resin-tray, jujube-wood-serving-basin, acacia-wood-serving-plate, handmade-wooden-cup, acacia-magnetic-knife-block, hand-painted-ceramic-oil-cruet, rattan-serving-tray, japanese-wooden-coaster-set, black-walnut-cutting-board, ceramic-butter-dish, multi-function-grater, ceramic-pour-over-dripper, vintage-japanese-ceramic-mug, japanese-stoneware-mug, nordic-espresso-cup-saucer
 - [x] Update all 38 product listings with new v2 images in products.ts
+
+### Fix 9 Minor Image Mismatches (Apr 2, 2026)
+- [x] Identify all 9 minor mismatch products from audit data
+- [x] Regenerate images for all 9 products (ceramic-seasoning-pot-set, bamboo-glass-storage-container, acacia-salt-pepper-mill, japanese-sake-set, motion-sensing-cabinet-light, mushroom-night-light, coral-fleece-throw-blanket, knit-nap-blanket, pet-blanket)
+- [x] Update product listings with new images
+
+### Restore 4 Broken Shopify Mappings (Apr 2, 2026)
+- [x] Restore: Acacia Serving Bowl — verified variant IDs match Shopify, already purchasable
+- [x] Restore: Acacia Salt & Pepper Mill — removed duplicate variant, fixed to 3 valid sizes
+- [x] Restore: Japanese Stoneware Mug — verified variant IDs match Shopify, already purchasable
+- [x] Restore: Vintage Japanese Ceramic Mug — set available:true, added 5 missing variants (B-F)

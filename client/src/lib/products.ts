@@ -63,7 +63,7 @@ export const PRODUCTS: Product[] = [
     price: 38.00,
     collection: "FEAST",
     collectionSlug: "feast",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-ceramic-seasoning-pot-set-KUvzZSKbWbbUgG9MPVQtRB.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-ceramic-seasoning-pot-set-v2-XMuqVrMqZxBApzgb32iDiq.webp",
     tags: ["seasoning", "ceramic", "bamboo", "kitchen", "storage"],
     notes: "Material: Ceramic and bamboo · Style: Japanese retro · Weight: 2kg",
     available: true,
@@ -337,7 +337,7 @@ export const PRODUCTS: Product[] = [
     includes: ["1 × Handmade wooden cup"],
     crossSells: ["stoneware-travel-tea-set", "acacia-wood-serving-plate", "acacia-serving-bowl"],
       variants: [
-        { id: "handmade-wooden-cup-wooden-cup", label: "Natural Wood", price: 22.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-11_Wooden-Cup_e4b2b791.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250914328657" }
+        { id: "handmade-wooden-cup-wooden-cup", label: "Natural Wood", price: 22.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-bamboo-glass-storage-container-v2-EcPhiLe4iFoew7pP5KmyHF.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250914328657" }
       ]
   },
   {
@@ -359,7 +359,7 @@ export const PRODUCTS: Product[] = [
       { id: "bamboo-glass-crisper-s", label: "Small", price: 18.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/9_uPuVsVxCLyyvnnhGI2ZDy0_1774801308305_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9iYW1ib29fZ2xhc3Nfc3RvcmFnZV9jb250YWluZXI_55add6b1_042359ad.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250914820177" },
       { id: "bamboo-glass-crisper-m", label: "Medium", price: 22.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/9_uPuVsVxCLyyvnnhGI2ZDy0_1774801308305_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9iYW1ib29fZ2xhc3Nfc3RvcmFnZV9jb250YWluZXI_55add6b1_042359ad.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250914918481" },
       { id: "bamboo-glass-crisper-l", label: "Large", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/9_uPuVsVxCLyyvnnhGI2ZDy0_1774801308305_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9iYW1ib29fZ2xhc3Nfc3RvcmFnZV9jb250YWluZXI_55add6b1_042359ad.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250914885713" },
-      { id: "bamboo-glass-crisper-set", label: "Complete Set", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/9_uPuVsVxCLyyvnnhGI2ZDy0_1774801308305_na1fn_L2hvbWUvdWJ1bnR1L3dlYmRldi1zdGF0aWMtYXNzZXRzL25ldy1wcm9kdWN0cy9iYW1ib29fZ2xhc3Nfc3RvcmFnZV9jb250YWluZXI_55add6b1_042359ad.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250914852945" }],
+      { id: "bamboo-glass-crisper-set", label: "Complete Set", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-acacia-salt-pepper-mill-v2-Gm56oMC3B2sBcq5iDf3PaH.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250914852945" }],
     includes: ["1 × Glass container", "1 × Bamboo lid"],
     crossSells: ["ceramic-seasoning-pot-set", "acacia-salt-pepper-mill", "acacia-wood-serving-plate"],
   },
@@ -380,10 +380,9 @@ export const PRODUCTS: Product[] = [
     notes: "Acacia wood · Ceramic grinder · Adjustable coarseness",
     available: true,
     variants: [
-      { id: "feast-14-base", label: "Wooden Display Base", price: 38.00, available: true , shopifyVariantId: "gid://shopify/ProductVariant/59250914984017" },
-      { id: "feast-14-6", label: "6-Inch Mill (170g)", price: 58.00, available: true , shopifyVariantId: "gid://shopify/ProductVariant/59250914984017"},
-      { id: "feast-14-8", label: "8-Inch Mill (190g)", price: 68.00, available: true , shopifyVariantId: "gid://shopify/ProductVariant/59250915016785"},
-      { id: "feast-14-10", label: "10-Inch Mill (275g)", price: 78.00, available: true , shopifyVariantId: "gid://shopify/ProductVariant/59250915049553"}],
+      { id: "feast-14-6", label: "6-Inch Mill (170g)", price: 38.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250914984017" },
+      { id: "feast-14-8", label: "8-Inch Mill (190g)", price: 48.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915016785" },
+      { id: "feast-14-10", label: "10-Inch Mill (275g)", price: 58.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59250915049553" }],
     includes: ["1 × Salt grinder", "1 × Pepper grinder", "1 × Cleaning brush"],
     crossSells: ["ceramic-seasoning-pot-set", "teak-kitchen-utensil-set", "acacia-magnetic-knife-block"],
   },
@@ -636,7 +635,7 @@ export const PRODUCTS: Product[] = [
     available: true,
     variants: [
         { id: "ceramic-pour-over-dripper-black-1-to-2-serving", label: "Matte Black", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307249745", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-26-black-cLjEFo7asMgcJRYweaSRyQ.webp" },
-        { id: "ceramic-pour-over-dripper-white-1-to-2-serving", label: "Classic White", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307282513", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/feast-26-white-ncvqphMEYXGttHZV4sAyY8.webp" }
+        { id: "ceramic-pour-over-dripper-white-1-to-2-serving", label: "Classic White", price: 32.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307282513", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-japanese-sake-set-v2-9AULNUmiZbqBCw9YEh8bgk.webp" }
       ],
     includes: ["1 × Ceramic dripper"],
     crossSells: ["japanese-stoneware-mug", "nordic-espresso-cup-saucer", "acacia-magnetic-knife-block"],
@@ -674,12 +673,17 @@ export const PRODUCTS: Product[] = [
     price: 28.00,
     collection: "FEAST",
     collectionSlug: "feast",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-japanese-stoneware-mug-v2-iXUhw3HpkTscUVWhKN3ztj.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-vintage-japanese-ceramic-mug-v2-LxE9e5aAVapvhX83LukwrM.webp",
     tags: ["mug", "ceramic", "japanese", "vintage", "reactive-glaze"],
-    notes: "Reactive glaze · 350ml · Microwave safe",
-    available: false,
+    notes: "Reactive glaze · 200ml cup / 350ml mug · Microwave safe",
+    available: true,
     variants: [
-      { id: "vintage-japanese-ceramic-coffee-mug-cup-200ml", label: "Cup · 200ml", price: 28.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/gather-6_7c8d1cb6_756ad08a.webp", shopifyVariantId: "gid://shopify/ProductVariant/59251307053137" }],
+      { id: "vintage-japanese-ceramic-mug-a", label: "Style A — Cup & Saucer", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307053137" },
+      { id: "vintage-japanese-ceramic-mug-b", label: "Style B — Cup & Saucer", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307085905" },
+      { id: "vintage-japanese-ceramic-mug-c", label: "Style C — Mug", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307118673" },
+      { id: "vintage-japanese-ceramic-mug-d", label: "Style D — Mug", price: 18.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307151441" },
+      { id: "vintage-japanese-ceramic-mug-e", label: "Style E — Small Cup", price: 12.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307184209" },
+      { id: "vintage-japanese-ceramic-mug-f", label: "Style F — Small Cup", price: 12.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251307216977" }],
     includes: ["1 × Ceramic mug"],
     crossSells: ["japanese-stoneware-mug", "nordic-espresso-cup-saucer", "ceramic-pour-over-dripper"],
   },
@@ -1526,7 +1530,7 @@ export const PRODUCTS: Product[] = [
         { id: "solar-pathway-light-warm-white-3pcs", label: "Warm White — 3 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_Warm-White-3Pcs_786f6df2.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900631633" },
         { id: "solar-pathway-light-white-light-3pcs", label: "Cool White — 3 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_White-Light-3Pcs_b21dfbc9.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900664401" },
         { id: "solar-pathway-light-10-pcs-white-light", label: "Cool White — 10 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_10-Pcs-White-Light_f2df4cb6.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900729937" },
-        { id: "solar-pathway-light-10-pcs-warm-white", label: "Warm White — 10 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-6_10-Pcs-Warm-White_20fdf565.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59250900959313" }
+        { id: "solar-pathway-light-10-pcs-warm-white", label: "Warm White — 10 Pack", price: 48.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-motion-sensing-cabinet-light-v2-dPqjUkyhBHRPRcuieDS3Ms.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250900959313" }
       ],
     includes: ["1 × Solar Pathway Light"],
     crossSells: ["solar-garden-torch", "magnetic-levitating-planter", "ceramic-bedside-lamp"],
@@ -1654,7 +1658,7 @@ export const PRODUCTS: Product[] = [
     variants: [
       { id: "glow-12-snd", label: "Sand", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-sand-39PFucBomL5XbcAYMrdjT6.webp" },
       { id: "glow-12-sge", label: "Sage", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-sage-aP76kxwRt2VafGZqM2gmUd.webp" },
-      { id: "glow-12-blu", label: "Ocean Blue", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/glow-12-blue-B7USbMnm4GshmkWquj2aFq.webp" }],
+      { id: "glow-12-blu", label: "Ocean Blue", price: 99.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-mushroom-night-light-v2-KFLkyr8L6dx3y2ad4MDLLc.webp" }],
     includes: ["1 × Ceramic bedside lamp"],
     crossSells: ["japanese-bedside-lamp", "round-linen-table-lamp", "woven-bamboo-table-lamp"],
   },
@@ -1867,7 +1871,7 @@ export const PRODUCTS: Product[] = [
         { id: "linen-runner-navy-30x220", label: "Navy Blue / 30X220", price: 34.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X220_03a0262a.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310461009" },
         { id: "linen-runner-navy-30x240", label: "Navy Blue / 30X240", price: 36.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X240_2b02f5c9.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310493777" },
         { id: "linen-runner-navy-30x260", label: "Navy Blue / 30X260", price: 38.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X260_93edb5a1.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310526545" },
-        { id: "linen-runner-navy-30x300", label: "Navy Blue / 30X300", price: 42.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-6_Enjoy-The-Navy-Blue-_-30X300_6672f1f8.jpg", shopifyVariantId: "gid://shopify/ProductVariant/59251310559313" }
+        { id: "linen-runner-navy-30x300", label: "Navy Blue / 30X300", price: 42.00, available: false, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-coral-fleece-throw-blanket-v2-NN5KUnq4odCsWJ2FAMuEwi.webp", shopifyVariantId: "gid://shopify/ProductVariant/59251310559313" }
       ],
     available: true,
     includes: ["1 × Linen table runner"],
@@ -1891,7 +1895,7 @@ export const PRODUCTS: Product[] = [
     variants: [
       { id: "dwell-7-crm", label: "Cream", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-7-cream-b9wX7dhnGgyPapEDi2QSeC_d258602e.jpg" },
       { id: "dwell-7-gry", label: "Grey", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-7-grey-FsZrVWkUD4TSfZA4EFw8Wt_6172bef5.jpg" },
-      { id: "dwell-7-sge", label: "Sage", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/dwell-7-sage-BPYwbLwCrTbx9eBXk4x5Xh_8bc4d3d7.jpg" }],
+      { id: "dwell-7-sge", label: "Sage", price: 38.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-knit-nap-blanket-v2-nsuLA5hExAw9o32bsWJ6dk.webp" }],
     includes: ["1 × Coral fleece throw blanket"],
     crossSells: ["knit-nap-blanket", "chunky-knit-cushion-cover", "boucle-sphere-cushion"],
   },
@@ -2065,7 +2069,7 @@ export const PRODUCTS: Product[] = [
         { id: "velvet-stripe-cushion-cover-black", label: "Charcoal Black", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304923217", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-charcoal-black-a4v7HfH2PpSTLU3WJ6zfVv.webp" },
         { id: "velvet-stripe-cushion-cover-wine-red", label: "Wine Red", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304955985", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-wine-red-9UT7dnuPihYuYFwXbq9wvh.webp" },
         { id: "velvet-stripe-cushion-cover-blue", label: "Navy Blue", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251304988753", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-navy-blue-fYMRURuxaDzaJT4jDFAqEM.webp" },
-        { id: "velvet-stripe-cushion-cover-white-and-pink-towel", label: "White & Pink Set", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305021521", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/velvet-cushion-white-pink-set-AdYgYaVB9tsUedSnpJjzTa_2353baf1.jpg" }
+        { id: "velvet-stripe-cushion-cover-white-and-pink-towel", label: "White & Pink Set", price: 28.00, available: true, shopifyVariantId: "gid://shopify/ProductVariant/59251305021521", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/regen-pet-blanket-v2-4fZ6JZEh9nQc7quEAVMcvS.webp" }
       ],
     includes: ["1 × Cushion cover"],
     crossSells: ["chunky-knit-cushion-cover", "tufted-tassel-cushion", "boucle-sphere-cushion"],
