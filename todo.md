@@ -721,6 +721,16 @@
 - [x] Parallel visual comparison of AI-rendered images vs Shopify originals (69 products)
 - [x] Manual verification of sample products to confirm findings
 - [x] Comprehensive audit report generated (hearth-curated-audit-report.md)
-- [ ] Fix 8 critical mismatches (wrong product type shown)
+- [x] Fix 8 critical mismatches (wrong product type shown) — all 8 images regenerated + 2 descriptions fixed
 - [ ] Fix 38 major mismatches (significant color/shape/pattern differences)
 - [ ] Fix 9 minor mismatches (small improvements)
+
+### Fix 8 Critical Image Mismatches (Apr 2, 2026)
+- [x] Regenerate: Linen Placemats (now shows natural linen placemat with gold spoon)
+- [x] Regenerate: Retro Reactive Glaze Dinnerware (now shows teal reactive glaze plate/bowl/mug set)
+- [x] Regenerate: Rapid Defrosting Board (now shows black ridged aluminum defrosting tray)
+- [x] Regenerate: Solar Pathway Light (now shows black pillar with lattice cutout pattern)
+- [x] Regenerate: Nordic Figurine — Monochrome (now shows white pear with black polka dots)
+- [x] Regenerate: Ceramic Incense Holder (now shows teal mountain landscape incense holder)
+- [x] Regenerate: Autumn Faux Flower Bouquet (new image + fixed description from straw basket to faux flowers)
+- [x] Regenerate: Minimalist Ceramic Planter (new image + fixed description from straw basket to ceramic planter)
