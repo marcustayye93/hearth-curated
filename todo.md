@@ -773,3 +773,13 @@
 - [x] Regenerate ADORN collection images with Shopify refs (4 products)
 - [x] Regenerate BLOOM collection images with Shopify refs (7 products)
 - [x] Update all 45 product listings with new v3 images in products.ts
+
+### Priority Variant Image Refresh (Apr 2, 2026)
+- [x] Identify all variant images using old/mismatched URLs (354 total, 210 unique visuals)
+- [x] Download Shopify variant reference images (474 refs across 33 products)
+- [x] Regenerate color-specific variant images with Shopify refs (GATHER collection)
+- [x] Regenerate color-specific variant images with Shopify refs (ADORN collection)
+- [x] Regenerate color-specific variant images with Shopify refs (BLOOM collection)
+- [x] Regenerate color-specific variant images with Shopify refs (GLOW collection)
+- [x] Regenerate color-specific variant images with Shopify refs (DWELL collection)
+- [x] Update products.ts with all new variant image URLs (403 v3 images + 39 acceptable legacy images)
