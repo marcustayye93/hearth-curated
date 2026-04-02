@@ -722,7 +722,7 @@
 - [x] Manual verification of sample products to confirm findings
 - [x] Comprehensive audit report generated (hearth-curated-audit-report.md)
 - [x] Fix 8 critical mismatches (wrong product type shown) — all 8 images regenerated + 2 descriptions fixed
-- [ ] Fix 38 major mismatches (significant color/shape/pattern differences)
+- [x] Fix 38 major mismatches (significant color/shape/pattern differences) — all 38 images regenerated from Shopify references
 - [ ] Fix 9 minor mismatches (small improvements)
 
 ### Fix 8 Critical Image Mismatches (Apr 2, 2026)
@@ -742,3 +742,12 @@
 - [x] Style consistently with existing PDP design language (matches Details section styling)
 - [x] Test rendering across products with different include counts (verified 1-item and 5-item products)
 - [x] Vitest tests passing (5 tests: data completeness, format validation, specific product checks)
+
+### Batch Fix 38 Major Image Mismatches (Apr 2, 2026)
+- [x] Download Shopify reference images for all 38 products
+- [x] Regenerate DWELL collection (6 products): bohemian-area-rug, diatomite-bath-mat, linen-table-runner, chunky-knit-cushion-cover, tufted-tassel-cushion, velvet-stripe-cushion-cover
+- [x] Regenerate GLOW collection (5 products): solar-garden-torch, japanese-bedside-lamp, round-linen-table-lamp, square-linen-table-lamp, woven-bamboo-table-lamp
+- [x] Regenerate BLOOM collection (4 products): dried-lavender-bundle, autumn-harvest-wreath, dried-reed-arrangement, woven-hanging-planter
+- [x] Regenerate ADORN collection (6 products): led-aroma-diffuser, nordic-figurine-golden, nordic-figurine-blush, macrame-wall-hanging, ceramic-bud-vase, fireplace-aroma-diffuser
+- [x] Regenerate FEAST collection (17 products): japanese-matcha-ceremony-set, stoneware-travel-tea-set, black-walnut-resin-tray, jujube-wood-serving-basin, acacia-wood-serving-plate, handmade-wooden-cup, acacia-magnetic-knife-block, hand-painted-ceramic-oil-cruet, rattan-serving-tray, japanese-wooden-coaster-set, black-walnut-cutting-board, ceramic-butter-dish, multi-function-grater, ceramic-pour-over-dripper, vintage-japanese-ceramic-mug, japanese-stoneware-mug, nordic-espresso-cup-saucer
+- [x] Update all 38 product listings with new v2 images in products.ts
