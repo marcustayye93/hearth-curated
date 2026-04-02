@@ -715,3 +715,12 @@
 - [x] Magnetic Levitating Planter: Confirmed plant (asparagus fern) IS included per Shopify listing
 - [x] Dried Lavender Bundle: Verified variant colors against Shopify (White and Pink match exactly)
 - [x] Dried Lavender Bundle: Updated description to clarify Pink variant has dominant purple-blue lavender with pink strawflower accents
+
+## Full Catalog Audit (Apr 2, 2026)
+- [x] Audit all 69 auditable product listings for image/description mismatches against Shopify data
+- [x] Parallel visual comparison of AI-rendered images vs Shopify originals (69 products)
+- [x] Manual verification of sample products to confirm findings
+- [x] Comprehensive audit report generated (hearth-curated-audit-report.md)
+- [ ] Fix 8 critical mismatches (wrong product type shown)
+- [ ] Fix 38 major mismatches (significant color/shape/pattern differences)
+- [ ] Fix 9 minor mismatches (small improvements)
