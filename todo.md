@@ -783,3 +783,14 @@
 - [x] Regenerate color-specific variant images with Shopify refs (GLOW collection)
 - [x] Regenerate color-specific variant images with Shopify refs (DWELL collection)
 - [x] Update products.ts with all new variant image URLs (403 v3 images + 39 acceptable legacy images)
+
+### Full Visual Audit — v3 Images vs Shopify Originals (Apr 2, 2026)
+- [x] Audit GATHER/FEAST collection (21 products) — 11 failed, all regenerated to v4
+- [x] Audit DWELL collection (7 products) — 7 failed, all regenerated to v4
+- [x] Audit GLOW collection (4 products) — 4 failed, all regenerated to v4
+- [x] Audit BLOOM collection (4 products) — 4 failed, all regenerated to v4
+- [x] Audit ADORN collection (4 products) — 4 failed, all regenerated to v4
+- [x] Compiled flagged list: 30 of 63 products failed v3 audit
+- [x] Regenerated all 30 flagged images to v4 — 29 passed re-audit
+- [x] Regenerated retro-reactive-glaze-dinnerware to v5 (final failure)
+- [x] Update products.ts with all corrected images (v4 + v5)
