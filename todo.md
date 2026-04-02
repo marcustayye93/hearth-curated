@@ -762,3 +762,14 @@
 - [x] Restore: Acacia Salt & Pepper Mill — removed duplicate variant, fixed to 3 valid sizes
 - [x] Restore: Japanese Stoneware Mug — verified variant IDs match Shopify, already purchasable
 - [x] Restore: Vintage Japanese Ceramic Mug — set available:true, added 5 missing variants (B-F)
+
+### Re-regenerate Failed Audit Products with Shopify Reference Photos (Apr 2, 2026)
+- [x] Extract all critical + major mismatch products from fresh audit (45 products)
+- [x] Download Shopify reference images for all 45 failed products
+- [x] Generate detailed prompts using Shopify originals as AI reference images
+- [x] Regenerate DWELL collection images with Shopify refs (7 products)
+- [x] Regenerate GLOW collection images with Shopify refs (6 products)
+- [x] Regenerate GATHER collection images with Shopify refs (21 products)
+- [x] Regenerate ADORN collection images with Shopify refs (4 products)
+- [x] Regenerate BLOOM collection images with Shopify refs (7 products)
+- [x] Update all 45 product listings with new v3 images in products.ts
