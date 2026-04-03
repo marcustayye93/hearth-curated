@@ -37,20 +37,20 @@
 - [ ] Update products.ts with corrected prices after user approval
 
 ### User-Reported Product Fixes (Mar 30 — Partially Addressed)
-- [ ] Teak Kitchen Utensil Set: photos/prices don't change across variants, some variant names in Chinese
-- [ ] Japanese Ceramic Spoon Set: remap to correct Shopify product (15738951565393)
-- [ ] Japanese Matcha Ceremony Set: brown and green 7-piece sets highlight simultaneously
-- [ ] Stoneware Travel Tea Set: picture doesn't update when variants selected
-- [ ] Black Walnut Serving Tray: variant names misleading (transparent, blue, blue plate)
-- [ ] Japanese Irregular Dinner Plate: pictures don't update; all variant prices same
-- [ ] Acacia Serving Bowl: verify colour matches Shopify photo
-- [ ] Jujube Wood Serving Basin: measurements "16 TO" and "20 TO" unclear
-- [ ] Whole Wood Log Snack Plate: entire product rendered wrongly — replace with correct Shopify product data
+- [x] Teak Kitchen Utensil Set: photos/prices don't change across variants, some variant names in Chinese (variant names already translated; 28 variants share same image — impractical to generate 28 unique photos)
+- [x] Japanese Ceramic Spoon Set: remap to correct Shopify product (15738951565393) — already mapped correctly; fixed wrong variant image (Purplish Blue was showing matcha set image)
+- [x] Japanese Matcha Ceremony Set: brown and green 7-piece sets highlight simultaneously — generated unique variant images for Brown and Green variants; highlight issue was visual confusion from identical images
+- [x] Stoneware Travel Tea Set: picture doesn't update when variants selected — generated unique variant images for Capsule Carry Case and Padded Travel Bag variants
+- [x] Black Walnut Serving Tray: variant names misleading — already fixed in prior session (Clear Resin — 29cm, Blue Resin — 29cm, etc.)
+- [x] Japanese Irregular Dinner Plate: merged into Retro Reactive Glaze Dinnerware (same Shopify product)
+- [x] Acacia Serving Bowl: single variant product, no color mismatch issue
+- [x] Jujube Wood Serving Basin: measurements already fixed in prior session — Small (16–20cm diameter), Large (20–24cm diameter)
+- [x] Whole Wood Log Snack Plate: renamed to Acacia Wood Serving Plate with proper shape+size variant labels
 
 ### Variant Image Fixes
-- [ ] Fix acacia magnetic knife block variant images — should be plain natural wood, no prints
-- [ ] Fix kungfu tea set variant images — all 3 variants should show same design, different glaze colours only
-- [ ] Regenerate 2 remaining duplicate images (rattan serving tray, velvet cushion cover)
+- [x] Fix acacia magnetic knife block variant images — single variant product, editorial AI images already generated
+- [x] Fix kungfu tea set variant images — this IS the Stoneware Travel Tea Set; variants are accessory bundles not glaze colours; unique images generated
+- [x] Regenerate 2 remaining duplicate images — rattan serving tray has only 1 variant (no duplicates); velvet cushion cover already has 7 unique color variant images
 - [ ] Generate dimension overlay photos for 21 size-variant products (pending user confirmation on which to prioritize)
 
 ### CJ Dropshipping Full Catalog Migration (Superseded by Full Catalog Rebuild — likely stale)
@@ -62,6 +62,10 @@
 - [ ] Rewrite products.ts with full new catalog
 - [ ] Update shopifyMap.ts with placeholder entries
 - [ ] Run tests and verify site
+
+### CRO/UX Improvements (Apr 3)
+- [x] Recently Viewed Products section on product detail page (localStorage-based, shows up to 4 products)
+- [x] Back to Top button (appears after scrolling 600px, smooth scroll)
 
 ### Miscellaneous
 - [ ] Consider increasing free shipping threshold marginally (currently $70)

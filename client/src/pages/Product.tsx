@@ -14,12 +14,20 @@ import { useCart } from "@/contexts/CartContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import SEOHead from "@/components/SEOHead";
 import { trpc } from "@/lib/trpc";
+import { useRecentlyViewed } from "@/hooks/useRecentlyViewed";
 
 export default function Product() {
   const params = useParams<{ slug: string }>();
   const product = getProductBySlug(params.slug);
   const { addItem } = useCart();
   const { formatPrice, currency } = useCurrency();
+
+  // Recently viewed tracking
+  const { recentlyViewed } = useRecentlyViewed(params.slug);
+  const recentlyViewedProducts = useMemo(
+    () => recentlyViewed.map(getProductBySlug).filter((p): p is NonNullable<typeof p> => p != null),
+    [recentlyViewed]
+  );
 
   // Variant state
   const [selectedVariant, setSelectedVariant] = useState<Variant | undefined>(
@@ -586,6 +594,57 @@ export default function Product() {
                         {rel.hookLine}
                       </p>
                     )}
+                    <p
+                      className="text-sm"
+                      style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}
+                    >
+                      {formatPrice(rel.price, { compact: true })}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+        {/* ── RECENTLY VIEWED ────────────────────────────────────────── */}
+        {recentlyViewedProducts.length > 0 && (
+          <section
+            className="py-16 md:py-24"
+            style={{ borderTop: "1px solid var(--hc-stone)" }}
+          >
+            <div className="container">
+              <p className="hc-eyebrow mb-8">Recently Viewed</p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                {recentlyViewedProducts.slice(0, 4).map((rel) => (
+                  <Link
+                    key={rel.id}
+                    href={`/products/${rel.slug}`}
+                    className="group block hc-product-card"
+                  >
+                    <div className="overflow-hidden mb-4 relative" style={{ aspectRatio: "3/4" }}>
+                      <img
+                        src={rel.image}
+                        alt={rel.name}
+                        className={`w-full h-full object-cover hc-product-img${!rel.available ? " hc-sold-out-img" : ""}`}
+                        loading="lazy"
+                        decoding="async"
+                        width={800}
+                        height={1067}
+                      />
+                      {!rel.available && <div className="hc-sold-out-ribbon" />}
+                    </div>
+                    <p
+                      className="text-xs tracking-widest uppercase mb-1"
+                      style={{ color: "var(--hc-sienna)", fontFamily: "'Karla', sans-serif" }}
+                    >
+                      {rel.collection}
+                    </p>
+                    <h3
+                      className="text-sm md:text-base mb-1"
+                      style={{ fontFamily: "'Libre Baskerville', serif", color: "var(--hc-espresso)", fontWeight: 400 }}
+                    >
+                      {rel.name}
+                    </h3>
                     <p
                       className="text-sm"
                       style={{ color: "var(--hc-espresso)", fontFamily: "'Karla', sans-serif" }}

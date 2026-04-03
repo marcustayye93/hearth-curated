@@ -10,6 +10,7 @@ import { CartProvider } from "./contexts/CartContext";
 import { CurrencyProvider } from "./contexts/CurrencyContext";
 import CartDrawer from "./components/CartDrawer";
 import EmailCapture from "./components/EmailCapture";
+import BackToTop from "./components/BackToTop";
 import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import Product from "./pages/Product";
@@ -64,6 +65,7 @@ function App() {
             <Toaster />
             <CartDrawer />
             <EmailCapture />
+            <BackToTop />
             <Router />
           </TooltipProvider>
         </CartProvider>

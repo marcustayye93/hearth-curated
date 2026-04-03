@@ -140,7 +140,7 @@ export const PRODUCTS: Product[] = [
     available: true,
     shopifyHandle: "japanese-style-creative-ceramic-spoon-small-kitchen-restaurant",
     variants: [
-        { id: "japanese-ceramic-spoon-purplish-blue", label: "Purplish Blue", price: 6.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/japanese-matcha-ceremony-set-v3-Uf3Yfg6xdqoAWXpXvqXVGF.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250896830545" },
+        { id: "japanese-ceramic-spoon-purplish-blue", label: "Purplish Blue", price: 6.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ceramic-spoon-purplish-blue-WRcLe8WgLnULKSwAcY8v5g.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250896830545" },
         { id: "japanese-ceramic-spoon-lunar-december", label: "Lunar December", price: 6.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ceramic-spoon-lunar-december-v3-FRjzZ7K89VhWBd9bQJsEui.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250896896081" },
         { id: "japanese-ceramic-spoon-sky", label: "Sky", price: 6.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ceramic-spoon-sky-v3-hwiEDXpqMyBiLJST7ahmrw.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250896961617" },
         { id: "japanese-ceramic-spoon-black-rhyme", label: "Black Rhyme", price: 6.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/ceramic-spoon-follow-the-fate-v3-78Bm5VdSiKqpiBK7FirFiA.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250897059921" },
@@ -165,8 +165,8 @@ export const PRODUCTS: Product[] = [
     available: true,
     variants: [
         { id: "matcha-set-7pieces-black", label: "7-Piece Black", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/japanese-matcha-ceremony-set-v3-nXemFUgeuT6LDiFyELmK2y.webp", shopifyVariantId: "gid://shopify/ProductVariant/59248631316561" },
-        { id: "matcha-set-7piece-painted-brown", label: "7-Piece Painted Brown", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/japanese-matcha-ceremony-set-v3-nXemFUgeuT6LDiFyELmK2y.webp", shopifyVariantId: "gid://shopify/ProductVariant/59248631349329" },
-        { id: "matcha-set-7piece-green", label: "7-Piece Green", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/japanese-matcha-ceremony-set-v3-nXemFUgeuT6LDiFyELmK2y.webp", shopifyVariantId: "gid://shopify/ProductVariant/59248631414865" }
+        { id: "matcha-set-7piece-painted-brown", label: "7-Piece Painted Brown", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/matcha-brown-BmJPhpKGZBywNdSnkt4tVj.webp", shopifyVariantId: "gid://shopify/ProductVariant/59248631349329" },
+        { id: "matcha-set-7piece-green", label: "7-Piece Green", price: 52.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/matcha-green-VcMtzTMUsNqqKt5w7zkr3u.webp", shopifyVariantId: "gid://shopify/ProductVariant/59248631414865" }
       ],
     includes: ["1 × Japanese Matcha Ceremony Set"],
     crossSells: ["stoneware-travel-tea-set", "japanese-stoneware-mug", "retro-reactive-glaze-dinnerware"],
@@ -188,8 +188,8 @@ export const PRODUCTS: Product[] = [
     available: true,
     variants: [
         { id: "stoneware-travel-tea-set-one-pot-one-cup-with", label: "Tea Set Only (Pot + Cup + Lid)", price: 32.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-travel-tea-set-v4-XYVMFoUbPUiTRiBgEtWuH2.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250898141265" },
-        { id: "stoneware-travel-tea-set-capsule-bag", label: "Tea Set + Capsule Carry Case", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-travel-tea-set-v4-XYVMFoUbPUiTRiBgEtWuH2.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250898174033" },
-        { id: "stoneware-travel-tea-set-travel-bag", label: "Tea Set + Padded Travel Bag", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/stoneware-travel-tea-set-v4-XYVMFoUbPUiTRiBgEtWuH2.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250898206801" }
+        { id: "stoneware-travel-tea-set-capsule-bag", label: "Tea Set + Capsule Carry Case", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/tea-set-capsule-ELojNExWH8vpFkQmX2vBzK.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250898174033" },
+        { id: "stoneware-travel-tea-set-travel-bag", label: "Tea Set + Padded Travel Bag", price: 42.00, available: true, image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663320869327/ATXAQqZMviwYB4q65RwV96/tea-set-travel-bag-87XfTHrsvviZWQrASSdnFk.webp", shopifyVariantId: "gid://shopify/ProductVariant/59250898206801" }
       ],
     includes: ["1 × Teapot", "2 × Tea cups", "1 × Travel bag"],
     crossSells: ["japanese-matcha-ceremony-set", "japanese-stoneware-mug", "multi-function-grater"],
